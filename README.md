@@ -34,7 +34,7 @@ Node.js 20 or newer is the only requirement. Run a scan without installing a
 global command:
 
 ```bash
-npx vendorprint@latest example.com --findings-only --pretty
+npx vendorprint@latest example.com
 ```
 
 To keep the `vendorprint` command available globally:
@@ -54,64 +54,67 @@ npm install vendorprint
 
 ```bash
 npm test
-vendorprint example.com another.example --pretty
-vendorprint example.com another.example --findings-only --pretty
+vendorprint example.com another.example
+vendorprint example.com --full --pretty
 vendorprint --input accounts.txt --output findings.json
-vendorprint --input accounts.txt --format ndjson --findings-only \
+vendorprint --input accounts.txt --format ndjson \
   --output findings.ndjson
 vendorprint signatures --pretty
 vendorprint signatures audit findings.ndjson --pretty
 vendorprint diff prior.json current.json --pretty
 ```
 
-Full mode is the accuracy-first default. `balanced` and `fast` remain explicit
-opt-ins for cases where reduced coverage is acceptable.
+The default output is a result-first JSON report: observed email and technology
+providers, confidence, relationship level, evidence, and caveats. It omits the
+candidate labels searched, raw DNS answers, query budgets, and empty technology
+categories. Use `--full` when you need that forensic scan detail.
+
+This output choice is separate from scan depth. `--mode full` is still the
+accuracy-first scan default; `balanced` and `fast` remain explicit opt-ins for
+cases where reduced coverage is acceptable.
 
 Input files may be comma-, space-, or newline-separated. To use a commented file:
 
 ```bash
 rg -v '^\s*(#|$)' examples/accounts.txt |
-  vendorprint --stdin --pretty > findings.json
+  vendorprint --stdin > findings.json
 ```
 
 If you know a company's naming convention, add candidate labels:
 
 ```bash
 vendorprint sample.example \
-  --labels news,updates,teamname,brandname \
-  --pretty
+  --labels news,updates,teamname,brandname
 ```
 
-The output is JSON on stdout unless `--output` is supplied. Diagnostics and CLI
-errors go to stderr, so redirecting stdout is safe.
+The output is formatted JSON on stdout unless `--output` is supplied. Diagnostics
+and CLI errors go to stderr, so redirecting stdout is safe. `--pretty` remains
+accepted for backwards compatibility and for the offline utility commands.
 
 For large jobs, use NDJSON. Each completed domain is appended immediately, which
 keeps memory bounded and creates a durable checkpoint:
 
 ```bash
-vendorprint --input accounts.txt --format ndjson --findings-only \
-  --output findings.ndjson
+vendorprint --input accounts.txt --format ndjson --output findings.ndjson
 
 # If the process is interrupted, rerun with the same original input:
-vendorprint --input accounts.txt --findings-only \
-  --resume findings.ndjson
+vendorprint --input accounts.txt --resume findings.ndjson
 ```
 
 Resume reads both full and compact result events, skips normalized domains already
 present, tolerates a final partially written line, and appends the remaining results.
 New output files are created without overwriting an existing file.
 
-`--findings-only` is the useful discovery view: it omits raw DNS records while
-retaining email routing, DNS hosting, redacted TXT ownership proofs, authorized
-senders, DMARC services, and sales-tool evidence.
-It also returns normalized arrays under `technologyProfile`, including
+The default discovery view returns only non-empty arrays under
+`technologyProfile`, including
 `aiWorkspaces`, `crm`, `salesEngagement`, `marketingAutomation`,
 `advertisingAndAbm`, `customerData`, `productAnalytics`, `customerSupport`,
 `customerSuccessAndEducation`, `eventsAndWebinars`, `meetingIntelligence`,
 `commerceAndPayments`, `emailDelivery`, and `businessSoftware`. The profile also
 separates `websiteAndContent`, `brandAndCreative`, and `identityAndAccess`.
-`inferenceGraph` keeps derived findings and non-exhaustive candidate sets separate.
-Every result includes a deterministic `technologyFingerprint` for change detection.
+`--findings-only` remains as a backwards-compatible alias for this default.
+`--full` additionally includes the inference graph, deterministic technology
+fingerprint, raw DNS records, and scan diagnostics.
 
 Each technology result retains the evidence, strongest confidence, product scope,
 relationship level, and a caveat. The relationship levels are:
@@ -189,7 +192,7 @@ requests, and never contacts company web endpoints.
 ```bash
 vendorprint --input accounts.txt --ct \
   --ct-cache .vendorprint-ct-cache.json \
-  --findings-only --output findings.json
+  --output findings.json
 ```
 
 Use a cache and small batches. Certificate data can be stale, and a certificate

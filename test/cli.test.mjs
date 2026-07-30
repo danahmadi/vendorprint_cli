@@ -5,6 +5,40 @@ import { mkdtemp, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
+test("documents result-first output and reserves --full for diagnostics", () => {
+  const run = spawnSync(
+    process.execPath,
+    ["bin/vendorprint.mjs", "--help"],
+    {
+      cwd: new URL("..", import.meta.url),
+      encoding: "utf8",
+    },
+  );
+
+  assert.equal(run.status, 0, run.stderr);
+  assert.match(run.stdout, /Result-first output is the default/);
+  assert.match(run.stdout, /--full\s+Include raw DNS, search, and query diagnostics/);
+});
+
+test("rejects conflicting output detail flags before scanning", () => {
+  const run = spawnSync(
+    process.execPath,
+    [
+      "bin/vendorprint.mjs",
+      "example.com",
+      "--full",
+      "--findings-only",
+    ],
+    {
+      cwd: new URL("..", import.meta.url),
+      encoding: "utf8",
+    },
+  );
+
+  assert.equal(run.status, 1);
+  assert.match(run.stderr, /--full cannot be combined with --findings-only/);
+});
+
 test("resume skips normalized completed domains and repairs a partial tail", async () => {
   const directory = await mkdtemp(join(tmpdir(), "vendorprint-test-"));
   const checkpointPath = join(directory, "checkpoint.ndjson");

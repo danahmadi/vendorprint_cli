@@ -25,7 +25,8 @@ import { scanDomainEvents, scanDomains } from "../src/scanner.mjs";
 const HELP = `vendorprint — inspect public DNS for company technology signals
 
 Usage:
-  vendorprint acme.com example.com --pretty
+  vendorprint acme.com example.com
+  vendorprint acme.com --full --pretty
   vendorprint --input accounts.txt --output findings.json
   vendorprint --input accounts.txt --format ndjson --output findings.ndjson
   vendorprint --input accounts.txt --resume findings.ndjson
@@ -48,16 +49,19 @@ Options:
   --ct-cache <path>       Reuse and update a local CT response cache
   --ct-delay <ms>         Delay between CT index requests (default: 1000)
   --ct-max-hosts <n>      Maximum CT-derived labels per domain (default: 20)
-  --findings-only         Emit compact findings without raw DNS detail
+  --full                  Include raw DNS, search, and query diagnostics
+  --findings-only         Legacy alias for the default result-first output
   --format <value>        json (default) or ndjson
   --output <path>         Write to a new file instead of stdout
   --resume <path>         Resume and append to an existing NDJSON checkpoint
-  --pretty                Pretty-print JSON (not valid with NDJSON)
+  --pretty                Force formatted JSON; scans are formatted by default
   --help                  Show this help
 
-Full mode is the accuracy-first default. Fast mode remains available only as an
-explicit opt-in. NDJSON writes one completed domain per line, so interrupted
-large scans can resume without repeating completed domains.
+Result-first output is the default and includes only observed technologies,
+confidence, evidence, and caveats. Use --full for forensic scan detail. Full
+scan mode is still the accuracy-first default; --mode changes scan depth, while
+--full changes output detail. NDJSON writes one completed domain per line, so
+interrupted large scans can resume without repeating completed domains.
 
 Exit codes:
   0  Scan completed (individual domains may still contain DNS errors)
@@ -87,6 +91,7 @@ function parseArgs(argv) {
     qps: 100,
     pretty: false,
     findingsOnly: false,
+    fullOutput: false,
     input: null,
     stdin: false,
     mode: "full",
@@ -107,6 +112,8 @@ function parseArgs(argv) {
     if (arg === "--help") return { help: true };
     if (arg === "--pretty") {
       options.pretty = true;
+    } else if (arg === "--full") {
+      options.fullOutput = true;
     } else if (arg === "--findings-only") {
       options.findingsOnly = true;
     } else if (arg === "--stdin") {
@@ -205,6 +212,9 @@ function parseArgs(argv) {
   }
   if (!["json", "ndjson"].includes(options.format)) {
     throw new Error("--format must be json or ndjson");
+  }
+  if (options.fullOutput && options.findingsOnly) {
+    throw new Error("--full cannot be combined with --findings-only");
   }
   if (options.resume) {
     if (options.output) {
@@ -422,7 +432,7 @@ async function runNdjson(options) {
     ? createWriteStream(outputPath, { flags: "a", encoding: "utf8" })
     : process.stdout;
   for await (const rawEvent of scanDomainEvents(options.domains, options)) {
-    let event = options.findingsOnly ? compactEvent(rawEvent) : rawEvent;
+    let event = options.fullOutput ? rawEvent : compactEvent(rawEvent);
     if (event.type === "meta" && options.resume) {
       event = {
         ...event,
@@ -465,11 +475,11 @@ try {
       await runNdjson(options);
     } else {
       const report = await scanDomains(options.domains, options);
-      const output = options.findingsOnly ? compactReport(report) : report;
+      const output = options.fullOutput ? report : compactReport(report);
       const serialized = `${JSON.stringify(
         output,
         null,
-        options.pretty ? 2 : 0,
+        2,
       )}\n`;
       if (options.output) {
         await writeFile(options.output, serialized, { flag: "wx" });

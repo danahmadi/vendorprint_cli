@@ -1,65 +1,113 @@
+const PROFILE_CATEGORIES = [
+  "aiWorkspaces",
+  "crm",
+  "marketingAutomation",
+  "emailDelivery",
+  "salesEngagement",
+  "advertisingAndAbm",
+  "customerData",
+  "productAnalytics",
+  "customerSupport",
+  "customerSuccessAndEducation",
+  "eventsAndWebinars",
+  "meetingIntelligence",
+  "commerceAndPayments",
+  "businessSoftware",
+  "websiteAndContent",
+  "brandAndCreative",
+  "identityAndAccess",
+];
+
+function resultFirstTechnologyProfile(profile = {}) {
+  return Object.fromEntries(
+    PROFILE_CATEGORIES.filter(
+      (category) =>
+        Array.isArray(profile[category]) && profile[category].length > 0,
+    ).map((category) => [category, profile[category]]),
+  );
+}
+
+function resultFirstEmail(mail = {}) {
+  const securityGateways = Array.isArray(mail.gateways) ? mail.gateways : [];
+  const providerFound = !["Unknown", "No MX record", undefined].includes(
+    mail.provider,
+  );
+  if (!providerFound && securityGateways.length === 0) return null;
+
+  return {
+    ...(providerFound
+      ? {
+          provider: mail.provider,
+          confidence: mail.confidence,
+        }
+      : {}),
+    ...(securityGateways.length > 0 ? { securityGateways } : {}),
+  };
+}
+
 export function compactResult(result) {
+  const email = resultFirstEmail(result.mail);
+  const technologyProfile = resultFirstTechnologyProfile(
+    result.technologyProfile,
+  );
+  const hasTechnologyFindings = Object.keys(technologyProfile).length > 0;
+
   return {
     domain: result.domain,
     status: result.status,
-    email: {
-      provider: result.mail.provider,
-      confidence: result.mail.confidence,
-      securityGateways: result.mail.gateways,
-    },
-    infrastructure: {
-      dnsProvider: result.technologySignals.dnsProvider,
-      domainVerifications: result.technologySignals.domainVerifications,
-      ...(result.technologySignals.unclassifiedDomainVerifications
-        ? {
-            unclassifiedDomainVerifications:
-              result.technologySignals.unclassifiedDomainVerifications,
-          }
-        : {}),
-      authorizedEmailSenders:
-        result.technologySignals.authorizedEmailSenders,
-      dmarcMonitoringServices:
-        result.technologySignals.dmarcMonitoringServices,
-      delegatedServices: result.technologySignals.delegatedServices,
-      dkimServices: result.technologySignals.dkimServices,
-      cnameServices: result.technologySignals.cnameServices,
-    },
-    querySafety: result.querySafety,
-    cnameDiagnostics: {
-      wildcardLikeTargets:
-        result.salesEngagement.wildcardLikeCnameTargets,
-      observationsCollapsedAsWildcardLike:
-        result.salesEngagement.observationsCollapsedAsWildcardLike,
-    },
-    technologyProfile: result.technologyProfile,
-    technologyFingerprint: result.technologyFingerprint,
-    salesEngagement: {
-      status: result.salesEngagement.status,
-      detected: result.salesEngagement.detected,
-    },
+    ...(email ? { email } : {}),
+    technologyProfile,
+    ...(!email && !hasTechnologyFindings
+      ? {
+          interpretation:
+            "No attributable public DNS technology signals were found. Absence is inconclusive because DNS cannot enumerate arbitrary subdomains and proxies can hide upstream services.",
+        }
+      : {}),
   };
 }
 
 export function compactReport(report) {
   return {
     schemaVersion: report.schemaVersion,
-    signatureCatalogVersion: report.signatureCatalogVersion,
     generatedAt: report.generatedAt,
     durationMs: report.durationMs,
-    methodology: report.methodology,
     summary: report.summary,
-    invalidInputs: report.invalidInputs,
+    ...(report.invalidInputs.length > 0
+      ? { invalidInputs: report.invalidInputs }
+      : {}),
     findings: report.results.map(compactResult),
   };
 }
 
 export function compactEvent(event) {
-  if (event.type !== "result") return event;
-  return {
-    type: "result",
-    index: event.index,
-    finding: compactResult(event.result),
-  };
+  if (event.type === "result") {
+    return {
+      type: "result",
+      index: event.index,
+      finding: compactResult(event.result),
+    };
+  }
+  if (event.type === "meta") {
+    return {
+      type: "meta",
+      schemaVersion: event.schemaVersion,
+      generatedAt: event.generatedAt,
+      summary: event.summary,
+      ...(event.invalidInputs.length > 0
+        ? { invalidInputs: event.invalidInputs }
+        : {}),
+    };
+  }
+  if (event.type === "summary") {
+    return {
+      type: "summary",
+      schemaVersion: event.schemaVersion,
+      generatedAt: event.generatedAt,
+      durationMs: event.durationMs,
+      summary: event.summary,
+    };
+  }
+  return event;
 }
 
 export function parseNdjsonCheckpoint(value) {
