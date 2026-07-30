@@ -28,22 +28,27 @@ stale. A negative result is inconclusive because DNS cannot list arbitrary subdo
 the customer chooses the label, a proxy can hide the CNAME, or branded tracking can
 be disabled.
 
-## Install locally
+## Run instantly
 
-Node.js 20 or newer is the only requirement. Until the package is published to
-npm, install from a GitHub clone:
+Node.js 20 or newer is the only requirement. Run a scan without installing a
+global command:
 
 ```bash
-git clone https://github.com/danahmadi/vendorprint_cli.git
-cd vendorprint_cli
-npm install
-npm link
+npx vendorprint@latest example.com --findings-only --pretty
+```
+
+To keep the `vendorprint` command available globally:
+
+```bash
+npm install --global vendorprint
 vendorprint --help
 ```
 
-`npm link` makes the `vendorprint` command available from your shell while you
-develop locally. Once it is published to npm, installation will be
-`npm install --global vendorprint` or `npx vendorprint example.com`.
+To use the library API from a Node.js project:
+
+```bash
+npm install vendorprint
+```
 
 ## Run
 
