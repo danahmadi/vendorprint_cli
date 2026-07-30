@@ -1,0 +1,46 @@
+{
+  "name": "vendorprint",
+  "version": "0.2.0",
+  "private": false,
+  "type": "module",
+  "description": "A careful, evidence-first CLI for discovering company technology signals in public DNS.",
+  "keywords": [
+    "dns",
+    "technographics",
+    "vendor-detection",
+    "sales-intelligence",
+    "cli"
+  ],
+  "homepage": "https://github.com/danahmadi/vendorprint_cli#readme",
+  "bugs": {
+    "url": "https://github.com/danahmadi/vendorprint_cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danahmadi/vendorprint_cli.git"
+  },
+  "bin": {
+    "vendorprint": "./bin/vendorprint.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "scan": "node ./bin/vendorprint.mjs",
+    "test": "node --test",
+    "check": "node --check ./bin/vendorprint.mjs && node --check ./src/index.mjs && node --check ./src/audit.mjs && node --check ./src/certificate-transparency.mjs && node --check ./src/domain.mjs && node --check ./src/fingerprint.mjs && node --check ./src/inference.mjs && node --check ./src/output.mjs && node --check ./src/profile.mjs && node --check ./src/scanner.mjs && node --check ./src/signals.mjs && node --check ./src/signature-registry.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "RESPONSIBLE_USE.md"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "tldts": "^7.4.9"
+  }
+}

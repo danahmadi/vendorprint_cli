@@ -1,0 +1,167 @@
+export const SIGNATURE_CATALOG_VERSION = "2026.07.29";
+
+const source = (url, kind = "official_documentation") => ({ url, kind });
+
+export const SIGNATURE_REGISTRY = Object.freeze({
+  schemaVersion: "1.0",
+  catalogVersion: SIGNATURE_CATALOG_VERSION,
+  verifiedAt: "2026-07-29",
+  cname: [
+    { provider: "Outreach", category: "sales_engagement", suffixes: ["outrch.com", "outreach.io", "outreach-mail.com"], confidence: "high" },
+    { provider: "Apollo", category: "sales_engagement", suffixes: ["apollo.io", "apollo-mail.io", "apollomail.io", "tryapollo.io"], confidence: "high" },
+    { provider: "Apollo", category: "sales_engagement", suffixes: ["aplolinks.com"], confidence: "medium" },
+    { provider: "Salesloft", category: "sales_engagement", suffixes: ["salesloft.com"], confidence: "high" },
+    { provider: "Gong Engage", category: "sales_engagement", suffixes: ["email-composer-webhooks.gong.io"], confidence: "high" },
+    { provider: "Mixmax", category: "sales_engagement", suffixes: ["mixmax.com"], confidence: "high" },
+    { provider: "Nooks", category: "sales_engagement", suffixes: ["nooks.in"], confidence: "medium" },
+    { provider: "Adobe Marketo", category: "marketing_automation", suffixes: ["mktoweb.com"], confidence: "high" },
+    { provider: "HubSpot", category: "marketing_automation", suffixes: ["hubspot.net", "hscoscdn.net"], confidence: "high" },
+    { provider: "Salesforce Pardot", category: "marketing_automation", suffixes: ["pardot.com"], confidence: "high" },
+    { provider: "Oracle Eloqua", category: "marketing_automation", suffixes: ["eloqua.com"], confidence: "high" },
+    { provider: "Act-On", category: "marketing_automation", suffixes: ["actonservice.com", "ez-touch.net"], confidence: "high" },
+    { provider: "ActiveCampaign", category: "marketing_automation", suffixes: ["activehosted.com"], confidence: "high", sources: [source("https://help.activecampaign.com/hc/en-us/articles/115000111324")] },
+    { provider: "Constant Contact / SharpSpring", category: "marketing_automation", suffixes: ["marketingautomation.services"], confidence: "medium" },
+    { provider: "Iterable", category: "customer_messaging", exact: ["links.iterable.com", "links.eu.iterable.com"], confidence: "high", sources: [source("https://support.iterable.com/hc/en-us/articles/115004339806")] },
+    { provider: "Customer.io", category: "customer_messaging", suffixes: ["customeriomail.com"], confidence: "high", sources: [source("https://docs.customer.io/journeys/custom-link-tracking-domains/")] },
+    { provider: "Klaviyo", category: "marketing_automation", suffixes: ["klaviyodns.com"], confidence: "high" },
+    { provider: "Unbounce", category: "landing_pages", suffixes: ["unbouncepages.com", "ubpages.com"], confidence: "high" },
+    { provider: "Userled", category: "advertising_abm", suffixes: ["userled.io"], confidence: "medium" },
+    { provider: "Bitly", category: "link_management", suffixes: ["bitly.com"], confidence: "high" },
+    { provider: "Frontify", category: "brand_management", suffixes: ["frontify.com"], confidence: "high" },
+    { provider: "SendGrid", category: "email_delivery", suffixes: ["sendgrid.net"], confidence: "high" },
+    { provider: "Mailgun", category: "email_delivery", suffixes: ["mailgun.org"], confidence: "high" },
+    { provider: "SMTP2GO", category: "email_delivery", suffixes: ["smtp2go.net"], confidence: "high" },
+    { provider: "SparkPost", category: "email_delivery", suffixes: ["sparkpostmail.com", "spgo.io", "mail.e.sparkpost.com", "et.e.sparkpost.com"], confidence: "high" },
+    { provider: "Zendesk", category: "customer_support", suffixes: ["zendesk.com"], confidence: "high", sources: [source("https://support.zendesk.com/hc/en-us/articles/4408838571930")] },
+    { provider: "Intercom", category: "customer_support", exact: ["custom.intercom.help", "custom.eu.intercom.help", "custom.au.intercom.help"], suffixes: ["intercomhelpcenter.com"], confidence: "high", sources: [source("https://www.intercom.com/help/en/articles/1039698")] },
+    { provider: "Help Scout", category: "customer_support", suffixes: ["helpscoutdocs.com"], confidence: "high", sources: [source("https://docs.helpscout.com/article/42-use-a-custom-domain")] },
+    { provider: "Khoros", category: "customer_community", suffixes: ["lithium.com"], confidence: "high" },
+    { provider: "Higher Logic Vanilla", category: "customer_community", suffixes: ["onvanilla.net"], confidence: "high" },
+    { provider: "Skilljar", category: "customer_education", suffixes: ["skilljarapp.com"], confidence: "high" },
+    { provider: "Docebo", category: "customer_education", suffixes: ["docebosaas.com"], confidence: "high" },
+    { provider: "Goldcast", category: "events_webinars", suffixes: ["goldcast.io"], confidence: "high", sources: [source("https://help.goldcast.io/en/articles/5311627")] },
+    { provider: "ServiceTitan", category: "crm_or_hosted_site", suffixes: ["servicetitan.com"], confidence: "medium" },
+    { provider: "Webflow", category: "website_cms", suffixes: ["webflow.com"], confidence: "high" },
+    { provider: "WP Engine", category: "website_cms", suffixes: ["wpengine.com"], confidence: "high" },
+    { provider: "Wix", category: "website_cms", suffixes: ["wixdns.net"], confidence: "high" },
+    { provider: "Vercel", category: "website_hosting", suffixes: ["vercel-dns.com"], confidence: "high" },
+    { provider: "Okta", category: "identity_access", suffixes: ["okta.com"], confidence: "high" },
+    { provider: "WorkOS", category: "identity_access", suffixes: ["workos-dns.com"], confidence: "high" },
+    { provider: "Salesforce Marketing Cloud Engagement", category: "marketing_automation", suffixes: ["sfmc-content.com", "exacttarget.com"], confidence: "high" },
+    { provider: "Salesforce", category: "crm_or_hosted_site", suffixes: ["siteforce.com", "force.com", "salesforce.com"], confidence: "high" },
+    { provider: "Microsoft Dynamics 365", category: "crm_or_hosted_site", suffixes: ["dynamics.com", "microsoftcrmportals.com"], confidence: "high" },
+    { provider: "Microsoft Power Pages", category: "power_platform_hosted_site", suffixes: ["powerappsportals.com"], confidence: "high" },
+    { provider: "Microsoft 365", category: "mail_productivity", exact: ["autodiscover.outlook.com"], confidence: "high", sources: [source("https://learn.microsoft.com/en-us/microsoft-365/admin/dns/create-dns-records-at-any-dns-hosting-provider")] },
+  ],
+  spf: [
+    { provider: "Google Workspace", suffixes: ["_spf.google.com"] },
+    { provider: "Microsoft 365", suffixes: ["spf.protection.outlook.com"] },
+    { provider: "Salesforce", suffixes: ["_spf.salesforce.com"] },
+    { provider: "HubSpot", suffixes: ["hubspotemail.net"] },
+    { provider: "Adobe Marketo", suffixes: ["mktomail.com"] },
+    { provider: "Salesforce Pardot", suffixes: ["aspmx.pardot.com"] },
+    { provider: "Act-On", suffixes: ["_spf.act-on.net"] },
+    { provider: "Zendesk", suffixes: ["mail.zendesk.com"] },
+    { provider: "Mailchimp", suffixes: ["servers.mcsv.net", "mandrillapp.com"] },
+    { provider: "SendGrid", suffixes: ["sendgrid.net"] },
+    { provider: "Mailgun", suffixes: ["mailgun.org"] },
+    { provider: "Amazon SES", suffixes: ["amazonses.com"] },
+    { provider: "Atlassian", suffixes: ["_spf.atlassian.net"] },
+    { provider: "Help Scout", suffixes: ["helpscoutemail.com"] },
+    { provider: "Freshworks", suffixes: ["freshemail.io", "email.freshservice.com"] },
+    { provider: "Brevo", suffixes: ["spf.sendinblue.com"] },
+    { provider: "MailerLite", suffixes: ["_spf.mlsend.com"] },
+    { provider: "Campaign Monitor", suffixes: ["_spf.createsend.com"] },
+    { provider: "Greenhouse", suffixes: ["mg-spf.greenhouse.io"] },
+    { provider: "MailChannels", suffixes: ["relay.mailchannels.net"] },
+    { provider: "Email Signatures 365", suffixes: ["spf.emailsignatures365.com"], confidence: "medium" },
+  ],
+  dkim: [
+    { provider: "Google Workspace", suffixes: ["_domainkey.google.com"] },
+    { provider: "Microsoft 365", suffixes: ["onmicrosoft.com"] },
+    { provider: "SendGrid", suffixes: ["sendgrid.net"] },
+    { provider: "Mailgun", suffixes: ["mailgun.org"] },
+    { provider: "HubSpot", suffixes: ["hubspotemail.net"] },
+    { provider: "Klaviyo", suffixes: ["klaviyodns.com"] },
+    { provider: "Salesforce", suffixes: ["salesforce.com"] },
+  ],
+  delegatedNs: [
+    { provider: "Salesforce Marketing Cloud Engagement", category: "marketing_automation", suffixes: ["exacttarget.com"], confidence: "high", sources: [source("https://help.salesforce.com/s/articleView?id=mktg.mc_es_subdomain_delegation_guide.htm")] },
+    { provider: "Adobe Campaign", category: "marketing_automation", suffixes: ["ns.campaign.adobe.com"], confidence: "high", sources: [source("https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding/delegate-subdomain")] },
+  ],
+  verification: [
+    ["Google", "Google site or domain ownership", /^google-site-verification\s*=/i, "business_software"],
+    ["Microsoft", "Microsoft domain ownership", /^MS=ms[a-z0-9]+$/i, "business_software"],
+    ["Apple Business", "Apple Business domain ownership", /^apple-domain-verification\s*=/i, "business_software"],
+    ["Atlassian", "Atlassian organization domain ownership", /^atlassian-domain-verification\s*=/i, "business_software"],
+    ["Meta", "Meta Business domain ownership", /^facebook-domain-verification\s*=/i, "advertising_abm"],
+    ["Adobe", "Adobe identity domain ownership", /^adobe-idp-site-verification\s*=/i, "business_software"],
+    ["Zoom", "Zoom domain ownership", /^(?:zoom-domain-verification|zoom_verify_)\s*[=:]/i, "business_software"],
+    ["OpenAI", "OpenAI workspace domain ownership", /^openai-domain-verification\s*=/i, "ai_workspace"],
+    ["Anthropic", "Anthropic workspace domain ownership", /^anthropic-domain-verification(?:-[a-z0-9]+)?\s*=/i, "ai_workspace"],
+    ["Slack", "Slack organization domain ownership", /^slack-domain-verification\s*=/i, "business_software"],
+    ["HubSpot", "HubSpot domain, DNS, or developer ownership", /^hubspot-(?:domain|dns|developer)-verification\s*=/i, "marketing_automation"],
+    ["Klaviyo", "Klaviyo branded sending domain ownership", /^klaviyo-site-verification\s*=/i, "marketing_automation"],
+    ["Salesforce", "Salesforce domain ownership", /^salesforce-domain-verification\s*=/i, "crm"],
+    ["Segment", "Twilio Segment workspace domain ownership", /^segment-site-verification\s*=/i, "customer_data"],
+    ["Pendo", "Pendo subscription domain ownership", /^pendo-domain-verification\s*=/i, "product_analytics"],
+    ["Fireflies.ai", "Fireflies domain ownership", /^fireflies-verification\s*=/i, "meeting_intelligence"],
+    ["LinkedIn", "LinkedIn organization domain ownership", /^linkedin-site-verification\s*=/i, "business_software"],
+    ["Stripe", "Stripe domain ownership", /^stripe-verification\s*=/i, "commerce_payments"],
+    ["Monday.com", "Monday.com organization domain ownership", /^monday-com-verification\s*=/i, "business_software"],
+    ["Rippling", "Rippling organization domain ownership", /^rippling-domain-verification\s*=/i, "business_software"],
+    ["Dropbox", "Dropbox organization domain ownership", /^dropbox-domain-verification\s*=/i, "business_software"],
+    ["LaunchDarkly", "LaunchDarkly organization domain ownership", /^launchdarkly-domain-verification\s*=/i, "business_software"],
+    ["Vercel", "Vercel domain ownership", /^vercel-domain-verification(?:-[a-z0-9]+)?\s*=/i, "business_software"],
+    ["MongoDB", "MongoDB organization domain ownership", /^mongodb-site-verification\s*=/i, "business_software"],
+    ["Jamf", "Jamf organization domain ownership", /^jamf-site-verification\s*=/i, "business_software"],
+    ["Coursera", "Coursera organization domain ownership", /^coursera-domain-verification\s*=/i, "customer_education"],
+    ["Gamma", "Gamma domain ownership", /^gamma-domain-verification(?:-[a-z0-9]+)?\s*=/i, "business_software"],
+    ["HackerOne", "HackerOne domain ownership", /^h1-domain-verification\s*=/i, "business_software"],
+    ["GlobalSign", "GlobalSign domain ownership", /^_globalsign-domain-verification\s*=/i, "identity_access"],
+    ["HashiCorp Cloud Platform", "HashiCorp Cloud Platform domain ownership", /^hcp-domain-verification\s*=/i, "business_software"],
+    ["GoTo / LogMeIn", "GoTo organization domain ownership", /^logmein-(?:verification-code|verify-code)\s*=/i, "business_software"],
+    ["Yuno", "Yuno domain ownership", /^yuno-domain-verification(?:-[a-z0-9]+)?\s*=/i, "commerce_payments"],
+    ["GC AI", "GC AI organization domain ownership", /^gc-ai-domain-verification(?:-[a-z0-9]+)?\s*=/i, "ai_workspace"],
+    ["Box", "Box organization domain ownership", /^box-domain-verification\s*=/i, "business_software"],
+    ["Uber for Business", "Uber organization domain ownership", /^uber-domain-verification\s*=/i, "business_software"],
+    ["Linear", "Linear workspace domain ownership", /^linear-domain-verification\s*=/i, "business_software"],
+    ["Reachdesk", "Reachdesk domain ownership", /^reachdesk-verification\s*=/i, "advertising_abm"],
+    ["Cisco", "Cisco service domain ownership", /^cisco-ci-domain-verification\s*=/i, "business_software"],
+    ["Cursor", "Cursor organization domain ownership", /^cursor-domain-verification(?:-[a-z0-9]+)?\s*=/i, "ai_workspace"],
+    ["Postman", "Postman organization domain ownership", /^postman-domain-verification\s*=/i, "business_software"],
+    ["Atlassian Statuspage", "Statuspage custom domain ownership", /^status-page-domain-verification\s*=/i, "customer_support"],
+    ["Zapier", "Zapier organization domain ownership", /^zapier-domain-verification-challenge\s*=/i, "business_software"],
+    ["Drift", "Drift domain ownership", /^drift-domain-verification\s*=/i, "marketing_automation"],
+    ["Mixpanel", "Mixpanel organization domain ownership", /^mixpanel-domain-verify\s*=/i, "product_analytics"],
+    ["Mailgun", "Mailgun sending domain ownership", /^mgverify\s*=/i, "email_delivery"],
+  ].map(([provider, purpose, pattern, category]) => ({ provider, purpose, pattern, category, confidence: "medium" })),
+});
+
+export function matchesHost(host, definition) {
+  const value = String(host).trim().replace(/\.$/, "").toLowerCase();
+  return (
+    definition.exact?.some((candidate) => value === candidate) ||
+    definition.suffixes?.some(
+      (suffix) => value === suffix || value.endsWith(`.${suffix}`),
+    ) ||
+    false
+  );
+}
+
+export function findHostSignature(host, family) {
+  return SIGNATURE_REGISTRY[family]?.find((definition) =>
+    matchesHost(host, definition),
+  ) ?? null;
+}
+
+export function publicSignatureCatalog() {
+  const scrub = ({ pattern, ...definition }) => ({
+    ...definition,
+    ...(pattern ? { pattern: pattern.source } : {}),
+  });
+  return {
+    ...SIGNATURE_REGISTRY,
+    verification: SIGNATURE_REGISTRY.verification.map(scrub),
+  };
+}

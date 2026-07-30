@@ -1,0 +1,6 @@
+# Reserved domains for testing the input pipeline.
+# Lines beginning with # are ignored only after shell filtering; see README.
+example.com
+example.org
+example.net
+sample.example
