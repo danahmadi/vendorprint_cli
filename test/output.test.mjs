@@ -124,6 +124,22 @@ test("result-first output explains an inconclusive empty result", () => {
   assert.equal("email" in output, false);
 });
 
+test("result-first output retains security and ITSM profile categories", () => {
+  const output = compactResult(
+    fullResult({
+      technologyProfile: {
+        securityAndCompliance: [{ provider: "KnowBe4" }],
+        itServiceManagement: [{ provider: "Freshservice" }],
+        inferenceGraph: { inferred: [], candidateSets: [] },
+      },
+    }),
+  );
+  assert.deepEqual(output.technologyProfile, {
+    securityAndCompliance: [{ provider: "KnowBe4" }],
+    itServiceManagement: [{ provider: "Freshservice" }],
+  });
+});
+
 test("compact reports and events omit methodology and signature diagnostics", () => {
   const report = compactReport({
     schemaVersion: "1.2",

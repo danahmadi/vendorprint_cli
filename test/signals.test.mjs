@@ -222,6 +222,65 @@ test("classifies additional SPF senders and redirect terms", () => {
   ]);
 });
 
+test("classifies SMB security, marketing, email, and automotive signatures", () => {
+  const spf = parseSpf([
+    [
+      "v=spf1 include:_spf.psm.knowbe4.com include:eu1.prod.hydra.sophos.com ",
+      "include:spf.constantcontact.com include:e2ma.net ",
+      "include:_spf.protonmail.ch include:spf.zohomail.com ",
+      "include:cust-spf.exacttarget.com include:_spf.dealersocket.com ",
+      "include:dospf.simplepart.com include:cust-spf.eleadtrack.net -all",
+    ],
+  ]);
+  assert.deepEqual(spf.authorizedSenders.sort(), [
+    "CDK Elead",
+    "Constant Contact",
+    "DealerSocket",
+    "Emma by Marigold",
+    "KnowBe4",
+    "Proton Mail",
+    "Salesforce Marketing Cloud Engagement",
+    "SimplePart",
+    "Sophos",
+    "Zoho",
+  ]);
+
+  const verifications = extractDomainVerifications([
+    ["knowbe4-site-verification=redacted"],
+    ["sophos-domain-verification=redacted"],
+    ["duo_sso_verification=redacted"],
+    ["protonmail-verification=redacted"],
+    ["zoho-verification=redacted"],
+    ["e2ma-verification=redacted"],
+  ]);
+  assert.deepEqual(
+    verifications.map(({ provider, category }) => [provider, category]),
+    [
+      ["KnowBe4", "security_compliance"],
+      ["Sophos", "security_compliance"],
+      ["Duo SSO", "identity_access"],
+      ["Proton Mail", "mail_productivity"],
+      ["Zoho", "mail_productivity"],
+      ["Emma by Marigold", "marketing_automation"],
+    ],
+  );
+});
+
+test("classifies new and expanded CNAME families", () => {
+  const examples = [
+    ["tenant.actonsoftware.com", "Act-On", "marketing_automation", "high"],
+    ["tenant.freshservice.com", "Freshservice", "it_service_management", "high"],
+    ["target.clickfunnels.com", "ClickFunnels", "landing_pages", "medium"],
+    ["retargeting.showroomlogic.com", "Showroom Logic", "advertising_abm", "medium"],
+  ];
+  for (const [target, provider, category, confidence] of examples) {
+    const signal = detectCnameTechnology("go.example.com", target);
+    assert.equal(signal?.provider, provider);
+    assert.equal(signal?.category, category);
+    assert.equal(signal?.confidence, confidence);
+  }
+});
+
 test("classifies authoritative DNS hosting", () => {
   assert.deepEqual(classifyDnsProvider(["lana.ns.cloudflare.com."]), [
     "Cloudflare DNS",

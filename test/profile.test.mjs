@@ -182,3 +182,76 @@ test("routes expanded GTM categories without changing legacy arrays", () => {
   assert.equal(profile.salesEngagement[0].provider, "Outreach");
   assert.equal(profile.marketingAutomation[0].provider, "ActiveCampaign");
 });
+
+test("routes security, ITSM, business email, and automotive evidence", () => {
+  const profile = buildTechnologyProfile({
+    domainVerifications: [
+      {
+        provider: "KnowBe4",
+        category: "security_compliance",
+        confidence: "medium",
+        recordPrefix: "knowbe4-site-verification",
+      },
+      {
+        provider: "Duo SSO",
+        category: "identity_access",
+        confidence: "medium",
+        recordPrefix: "duo_sso_verification",
+      },
+      {
+        provider: "Zoho",
+        category: "mail_productivity",
+        confidence: "medium",
+        recordPrefix: "zoho-verification",
+      },
+    ],
+    authorizedEmailSenders: [
+      "Sophos",
+      "DealerSocket",
+      "CDK Elead",
+      "SimplePart",
+      "Constant Contact",
+      "Proton Mail",
+    ],
+    cnameServices: [
+      {
+        provider: "Freshservice",
+        category: "it_service_management",
+        evidence: [
+          {
+            hostname: "help.example.com",
+            target: "tenant.freshservice.com",
+            confidence: "high",
+          },
+        ],
+      },
+      {
+        provider: "Showroom Logic",
+        category: "advertising_abm",
+        evidence: [
+          {
+            hostname: "offers.example.com",
+            target: "retargeting.showroomlogic.com",
+            confidence: "medium",
+          },
+        ],
+      },
+    ],
+  });
+
+  assert.equal(profile.securityAndCompliance.find((item) => item.provider === "KnowBe4").relationshipLevel, "domain_relationship");
+  assert.equal(profile.securityAndCompliance.find((item) => item.provider === "Sophos").relationshipLevel, "sending_authorization");
+  assert.equal(profile.identityAndAccess[0].provider, "Duo SSO");
+  assert.deepEqual(
+    profile.businessSoftware.map((item) => item.provider).sort(),
+    ["Proton Mail", "Zoho"],
+  );
+  assert.equal(profile.itServiceManagement[0].provider, "Freshservice");
+  assert.equal(profile.advertisingAndAbm[0].provider, "Showroom Logic");
+  assert.deepEqual(
+    profile.crm.map((item) => item.provider).sort(),
+    ["CDK Elead", "DealerSocket"],
+  );
+  assert.equal(profile.commerceAndPayments[0].provider, "SimplePart");
+  assert.equal(profile.marketingAutomation[0].provider, "Constant Contact");
+});

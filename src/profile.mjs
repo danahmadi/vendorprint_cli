@@ -106,6 +106,8 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
   const websiteAndContent = new Map();
   const brandAndCreative = new Map();
   const identityAndAccess = new Map();
+  const securityAndCompliance = new Map();
+  const itServiceManagement = new Map();
   const categoryMaps = {
     ai_workspace: ai,
     crm: crm,
@@ -129,6 +131,8 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
     link_management: websiteAndContent,
     brand_management: brandAndCreative,
     identity_access: identityAndAccess,
+    security_compliance: securityAndCompliance,
+    it_service_management: itServiceManagement,
   };
 
   for (const finding of technologySignals.domainVerifications) {
@@ -423,6 +427,9 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
         "Campaign Monitor",
         "MailerLite",
         "Salesforce Pardot",
+        "Constant Contact",
+        "Emma by Marigold",
+        "Salesforce Marketing Cloud Engagement",
       ].includes(provider)
     ) {
       pushFinding(
@@ -437,6 +444,30 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
             "SPF authorization is useful sending evidence but can remain after a product is retired.",
         },
       );
+    } else if (["KnowBe4", "Sophos"].includes(provider)) {
+      pushFinding(securityAndCompliance, provider, spfEvidence(provider), {
+        productScope: "security_email_sending",
+        caveat:
+          "SPF proves vendor sending authorization only. It can remain after the security service is retired and does not identify an edition.",
+      });
+    } else if (["DealerSocket", "CDK Elead"].includes(provider)) {
+      pushFinding(crm, provider, spfEvidence(provider), {
+        productScope: "automotive_crm_email_sending",
+        caveat:
+          "SPF is evidence of automotive CRM sending authorization, not active CRM seats or recent use.",
+      });
+    } else if (provider === "SimplePart") {
+      pushFinding(commerceAndPayments, provider, spfEvidence(provider), {
+        productScope: "automotive_parts_commerce_email_sending",
+        caveat:
+          "SPF is evidence of sending authorization only and can remain after a service is retired.",
+      });
+    } else if (["Zoho", "Proton Mail"].includes(provider)) {
+      pushFinding(businessSoftware, provider, spfEvidence(provider), {
+        productScope: "business_email_sending",
+        caveat:
+          "SPF proves business-email sending authorization, not active mailboxes, seats, or a specific Zoho product.",
+      });
     }
     if (
       [
@@ -527,6 +558,8 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
     websiteAndContent: [...websiteAndContent.values()],
     brandAndCreative: [...brandAndCreative.values()],
     identityAndAccess: [...identityAndAccess.values()],
+    securityAndCompliance: [...securityAndCompliance.values()],
+    itServiceManagement: [...itServiceManagement.values()],
   };
   return {
     ...profile,

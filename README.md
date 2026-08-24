@@ -111,7 +111,8 @@ The default discovery view returns only non-empty arrays under
 `advertisingAndAbm`, `customerData`, `productAnalytics`, `customerSupport`,
 `customerSuccessAndEducation`, `eventsAndWebinars`, `meetingIntelligence`,
 `commerceAndPayments`, `emailDelivery`, and `businessSoftware`. The profile also
-separates `websiteAndContent`, `brandAndCreative`, and `identityAndAccess`.
+separates `websiteAndContent`, `brandAndCreative`, `identityAndAccess`,
+`securityAndCompliance`, and `itServiceManagement`.
 `--findings-only` remains as a backwards-compatible alias for this default.
 `--full` additionally includes the inference graph, deterministic technology
 fingerprint, raw DNS records, and scan diagnostics.

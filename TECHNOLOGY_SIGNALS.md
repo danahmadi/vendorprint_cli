@@ -39,6 +39,12 @@ difference.
 | CRM inference | Salesforce Marketing Cloud Engagement CNAME | Medium | Salesforce CRM inferred from a proven Marketing Cloud relationship; not direct proof of Sales Cloud |
 | Delivery | SendGrid, Mailgun, SMTP2GO, or SparkPost CNAME | High | Branded email-delivery or tracking configuration |
 | Delivery | SendGrid, Mailgun, Amazon SES, or SparkPost SPF | Low | Authorized sending only; potentially stale |
+| Security | KnowBe4 or Sophos verification TXT | Medium | Configured security-provider domain relationship; exact edition remains ambiguous |
+| Security | KnowBe4 or Sophos SPF | Low | Vendor-authorized email sending only; potentially stale |
+| Identity | Duo SSO verification TXT | Medium | Domain permitted for Duo Single Sign-On; not proof of active seats |
+| IT service management | Freshservice CNAME | High | Branded Freshservice portal configuration |
+| Automotive CRM | DealerSocket or CDK Elead SPF | Low | Vendor-authorized automotive CRM email sending; potentially stale |
+| Automotive commerce | SimplePart SPF | Low | Vendor-authorized automotive-parts email sending; potentially stale |
 
 The confidence and relationship dimensions answer different questions. Confidence
 describes how specifically the record identifies the provider. `relationshipLevel`

@@ -16,6 +16,8 @@ const PROFILE_CATEGORIES = [
   "websiteAndContent",
   "brandAndCreative",
   "identityAndAccess",
+  "securityAndCompliance",
+  "itServiceManagement",
 ];
 
 function resultFirstTechnologyProfile(profile = {}) {
