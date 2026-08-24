@@ -1,4 +1,4 @@
-export const SIGNATURE_CATALOG_VERSION = "2026.07.29";
+export const SIGNATURE_CATALOG_VERSION = "2026.08.24";
 
 const source = (url, kind = "official_documentation") => ({ url, kind });
 
@@ -18,7 +18,7 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     { provider: "HubSpot", category: "marketing_automation", suffixes: ["hubspot.net", "hscoscdn.net"], confidence: "high" },
     { provider: "Salesforce Pardot", category: "marketing_automation", suffixes: ["pardot.com"], confidence: "high" },
     { provider: "Oracle Eloqua", category: "marketing_automation", suffixes: ["eloqua.com"], confidence: "high" },
-    { provider: "Act-On", category: "marketing_automation", suffixes: ["actonservice.com", "ez-touch.net"], confidence: "high" },
+    { provider: "Act-On", category: "marketing_automation", suffixes: ["actonservice.com", "actonsoftware.com", "ez-touch.net"], confidence: "high", sources: [source("https://connect.act-on.com/hc/en-us/articles/360025843013-How-to-Add-a-Custom-Marketing-Domain-with-an-SSL-Certificate")] },
     { provider: "ActiveCampaign", category: "marketing_automation", suffixes: ["activehosted.com"], confidence: "high", sources: [source("https://help.activecampaign.com/hc/en-us/articles/115000111324")] },
     { provider: "Constant Contact / SharpSpring", category: "marketing_automation", suffixes: ["marketingautomation.services"], confidence: "medium" },
     { provider: "Iterable", category: "customer_messaging", exact: ["links.iterable.com", "links.eu.iterable.com"], confidence: "high", sources: [source("https://support.iterable.com/hc/en-us/articles/115004339806")] },
@@ -33,6 +33,7 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     { provider: "SMTP2GO", category: "email_delivery", suffixes: ["smtp2go.net"], confidence: "high" },
     { provider: "SparkPost", category: "email_delivery", suffixes: ["sparkpostmail.com", "spgo.io", "mail.e.sparkpost.com", "et.e.sparkpost.com"], confidence: "high" },
     { provider: "Zendesk", category: "customer_support", suffixes: ["zendesk.com"], confidence: "high", sources: [source("https://support.zendesk.com/hc/en-us/articles/4408838571930")] },
+    { provider: "Freshservice", category: "it_service_management", suffixes: ["freshservice.com"], confidence: "high", sources: [source("https://support.freshservice.com/support/solutions/articles/156516-using-a-vanity-support-url-and-pointing-the-cname-in-freshservice")] },
     { provider: "Intercom", category: "customer_support", exact: ["custom.intercom.help", "custom.eu.intercom.help", "custom.au.intercom.help"], suffixes: ["intercomhelpcenter.com"], confidence: "high", sources: [source("https://www.intercom.com/help/en/articles/1039698")] },
     { provider: "Help Scout", category: "customer_support", suffixes: ["helpscoutdocs.com"], confidence: "high", sources: [source("https://docs.helpscout.com/article/42-use-a-custom-domain")] },
     { provider: "Khoros", category: "customer_community", suffixes: ["lithium.com"], confidence: "high" },
@@ -45,6 +46,8 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     { provider: "WP Engine", category: "website_cms", suffixes: ["wpengine.com"], confidence: "high" },
     { provider: "Wix", category: "website_cms", suffixes: ["wixdns.net"], confidence: "high" },
     { provider: "Vercel", category: "website_hosting", suffixes: ["vercel-dns.com"], confidence: "high" },
+    { provider: "ClickFunnels", category: "landing_pages", exact: ["target.clickfunnels.com"], confidence: "medium" },
+    { provider: "Showroom Logic", category: "advertising_abm", exact: ["retargeting.showroomlogic.com"], confidence: "medium" },
     { provider: "Okta", category: "identity_access", suffixes: ["okta.com"], confidence: "high" },
     { provider: "WorkOS", category: "identity_access", suffixes: ["workos-dns.com"], confidence: "high" },
     { provider: "Salesforce Marketing Cloud Engagement", category: "marketing_automation", suffixes: ["sfmc-content.com", "exacttarget.com"], confidence: "high" },
@@ -75,6 +78,16 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     { provider: "Greenhouse", suffixes: ["mg-spf.greenhouse.io"] },
     { provider: "MailChannels", suffixes: ["relay.mailchannels.net"] },
     { provider: "Email Signatures 365", suffixes: ["spf.emailsignatures365.com"], confidence: "medium" },
+    { provider: "KnowBe4", suffixes: ["_spf.psm.knowbe4.com"], confidence: "medium" },
+    { provider: "Sophos", suffixes: ["prod.hydra.sophos.com"], confidence: "medium" },
+    { provider: "Constant Contact", suffixes: ["spf.constantcontact.com", "_int.constantcontact.com"], confidence: "medium" },
+    { provider: "Emma by Marigold", suffixes: ["e2ma.net"], confidence: "medium" },
+    { provider: "Proton Mail", suffixes: ["_spf.protonmail.ch", "_spf2.protonmail.ch"], confidence: "medium", sources: [source("https://proton.me/support/custom-domain")] },
+    { provider: "Zoho", suffixes: ["spf.zoho.com", "spf.zohomail.com", "popspf.zohomail.com"], confidence: "medium", sources: [source("https://help.zoho.com/portal/en/kb/mail/adminconsole/articles/what-is-an-spf-verification")] },
+    { provider: "Salesforce Marketing Cloud Engagement", suffixes: ["cust-spf.exacttarget.com"], confidence: "medium" },
+    { provider: "DealerSocket", suffixes: ["_spf.dealersocket.com"], confidence: "medium" },
+    { provider: "SimplePart", suffixes: ["dospf.simplepart.com"], confidence: "low" },
+    { provider: "CDK Elead", suffixes: ["cust-spf.eleadtrack.net"], confidence: "low" },
   ],
   dkim: [
     { provider: "Google Workspace", suffixes: ["_domainkey.google.com"] },
@@ -135,6 +148,12 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     ["Drift", "Drift domain ownership", /^drift-domain-verification\s*=/i, "marketing_automation"],
     ["Mixpanel", "Mixpanel organization domain ownership", /^mixpanel-domain-verify\s*=/i, "product_analytics"],
     ["Mailgun", "Mailgun sending domain ownership", /^mgverify\s*=/i, "email_delivery"],
+    ["KnowBe4", "KnowBe4 security-awareness domain ownership", /^knowbe4-site-verification\s*=/i, "security_compliance"],
+    ["Sophos", "Sophos federated or Phish Threat domain ownership", /^sophos-domain-verification\s*=/i, "security_compliance"],
+    ["Duo SSO", "Duo Single Sign-On permitted email domain", /^duo_sso_verification\s*=/i, "identity_access"],
+    ["Proton Mail", "Proton Mail custom-domain ownership", /^protonmail-verification\s*=/i, "mail_productivity"],
+    ["Zoho", "Zoho custom-domain ownership", /^zoho-verification\s*=/i, "mail_productivity"],
+    ["Emma by Marigold", "Emma sending-domain ownership", /^e2ma-verification\s*=/i, "marketing_automation"],
   ].map(([provider, purpose, pattern, category]) => ({ provider, purpose, pattern, category, confidence: "medium" })),
 });
 
