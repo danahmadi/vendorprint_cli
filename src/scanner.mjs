@@ -347,12 +347,11 @@ function buildMethodology(config) {
         : "Public MX, TXT ownership/SPF, DMARC, nameservers, and CNAMEs on prioritized tracking subdomain labels. DKIM is omitted in fast and balanced modes.",
     confidence:
       "Findings distinguish domain relationships, sending authorization, and product-specific configuration. Absence of a signal is inconclusive.",
-    privacy:
-      config.certificateTransparency
-        ? "Uses public DNS plus explicitly enabled passive certificate-transparency metadata. Certificate discovery queries a third-party log index, then only DNS-validates names; no company endpoint, login, mailbox, or personal data is accessed."
-        : config.dnsTransport === "https"
-          ? "Uses public DNS records through Google's DNS-over-HTTPS service; queried names are shared with Google. No company endpoint, login, mailbox, or personal data is accessed."
-          : "Uses public DNS records only; no login, mailbox, personal data, or vendor endpoint is accessed.",
+    privacy: `${config.certificateTransparency
+      ? "Uses public DNS plus explicitly enabled passive certificate-transparency metadata. Certificate discovery queries a third-party log index, then only DNS-validates names; no company endpoint, login, mailbox, or personal data is accessed."
+      : "Uses public DNS records only; no login, mailbox, personal data, or vendor endpoint is accessed."}${config.dnsTransport === "https"
+      ? " DNS queries are sent to Google's DNS-over-HTTPS service."
+      : ""}`,
     dnsTransport: config.dnsTransport,
     safety: `Queries are bounded to ${MAX_QUERIES_PER_DOMAIN} attempts per domain, including adaptive branches; limited to ${PER_DOMAIN_QUERY_CONCURRENCY} logical queries in flight per domain and ${config.maxInflightDns} DNS attempts globally, with no more than ${config.qps} starts per second. Only four critical record types are retried. No AXFR, NSEC walking, or endpoint probing is performed.`,
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
