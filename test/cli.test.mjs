@@ -18,6 +18,7 @@ test("documents result-first output and reserves --full for diagnostics", () => 
   assert.equal(run.status, 0, run.stderr);
   assert.match(run.stdout, /Result-first output is the default/);
   assert.match(run.stdout, /--full\s+Include raw DNS, search, and query diagnostics/);
+  assert.match(run.stdout, /--dns-transport <kind>\s+native \(default\) or https/);
 });
 
 test("rejects conflicting output detail flags before scanning", () => {

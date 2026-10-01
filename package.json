@@ -28,7 +28,7 @@
   "scripts": {
     "scan": "node ./bin/vendorprint.mjs",
     "test": "node --test",
-    "check": "node --check ./bin/vendorprint.mjs && node --check ./src/index.mjs && node --check ./src/audit.mjs && node --check ./src/certificate-transparency.mjs && node --check ./src/domain.mjs && node --check ./src/fingerprint.mjs && node --check ./src/inference.mjs && node --check ./src/output.mjs && node --check ./src/profile.mjs && node --check ./src/scanner.mjs && node --check ./src/signals.mjs && node --check ./src/signature-registry.mjs",
+    "check": "node --check ./bin/vendorprint.mjs && node --check ./src/index.mjs && node --check ./src/audit.mjs && node --check ./src/certificate-transparency.mjs && node --check ./src/doh-resolver.mjs && node --check ./src/domain.mjs && node --check ./src/fingerprint.mjs && node --check ./src/inference.mjs && node --check ./src/output.mjs && node --check ./src/profile.mjs && node --check ./src/scanner.mjs && node --check ./src/signals.mjs && node --check ./src/signature-registry.mjs",
     "prepublishOnly": "npm run check && npm test"
   },
   "publishConfig": {
