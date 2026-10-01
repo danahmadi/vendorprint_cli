@@ -189,7 +189,8 @@ vendorprint diff before.json after.json --pretty
 `--ct` asks a third-party public certificate-transparency index for direct
 subdomains, then validates the resulting labels with DNS. It is disabled by
 default, limited to 100 domains per run, waits at least 500ms between index
-requests, and never contacts company web endpoints.
+requests, rejects index responses larger than 5 MiB, and never contacts company
+web endpoints.
 
 ```bash
 vendorprint --input accounts.txt --ct \
