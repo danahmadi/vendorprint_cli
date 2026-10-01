@@ -38,5 +38,6 @@ test("absence differs from malformed, HTTP, and DNS server failures", () => {
   assert.throws(() => parseDohResponse({ Status: 0 }, "example.com", "MX"), { code: "ENODATA" });
   assert.throws(() => parseDohResponse({ Status: 2 }, "example.com", "MX"), { code: "ESERVFAIL" });
   assert.throws(() => parseDohResponse({ Status: 0, Answer: {} }, "example.com", "MX"), { code: "EBADRESP" });
+  assert.throws(() => parseDohResponse({ Status: 0, Answer: [{ type: 15, data: "10 mail.example.net." }] }, "example.com", "MX"), { code: "EBADRESP" });
   assert.throws(() => parseDohResponse({ Status: 0, Answer: [{ name: "example.com", type: 15, data: "bad" }] }, "example.com", "MX"), { code: "EBADRESP" });
 });

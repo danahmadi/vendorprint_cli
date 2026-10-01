@@ -134,9 +134,13 @@ export function parseDohResponse(body, name, type) {
   if (body.Answer !== undefined && !Array.isArray(body.Answer)) {
     throw codedError("EBADRESP", "Invalid DoH answers");
   }
+  if ((body.Answer ?? []).some((answer) => !answer ||
+    !Number.isInteger(answer.type) || typeof answer.name !== "string" ||
+    typeof answer.data !== "string")) {
+    throw codedError("EBADRESP", "Invalid DoH answer");
+  }
   const answers = (body.Answer ?? []).filter((answer) =>
-    answer && answer.type === TYPES[type] &&
-    typeof answer.name === "string" &&
+    answer.type === TYPES[type] &&
     answer.name.replace(/\.$/, "").toLowerCase() === name.replace(/\.$/, "").toLowerCase(),
   );
   if (!answers.length) throw codedError("ENODATA", "No DNS answer");
