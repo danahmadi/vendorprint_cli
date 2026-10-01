@@ -40,6 +40,7 @@ Options:
   --labels <a,b,c>        Add candidate tracking subdomain labels
   --mode <value>          full (default), balanced, or fast
   --timeout <ms>          DNS timeout per attempt (default: 1800)
+  --dns-transport <kind>  native (default) or https (Google DNS-over-HTTPS)
   --concurrency <n>       Domains scanned concurrently (default: 4, maximum: 12)
   --max-inflight-dns <n>  Global DNS attempt ceiling (default: 32, maximum: 128)
   --qps <n>               Maximum DNS attempt starts per second (default: 100)
@@ -86,6 +87,7 @@ function parseArgs(argv) {
     domains: [],
     extraLabels: [],
     timeoutMs: 1800,
+    dnsTransport: "native",
     concurrency: 4,
     maxInflightDns: 32,
     qps: 100,
@@ -159,6 +161,9 @@ function parseArgs(argv) {
     } else if (arg === "--timeout") {
       options.timeoutMs = Number(takeValue(argv, index, "--timeout"));
       index += 1;
+    } else if (arg === "--dns-transport") {
+      options.dnsTransport = takeValue(argv, index, "--dns-transport").toLowerCase();
+      index += 1;
     } else if (arg === "--concurrency") {
       options.concurrency = Number(takeValue(argv, index, "--concurrency"));
       index += 1;
@@ -179,6 +184,9 @@ function parseArgs(argv) {
 
   if (!Number.isInteger(options.timeoutMs) || options.timeoutMs < 100) {
     throw new Error("--timeout must be an integer of at least 100ms");
+  }
+  if (!["native", "https"].includes(options.dnsTransport)) {
+    throw new Error("--dns-transport must be native or https");
   }
   if (
     !Number.isInteger(options.concurrency) ||

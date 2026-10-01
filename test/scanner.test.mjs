@@ -64,6 +64,14 @@ test("rejects invalid scan modes before starting DNS work", async () => {
   );
 });
 
+test("uses native DNS by default and validates opt-in transport", async () => {
+  const native = await scanDomains([]);
+  const https = await scanDomains([], { dnsTransport: "https" });
+  assert.equal(native.methodology.dnsTransport, "native");
+  assert.equal(https.methodology.dnsTransport, "https");
+  await assert.rejects(scanDomains([], { dnsTransport: "udp" }), /dnsTransport must be native or https/);
+});
+
 test("enforces global DNS safety ceilings through the library API", async () => {
   await assert.rejects(
     scanDomains([], { maxInflightDns: 129 }),

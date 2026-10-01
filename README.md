@@ -145,6 +145,7 @@ const report = await scanDomains(["example.com"], {
   concurrency: 4,
   maxInflightDns: 32,
   qps: 100,
+  // dnsTransport: "https", // opt in to Google DNS-over-HTTPS
 });
 ```
 
@@ -217,6 +218,15 @@ name alone never becomes a technology finding without live DNS corroboration.
   `--include-unclassified` exposes them in a separate diagnostic array.
 - `--concurrency 4` controls how many account domains run at once.
 - `--timeout 1800` controls the resolver attempt timeout.
+- DNS uses the system's configured recursive resolver by default. Use
+  `--dns-transport https` (or `dnsTransport: "https"` in the library) when
+  native DNS is unavailable. This sends queried names to Google's public
+  DNS-over-HTTPS service at `https://dns.google/resolve`. It honors
+  `HTTPS_PROXY`/`https_proxy` and `NO_PROXY`/`no_proxy`; proxy credentials in
+  the URL are supported. A failed HTTPS lookup is reported as a query error,
+  with no silent fallback to the system resolver. Query caps, concurrency,
+  retries, and `--timeout` still apply. The proxy and DoH service must be
+  reachable; enabling HTTPS does not guarantee network access.
 - The default domain concurrency is four and the CLI rejects values above 12.
 - Each domain has a hard budget of 80 DNS attempts, no more than four logical
   queries in flight, and at least 25ms between per-domain query starts. A global

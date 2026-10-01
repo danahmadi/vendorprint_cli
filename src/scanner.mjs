@@ -1,4 +1,5 @@
 import { Resolver } from "node:dns/promises";
+import { createDohResolver } from "./doh-resolver.mjs";
 import { createHash } from "node:crypto";
 import { normalizeDomainInput } from "./domain.mjs";
 import {
@@ -245,6 +246,7 @@ export async function followCnameChain(
 function buildConfig(options) {
   const config = {
     timeoutMs: options.timeoutMs ?? 1800,
+    dnsTransport: options.dnsTransport ?? "native",
     concurrency: options.concurrency ?? 4,
     extraLabels: options.extraLabels ?? [],
     mode: options.mode ?? "full",
@@ -259,6 +261,9 @@ function buildConfig(options) {
   };
   if (!Number.isInteger(config.timeoutMs) || config.timeoutMs < 100) {
     throw new RangeError("timeoutMs must be an integer of at least 100");
+  }
+  if (!["native", "https"].includes(config.dnsTransport)) {
+    throw new RangeError("dnsTransport must be native or https");
   }
   if (
     !Number.isInteger(config.concurrency) ||
@@ -345,7 +350,10 @@ function buildMethodology(config) {
     privacy:
       config.certificateTransparency
         ? "Uses public DNS plus explicitly enabled passive certificate-transparency metadata. Certificate discovery queries a third-party log index, then only DNS-validates names; no company endpoint, login, mailbox, or personal data is accessed."
-        : "Uses public DNS records only; no login, mailbox, personal data, or vendor endpoint is accessed.",
+        : config.dnsTransport === "https"
+          ? "Uses public DNS records through Google's DNS-over-HTTPS service; queried names are shared with Google. No company endpoint, login, mailbox, or personal data is accessed."
+          : "Uses public DNS records only; no login, mailbox, personal data, or vendor endpoint is accessed.",
+    dnsTransport: config.dnsTransport,
     safety: `Queries are bounded to ${MAX_QUERIES_PER_DOMAIN} attempts per domain, including adaptive branches; limited to ${PER_DOMAIN_QUERY_CONCURRENCY} logical queries in flight per domain and ${config.maxInflightDns} DNS attempts globally, with no more than ${config.qps} starts per second. Only four critical record types are retried. No AXFR, NSEC walking, or endpoint probing is performed.`,
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
   };
@@ -353,7 +361,9 @@ function buildMethodology(config) {
 
 async function scanDomain(domain, options) {
   const startedAt = performance.now();
-  const resolver = new Resolver({ timeout: options.timeoutMs, tries: 1 });
+  const resolver = options.dnsTransport === "https"
+    ? createDohResolver({ timeoutMs: options.timeoutMs })
+    : new Resolver({ timeout: options.timeoutMs, tries: 1 });
   const baseLabels =
     options.mode === "fast"
       ? FAST_TRACKING_LABELS
