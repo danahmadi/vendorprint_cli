@@ -1,6 +1,6 @@
 {
   "name": "vendorprint",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": false,
   "type": "module",
   "description": "A careful, evidence-first CLI for discovering company technology signals in public DNS.",
