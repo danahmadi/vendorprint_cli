@@ -6,6 +6,38 @@ function normalizeHost(value) {
     .toLowerCase();
 }
 
+const MAX_RESPONSE_BYTES = 5 * 1024 * 1024;
+
+export async function readBoundedJson(response, maxBytes = MAX_RESPONSE_BYTES) {
+  if (!response.body) {
+    throw new Error("Certificate transparency response has no body");
+  }
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder("utf-8", { fatal: true });
+  let bytes = 0;
+  let text = "";
+  let complete = false;
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) {
+        complete = true;
+        break;
+      }
+      bytes += value.byteLength;
+      if (bytes > maxBytes) {
+        throw new Error(`Certificate transparency response exceeds ${maxBytes} byte limit`);
+      }
+      text += decoder.decode(value, { stream: true });
+    }
+    text += decoder.decode();
+    return JSON.parse(text);
+  } finally {
+    if (!complete) await reader.cancel().catch(() => {});
+    reader.releaseLock();
+  }
+}
+
 export function extractCertificateHosts(payload, domain, options = {}) {
   const maxHosts = options.maxHosts ?? 20;
   const base = normalizeHost(domain);
@@ -44,6 +76,6 @@ export async function discoverCertificateHosts(domain, options = {}) {
   return {
     source: "certificate_transparency",
     endpointHost: new URL(endpoint).hostname,
-    hosts: extractCertificateHosts(await response.json(), domain, { maxHosts }),
+    hosts: extractCertificateHosts(await readBoundedJson(response), domain, { maxHosts }),
   };
 }
