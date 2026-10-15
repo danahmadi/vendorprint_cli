@@ -1,0 +1,125 @@
+{
+  "selection": "Up to five domains per prefix from the prior 1000-domain software cohort, excluding all 128 PublicWWW experiment domains. Fresh TXT lookups; token values discarded.",
+  "rows": [
+    {
+      "domain": "accruent.com",
+      "prefix": "smartsheet-site-validation",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:30.710Z"
+    },
+    {
+      "domain": "acumatica.com",
+      "prefix": "smartsheet-site-validation",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:30.872Z"
+    },
+    {
+      "domain": "aderant.com",
+      "prefix": "smartsheet-site-validation",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:31.036Z"
+    },
+    {
+      "domain": "appdirect.com",
+      "prefix": "smartsheet-site-validation",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:31.306Z"
+    },
+    {
+      "domain": "avature.net",
+      "prefix": "smartsheet-site-validation",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:31.468Z"
+    },
+    {
+      "domain": "avidxchange.com",
+      "prefix": "dynatrace-site-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:31.768Z"
+    },
+    {
+      "domain": "bluebeam.com",
+      "prefix": "dynatrace-site-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:31.937Z"
+    },
+    {
+      "domain": "cohesity.com",
+      "prefix": "dynatrace-site-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:32.106Z"
+    },
+    {
+      "domain": "connectwise.com",
+      "prefix": "dynatrace-site-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:32.279Z"
+    },
+    {
+      "domain": "coupa.com",
+      "prefix": "dynatrace-site-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:32.449Z"
+    },
+    {
+      "domain": "appdirect.com",
+      "prefix": "teamviewer-sso-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:32.801Z"
+    },
+    {
+      "domain": "bamboohr.com",
+      "prefix": "teamviewer-sso-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:32.970Z"
+    },
+    {
+      "domain": "cultureamp.com",
+      "prefix": "teamviewer-sso-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:33.132Z"
+    },
+    {
+      "domain": "dealersocket.com",
+      "prefix": "teamviewer-sso-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:33.304Z"
+    },
+    {
+      "domain": "datadoghq.com",
+      "prefix": "teamviewer-sso-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:33.466Z"
+    },
+    {
+      "domain": "appdirect.com",
+      "prefix": "adobe-sign-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:33.752Z"
+    },
+    {
+      "domain": "automationanywhere.com",
+      "prefix": "adobe-sign-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:33.929Z"
+    },
+    {
+      "domain": "betterworks.com",
+      "prefix": "adobe-sign-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:34.143Z"
+    },
+    {
+      "domain": "certain.com",
+      "prefix": "adobe-sign-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:34.392Z"
+    },
+    {
+      "domain": "coupa.com",
+      "prefix": "adobe-sign-verification",
+      "present": true,
+      "observedAt": "2026-10-15T19:38:34.609Z"
+    }
+  ]
+}
