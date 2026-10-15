@@ -262,8 +262,22 @@ name alone never becomes a technology finding without live DNS corroboration.
   The observed `aplolinks.com` fingerprint is
   deliberately medium-confidence because Apollo's public setup documentation does
   not name that generated target.
-- Gong documents Engage branded URL CNAMEs whose unbranded target is under
-  `email-composer-webhooks.gong.io`.
+- [Gong documents Engage branded URL CNAMEs](https://help.gong.io/docs/set-up-branded-urls)
+  under `email-composer-webhooks.gong.io`. Balanced and full scans include the
+  documented `email-tracking` label. This identifies Engage link tracking, not
+  Gong call recording.
+- Fireflies and [Read AI](https://support.read.ai/hc/en-us/articles/48607849975955-How-do-I-verify-domain-ownership)
+  verification markers identify published domain-verification records. DNS does
+  not establish completed verification, enabled SSO, paid seats, or recording activity.
+- [Reachdesk domain verification](https://support.reachdesk.com/hc/en-gb/articles/4410354225169-How-to-verify-domains-within-Reachdesk)
+  indicates configuration for branded correspondence, not active gifting campaigns.
+- The [meeting-intelligence research report](https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md)
+  records 35 Gong, 32 Fireflies, and 30 Granola public references, their evidence
+  strength, and bounded DNS results. No Granola-specific signature was validated.
+  Public customer references and DNS observations are separate evidence sources.
+  Version 0.4.0 narrows Gong Engage, Fireflies, and Reachdesk `productScope` values, so existing
+  fingerprints and diffs involving those providers change once on upgrade; that
+  alone does not indicate a customer's stack changed.
 - Salesloft supports custom tracking domains; its attributable target used by the
   detector is `custom-tracking.salesloft.com`.
 - [HubSpot documents reverse-proxy targets under `hscoscdn.net`](https://developers.hubspot.com/docs/cms/best-practices/testing-staging-performance/reverse-proxies/setup),

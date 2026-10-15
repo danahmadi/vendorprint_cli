@@ -3,3 +3,4 @@ node_modules/
 .DS_Store
 findings.json
 .vendorprint-ct-cache.json
+docs/research/meeting-intelligence/*-observations.json

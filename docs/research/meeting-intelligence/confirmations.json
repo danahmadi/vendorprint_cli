@@ -1,0 +1,99 @@
+[
+  {
+    "domain": "webflow.com",
+    "observedAt": "2026-10-15T00:17:19.754Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "fireflies-verification",
+      "reachdesk-verification"
+    ]
+  },
+  {
+    "domain": "tavily.com",
+    "observedAt": "2026-10-15T00:17:19.822Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "fireflies-verification"
+    ]
+  },
+  {
+    "domain": "bosch.com",
+    "observedAt": "2026-10-15T00:17:20.242Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "fireflies-verification"
+    ]
+  },
+  {
+    "domain": "gusto.com",
+    "observedAt": "2026-10-15T00:17:20.364Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "read-ai-verification"
+    ]
+  },
+  {
+    "domain": "atlan.com",
+    "observedAt": "2026-10-15T00:17:20.478Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "reachdesk-verification"
+    ]
+  },
+  {
+    "domain": "greenhouse.io",
+    "observedAt": "2026-10-15T00:17:20.630Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "reachdesk-verification"
+    ]
+  },
+  {
+    "domain": "figma.com",
+    "observedAt": "2026-10-15T00:17:20.737Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "reachdesk-verification"
+    ]
+  },
+  {
+    "domain": "reachdesk.com",
+    "observedAt": "2026-10-15T00:17:20.843Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 0,
+    "prefixes": [
+      "reachdesk-verification"
+    ]
+  },
+  {
+    "name": "sales.fourangle.com",
+    "type": "CNAME",
+    "observedAt": "2026-10-15T00:17:21.044Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 3,
+    "targets": []
+  },
+  {
+    "name": "email-tracking.thumbtack.com",
+    "type": "CNAME",
+    "observedAt": "2026-10-15T00:17:21.144Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 3,
+    "targets": []
+  },
+  {
+    "name": "mkto-o0211.com",
+    "type": "CNAME",
+    "observedAt": "2026-10-15T00:17:58.849Z",
+    "resolver": "Google DNS over HTTPS",
+    "dnsStatus": 2,
+    "targets": []
+  }
+]

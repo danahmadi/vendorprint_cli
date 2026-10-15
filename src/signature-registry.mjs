@@ -1,4 +1,4 @@
-export const SIGNATURE_CATALOG_VERSION = "2026.08.24";
+export const SIGNATURE_CATALOG_VERSION = "2026.10.14";
 
 const source = (url, kind = "official_documentation") => ({ url, kind });
 
@@ -11,7 +11,14 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     { provider: "Apollo", category: "sales_engagement", suffixes: ["apollo.io", "apollo-mail.io", "apollomail.io", "tryapollo.io"], confidence: "high" },
     { provider: "Apollo", category: "sales_engagement", suffixes: ["aplolinks.com"], confidence: "medium" },
     { provider: "Salesloft", category: "sales_engagement", suffixes: ["salesloft.com"], confidence: "high" },
-    { provider: "Gong Engage", category: "sales_engagement", suffixes: ["email-composer-webhooks.gong.io"], confidence: "high" },
+    {
+      provider: "Gong Engage", category: "sales_engagement",
+      suffixes: ["email-composer-webhooks.gong.io"], confidence: "high",
+      productScope: "gong_engage_link_tracking",
+      caveat: "This identifies Gong Engage branded link tracking, not Gong call recording, active seats, or recent activity.",
+      verifiedAt: "2026-10-14",
+      sources: [source("https://help.gong.io/docs/set-up-branded-urls")],
+    },
     { provider: "Mixmax", category: "sales_engagement", suffixes: ["mixmax.com"], confidence: "high" },
     { provider: "Nooks", category: "sales_engagement", suffixes: ["nooks.in"], confidence: "medium" },
     { provider: "Adobe Marketo", category: "marketing_automation", suffixes: ["mktoweb.com"], confidence: "high" },
@@ -118,8 +125,31 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     ["Salesforce", "Salesforce domain ownership", /^salesforce-domain-verification\s*=/i, "crm"],
     ["Segment", "Twilio Segment workspace domain ownership", /^segment-site-verification\s*=/i, "customer_data"],
     ["Pendo", "Pendo subscription domain ownership", /^pendo-domain-verification\s*=/i, "product_analytics"],
-    ["Fireflies.ai", "Fireflies domain ownership", /^fireflies-verification\s*=/i, "meeting_intelligence"],
+    ["Fireflies.ai", "Fireflies domain ownership", /^fireflies-verification\s*=\s*\S+/i, "meeting_intelligence", {
+      productScope: "fireflies_domain_verification",
+      caveat: "A Fireflies domain-verification record is published. It does not establish completed verification, enabled SSO, a paid subscription, or meeting-recording activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://guide.fireflies.ai/articles/7821332836-how-to-setup-saml-sso-for-your-google-workspace"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md", "public_dns_research"),
+      ],
+    }],
     ["LinkedIn", "LinkedIn organization domain ownership", /^linkedin-site-verification\s*=/i, "business_software"],
+    ["Read AI", "Read AI workspace domain ownership", /^read-ai-verification\s*=\s*\S+/i, "meeting_intelligence", {
+      productScope: "read_ai_domain_verification",
+      caveat: "A Read AI workspace domain-verification record is published. It does not establish completed verification, a paid subscription, or meeting-recording activity.",
+      verifiedAt: "2026-10-14",
+      sources: [source("https://support.read.ai/hc/en-us/articles/48607849975955-How-do-I-verify-domain-ownership")],
+    }],
+    ["Reachdesk", "Reachdesk branded email domain ownership", /^reachdesk-verification\s*=\s*\S+/i, "advertising_abm", {
+      productScope: "reachdesk_email_domain_verification",
+      caveat: "A Reachdesk domain-verification record is published for branded correspondence. It does not establish completed verification, active campaigns, or gifts sent.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://support.reachdesk.com/hc/en-gb/articles/4410354225169-How-to-verify-domains-within-Reachdesk"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md", "public_dns_research"),
+      ],
+    }],
     ["Stripe", "Stripe domain ownership", /^stripe-verification\s*=/i, "commerce_payments"],
     ["Monday.com", "Monday.com organization domain ownership", /^monday-com-verification\s*=/i, "business_software"],
     ["Rippling", "Rippling organization domain ownership", /^rippling-domain-verification\s*=/i, "business_software"],
@@ -139,7 +169,6 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     ["Box", "Box organization domain ownership", /^box-domain-verification\s*=/i, "business_software"],
     ["Uber for Business", "Uber organization domain ownership", /^uber-domain-verification\s*=/i, "business_software"],
     ["Linear", "Linear workspace domain ownership", /^linear-domain-verification\s*=/i, "business_software"],
-    ["Reachdesk", "Reachdesk domain ownership", /^reachdesk-verification\s*=/i, "advertising_abm"],
     ["Cisco", "Cisco service domain ownership", /^cisco-ci-domain-verification\s*=/i, "business_software"],
     ["Cursor", "Cursor organization domain ownership", /^cursor-domain-verification(?:-[a-z0-9]+)?\s*=/i, "ai_workspace"],
     ["Postman", "Postman organization domain ownership", /^postman-domain-verification\s*=/i, "business_software"],
@@ -154,7 +183,7 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     ["Proton Mail", "Proton Mail custom-domain ownership", /^protonmail-verification\s*=/i, "mail_productivity"],
     ["Zoho", "Zoho custom-domain ownership", /^zoho-verification\s*=/i, "mail_productivity"],
     ["Emma by Marigold", "Emma sending-domain ownership", /^e2ma-verification\s*=/i, "marketing_automation"],
-  ].map(([provider, purpose, pattern, category]) => ({ provider, purpose, pattern, category, confidence: "medium" })),
+  ].map(([provider, purpose, pattern, category, metadata = {}]) => ({ provider, purpose, pattern, category, confidence: "medium", ...metadata })),
 });
 
 export function matchesHost(host, definition) {

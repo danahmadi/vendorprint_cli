@@ -33,7 +33,8 @@ difference.
 | Events | Goldcast CNAME | High | Product-specific vanity event domain |
 | Customer data | Segment ownership TXT | Medium | Configured Segment organization relationship |
 | Product analytics | Pendo or Mixpanel ownership TXT | Medium | Configured analytics-platform relationship |
-| Meeting intelligence | Fireflies ownership TXT | Medium | Configured Fireflies organization relationship |
+| Meeting intelligence | Fireflies or Read AI ownership TXT | Medium | Published vendor-specific domain-verification record; not proof of meeting activity |
+| Gifting / ABM | Reachdesk ownership TXT | Medium | Published domain-verification record for branded correspondence |
 | Payments | Stripe ownership TXT | Medium | Configured Stripe domain relationship |
 | CRM inference | Salesforce Account Engagement/Pardot CNAME | High | Salesforce CRM organization relationship; not active Sales Cloud seats |
 | CRM inference | Salesforce Marketing Cloud Engagement CNAME | Medium | Salesforce CRM inferred from a proven Marketing Cloud relationship; not direct proof of Sales Cloud |
@@ -51,7 +52,7 @@ describes how specifically the record identifies the provider. `relationshipLeve
 describes what the record actually proves:
 
 - `platform_configuration`: an attributable hosted or tracking CNAME;
-- `domain_relationship`: a completed ownership-verification challenge;
+- `domain_relationship`: a published vendor-specific ownership-verification record; completion is not observable from DNS;
 - `sending_authorization`: permission in SPF to send on the domain's behalf.
 
 ## Cross-tool inference graph

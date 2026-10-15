@@ -13,6 +13,7 @@ export const FAST_TRACKING_LABELS = [
 
 export const BALANCED_TRACKING_LABELS = [
   ...FAST_TRACKING_LABELS,
+  "email-tracking",
   "outreach",
   "tracking",
   "click",
@@ -31,6 +32,7 @@ export const BALANCED_TRACKING_LABELS = [
 export const DEFAULT_TRACKING_LABELS = [
   "track",
   "tracking",
+  "email-tracking",
   "click",
   "clicks",
   "link",
@@ -379,11 +381,6 @@ const VERIFICATION_PATTERNS = [
     pattern: /^linear-domain-verification\s*=/i,
   },
   {
-    provider: "Reachdesk",
-    purpose: "Reachdesk domain ownership",
-    pattern: /^reachdesk-verification\s*=/i,
-  },
-  {
     provider: "Cisco",
     purpose: "Cisco service domain ownership",
     pattern: /^cisco-ci-domain-verification\s*=/i,
@@ -531,6 +528,14 @@ function matchPattern(host, definitions) {
   );
 }
 
+function signatureMetadata(definition) {
+  return Object.fromEntries(
+    ["productScope", "caveat", "sources", "verifiedAt"]
+      .filter((key) => definition?.[key] !== undefined)
+      .map((key) => [key, definition[key]]),
+  );
+}
+
 export function detectSalesVendor(hostname, cnameTarget) {
   const target = cleanHost(cnameTarget);
   const registryMatch = findHostSignature(target, "cname");
@@ -546,6 +551,7 @@ export function detectSalesVendor(hostname, cnameTarget) {
     relationship: "platform_configuration",
     hostname: cleanHost(hostname),
     target,
+    ...signatureMetadata(matched),
     rationale:
       matched.confidence === "high"
         ? "A public tracking-style subdomain points to documented or vendor-attributable infrastructure. This is strong configuration evidence, but does not prove current seat usage."
@@ -566,6 +572,7 @@ export function detectCnameTechnology(hostname, cnameTarget) {
     confidence: matched.confidence ?? "high",
     hostname: cleanHost(hostname),
     target,
+    ...signatureMetadata(matched),
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
   };
 }
@@ -633,6 +640,7 @@ export function extractDomainVerifications(txtRecords, options = {}) {
       purpose: known?.purpose ?? "Domain or site ownership verification",
       confidence: known ? "medium" : "low",
       ...(known?.category ? { category: known.category } : {}),
+      ...signatureMetadata(known),
       recordPrefix: prefix,
       tokenRedacted: true,
       signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
