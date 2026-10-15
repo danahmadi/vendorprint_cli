@@ -1,3 +1,10 @@
+function reportVersions(report) {
+  return {
+    ...(report.packageVersion ? { packageVersion: report.packageVersion } : {}),
+    ...(report.signatureCatalogVersion ? { signatureCatalogVersion: report.signatureCatalogVersion } : {}),
+  };
+}
+
 const PROFILE_CATEGORIES = [
   "aiWorkspaces",
   "crm",
@@ -71,6 +78,7 @@ export function compactResult(result) {
 export function compactReport(report) {
   return {
     schemaVersion: report.schemaVersion,
+    ...reportVersions(report),
     generatedAt: report.generatedAt,
     durationMs: report.durationMs,
     summary: report.summary,
@@ -93,6 +101,7 @@ export function compactEvent(event) {
     return {
       type: "meta",
       schemaVersion: event.schemaVersion,
+      ...reportVersions(event),
       generatedAt: event.generatedAt,
       summary: event.summary,
       ...(event.invalidInputs.length > 0
@@ -104,6 +113,7 @@ export function compactEvent(event) {
     return {
       type: "summary",
       schemaVersion: event.schemaVersion,
+      ...reportVersions(event),
       generatedAt: event.generatedAt,
       durationMs: event.durationMs,
       summary: event.summary,

@@ -1,3 +1,4 @@
+import { PACKAGE_VERSION } from "./version.mjs";
 import { Resolver } from "node:dns/promises";
 import { createDohResolver } from "./doh-resolver.mjs";
 import { createHash } from "node:crypto";
@@ -740,6 +741,7 @@ export async function* scanDomainEvents(inputs, options = {}) {
   yield {
     type: "meta",
     schemaVersion: "1.2",
+    packageVersion: PACKAGE_VERSION,
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
     generatedAt,
     methodology,
@@ -785,6 +787,7 @@ export async function* scanDomainEvents(inputs, options = {}) {
   yield {
     type: "summary",
     schemaVersion: "1.2",
+    packageVersion: PACKAGE_VERSION,
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
     generatedAt,
     durationMs: Math.round(performance.now() - startedAt),
@@ -808,6 +811,7 @@ export async function scanDomains(inputs, options = {}) {
   }
   return {
     schemaVersion: meta.schemaVersion,
+    packageVersion: meta.packageVersion,
     signatureCatalogVersion: meta.signatureCatalogVersion,
     generatedAt: meta.generatedAt,
     durationMs: summary.durationMs,

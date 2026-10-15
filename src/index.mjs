@@ -1,3 +1,4 @@
+export { PACKAGE_VERSION } from "./version.mjs";
 export { buildTechnologyProfile } from "./profile.mjs";
 export { buildTechnologyInferenceGraph } from "./inference.mjs";
 export {
