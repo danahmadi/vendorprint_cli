@@ -10,6 +10,7 @@ import {
   writeFile,
 } from "node:fs/promises";
 import process from "node:process";
+import { PACKAGE_VERSION } from "../src/version.mjs";
 import { normalizeDomainInput } from "../src/domain.mjs";
 import { auditScanDocuments, parseScanDocuments } from "../src/audit.mjs";
 import { discoverCertificateHosts } from "../src/certificate-transparency.mjs";
@@ -57,6 +58,7 @@ Options:
   --resume <path>         Resume and append to an existing NDJSON checkpoint
   --pretty                Force formatted JSON; scans are formatted by default
   --help                  Show this help
+  --version               Show the installed package version
 
 Result-first output is the default and includes only observed technologies,
 confidence, evidence, and caveats. Use --full for forensic scan detail. Full
@@ -461,7 +463,9 @@ async function runNdjson(options) {
 
 try {
   const argv = process.argv.slice(2);
-  if (await runUtilityCommand(argv)) {
+  if (argv.length === 1 && ["--version", "-v"].includes(argv[0])) {
+    process.stdout.write(`${PACKAGE_VERSION}\n`);
+  } else if (await runUtilityCommand(argv)) {
     // Utility commands do not perform network operations.
   } else {
   const options = parseArgs(argv);

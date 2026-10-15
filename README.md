@@ -16,8 +16,8 @@ Node.js CLI that checks for:
 The product site includes an interactive sample replay and complete CLI
 documentation. The replay does not make browser-side DNS or website requests.
 
-- [Interactive demo](https://vendorprint.vercel.app)
-- [Documentation](https://vendorprint.vercel.app/docs)
+- [Interactive demo](https://www.vendorprintcli.com)
+- [Documentation](https://www.vendorprintcli.com/docs)
 
 ## Why the result is a signal, not a verdict
 
@@ -327,3 +327,24 @@ name alone never becomes a technology finding without live DNS corroboration.
 - [Microsoft documents Dataverse as a required Power Pages component](https://learn.microsoft.com/en-us/power-pages/admin/connectivity).
   Power Pages therefore infers Dataverse directly while keeping Dynamics 365 as an
   unconfirmed candidate.
+
+## Reproducible results
+
+JSON reports and NDJSON metadata/summary events include `packageVersion` and
+`signatureCatalogVersion`, including compact output. Keep both with saved results;
+DNS records and signature interpretation can change independently. Older reports
+without version metadata remain readable and are not relabelled with the current version.
+
+For restricted networks, use `--dns-transport https` to query Google DNS-over-HTTPS.
+It changes the DNS transport; it never visits company websites.
+
+For discovery audits, retain full output and redacted unmatched-key diagnostics:
+
+```sh
+vendorprint --input accounts.txt --full --include-unclassified --format ndjson --output findings.ndjson
+vendorprint signatures audit findings.ndjson --pretty
+```
+
+[Browse the signature catalog](https://www.vendorprintcli.com/coverage) for record
+families, scopes, confidence, and available sources. Coverage benchmarks describe
+a specific cohort and scan date, not vendor-detection accuracy or paid adoption.

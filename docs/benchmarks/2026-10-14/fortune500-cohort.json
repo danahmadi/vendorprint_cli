@@ -1,0 +1,2014 @@
+{
+  "id": "fortune500-2026",
+  "title": "Fortune 500 domain cohort",
+  "source": "https://installmap.com/static/data/fortune-100-ai-homepage/fortune500.csv",
+  "sourceMethod": "https://installmap.com/static/data/fortune-100-ai-homepage/README.md",
+  "attribution": "Source: Installmap, September 2026. Data: CC BY 4.0. Adapted to retain company names and normalized domains only.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "retrievedAt": "2026-10-15T05:22:41.706963+00:00",
+  "sourceSha256": "85e1cefb129b8910b15034847ecad3c77ef156a02c6b91b6e59103ab40eff705",
+  "scope": "500 company domains from Installmap’s 2026 Fortune 500 cohort; a third-party company/domain mapping, not independent verification of current rank or corporate ownership. All source rows retained regardless of source website-crawl success. New baseline, not comparable to the old Inc. cohort.",
+  "rows": [
+    {
+      "name": "Amazon",
+      "domain": "amazon.com"
+    },
+    {
+      "name": "Walmart",
+      "domain": "walmart.com"
+    },
+    {
+      "name": "UnitedHealth Group",
+      "domain": "unitedhealthgroup.com"
+    },
+    {
+      "name": "Apple",
+      "domain": "apple.com"
+    },
+    {
+      "name": "Alphabet",
+      "domain": "abc.xyz"
+    },
+    {
+      "name": "CVS Health",
+      "domain": "cvshealth.com"
+    },
+    {
+      "name": "Berkshire Hathaway",
+      "domain": "berkshirehathaway.com"
+    },
+    {
+      "name": "McKesson",
+      "domain": "mckesson.com"
+    },
+    {
+      "name": "ExxonMobil Holdings",
+      "domain": "exxonmobil.com"
+    },
+    {
+      "name": "Cencora",
+      "domain": "cencora.com"
+    },
+    {
+      "name": "Microsoft",
+      "domain": "microsoft.com"
+    },
+    {
+      "name": "JPMorgan Chase",
+      "domain": "jpmorganchase.com"
+    },
+    {
+      "name": "Costco Wholesale",
+      "domain": "costco.com"
+    },
+    {
+      "name": "Cigna Group",
+      "domain": "thecignagroup.com"
+    },
+    {
+      "name": "Cardinal Health",
+      "domain": "cardinalhealth.com"
+    },
+    {
+      "name": "Nvidia",
+      "domain": "nvidia.com"
+    },
+    {
+      "name": "Meta Platforms",
+      "domain": "atmeta.com",
+      "normalizationError": "Invalid domain: atmeta.com"
+    },
+    {
+      "name": "Elevance Health",
+      "domain": "elevancehealth.com"
+    },
+    {
+      "name": "Centene",
+      "domain": "centene.com"
+    },
+    {
+      "name": "Bank of America",
+      "domain": "bankofamerica.com"
+    },
+    {
+      "name": "Chevron",
+      "domain": "chevron.com"
+    },
+    {
+      "name": "Ford Motor",
+      "domain": "ford.com"
+    },
+    {
+      "name": "General Motors",
+      "domain": "gm.com"
+    },
+    {
+      "name": "Citigroup",
+      "domain": "citigroup.com"
+    },
+    {
+      "name": "Home Depot",
+      "domain": "homedepot.com"
+    },
+    {
+      "name": "Fannie Mae",
+      "domain": "fanniemae.com"
+    },
+    {
+      "name": "Kroger",
+      "domain": "thekrogerco.com"
+    },
+    {
+      "name": "Verizon Communications",
+      "domain": "verizon.com"
+    },
+    {
+      "name": "Phillips 66",
+      "domain": "phillips66.com"
+    },
+    {
+      "name": "Marathon Petroleum",
+      "domain": "marathonpetroleum.com"
+    },
+    {
+      "name": "StoneX Group",
+      "domain": "stonex.com"
+    },
+    {
+      "name": "State Farm Insurance",
+      "domain": "statefarm.com"
+    },
+    {
+      "name": "Freddie Mac",
+      "domain": "freddiemac.com"
+    },
+    {
+      "name": "Humana",
+      "domain": "humana.com"
+    },
+    {
+      "name": "AT&T",
+      "domain": "att.com"
+    },
+    {
+      "name": "Goldman Sachs Group",
+      "domain": "goldmansachs.com"
+    },
+    {
+      "name": "Comcast",
+      "domain": "comcastcorporation.com"
+    },
+    {
+      "name": "Wells Fargo",
+      "domain": "wellsfargo.com"
+    },
+    {
+      "name": "Morgan Stanley",
+      "domain": "morganstanley.com"
+    },
+    {
+      "name": "Valero Energy",
+      "domain": "valero.com"
+    },
+    {
+      "name": "Dell Technologies",
+      "domain": "dell.com"
+    },
+    {
+      "name": "Target",
+      "domain": "target.com"
+    },
+    {
+      "name": "Tesla",
+      "domain": "tesla.com"
+    },
+    {
+      "name": "Walt Disney",
+      "domain": "thewaltdisneycompany.com"
+    },
+    {
+      "name": "Johnson & Johnson",
+      "domain": "jnj.com"
+    },
+    {
+      "name": "PepsiCo",
+      "domain": "pepsico.com"
+    },
+    {
+      "name": "Boeing",
+      "domain": "boeing.com"
+    },
+    {
+      "name": "United Parcel Service",
+      "domain": "ups.com"
+    },
+    {
+      "name": "RTX",
+      "domain": "rtx.com"
+    },
+    {
+      "name": "FedEx",
+      "domain": "fedex.com"
+    },
+    {
+      "name": "Progressive",
+      "domain": "progressive.com"
+    },
+    {
+      "name": "Lowe's",
+      "domain": "lowes.com"
+    },
+    {
+      "name": "Energy Transfer",
+      "domain": "energytransfer.com"
+    },
+    {
+      "name": "Procter & Gamble",
+      "domain": "pginvestor.com"
+    },
+    {
+      "name": "Sysco",
+      "domain": "sysco.com"
+    },
+    {
+      "name": "American Express",
+      "domain": "americanexpress.com"
+    },
+    {
+      "name": "Albertsons",
+      "domain": "albertsonscompanies.com"
+    },
+    {
+      "name": "Archer Daniels Midland",
+      "domain": "adm.com"
+    },
+    {
+      "name": "MetLife",
+      "domain": "metlife.com"
+    },
+    {
+      "name": "HCA Healthcare",
+      "domain": "hcahealthcare.com"
+    },
+    {
+      "name": "Lockheed Martin",
+      "domain": "lockheedmartin.com"
+    },
+    {
+      "name": "New York Life Insurance",
+      "domain": "newyorklife.com"
+    },
+    {
+      "name": "Capital One Financial",
+      "domain": "capitalone.com"
+    },
+    {
+      "name": "Allstate",
+      "domain": "allstate.com"
+    },
+    {
+      "name": "Caterpillar",
+      "domain": "caterpillar.com"
+    },
+    {
+      "name": "International Business Machines",
+      "domain": "ibm.com"
+    },
+    {
+      "name": "Eli Lilly",
+      "domain": "lilly.com"
+    },
+    {
+      "name": "Merck",
+      "domain": "merck.com"
+    },
+    {
+      "name": "Nationwide",
+      "domain": "nationwide.com"
+    },
+    {
+      "name": "Broadcom",
+      "domain": "broadcom.com"
+    },
+    {
+      "name": "Delta Air Lines",
+      "domain": "delta.com"
+    },
+    {
+      "name": "Publix Super Markets",
+      "domain": "publix.com"
+    },
+    {
+      "name": "Pfizer",
+      "domain": "pfizer.com"
+    },
+    {
+      "name": "TD Synnex",
+      "domain": "tdsynnex.com"
+    },
+    {
+      "name": "ConocoPhillips",
+      "domain": "conocophillips.com"
+    },
+    {
+      "name": "Galaxy Digital",
+      "domain": "galaxy.com"
+    },
+    {
+      "name": "AbbVie",
+      "domain": "abbvie.com"
+    },
+    {
+      "name": "Prudential Financial",
+      "domain": "prudential.com"
+    },
+    {
+      "name": "TJX",
+      "domain": "tjx.com"
+    },
+    {
+      "name": "Performance Food Group",
+      "domain": "pfgc.com"
+    },
+    {
+      "name": "United Airlines Holdings",
+      "domain": "united.com"
+    },
+    {
+      "name": "Oracle",
+      "domain": "oracle.com"
+    },
+    {
+      "name": "Cisco Systems",
+      "domain": "cisco.com"
+    },
+    {
+      "name": "HP",
+      "domain": "hp.com"
+    },
+    {
+      "name": "Charter Communications",
+      "domain": "charter.com"
+    },
+    {
+      "name": "American Airlines Group",
+      "domain": "aa.com"
+    },
+    {
+      "name": "Tyson Foods",
+      "domain": "tysonfoods.com"
+    },
+    {
+      "name": "Intel",
+      "domain": "intel.com"
+    },
+    {
+      "name": "Enterprise Products Partners",
+      "domain": "enterpriseproducts.com"
+    },
+    {
+      "name": "Ingram Micro Holding",
+      "domain": "ingrammicro.com"
+    },
+    {
+      "name": "General Dynamics",
+      "domain": "gd.com"
+    },
+    {
+      "name": "Uber Technologies",
+      "domain": "uber.com"
+    },
+    {
+      "name": "United Services Automobile Assn.",
+      "domain": "usaa.com"
+    },
+    {
+      "name": "TIAA",
+      "domain": "tiaa.org"
+    },
+    {
+      "name": "Liberty Mutual Insurance Group",
+      "domain": "libertymutual.com"
+    },
+    {
+      "name": "Travelers",
+      "domain": "travelers.com"
+    },
+    {
+      "name": "Bristol-Myers Squibb",
+      "domain": "bms.com"
+    },
+    {
+      "name": "Coca-Cola",
+      "domain": "coca-colacompany.com"
+    },
+    {
+      "name": "Nike",
+      "domain": "nike.com"
+    },
+    {
+      "name": "Massachusetts Mutual Life Insurance",
+      "domain": "massmutual.com"
+    },
+    {
+      "name": "GE Aerospace",
+      "domain": "geaerospace.com"
+    },
+    {
+      "name": "Deere",
+      "domain": "deere.com"
+    },
+    {
+      "name": "Plains GP Holdings",
+      "domain": "plains.com"
+    },
+    {
+      "name": "Molina Healthcare",
+      "domain": "molinahealthcare.com"
+    },
+    {
+      "name": "Netflix",
+      "domain": "netflix.com"
+    },
+    {
+      "name": "Thermo Fisher Scientific",
+      "domain": "thermofisher.com"
+    },
+    {
+      "name": "Abbott Laboratories",
+      "domain": "abbott.com"
+    },
+    {
+      "name": "Qualcomm",
+      "domain": "qualcomm.com"
+    },
+    {
+      "name": "Northwestern Mutual",
+      "domain": "northwesternmutual.com"
+    },
+    {
+      "name": "U.S. Bancorp",
+      "domain": "usbank.com"
+    },
+    {
+      "name": "Dollar General",
+      "domain": "dollargeneral.com"
+    },
+    {
+      "name": "Northrop Grumman",
+      "domain": "northropgrumman.com"
+    },
+    {
+      "name": "Best Buy",
+      "domain": "bestbuy.com"
+    },
+    {
+      "name": "Salesforce",
+      "domain": "salesforce.com"
+    },
+    {
+      "name": "Bank of New York (BNY)",
+      "domain": "bny.com"
+    },
+    {
+      "name": "Honeywell Technologies",
+      "domain": "honeywell.com"
+    },
+    {
+      "name": "Philip Morris International",
+      "domain": "pmi.com"
+    },
+    {
+      "name": "CBRE Group",
+      "domain": "cbre.com"
+    },
+    {
+      "name": "Visa",
+      "domain": "visa.com"
+    },
+    {
+      "name": "Dow",
+      "domain": "dow.com"
+    },
+    {
+      "name": "US Foods Holding",
+      "domain": "usfoods.com"
+    },
+    {
+      "name": "Mondelēz International",
+      "domain": "mondelezinternational.com"
+    },
+    {
+      "name": "Lithia Motors",
+      "domain": "lithiadriveway.com"
+    },
+    {
+      "name": "GE Vernova",
+      "domain": "gevernova.com"
+    },
+    {
+      "name": "Micron Technology",
+      "domain": "micron.com"
+    },
+    {
+      "name": "Warner Bros. Discovery",
+      "domain": "wbd.com"
+    },
+    {
+      "name": "Starbucks",
+      "domain": "starbucks.com"
+    },
+    {
+      "name": "World Kinect",
+      "domain": "world-kinect.com"
+    },
+    {
+      "name": "Amgen",
+      "domain": "amgen.com"
+    },
+    {
+      "name": "CHS",
+      "domain": "chsinc.com"
+    },
+    {
+      "name": "Advanced Micro Devices",
+      "domain": "amd.com"
+    },
+    {
+      "name": "Coupang",
+      "domain": "aboutcoupang.com"
+    },
+    {
+      "name": "Hewlett Packard Enterprise",
+      "domain": "hpe.com"
+    },
+    {
+      "name": "D.R. Horton",
+      "domain": "drhorton.com"
+    },
+    {
+      "name": "Lennar",
+      "domain": "lennar.com"
+    },
+    {
+      "name": "PNC Financial Services Group",
+      "domain": "pnc.com"
+    },
+    {
+      "name": "Cummins",
+      "domain": "cummins.com"
+    },
+    {
+      "name": "Oneok",
+      "domain": "oneok.com"
+    },
+    {
+      "name": "PayPal Holdings",
+      "domain": "paypal.com"
+    },
+    {
+      "name": "GuideWell Mutual Holding",
+      "domain": "guidewell.com"
+    },
+    {
+      "name": "Mastercard",
+      "domain": "mastercard.com"
+    },
+    {
+      "name": "Nucor",
+      "domain": "nucor.com"
+    },
+    {
+      "name": "Apollo Global Management",
+      "domain": "apollo.com"
+    },
+    {
+      "name": "Penske Automotive Group",
+      "domain": "penskeautomotive.com"
+    },
+    {
+      "name": "Duke Energy",
+      "domain": "duke-energy.com"
+    },
+    {
+      "name": "United Natural Foods",
+      "domain": "unfi.com"
+    },
+    {
+      "name": "Ferguson Enterprises",
+      "domain": "ferguson.com"
+    },
+    {
+      "name": "Arrow Electronics",
+      "domain": "arrow.com"
+    },
+    {
+      "name": "NRG Energy",
+      "domain": "nrg.com"
+    },
+    {
+      "name": "Truist Financial",
+      "domain": "truist.com"
+    },
+    {
+      "name": "Jabil",
+      "domain": "jabil.com"
+    },
+    {
+      "name": "Southern",
+      "domain": "southerncompany.com"
+    },
+    {
+      "name": "Gilead Sciences",
+      "domain": "gilead.com"
+    },
+    {
+      "name": "PBF Energy",
+      "domain": "pbfenergy.com"
+    },
+    {
+      "name": "Paramount Skydance",
+      "domain": "paramount.com"
+    },
+    {
+      "name": "KKR",
+      "domain": "kkr.com"
+    },
+    {
+      "name": "Quanta Services",
+      "domain": "quantaservices.com"
+    },
+    {
+      "name": "Paccar",
+      "domain": "paccar.com"
+    },
+    {
+      "name": "Medline",
+      "domain": "medline.com"
+    },
+    {
+      "name": "Applied Materials",
+      "domain": "appliedmaterials.com"
+    },
+    {
+      "name": "Hartford Insurance Group",
+      "domain": "thehartford.com"
+    },
+    {
+      "name": "CarMax",
+      "domain": "carmax.com"
+    },
+    {
+      "name": "Southwest Airlines",
+      "domain": "southwest.com"
+    },
+    {
+      "name": "Baker Hughes",
+      "domain": "bakerhughes.com"
+    },
+    {
+      "name": "Charles Schwab",
+      "domain": "aboutschwab.com"
+    },
+    {
+      "name": "AutoNation",
+      "domain": "autonation.com"
+    },
+    {
+      "name": "NextEra Energy",
+      "domain": "nexteraenergy.com"
+    },
+    {
+      "name": "Marsh & McLennan",
+      "domain": "marshmclennan.com"
+    },
+    {
+      "name": "Booking Holdings",
+      "domain": "bookingholdings.com"
+    },
+    {
+      "name": "McDonald's",
+      "domain": "mcdonalds.com"
+    },
+    {
+      "name": "HF Sinclair",
+      "domain": "hfsinclair.com"
+    },
+    {
+      "name": "AIG",
+      "domain": "aig.com"
+    },
+    {
+      "name": "Occidental Petroleum",
+      "domain": "oxy.com"
+    },
+    {
+      "name": "Marriott International",
+      "domain": "marriott.com"
+    },
+    {
+      "name": "Jones Lang LaSalle",
+      "domain": "jll.com"
+    },
+    {
+      "name": "International Paper",
+      "domain": "internationalpaper.com"
+    },
+    {
+      "name": "Freeport-McMoRan",
+      "domain": "fcx.com"
+    },
+    {
+      "name": "Constellation Energy",
+      "domain": "constellationenergy.com"
+    },
+    {
+      "name": "Waste Management",
+      "domain": "wm.com"
+    },
+    {
+      "name": "Live Nation Entertainment",
+      "domain": "livenationentertainment.com"
+    },
+    {
+      "name": "Stryker",
+      "domain": "stryker.com"
+    },
+    {
+      "name": "Dollar Tree",
+      "domain": "dollartree.com"
+    },
+    {
+      "name": "3M",
+      "domain": "3m.com"
+    },
+    {
+      "name": "Kraft Heinz",
+      "domain": "kraftheinzcompany.com"
+    },
+    {
+      "name": "PG&E",
+      "domain": "pgecorp.com"
+    },
+    {
+      "name": "Danaher",
+      "domain": "danaher.com"
+    },
+    {
+      "name": "Union Pacific",
+      "domain": "up.com"
+    },
+    {
+      "name": "Genuine Parts",
+      "domain": "genpt.com"
+    },
+    {
+      "name": "Exelon",
+      "domain": "exeloncorp.com"
+    },
+    {
+      "name": "BlackRock",
+      "domain": "blackrock.com"
+    },
+    {
+      "name": "Block",
+      "domain": "block.xyz"
+    },
+    {
+      "name": "Adobe",
+      "domain": "adobe.com"
+    },
+    {
+      "name": "Reinsurance Group of America",
+      "domain": "rgare.com"
+    },
+    {
+      "name": "Sherwin-Williams",
+      "domain": "sherwin-williams.com"
+    },
+    {
+      "name": "WESCO International",
+      "domain": "wesco.com"
+    },
+    {
+      "name": "Lear",
+      "domain": "lear.com"
+    },
+    {
+      "name": "Synchrony",
+      "domain": "synchrony.com"
+    },
+    {
+      "name": "Amphenol",
+      "domain": "amphenol.com"
+    },
+    {
+      "name": "Ross Stores",
+      "domain": "rossstores.com"
+    },
+    {
+      "name": "Newmont",
+      "domain": "newmont.com"
+    },
+    {
+      "name": "EOG Resources",
+      "domain": "eogresources.com"
+    },
+    {
+      "name": "State Street",
+      "domain": "statestreet.com"
+    },
+    {
+      "name": "Macy's",
+      "domain": "macysinc.com"
+    },
+    {
+      "name": "Group 1 Automotive",
+      "domain": "group1auto.com"
+    },
+    {
+      "name": "CDW",
+      "domain": "cdw.com"
+    },
+    {
+      "name": "Avnet",
+      "domain": "avnet.com"
+    },
+    {
+      "name": "Halliburton",
+      "domain": "halliburton.com"
+    },
+    {
+      "name": "Super Micro Computer",
+      "domain": "supermicro.com"
+    },
+    {
+      "name": "American Electric Power",
+      "domain": "aep.com"
+    },
+    {
+      "name": "L3Harris Technologies",
+      "domain": "l3harris.com"
+    },
+    {
+      "name": "Becton Dickinson",
+      "domain": "bd.com"
+    },
+    {
+      "name": "Carrier Global",
+      "domain": "carrier.com"
+    },
+    {
+      "name": "BJ's Wholesale Club",
+      "domain": "bjs.com"
+    },
+    {
+      "name": "Tenet Healthcare",
+      "domain": "tenethealth.com"
+    },
+    {
+      "name": "Fiserv",
+      "domain": "fiserv.com"
+    },
+    {
+      "name": "Cognizant Technology Solutions",
+      "domain": "cognizant.com"
+    },
+    {
+      "name": "GE HealthCare Technologies",
+      "domain": "gehealthcare.com"
+    },
+    {
+      "name": "Automatic Data Processing",
+      "domain": "adp.com"
+    },
+    {
+      "name": "Colgate-Palmolive",
+      "domain": "colgatepalmolive.com"
+    },
+    {
+      "name": "Carvana",
+      "domain": "carvana.com"
+    },
+    {
+      "name": "Altria Group",
+      "domain": "altria.com"
+    },
+    {
+      "name": "Boston Scientific",
+      "domain": "bostonscientific.com"
+    },
+    {
+      "name": "Cheniere Energy",
+      "domain": "cheniere.com"
+    },
+    {
+      "name": "Parker-Hannifin",
+      "domain": "parker.com"
+    },
+    {
+      "name": "Kimberly-Clark",
+      "domain": "kimberly-clark.com"
+    },
+    {
+      "name": "American Family Insurance Group",
+      "domain": "amfam.com"
+    },
+    {
+      "name": "General Mills",
+      "domain": "generalmills.com"
+    },
+    {
+      "name": "Edison International",
+      "domain": "edisoninvestor.com"
+    },
+    {
+      "name": "AutoZone",
+      "domain": "autozone.com"
+    },
+    {
+      "name": "Ameriprise Financial",
+      "domain": "ameriprise.com"
+    },
+    {
+      "name": "Intuit",
+      "domain": "intuit.com"
+    },
+    {
+      "name": "Guardian Life Ins. Co. of America",
+      "domain": "guardianlife.com"
+    },
+    {
+      "name": "Cleveland-Cliffs",
+      "domain": "clevelandcliffs.com"
+    },
+    {
+      "name": "Global Partners",
+      "domain": "globalp.com"
+    },
+    {
+      "name": "Aramark",
+      "domain": "aramark.com"
+    },
+    {
+      "name": "Corebridge Financial",
+      "domain": "corebridgefinancial.com"
+    },
+    {
+      "name": "Loews",
+      "domain": "loews.com"
+    },
+    {
+      "name": "Lam Research",
+      "domain": "lamresearch.com"
+    },
+    {
+      "name": "Goodyear Tire & Rubber",
+      "domain": "goodyear.com"
+    },
+    {
+      "name": "Pacific Life",
+      "domain": "pacificlife.com"
+    },
+    {
+      "name": "Auto-Owners Insurance",
+      "domain": "auto-owners.com"
+    },
+    {
+      "name": "Peter Kiewit Sons'",
+      "domain": "kiewit.com"
+    },
+    {
+      "name": "Lincoln National",
+      "domain": "lincolnfinancial.com"
+    },
+    {
+      "name": "Steel Dynamics",
+      "domain": "steeldynamics.com"
+    },
+    {
+      "name": "Emerson Electric",
+      "domain": "emerson.com"
+    },
+    {
+      "name": "Asbury Automotive Group",
+      "domain": "asburyauto.com"
+    },
+    {
+      "name": "ManpowerGroup",
+      "domain": "manpowergroup.com"
+    },
+    {
+      "name": "W.W. Grainger",
+      "domain": "grainger.com"
+    },
+    {
+      "name": "Jones Financial (Edward Jones)",
+      "domain": "edwardjones.com"
+    },
+    {
+      "name": "O'Reilly Automotive",
+      "domain": "oreillyauto.com"
+    },
+    {
+      "name": "Vistra",
+      "domain": "vistracorp.com"
+    },
+    {
+      "name": "Texas Instruments",
+      "domain": "ti.com"
+    },
+    {
+      "name": "MGM Resorts International",
+      "domain": "mgmresorts.com"
+    },
+    {
+      "name": "Corteva",
+      "domain": "corteva.com"
+    },
+    {
+      "name": "Universal Health Services",
+      "domain": "uhs.com"
+    },
+    {
+      "name": "PulteGroup",
+      "domain": "pultegroupinc.com"
+    },
+    {
+      "name": "Omnicom Group",
+      "domain": "omc.com"
+    },
+    {
+      "name": "Dick's Sporting Goods",
+      "domain": "dicks.com"
+    },
+    {
+      "name": "Devon Energy",
+      "domain": "devonenergy.com"
+    },
+    {
+      "name": "Leidos Holdings",
+      "domain": "leidos.com"
+    },
+    {
+      "name": "Aflac",
+      "domain": "aflac.com"
+    },
+    {
+      "name": "Targa Resources",
+      "domain": "targaresources.com"
+    },
+    {
+      "name": "Murphy USA",
+      "domain": "murphyusa.com"
+    },
+    {
+      "name": "LPL Financial Holdings",
+      "domain": "lpl.com"
+    },
+    {
+      "name": "EMCOR Group",
+      "domain": "emcorgroup.com"
+    },
+    {
+      "name": "Kinder Morgan",
+      "domain": "kindermorgan.com"
+    },
+    {
+      "name": "Consolidated Edison",
+      "domain": "conedison.com"
+    },
+    {
+      "name": "Keurig Dr Pepper",
+      "domain": "keurigdrpepper.com"
+    },
+    {
+      "name": "Republic Services",
+      "domain": "republicservices.com"
+    },
+    {
+      "name": "Markel Group",
+      "domain": "mklgroup.com"
+    },
+    {
+      "name": "Farmers Insurance Exchange",
+      "domain": "farmers.com"
+    },
+    {
+      "name": "Dominion Energy",
+      "domain": "dominionenergy.com"
+    },
+    {
+      "name": "Land O'Lakes",
+      "domain": "landolakesinc.com"
+    },
+    {
+      "name": "IQVIA Holdings",
+      "domain": "iqvia.com"
+    },
+    {
+      "name": "Fox",
+      "domain": "foxcorporation.com"
+    },
+    {
+      "name": "AECOM",
+      "domain": "aecom.com"
+    },
+    {
+      "name": "C.H. Robinson Worldwide",
+      "domain": "chrobinson.com"
+    },
+    {
+      "name": "Bitgo Holdings",
+      "domain": "bitgo.com"
+    },
+    {
+      "name": "United Rentals",
+      "domain": "unitedrentals.com"
+    },
+    {
+      "name": "Ecolab",
+      "domain": "ecolab.com"
+    },
+    {
+      "name": "Illinois Tool Works",
+      "domain": "itw.com"
+    },
+    {
+      "name": "Casey's General Stores",
+      "domain": "caseys.com"
+    },
+    {
+      "name": "Raymond James Financial",
+      "domain": "raymondjames.com"
+    },
+    {
+      "name": "PPG Industries",
+      "domain": "ppg.com"
+    },
+    {
+      "name": "DTE Energy",
+      "domain": "dteenergy.com"
+    },
+    {
+      "name": "Corning",
+      "domain": "corning.com"
+    },
+    {
+      "name": "Principal Financial",
+      "domain": "principal.com"
+    },
+    {
+      "name": "Mutual of Omaha",
+      "domain": "mutualofomaha.com"
+    },
+    {
+      "name": "Kohl's",
+      "domain": "kohls.com"
+    },
+    {
+      "name": "Tractor Supply",
+      "domain": "tractorsupply.com"
+    },
+    {
+      "name": "Whirlpool",
+      "domain": "whirlpoolcorp.com"
+    },
+    {
+      "name": "Fluor",
+      "domain": "fluor.com"
+    },
+    {
+      "name": "Gap",
+      "domain": "gapinc.com"
+    },
+    {
+      "name": "S&P Global",
+      "domain": "spglobal.com"
+    },
+    {
+      "name": "Ally Financial",
+      "domain": "ally.com"
+    },
+    {
+      "name": "Builders FirstSource",
+      "domain": "bldr.com"
+    },
+    {
+      "name": "Sonic Automotive",
+      "domain": "sonicautomotive.com"
+    },
+    {
+      "name": "Stanley Black & Decker",
+      "domain": "stanleyblackanddecker.com"
+    },
+    {
+      "name": "Kenvue",
+      "domain": "kenvue.com"
+    },
+    {
+      "name": "Kyndryl Holdings",
+      "domain": "kyndryl.com"
+    },
+    {
+      "name": "Diamondback Energy",
+      "domain": "diamondbackenergy.com"
+    },
+    {
+      "name": "EchoStar",
+      "domain": "echostar.com"
+    },
+    {
+      "name": "Textron",
+      "domain": "textron.com"
+    },
+    {
+      "name": "Expedia Group",
+      "domain": "expediagroup.com"
+    },
+    {
+      "name": "W.R. Berkley",
+      "domain": "berkley.com"
+    },
+    {
+      "name": "Xcel Energy",
+      "domain": "xcelenergy.com"
+    },
+    {
+      "name": "FirstEnergy",
+      "domain": "firstenergycorp.com"
+    },
+    {
+      "name": "Erie Insurance Group",
+      "domain": "erieinsurance.com"
+    },
+    {
+      "name": "First Citizens BancShares",
+      "domain": "firstcitizens.com"
+    },
+    {
+      "name": "Blackstone",
+      "domain": "blackstone.com"
+    },
+    {
+      "name": "Fidelity National Financial",
+      "domain": "fnf.com"
+    },
+    {
+      "name": "Otis Worldwide",
+      "domain": "otis.com"
+    },
+    {
+      "name": "Amentum Holdings",
+      "domain": "amentum.com"
+    },
+    {
+      "name": "Regeneron Pharmaceuticals",
+      "domain": "regeneron.com"
+    },
+    {
+      "name": "Estée Lauder",
+      "domain": "elcompanies.com"
+    },
+    {
+      "name": "BorgWarner",
+      "domain": "borgwarner.com"
+    },
+    {
+      "name": "Northern Trust",
+      "domain": "northerntrust.com"
+    },
+    {
+      "name": "Viatris",
+      "domain": "viatris.com"
+    },
+    {
+      "name": "MasTec",
+      "domain": "mastec.com"
+    },
+    {
+      "name": "Reliance",
+      "domain": "reliance.com"
+    },
+    {
+      "name": "Western & Southern Financial Group",
+      "domain": "westernsouthern.com"
+    },
+    {
+      "name": "Alaska Air Group",
+      "domain": "alaskaair.com"
+    },
+    {
+      "name": "BrightSpring Health Services",
+      "domain": "brightspringhealth.com"
+    },
+    {
+      "name": "CSX",
+      "domain": "csx.com"
+    },
+    {
+      "name": "LKQ",
+      "domain": "lkqcorp.com"
+    },
+    {
+      "name": "Labcorp Holdings",
+      "domain": "labcorp.com"
+    },
+    {
+      "name": "Arthur J. Gallagher",
+      "domain": "ajg.com"
+    },
+    {
+      "name": "Venture Global",
+      "domain": "ventureglobal.com"
+    },
+    {
+      "name": "DoorDash",
+      "domain": "doordash.com"
+    },
+    {
+      "name": "Sempra",
+      "domain": "sempra.com"
+    },
+    {
+      "name": "DaVita",
+      "domain": "davita.com"
+    },
+    {
+      "name": "Eversource Energy",
+      "domain": "eversource.com"
+    },
+    {
+      "name": "ServiceNow",
+      "domain": "servicenow.com"
+    },
+    {
+      "name": "M&T Bank",
+      "domain": "mtb.com"
+    },
+    {
+      "name": "Henry Schein",
+      "domain": "henryschein.com"
+    },
+    {
+      "name": "GXO Logistics",
+      "domain": "gxo.com"
+    },
+    {
+      "name": "Ball",
+      "domain": "ball.com"
+    },
+    {
+      "name": "Unum Group",
+      "domain": "unum.com"
+    },
+    {
+      "name": "Las Vegas Sands",
+      "domain": "sands.com"
+    },
+    {
+      "name": "Entergy",
+      "domain": "entergy.com"
+    },
+    {
+      "name": "Fifth Third Bancorp",
+      "domain": "53.com"
+    },
+    {
+      "name": "Graybar Electric",
+      "domain": "graybar.com"
+    },
+    {
+      "name": "DXC Technology",
+      "domain": "dxc.technology"
+    },
+    {
+      "name": "Alcoa",
+      "domain": "alcoa.com"
+    },
+    {
+      "name": "Assurant",
+      "domain": "assurant.com"
+    },
+    {
+      "name": "Ryder System",
+      "domain": "ryder.com"
+    },
+    {
+      "name": "Intercontinental Exchange",
+      "domain": "ice.com"
+    },
+    {
+      "name": "Cincinnati Financial",
+      "domain": "cinfin.com"
+    },
+    {
+      "name": "Chewy",
+      "domain": "chewy.com"
+    },
+    {
+      "name": "Community Health Systems",
+      "domain": "chs.net"
+    },
+    {
+      "name": "Huntington Bancshares",
+      "domain": "huntington.com"
+    },
+    {
+      "name": "Huntington Ingalls Industries",
+      "domain": "hii.com"
+    },
+    {
+      "name": "Wayfair",
+      "domain": "wayfair.com"
+    },
+    {
+      "name": "Lumen Technologies",
+      "domain": "lumen.com"
+    },
+    {
+      "name": "Ulta Beauty",
+      "domain": "ulta.com"
+    },
+    {
+      "name": "Crown Holdings",
+      "domain": "crowncork.com"
+    },
+    {
+      "name": "Airbnb",
+      "domain": "airbnb.com"
+    },
+    {
+      "name": "AES",
+      "domain": "aes.com"
+    },
+    {
+      "name": "Norfolk Southern",
+      "domain": "norfolksouthern.com"
+    },
+    {
+      "name": "Public Service Enterprise Group",
+      "domain": "pseg.com"
+    },
+    {
+      "name": "KLA",
+      "domain": "kla.com"
+    },
+    {
+      "name": "Expand Energy",
+      "domain": "expandenergy.com"
+    },
+    {
+      "name": "Hormel Foods",
+      "domain": "hormelfoods.com"
+    },
+    {
+      "name": "Darden Restaurants",
+      "domain": "darden.com"
+    },
+    {
+      "name": "Citizens Financial Group",
+      "domain": "citizensbank.com"
+    },
+    {
+      "name": "Mosaic",
+      "domain": "mosaicco.com"
+    },
+    {
+      "name": "Hilton Worldwide Holdings",
+      "domain": "hilton.com"
+    },
+    {
+      "name": "Air Products & Chemicals",
+      "domain": "airproducts.com"
+    },
+    {
+      "name": "Jacobs Solutions",
+      "domain": "jacobs.com"
+    },
+    {
+      "name": "Vertex Pharmaceuticals",
+      "domain": "vrtx.com"
+    },
+    {
+      "name": "J.B. Hunt Transport Services",
+      "domain": "jbhunt.com"
+    },
+    {
+      "name": "Booz Allen Hamilton Holding",
+      "domain": "boozallen.com"
+    },
+    {
+      "name": "Williams",
+      "domain": "williams.com"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "domain": "chipotle.com"
+    },
+    {
+      "name": "Yum China Holdings",
+      "domain": "yumchina.com"
+    },
+    {
+      "name": "Oscar Health",
+      "domain": "hioscar.com"
+    },
+    {
+      "name": "Hershey",
+      "domain": "thehersheycompany.com"
+    },
+    {
+      "name": "Motorola Solutions",
+      "domain": "motorolasolutions.com"
+    },
+    {
+      "name": "Equitable Holdings",
+      "domain": "equitableholdings.com"
+    },
+    {
+      "name": "Avis Budget Group",
+      "domain": "avisbudgetgroup.com"
+    },
+    {
+      "name": "Conagra Brands",
+      "domain": "conagrabrands.com"
+    },
+    {
+      "name": "Baxter International",
+      "domain": "baxter.com"
+    },
+    {
+      "name": "Burlington Stores",
+      "domain": "burlingtoninvestors.com"
+    },
+    {
+      "name": "Caesars Entertainment",
+      "domain": "caesars.com"
+    },
+    {
+      "name": "Owens Corning",
+      "domain": "owenscorning.com"
+    },
+    {
+      "name": "KeyCorp",
+      "domain": "key.com"
+    },
+    {
+      "name": "Thrivent Financial",
+      "domain": "thrivent.com"
+    },
+    {
+      "name": "Westlake",
+      "domain": "westlake.com"
+    },
+    {
+      "name": "Westinghouse Air Brake",
+      "domain": "wabteccorp.com"
+    },
+    {
+      "name": "Molson Coors Beverage",
+      "domain": "molsoncoors.com"
+    },
+    {
+      "name": "Lululemon athletica",
+      "domain": "lululemon.com"
+    },
+    {
+      "name": "FM",
+      "domain": "fm.com"
+    },
+    {
+      "name": "Ebay",
+      "domain": "ebayinc.com"
+    },
+    {
+      "name": "Expeditors Intl. of Washington",
+      "domain": "expeditors.com"
+    },
+    {
+      "name": "Quest Diagnostics",
+      "domain": "questdiagnostics.com"
+    },
+    {
+      "name": "Analog Devices",
+      "domain": "analog.com"
+    },
+    {
+      "name": "Andersons",
+      "domain": "andersonsinc.com"
+    },
+    {
+      "name": "Gold.com",
+      "domain": "gold.com"
+    },
+    {
+      "name": "Toll Brothers",
+      "domain": "tollbrothers.com"
+    },
+    {
+      "name": "International Flavors & Fragrances",
+      "domain": "iff.com"
+    },
+    {
+      "name": "Welltower",
+      "domain": "welltower.com"
+    },
+    {
+      "name": "Jefferies Financial Group",
+      "domain": "jefferies.com"
+    },
+    {
+      "name": "Autoliv",
+      "domain": "autoliv.com"
+    },
+    {
+      "name": "Mohawk Industries",
+      "domain": "mohawkind.com"
+    },
+    {
+      "name": "Delek US Holdings",
+      "domain": "delekus.com"
+    },
+    {
+      "name": "Fidelity National Information (FIS)",
+      "domain": "fisglobal.com"
+    },
+    {
+      "name": "Accendra Health",
+      "domain": "accendrahealth.com"
+    },
+    {
+      "name": "American Tower",
+      "domain": "americantower.com"
+    },
+    {
+      "name": "NVR",
+      "domain": "nvrinc.com"
+    },
+    {
+      "name": "Interactive Brokers Group",
+      "domain": "interactivebrokers.com"
+    },
+    {
+      "name": "Oshkosh",
+      "domain": "oshkoshcorp.com"
+    },
+    {
+      "name": "Cintas",
+      "domain": "cintas.com"
+    },
+    {
+      "name": "Campbell's",
+      "domain": "thecampbellscompany.com"
+    },
+    {
+      "name": "Vertiv Holdings",
+      "domain": "vertiv.com"
+    },
+    {
+      "name": "Global Payments",
+      "domain": "globalpaymentsinc.com"
+    },
+    {
+      "name": "Constellation Brands",
+      "domain": "cbrands.com"
+    },
+    {
+      "name": "AGCO",
+      "domain": "agcocorp.com"
+    },
+    {
+      "name": "Intuitive Surgical",
+      "domain": "intuitive.com"
+    },
+    {
+      "name": "Ace Hardware",
+      "domain": "acehardware.com"
+    },
+    {
+      "name": "Dana",
+      "domain": "dana.com"
+    },
+    {
+      "name": "Biogen",
+      "domain": "biogen.com"
+    },
+    {
+      "name": "News Corp.",
+      "domain": "newscorp.com"
+    },
+    {
+      "name": "Concentrix",
+      "domain": "concentrix.com"
+    },
+    {
+      "name": "WEC Energy Group",
+      "domain": "wecenergygroup.com"
+    },
+    {
+      "name": "VF",
+      "domain": "vfc.com"
+    },
+    {
+      "name": "Seaboard",
+      "domain": "seaboardcorp.com"
+    },
+    {
+      "name": "Icahn Enterprises",
+      "domain": "ielp.com"
+    },
+    {
+      "name": "Regions Financial",
+      "domain": "regions.com"
+    },
+    {
+      "name": "Thor Industries",
+      "domain": "thorindustries.com"
+    },
+    {
+      "name": "Workday",
+      "domain": "workday.com"
+    },
+    {
+      "name": "Celanese",
+      "domain": "celanese.com"
+    },
+    {
+      "name": "Western Digital",
+      "domain": "westerndigital.com"
+    },
+    {
+      "name": "QVC Group",
+      "domain": "qvcgrp.com"
+    },
+    {
+      "name": "Zoetis",
+      "domain": "zoetis.com"
+    },
+    {
+      "name": "CenterPoint Energy",
+      "domain": "centerpointenergy.com"
+    },
+    {
+      "name": "Equinix",
+      "domain": "equinix.com"
+    },
+    {
+      "name": "Palo Alto Networks",
+      "domain": "paloaltonetworks.com"
+    },
+    {
+      "name": "APA",
+      "domain": "apacorp.com"
+    },
+    {
+      "name": "Old Republic International",
+      "domain": "oldrepublic.com"
+    },
+    {
+      "name": "Comfort Systems USA",
+      "domain": "comfortsystemsusa.com"
+    },
+    {
+      "name": "JetBlue Airways",
+      "domain": "jetblue.com"
+    },
+    {
+      "name": "PPL",
+      "domain": "pplweb.com"
+    },
+    {
+      "name": "Xylem",
+      "domain": "xylem.com"
+    },
+    {
+      "name": "Arista Networks",
+      "domain": "arista.com"
+    },
+    {
+      "name": "Packaging Corp. of America",
+      "domain": "packagingcorp.com"
+    },
+    {
+      "name": "PVH",
+      "domain": "pvh.com"
+    },
+    {
+      "name": "Ovintiv",
+      "domain": "ovintiv.com"
+    },
+    {
+      "name": "Avery Dennison",
+      "domain": "averydennison.com"
+    },
+    {
+      "name": "TransDigm Group",
+      "domain": "transdigm.com"
+    },
+    {
+      "name": "Sprouts Farmers Market",
+      "domain": "sprouts.com"
+    },
+    {
+      "name": "Prologis",
+      "domain": "prologis.com"
+    },
+    {
+      "name": "Franklin Templeton",
+      "domain": "franklintempleton.com"
+    },
+    {
+      "name": "Eastman Chemical",
+      "domain": "eastman.com"
+    },
+    {
+      "name": "ABM Industries",
+      "domain": "abm.com"
+    },
+    {
+      "name": "NOV",
+      "domain": "nov.com"
+    },
+    {
+      "name": "J.M. Smucker",
+      "domain": "jmsmucker.com"
+    },
+    {
+      "name": "Securian Financial Group",
+      "domain": "securian.com"
+    },
+    {
+      "name": "EQT",
+      "domain": "eqt.com"
+    },
+    {
+      "name": "CACI International",
+      "domain": "caci.com"
+    },
+    {
+      "name": "Graphic Packaging Holding",
+      "domain": "graphicpkg.com"
+    },
+    {
+      "name": "Advance Auto Parts",
+      "domain": "advanceautoparts.com"
+    },
+    {
+      "name": "Optimum Communications",
+      "domain": "optimum.com"
+    },
+    {
+      "name": "Sirius XM Holdings",
+      "domain": "siriusxm.com"
+    },
+    {
+      "name": "CMS Energy",
+      "domain": "cmsenergy.com"
+    },
+    {
+      "name": "Hertz Global Holdings",
+      "domain": "hertz.com"
+    },
+    {
+      "name": "Ameren",
+      "domain": "amereninvestors.com"
+    },
+    {
+      "name": "Rockwell Automation",
+      "domain": "rockwellautomation.com"
+    },
+    {
+      "name": "Solventum",
+      "domain": "solventum.com"
+    },
+    {
+      "name": "Monster Beverage",
+      "domain": "monsterbevcorp.com"
+    },
+    {
+      "name": "Nasdaq",
+      "domain": "nasdaq.com"
+    },
+    {
+      "name": "Howmet Aerospace",
+      "domain": "howmet.com"
+    },
+    {
+      "name": "Insight Enterprises",
+      "domain": "insight.com"
+    },
+    {
+      "name": "Zimmer Biomet Holdings",
+      "domain": "zimmerbiomet.com"
+    },
+    {
+      "name": "Yum Brands",
+      "domain": "yum.com"
+    },
+    {
+      "name": "Fastenal",
+      "domain": "fastenal.com"
+    },
+    {
+      "name": "Marvell Technology",
+      "domain": "marvell.com"
+    },
+    {
+      "name": "Voya Financial",
+      "domain": "voya.com"
+    },
+    {
+      "name": "American Financial Group",
+      "domain": "afginc.com"
+    },
+    {
+      "name": "Post Holdings",
+      "domain": "postholdings.com"
+    },
+    {
+      "name": "XPO",
+      "domain": "xpo.com"
+    },
+    {
+      "name": "DuPont",
+      "domain": "dupont.com"
+    },
+    {
+      "name": "Sanmina",
+      "domain": "sanmina.com"
+    },
+    {
+      "name": "Taylor Morrison Home",
+      "domain": "taylormorrison.com"
+    },
+    {
+      "name": "Dover",
+      "domain": "dovercorporation.com"
+    },
+    {
+      "name": "Vulcan Materials",
+      "domain": "vulcanmaterials.com"
+    },
+    {
+      "name": "APi Group",
+      "domain": "apigroupcorp.com"
+    },
+    {
+      "name": "Roper Technologies",
+      "domain": "ropertech.com"
+    },
+    {
+      "name": "KBR",
+      "domain": "kbr.com"
+    },
+    {
+      "name": "Sonoco Products",
+      "domain": "sonoco.com"
+    },
+    {
+      "name": "Williams-Sonoma",
+      "domain": "williams-sonomainc.com"
+    },
+    {
+      "name": "Commercial Metals",
+      "domain": "cmc.com"
+    },
+    {
+      "name": "Moody's",
+      "domain": "moodys.com"
+    },
+    {
+      "name": "Continental Resources",
+      "domain": "clr.com"
+    },
+    {
+      "name": "Ingersoll Rand",
+      "domain": "irco.com"
+    },
+    {
+      "name": "Core & Main",
+      "domain": "coreandmain.com"
+    },
+    {
+      "name": "Coterra Energy",
+      "domain": "coterra.com"
+    },
+    {
+      "name": "Primoris Services",
+      "domain": "prim.com"
+    },
+    {
+      "name": "Masco",
+      "domain": "masco.com"
+    },
+    {
+      "name": "Somnigroup International",
+      "domain": "somnigroup.com"
+    },
+    {
+      "name": "Resideo Technologies",
+      "domain": "resideo.com"
+    }
+  ]
+}

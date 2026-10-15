@@ -4,6 +4,13 @@ import { spawnSync } from "node:child_process";
 import { mkdtemp, readFile, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { PACKAGE_VERSION } from "../src/version.mjs";
+
+test('prints the installed package version without DNS work', () => {
+  const run = spawnSync(process.execPath, ['bin/vendorprint.mjs', '--version'], { cwd: new URL('..', import.meta.url), encoding: 'utf8' });
+  assert.equal(run.status, 0);
+  assert.equal(run.stdout.trim(), PACKAGE_VERSION);
+});
 
 test("documents result-first output and reserves --full for diagnostics", () => {
   const run = spawnSync(

@@ -1,5 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { scanDomains, scanDomainEvents } from "../src/scanner.mjs";
+import { PACKAGE_VERSION } from "../src/version.mjs";
+import { SIGNATURE_CATALOG_VERSION } from "../src/signature-registry.mjs";
 import {
   compactEvent,
   compactReport,
@@ -140,10 +143,11 @@ test("result-first output retains security and ITSM profile categories", () => {
   });
 });
 
-test("compact reports and events omit methodology and signature diagnostics", () => {
+test("compact reports and events retain versions while omitting scan internals", () => {
   const report = compactReport({
     schemaVersion: "1.2",
     signatureCatalogVersion: "2026.07.29",
+    packageVersion: "0.3.1",
     generatedAt: "2026-07-30T00:00:00.000Z",
     durationMs: 25,
     methodology: { scope: "full detail" },
@@ -152,13 +156,15 @@ test("compact reports and events omit methodology and signature diagnostics", ()
     results: [fullResult()],
   });
   assert.equal("methodology" in report, false);
-  assert.equal("signatureCatalogVersion" in report, false);
+  assert.equal(report.signatureCatalogVersion, "2026.07.29");
+  assert.equal(report.packageVersion, "0.3.1");
   assert.equal("invalidInputs" in report, false);
 
   const event = compactEvent({
     type: "meta",
     schemaVersion: "1.2",
     signatureCatalogVersion: "2026.07.29",
+    packageVersion: "0.3.1",
     generatedAt: "2026-07-30T00:00:00.000Z",
     methodology: { scope: "full detail" },
     summary: { requested: 1, scheduled: 1, invalid: 0 },
@@ -167,6 +173,8 @@ test("compact reports and events omit methodology and signature diagnostics", ()
   assert.deepEqual(event, {
     type: "meta",
     schemaVersion: "1.2",
+    packageVersion: "0.3.1",
+    signatureCatalogVersion: "2026.07.29",
     generatedAt: "2026-07-30T00:00:00.000Z",
     summary: { requested: 1, scheduled: 1, invalid: 0 },
   });
@@ -211,4 +219,21 @@ test("tolerates only a final partial NDJSON line after interruption", () => {
     () => parseNdjsonCheckpoint('{"broken"\n{"type":"summary"}\n'),
     /line 1/,
   );
+});
+
+test("compact output never assigns today’s versions to historical input", () => {
+  const event = compactEvent({ type: "summary", schemaVersion: "1.1", summary: {} });
+  assert.equal("packageVersion" in event, false);
+  assert.equal("signatureCatalogVersion" in event, false);
+});
+
+test('library reports and compact streaming metadata identify the producing package', async () => {
+  const report = compactReport(await scanDomains([]));
+  assert.equal(report.packageVersion, PACKAGE_VERSION);
+  assert.equal(report.signatureCatalogVersion, SIGNATURE_CATALOG_VERSION);
+  for await (const raw of scanDomainEvents([])) {
+    const event = compactEvent(raw);
+    assert.equal(event.packageVersion, PACKAGE_VERSION);
+    assert.equal(event.signatureCatalogVersion, SIGNATURE_CATALOG_VERSION);
+  }
 });

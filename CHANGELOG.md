@@ -1,7 +1,9 @@
 # Changelog
 
-## 0.4.0 — prepared for release
+## 0.4.0
 
+- Preserve package and catalog versions in compact JSON and NDJSON metadata.
+- Align public documentation links and publish a reproducible coverage workflow.
 - Detect Vanta, SafeBase, and Drata trust-center CNAMEs with narrowly scoped evidence.
   Probe `trust` in every mode and `security`/`trustcenter` in balanced/full mode,
   retaining the 80-attempt ceiling. Add a supplemental 1,000-domain DNS study.

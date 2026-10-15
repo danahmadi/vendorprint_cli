@@ -1,0 +1,4009 @@
+{
+  "id": "software-1000",
+  "title": "Business-software cohort",
+  "source": "https://www.saasmag.com/saas-1000-2021/",
+  "scope": "Established business software / SaaS seed cohort, including midmarket. Source is a historical 2021 ranking, not current headcount or independent verification of enterprise sales. Acquired brands and older domains remain; domains are not necessarily distinct corporate parents. DNS is queried live.",
+  "selection": "First 1,000 distinct normalized domains ranked by source historical employee count after exclusions; 800 discovery / 200 holdout assigned by SHA-256 domain order before scanning.",
+  "rows": [
+    {
+      "name": "15Five",
+      "domain": "15five.com"
+    },
+    {
+      "name": "1Nebula",
+      "domain": "1nebula.com"
+    },
+    {
+      "name": "1Password",
+      "domain": "1password.com"
+    },
+    {
+      "name": "2Checkout",
+      "domain": "2checkout.com"
+    },
+    {
+      "name": "360Learning",
+      "domain": "360learning.com"
+    },
+    {
+      "name": "3CX Phone System",
+      "domain": "3cx.com"
+    },
+    {
+      "name": "6sense",
+      "domain": "6sense.com"
+    },
+    {
+      "name": "8x8",
+      "domain": "8x8.com"
+    },
+    {
+      "name": "Accela",
+      "domain": "accela.com"
+    },
+    {
+      "name": "Accelevents",
+      "domain": "accelevents.com"
+    },
+    {
+      "name": "Accelo",
+      "domain": "accelo.com"
+    },
+    {
+      "name": "Accurent",
+      "domain": "accruent.com"
+    },
+    {
+      "name": "Achievers",
+      "domain": "achievers.com"
+    },
+    {
+      "name": "Acquia",
+      "domain": "acquia.com"
+    },
+    {
+      "name": "Act! CRM (formerly SwiftPage)",
+      "domain": "act.com"
+    },
+    {
+      "name": "ActiveCampaign",
+      "domain": "activecampaign.com"
+    },
+    {
+      "name": "ActivTrak",
+      "domain": "activtrak.com"
+    },
+    {
+      "name": "Acumatica",
+      "domain": "acumatica.com"
+    },
+    {
+      "name": "Aderant",
+      "domain": "aderant.com"
+    },
+    {
+      "name": "AdRoll",
+      "domain": "adroll.com"
+    },
+    {
+      "name": "AdvancedMD",
+      "domain": "advancedmd.com"
+    },
+    {
+      "name": "Adverity",
+      "domain": "adverity.com"
+    },
+    {
+      "name": "Aeries Software",
+      "domain": "aeries.com"
+    },
+    {
+      "name": "Aerospike",
+      "domain": "aerospike.com"
+    },
+    {
+      "name": "AgileCRM",
+      "domain": "agilecrm.com"
+    },
+    {
+      "name": "Agiloft",
+      "domain": "agiloft.com"
+    },
+    {
+      "name": "AgoraPulse",
+      "domain": "agorapulse.com"
+    },
+    {
+      "name": "Aha!",
+      "domain": "aha.io"
+    },
+    {
+      "name": "Ahrefs",
+      "domain": "ahrefs.com"
+    },
+    {
+      "name": "Aircall",
+      "domain": "aircall.io"
+    },
+    {
+      "name": "AirParrot",
+      "domain": "airsquirrels.com"
+    },
+    {
+      "name": "Akamai",
+      "domain": "akamai.com"
+    },
+    {
+      "name": "Alchemer (formerly SurveyGizmo)",
+      "domain": "alchemer.com"
+    },
+    {
+      "name": "ALEKS",
+      "domain": "aleks.com"
+    },
+    {
+      "name": "Highland Alfresco",
+      "domain": "alfresco.com"
+    },
+    {
+      "name": "Algolia",
+      "domain": "algolia.com"
+    },
+    {
+      "name": "Allbound",
+      "domain": "allbound.com"
+    },
+    {
+      "name": "Allego",
+      "domain": "allego.com"
+    },
+    {
+      "name": "Allocadia",
+      "domain": "allocadia.com"
+    },
+    {
+      "name": "Alpha Anywhere",
+      "domain": "alphasoftware.com"
+    },
+    {
+      "name": "Alteryx",
+      "domain": "alteryx.com"
+    },
+    {
+      "name": "Alyce",
+      "domain": "alyce.com"
+    },
+    {
+      "name": "Ambition",
+      "domain": "ambition.com"
+    },
+    {
+      "name": "Amplitude Analytics",
+      "domain": "amplitude.com"
+    },
+    {
+      "name": "Anaplan",
+      "domain": "anaplan.com"
+    },
+    {
+      "name": "Any.do",
+      "domain": "any.do"
+    },
+    {
+      "name": "AnyDesk",
+      "domain": "anydesk.com"
+    },
+    {
+      "name": "Aplos",
+      "domain": "aplos.com"
+    },
+    {
+      "name": "Apollo.io (Formerly ZenProspect)",
+      "domain": "apollo.io"
+    },
+    {
+      "name": "App Annie",
+      "domain": "appannie.com"
+    },
+    {
+      "name": "AppCues",
+      "domain": "appcues.com"
+    },
+    {
+      "name": "AppDirect",
+      "domain": "appdirect.com"
+    },
+    {
+      "name": "AppFolio",
+      "domain": "appfolio.com"
+    },
+    {
+      "name": "AppFollow",
+      "domain": "appfollow.io"
+    },
+    {
+      "name": "Appian",
+      "domain": "appian.com"
+    },
+    {
+      "name": "Applause",
+      "domain": "applause.com"
+    },
+    {
+      "name": "Applitools",
+      "domain": "applitools.com"
+    },
+    {
+      "name": "AppointmentPlus",
+      "domain": "appointment-plus.com"
+    },
+    {
+      "name": "Appointy",
+      "domain": "appointy.com"
+    },
+    {
+      "name": "AppSealing",
+      "domain": "appsealing.com"
+    },
+    {
+      "name": "AppsFlyer",
+      "domain": "appsflyer.com"
+    },
+    {
+      "name": "Apptio",
+      "domain": "apptio.com"
+    },
+    {
+      "name": "Apptivo",
+      "domain": "apptivo.com"
+    },
+    {
+      "name": "Appypie",
+      "domain": "appypie.com"
+    },
+    {
+      "name": "AppZen",
+      "domain": "appzen.com"
+    },
+    {
+      "name": "APS Payroll",
+      "domain": "apspayroll.com"
+    },
+    {
+      "name": "ArangoDB",
+      "domain": "arangodb.com"
+    },
+    {
+      "name": "ARCHIBUS",
+      "domain": "archibus.com"
+    },
+    {
+      "name": "ArchiveSocial",
+      "domain": "archivesocial.com"
+    },
+    {
+      "name": "Arena Solutions",
+      "domain": "arenasolutions.com"
+    },
+    {
+      "name": "Aria Systems",
+      "domain": "ariasystems.com"
+    },
+    {
+      "name": "Ariba",
+      "domain": "ariba.com"
+    },
+    {
+      "name": "Artesian Solutions",
+      "domain": "artesian.co"
+    },
+    {
+      "name": "Articulate",
+      "domain": "articulate.com"
+    },
+    {
+      "name": "Asana",
+      "domain": "asana.com"
+    },
+    {
+      "name": "AscendixRE",
+      "domain": "ascendix.com"
+    },
+    {
+      "name": "AskNicely",
+      "domain": "asknicely.com"
+    },
+    {
+      "name": "Aspire Technologies",
+      "domain": "aspiretechnology.com"
+    },
+    {
+      "name": "Atera",
+      "domain": "atera.com"
+    },
+    {
+      "name": "athenahealth",
+      "domain": "athenahealth.com"
+    },
+    {
+      "name": "Atlassian",
+      "domain": "atlassian.com"
+    },
+    {
+      "name": "Attentive",
+      "domain": "attentive.ai"
+    },
+    {
+      "name": "Author-It",
+      "domain": "author-it.com"
+    },
+    {
+      "name": "Automation Anywhere",
+      "domain": "automationanywhere.com"
+    },
+    {
+      "name": "Automattic",
+      "domain": "automattic.com"
+    },
+    {
+      "name": "Avaamo",
+      "domain": "avaamo.com"
+    },
+    {
+      "name": "Avalara",
+      "domain": "avalara.com"
+    },
+    {
+      "name": "Avature",
+      "domain": "avature.net"
+    },
+    {
+      "name": "AvidXchange",
+      "domain": "avidxchange.com"
+    },
+    {
+      "name": "Avionte",
+      "domain": "avionte.com"
+    },
+    {
+      "name": "Awardco",
+      "domain": "award.co"
+    },
+    {
+      "name": "aweber",
+      "domain": "aweber.com"
+    },
+    {
+      "name": "Axosoft",
+      "domain": "axosoft.com"
+    },
+    {
+      "name": "backblaze",
+      "domain": "backblaze.com"
+    },
+    {
+      "name": "Bamboo HR",
+      "domain": "bamboohr.com"
+    },
+    {
+      "name": "Bananatag",
+      "domain": "bananatag.com"
+    },
+    {
+      "name": "Bandwidth.com",
+      "domain": "bandwidth.com"
+    },
+    {
+      "name": "Basecamp",
+      "domain": "basecamp.com"
+    },
+    {
+      "name": "BazaarVoice",
+      "domain": "bazaarvoice.com"
+    },
+    {
+      "name": "beekeeper",
+      "domain": "beekeeper.io"
+    },
+    {
+      "name": "Benchmark Email",
+      "domain": "benchmarkemail.com"
+    },
+    {
+      "name": "BetterCloud",
+      "domain": "bettercloud.com"
+    },
+    {
+      "name": "BetterWorks",
+      "domain": "betterworks.com"
+    },
+    {
+      "name": "BigCommerce",
+      "domain": "bigcommerce.com"
+    },
+    {
+      "name": "BigTime",
+      "domain": "bigtime.net"
+    },
+    {
+      "name": "Bill.com",
+      "domain": "bill.com"
+    },
+    {
+      "name": "Birdeye",
+      "domain": "birdeye.com"
+    },
+    {
+      "name": "bitly",
+      "domain": "bitly.com"
+    },
+    {
+      "name": "Bitmovin",
+      "domain": "bitmovin.com"
+    },
+    {
+      "name": "Bitnami by Vmware",
+      "domain": "bitnami.com"
+    },
+    {
+      "name": "Bitrix24",
+      "domain": "bitrix24.com"
+    },
+    {
+      "name": "BiznessApps",
+      "domain": "biznessapps.com"
+    },
+    {
+      "name": "Bizom (formerly Mobisy Technologies)",
+      "domain": "bizom.in"
+    },
+    {
+      "name": "Bizzabo",
+      "domain": "bizzabo.com"
+    },
+    {
+      "name": "BlackLine",
+      "domain": "blackline.com"
+    },
+    {
+      "name": "Bloomerang",
+      "domain": "bloomerang.co"
+    },
+    {
+      "name": "Bloomfire",
+      "domain": "bloomfire.com"
+    },
+    {
+      "name": "Bluebeam Revu",
+      "domain": "bluebeam.com"
+    },
+    {
+      "name": "Bluecore",
+      "domain": "bluecore.com"
+    },
+    {
+      "name": "Bluehost",
+      "domain": "bluehost.com"
+    },
+    {
+      "name": "Path LMS",
+      "domain": "blueskyelearn.com"
+    },
+    {
+      "name": "Bluesnap",
+      "domain": "bluesnap.com"
+    },
+    {
+      "name": "Board International",
+      "domain": "board.com"
+    },
+    {
+      "name": "Boardable",
+      "domain": "boardable.com"
+    },
+    {
+      "name": "Bombora",
+      "domain": "bombora.com"
+    },
+    {
+      "name": "Bonusly",
+      "domain": "bonus.ly"
+    },
+    {
+      "name": "BoomTown",
+      "domain": "boomtownroi.com"
+    },
+    {
+      "name": "Botkeeper",
+      "domain": "botkeeper.com"
+    },
+    {
+      "name": "Brainshark",
+      "domain": "brainshark.com"
+    },
+    {
+      "name": "Brand24",
+      "domain": "brand24.com"
+    },
+    {
+      "name": "Brandfolder",
+      "domain": "brandfolder.com"
+    },
+    {
+      "name": "BrandMaker",
+      "domain": "brandmaker.com"
+    },
+    {
+      "name": "BrandpointHUB",
+      "domain": "brandpoint.com"
+    },
+    {
+      "name": "BrandsEye",
+      "domain": "brandseye.com"
+    },
+    {
+      "name": "Brandwatch",
+      "domain": "brandwatch.com"
+    },
+    {
+      "name": "Braze",
+      "domain": "braze.com"
+    },
+    {
+      "name": "BricsCAD",
+      "domain": "bricsys.com"
+    },
+    {
+      "name": "Brightcove",
+      "domain": "brightcove.com"
+    },
+    {
+      "name": "Brightflag",
+      "domain": "brightflag.com"
+    },
+    {
+      "name": "Brightidea",
+      "domain": "brightidea.com"
+    },
+    {
+      "name": "BrightLocal",
+      "domain": "brightlocal.com"
+    },
+    {
+      "name": "Bright Pattern",
+      "domain": "brightpattern.com"
+    },
+    {
+      "name": "Broadbean",
+      "domain": "broadbean.com"
+    },
+    {
+      "name": "Broadlume (formerly AdHawk)",
+      "domain": "broadlume.com"
+    },
+    {
+      "name": "Broadly",
+      "domain": "broadly.com"
+    },
+    {
+      "name": "Buffer",
+      "domain": "buffer.com"
+    },
+    {
+      "name": "BugSnag",
+      "domain": "bugsnag.com"
+    },
+    {
+      "name": "BuilderTREND",
+      "domain": "buildertrend.com"
+    },
+    {
+      "name": "Building Engines",
+      "domain": "buildingengines.com"
+    },
+    {
+      "name": "Buildium",
+      "domain": "buildium.com"
+    },
+    {
+      "name": "Bullhorn",
+      "domain": "bullhorn.com"
+    },
+    {
+      "name": "Burrelles",
+      "domain": "burrelles.com"
+    },
+    {
+      "name": "Bynder",
+      "domain": "bynder.com"
+    },
+    {
+      "name": "Calabrio",
+      "domain": "calabrio.com"
+    },
+    {
+      "name": "Calendly",
+      "domain": "calendly.com"
+    },
+    {
+      "name": "Call Box",
+      "domain": "callbox.com"
+    },
+    {
+      "name": "CallRail",
+      "domain": "callrail.com"
+    },
+    {
+      "name": "CallTrackingMetrics",
+      "domain": "calltrackingmetrics.com"
+    },
+    {
+      "name": "CampusNexus Student",
+      "domain": "campusmanagement.com"
+    },
+    {
+      "name": "Flight by Canto",
+      "domain": "canto.com"
+    },
+    {
+      "name": "Canva",
+      "domain": "canva.com"
+    },
+    {
+      "name": "CaptivateIQ",
+      "domain": "captivateiq.com"
+    },
+    {
+      "name": "Carlson Civil",
+      "domain": "carlsonsw.com"
+    },
+    {
+      "name": "Carta",
+      "domain": "carta.com"
+    },
+    {
+      "name": "CARTO",
+      "domain": "carto.com"
+    },
+    {
+      "name": "CASA Retail AI",
+      "domain": "casaretail.ai"
+    },
+    {
+      "name": "casavi",
+      "domain": "casavi.de"
+    },
+    {
+      "name": "Caspio",
+      "domain": "caspio.com"
+    },
+    {
+      "name": "cb insights",
+      "domain": "cbinsights.com"
+    },
+    {
+      "name": "CDN77.com",
+      "domain": "cdn77.com"
+    },
+    {
+      "name": "Celonis",
+      "domain": "celonis.com"
+    },
+    {
+      "name": "Celtra",
+      "domain": "celtra.com"
+    },
+    {
+      "name": "Celtx",
+      "domain": "celtx.com"
+    },
+    {
+      "name": "CELUM",
+      "domain": "celum.com"
+    },
+    {
+      "name": "Centercode",
+      "domain": "centercode.com"
+    },
+    {
+      "name": "Centrical (formerly GamEffective)",
+      "domain": "centrical.com"
+    },
+    {
+      "name": "Centrify",
+      "domain": "centrify.com"
+    },
+    {
+      "name": "Ceros",
+      "domain": "ceros.com"
+    },
+    {
+      "name": "Certain Event Automation",
+      "domain": "certain.com"
+    },
+    {
+      "name": "Ceterus",
+      "domain": "ceterus.com"
+    },
+    {
+      "name": "Changepoint",
+      "domain": "changepoint.com"
+    },
+    {
+      "name": "ChannelAdvisor",
+      "domain": "channeladvisor.com"
+    },
+    {
+      "name": "ChannelEngine.com",
+      "domain": "channelengine.com"
+    },
+    {
+      "name": "Chargebee",
+      "domain": "chargebee.com"
+    },
+    {
+      "name": "Chargify",
+      "domain": "chargify.com"
+    },
+    {
+      "name": "Chartbeat",
+      "domain": "chartbeat.com"
+    },
+    {
+      "name": "ChartMogul",
+      "domain": "chartmogul.com"
+    },
+    {
+      "name": "Chatmeter",
+      "domain": "chatmeter.com"
+    },
+    {
+      "name": "Chef",
+      "domain": "chef.io"
+    },
+    {
+      "name": "Chili Piper",
+      "domain": "chilipiper.com"
+    },
+    {
+      "name": "Choozle",
+      "domain": "choozle.com"
+    },
+    {
+      "name": "Chorus.ai",
+      "domain": "chorus.ai"
+    },
+    {
+      "name": "ChurnZero",
+      "domain": "churnzero.net"
+    },
+    {
+      "name": "CircleCI",
+      "domain": "circleci.com"
+    },
+    {
+      "name": "Cirrus Insight",
+      "domain": "cirrusinsight.com"
+    },
+    {
+      "name": "CivilGEO, Inc.",
+      "domain": "civilgeo.com"
+    },
+    {
+      "name": "Clarabridge",
+      "domain": "clarabridge.com"
+    },
+    {
+      "name": "Clari",
+      "domain": "clari.com"
+    },
+    {
+      "name": "Clarizen",
+      "domain": "clarizen.com"
+    },
+    {
+      "name": "Classy",
+      "domain": "classy.org"
+    },
+    {
+      "name": "Clearbit",
+      "domain": "clearbit.com"
+    },
+    {
+      "name": "ClearCompany",
+      "domain": "clearcompany.com"
+    },
+    {
+      "name": "Cleo",
+      "domain": "cleo.com"
+    },
+    {
+      "name": "CleverTap",
+      "domain": "clevertap.com"
+    },
+    {
+      "name": "ClickDimensions",
+      "domain": "clickdimensions.com"
+    },
+    {
+      "name": "ClickFunnels",
+      "domain": "clickfunnels.com"
+    },
+    {
+      "name": "ClickMeeting",
+      "domain": "clickmeeting.com"
+    },
+    {
+      "name": "ClickUp",
+      "domain": "clickup.com"
+    },
+    {
+      "name": "Close",
+      "domain": "close.com"
+    },
+    {
+      "name": "Cloud Elements",
+      "domain": "cloud-elements.com"
+    },
+    {
+      "name": "Cloudera",
+      "domain": "cloudera.com"
+    },
+    {
+      "name": "CloudFlare",
+      "domain": "cloudflare.com"
+    },
+    {
+      "name": "CloudNine",
+      "domain": "cloudninediscovery.com"
+    },
+    {
+      "name": "CloudPay",
+      "domain": "cloudpay.net"
+    },
+    {
+      "name": "CloudSense",
+      "domain": "cloudsense.com"
+    },
+    {
+      "name": "CloudTalk",
+      "domain": "cloudtalk.io"
+    },
+    {
+      "name": "Cloudways",
+      "domain": "cloudways.com"
+    },
+    {
+      "name": "Code42",
+      "domain": "code42.com"
+    },
+    {
+      "name": "Codecademy",
+      "domain": "codecademy.com"
+    },
+    {
+      "name": "CodeSignal",
+      "domain": "codesignal.com"
+    },
+    {
+      "name": "Cogito",
+      "domain": "cogitocorp.com"
+    },
+    {
+      "name": "Cognism",
+      "domain": "cognism.com"
+    },
+    {
+      "name": "Cohesity",
+      "domain": "cohesity.com"
+    },
+    {
+      "name": "Collibra",
+      "domain": "collibra.com"
+    },
+    {
+      "name": "CompStak",
+      "domain": "compstak.com"
+    },
+    {
+      "name": "Confirmit",
+      "domain": "confirmit.com"
+    },
+    {
+      "name": "Confluence",
+      "domain": "confluence.com"
+    },
+    {
+      "name": "ConnectAndSell",
+      "domain": "connectandsell.com"
+    },
+    {
+      "name": "ConnectWise",
+      "domain": "connectwise.com"
+    },
+    {
+      "name": "Conquer (formerly DialSource)",
+      "domain": "conquer.io"
+    },
+    {
+      "name": "Contify",
+      "domain": "contify.com"
+    },
+    {
+      "name": "Conversica",
+      "domain": "conversica.com"
+    },
+    {
+      "name": "Conversocial",
+      "domain": "conversocial.com"
+    },
+    {
+      "name": "Convertkit",
+      "domain": "convertkit.com"
+    },
+    {
+      "name": "Convoso",
+      "domain": "convoso.com"
+    },
+    {
+      "name": "Copper",
+      "domain": "copper.com"
+    },
+    {
+      "name": "Coralogix",
+      "domain": "coralogix.com"
+    },
+    {
+      "name": "CoSchedule",
+      "domain": "coschedule.com"
+    },
+    {
+      "name": "Couchbase",
+      "domain": "couchbase.com"
+    },
+    {
+      "name": "Coupa",
+      "domain": "coupa.com"
+    },
+    {
+      "name": "Coursera",
+      "domain": "coursera.org"
+    },
+    {
+      "name": "Coveo",
+      "domain": "coveo.com"
+    },
+    {
+      "name": "Creatio",
+      "domain": "creatio.com"
+    },
+    {
+      "name": "Credit Repair Cloud",
+      "domain": "creditrepaircloud.com"
+    },
+    {
+      "name": "Crisp",
+      "domain": "crispthinking.com"
+    },
+    {
+      "name": "Critical Mention",
+      "domain": "criticalmention.com"
+    },
+    {
+      "name": "Culture Amp",
+      "domain": "cultureamp.com"
+    },
+    {
+      "name": "Customer.io",
+      "domain": "customer.io"
+    },
+    {
+      "name": "CustomerGauge",
+      "domain": "customergauge.com"
+    },
+    {
+      "name": "Cvent",
+      "domain": "cvent.com"
+    },
+    {
+      "name": "Cygilant",
+      "domain": "cygilant.com"
+    },
+    {
+      "name": "Dashlane",
+      "domain": "dashlane.com"
+    },
+    {
+      "name": "Databox",
+      "domain": "databox.com"
+    },
+    {
+      "name": "Databricks",
+      "domain": "databricks.com"
+    },
+    {
+      "name": "Datadog",
+      "domain": "datadoghq.com"
+    },
+    {
+      "name": "Dataforce (Formerly Corporate360)",
+      "domain": "dataforcesales.com"
+    },
+    {
+      "name": "Dataiku",
+      "domain": "dataiku.com"
+    },
+    {
+      "name": "DataRobot",
+      "domain": "datarobot.com"
+    },
+    {
+      "name": "DataStax",
+      "domain": "datastax.com"
+    },
+    {
+      "name": "DATEV eG",
+      "domain": "datev.com"
+    },
+    {
+      "name": "Datorama",
+      "domain": "datorama.com"
+    },
+    {
+      "name": "DealerSocket",
+      "domain": "dealersocket.com"
+    },
+    {
+      "name": "DecisionLink",
+      "domain": "decisionlink.com"
+    },
+    {
+      "name": "DecisionPoint",
+      "domain": "decisionpt.com"
+    },
+    {
+      "name": "Deem",
+      "domain": "deem.com"
+    },
+    {
+      "name": "Demandbase",
+      "domain": "demandbase.com"
+    },
+    {
+      "name": "DemandFarm",
+      "domain": "demandfarm.com"
+    },
+    {
+      "name": "Deputy",
+      "domain": "deputy.com"
+    },
+    {
+      "name": "Devolutions",
+      "domain": "devolutions.net"
+    },
+    {
+      "name": "Digicert",
+      "domain": "digicert.com"
+    },
+    {
+      "name": "Digimind Social",
+      "domain": "digimind.com"
+    },
+    {
+      "name": "Digital.ai",
+      "domain": "digital.ai"
+    },
+    {
+      "name": "DigitalOcean",
+      "domain": "digitalocean.com"
+    },
+    {
+      "name": "Digital River",
+      "domain": "digitalriver.com"
+    },
+    {
+      "name": "Docebo",
+      "domain": "docebo.com"
+    },
+    {
+      "name": "DocSend",
+      "domain": "docsend.com"
+    },
+    {
+      "name": "Docusign",
+      "domain": "docusign.com"
+    },
+    {
+      "name": "Domo",
+      "domain": "domo.com"
+    },
+    {
+      "name": "Doodle",
+      "domain": "doodle.com"
+    },
+    {
+      "name": "Doximity",
+      "domain": "doximity.com"
+    },
+    {
+      "name": "Drift",
+      "domain": "drift.com"
+    },
+    {
+      "name": "DroneDeploy",
+      "domain": "dronedeploy.com"
+    },
+    {
+      "name": "DropBox",
+      "domain": "dropbox.com"
+    },
+    {
+      "name": "Druva inSync",
+      "domain": "druva.com"
+    },
+    {
+      "name": "Dubber",
+      "domain": "dubber.net"
+    },
+    {
+      "name": "Duda",
+      "domain": "dudamobile.com"
+    },
+    {
+      "name": "Dundas BI",
+      "domain": "dundas.com"
+    },
+    {
+      "name": "Duo Security",
+      "domain": "duo.com"
+    },
+    {
+      "name": "dwolla",
+      "domain": "dwolla.com"
+    },
+    {
+      "name": "Dynatrace",
+      "domain": "dynatrace.com"
+    },
+    {
+      "name": "E2Open",
+      "domain": "e2open.com"
+    },
+    {
+      "name": "Easy Projects",
+      "domain": "easyprojects.net"
+    },
+    {
+      "name": "Easy Software",
+      "domain": "easysoftware.com"
+    },
+    {
+      "name": "EasyVista",
+      "domain": "easyvista.com"
+    },
+    {
+      "name": "eClinicalWorks",
+      "domain": "eclinicalworks.com"
+    },
+    {
+      "name": "EdApp",
+      "domain": "edapp.com"
+    },
+    {
+      "name": "eDesk (formerly xSellco)",
+      "domain": "edesk.com"
+    },
+    {
+      "name": "eFileCabinet",
+      "domain": "efilecabinet.com"
+    },
+    {
+      "name": "eGain",
+      "domain": "egain.com"
+    },
+    {
+      "name": "Egnyte",
+      "domain": "egnyte.com"
+    },
+    {
+      "name": "Elastic",
+      "domain": "elastic.co"
+    },
+    {
+      "name": "elcomCMS",
+      "domain": "elcomcms.com.au"
+    },
+    {
+      "name": "eloomi",
+      "domain": "eloomi.com"
+    },
+    {
+      "name": "Employee Navigator",
+      "domain": "employeenavigator.com"
+    },
+    {
+      "name": "Enable",
+      "domain": "enable.com"
+    },
+    {
+      "name": "Encompass Corporation",
+      "domain": "encompasscorporation.com"
+    },
+    {
+      "name": "Engagedly",
+      "domain": "engagedly.com"
+    },
+    {
+      "name": "Engine Yard",
+      "domain": "engineyard.com"
+    },
+    {
+      "name": "Ensighten",
+      "domain": "ensighten.com"
+    },
+    {
+      "name": "Envoy",
+      "domain": "envoy.com"
+    },
+    {
+      "name": "Estabild AB",
+      "domain": "estabild.com"
+    },
+    {
+      "name": "Eventbrite",
+      "domain": "eventbrite.com"
+    },
+    {
+      "name": "everbridge",
+      "domain": "everbridge.com"
+    },
+    {
+      "name": "Evernote",
+      "domain": "evernote.com"
+    },
+    {
+      "name": "Exago",
+      "domain": "exagoinc.com"
+    },
+    {
+      "name": "EXASOL",
+      "domain": "exasol.com"
+    },
+    {
+      "name": "Cascade Strategy",
+      "domain": "executestrategy.net"
+    },
+    {
+      "name": "Expensify",
+      "domain": "expensify.com"
+    },
+    {
+      "name": "ExperLogix",
+      "domain": "experlogix.com"
+    },
+    {
+      "name": "Fairmarkit",
+      "domain": "fairmarkit.com"
+    },
+    {
+      "name": "Falcon",
+      "domain": "falcon.io"
+    },
+    {
+      "name": "Faraday",
+      "domain": "faraday.io"
+    },
+    {
+      "name": "Fastly",
+      "domain": "fastly.com"
+    },
+    {
+      "name": "FastSpring",
+      "domain": "fastspring.com"
+    },
+    {
+      "name": "FieldEdge",
+      "domain": "fieldedge.com"
+    },
+    {
+      "name": "Figma",
+      "domain": "figma.com"
+    },
+    {
+      "name": "FinancialForce",
+      "domain": "financialforce.com"
+    },
+    {
+      "name": "Fishbowl Inventory",
+      "domain": "fishbowlinventory.com"
+    },
+    {
+      "name": "FishEye",
+      "domain": "fisheye.net"
+    },
+    {
+      "name": "Five9",
+      "domain": "five9.com"
+    },
+    {
+      "name": "Fivetran",
+      "domain": "fivetran.com"
+    },
+    {
+      "name": "Flashtalking",
+      "domain": "flashtalking.com"
+    },
+    {
+      "name": "Flatfile",
+      "domain": "flatfile.io"
+    },
+    {
+      "name": "FloQast",
+      "domain": "floqast.com"
+    },
+    {
+      "name": "Folloze",
+      "domain": "folloze.com"
+    },
+    {
+      "name": "Fond",
+      "domain": "fond.co"
+    },
+    {
+      "name": "FORM MarketX (formerly GoSpotCheck)",
+      "domain": "form.com"
+    },
+    {
+      "name": "Forma.ai",
+      "domain": "forma.ai"
+    },
+    {
+      "name": "FormAssembly",
+      "domain": "formassembly.com"
+    },
+    {
+      "name": "Formstack",
+      "domain": "formstack.com"
+    },
+    {
+      "name": "Forter",
+      "domain": "forter.com"
+    },
+    {
+      "name": "Fountain",
+      "domain": "fountain.com"
+    },
+    {
+      "name": "Foureyes",
+      "domain": "foureyes.io"
+    },
+    {
+      "name": "Foxit PhantomPDF",
+      "domain": "foxitsoftware.com"
+    },
+    {
+      "name": "Framer Studio",
+      "domain": "framer.com"
+    },
+    {
+      "name": "FreeAgent",
+      "domain": "freeagent.com"
+    },
+    {
+      "name": "FreeConferenceCall.com",
+      "domain": "freeconferencecall.com"
+    },
+    {
+      "name": "FreightWaves",
+      "domain": "freightwaves.com"
+    },
+    {
+      "name": "FreshBooks",
+      "domain": "freshbooks.com"
+    },
+    {
+      "name": "Freshworks",
+      "domain": "freshdesk.com"
+    },
+    {
+      "name": "Freshmail",
+      "domain": "freshmail.com"
+    },
+    {
+      "name": "Front",
+      "domain": "frontapp.com"
+    },
+    {
+      "name": "Frontify",
+      "domain": "frontify.com"
+    },
+    {
+      "name": "Fuel Cycle",
+      "domain": "fuelcycle.com"
+    },
+    {
+      "name": "FullContact",
+      "domain": "fullcontact.com"
+    },
+    {
+      "name": "FullStory",
+      "domain": "fullstory.com"
+    },
+    {
+      "name": "Funnel.io",
+      "domain": "funnel.io"
+    },
+    {
+      "name": "G2 Crowd",
+      "domain": "g2crowd.com"
+    },
+    {
+      "name": "Gainsight",
+      "domain": "gainsight.com"
+    },
+    {
+      "name": "GetAccept",
+      "domain": "getaccept.com"
+    },
+    {
+      "name": "Conga",
+      "domain": "getconga.com"
+    },
+    {
+      "name": "Jobber",
+      "domain": "getjobber.com"
+    },
+    {
+      "name": "Postman",
+      "domain": "getpostman.com"
+    },
+    {
+      "name": "GetResponse",
+      "domain": "getresponse.com"
+    },
+    {
+      "name": "Gigya",
+      "domain": "gigya.com"
+    },
+    {
+      "name": "Github",
+      "domain": "github.com"
+    },
+    {
+      "name": "GitLab",
+      "domain": "gitlab.com"
+    },
+    {
+      "name": "Glisser",
+      "domain": "glisser.com"
+    },
+    {
+      "name": "Global Shop Solutions",
+      "domain": "globalshopsolutions.com"
+    },
+    {
+      "name": "GlobalVision",
+      "domain": "globalvisioninc.com"
+    },
+    {
+      "name": "Bridgit Closeout",
+      "domain": "gobridgit.com"
+    },
+    {
+      "name": "Clio",
+      "domain": "goclio.com"
+    },
+    {
+      "name": "GoCo.io, Inc.",
+      "domain": "goco.io"
+    },
+    {
+      "name": "Consensus",
+      "domain": "goconsensus.com"
+    },
+    {
+      "name": "Fastpath",
+      "domain": "gofastpath.com"
+    },
+    {
+      "name": "Lucid Software",
+      "domain": "golucid.co"
+    },
+    {
+      "name": "Gong",
+      "domain": "gong.io"
+    },
+    {
+      "name": "Nitro Pro",
+      "domain": "gonitro.com"
+    },
+    {
+      "name": "GrabCAD Workbench",
+      "domain": "grabcad.com"
+    },
+    {
+      "name": "Gradle",
+      "domain": "gradle.org"
+    },
+    {
+      "name": "Graduway",
+      "domain": "graduway.com"
+    },
+    {
+      "name": "Garfana",
+      "domain": "grafana.com"
+    },
+    {
+      "name": "Green Cloud Defense",
+      "domain": "greenclouddefense.com"
+    },
+    {
+      "name": "Greenhouse Software",
+      "domain": "greenhouse.io"
+    },
+    {
+      "name": "GRIN",
+      "domain": "grin.co"
+    },
+    {
+      "name": "Growbots",
+      "domain": "growbots.com"
+    },
+    {
+      "name": "Growens",
+      "domain": "growens.io"
+    },
+    {
+      "name": "Gryphon Networks",
+      "domain": "gryphonnetworks.com"
+    },
+    {
+      "name": "Guild Education",
+      "domain": "guildeducation.com"
+    },
+    {
+      "name": "Gusto",
+      "domain": "gusto.com"
+    },
+    {
+      "name": "HackerRank",
+      "domain": "hackerrank.com"
+    },
+    {
+      "name": "Happeo",
+      "domain": "happeo.com"
+    },
+    {
+      "name": "HappyFox",
+      "domain": "happyfox.com"
+    },
+    {
+      "name": "HashiCorp",
+      "domain": "hashicorp.com"
+    },
+    {
+      "name": "HealthStream",
+      "domain": "healthstream.com"
+    },
+    {
+      "name": "Heap",
+      "domain": "heapanalytics.com"
+    },
+    {
+      "name": "Hearsay Systems",
+      "domain": "hearsaysystems.com"
+    },
+    {
+      "name": "HelloSign",
+      "domain": "hellosign.com"
+    },
+    {
+      "name": "Help Scout",
+      "domain": "helpscout.net"
+    },
+    {
+      "name": "Helpshift",
+      "domain": "helpshift.com"
+    },
+    {
+      "name": "HelpSystems",
+      "domain": "helpsystems.com"
+    },
+    {
+      "name": "Hevo Data",
+      "domain": "hevodata.com"
+    },
+    {
+      "name": "HG Insights",
+      "domain": "hginsights.com"
+    },
+    {
+      "name": "Highspot",
+      "domain": "highspot.com"
+    },
+    {
+      "name": "Hireology",
+      "domain": "hireology.com"
+    },
+    {
+      "name": "HireVue",
+      "domain": "hirevue.com"
+    },
+    {
+      "name": "Hiver",
+      "domain": "hiverhq.com"
+    },
+    {
+      "name": "Hootsuite",
+      "domain": "hootsuite.com"
+    },
+    {
+      "name": "Hopin",
+      "domain": "hopin.com"
+    },
+    {
+      "name": "Hornbill",
+      "domain": "hornbill.com"
+    },
+    {
+      "name": "Hotelogix",
+      "domain": "hotelogix.com"
+    },
+    {
+      "name": "HotJar",
+      "domain": "hotjar.com"
+    },
+    {
+      "name": "HouseCall Pro",
+      "domain": "housecallpro.com"
+    },
+    {
+      "name": "Hubspot",
+      "domain": "hubspot.com"
+    },
+    {
+      "name": "Hubstaff",
+      "domain": "hubstaff.com"
+    },
+    {
+      "name": "Huddle",
+      "domain": "huddle.com"
+    },
+    {
+      "name": "Humanity",
+      "domain": "humanity.com"
+    },
+    {
+      "name": "ICE Mortgage Technology (Formerly Ellie Mae)",
+      "domain": "icemortgagetechnology.com"
+    },
+    {
+      "name": "Icertis",
+      "domain": "icertis.com"
+    },
+    {
+      "name": "iCIMS",
+      "domain": "icims.com"
+    },
+    {
+      "name": "iContact",
+      "domain": "icontact.com"
+    },
+    {
+      "name": "IdeaScale",
+      "domain": "ideascale.com"
+    },
+    {
+      "name": "Iluminate Education",
+      "domain": "illuminateed.com"
+    },
+    {
+      "name": "iManage",
+      "domain": "imanage.com"
+    },
+    {
+      "name": "Impartner",
+      "domain": "impartner.com"
+    },
+    {
+      "name": "Imperva (Formerly Incapsula)",
+      "domain": "imperva.com"
+    },
+    {
+      "name": "inDinero",
+      "domain": "indinero.com"
+    },
+    {
+      "name": "InetSoft",
+      "domain": "inetsoft.com"
+    },
+    {
+      "name": "inFeedo",
+      "domain": "infeedo.com"
+    },
+    {
+      "name": "Infinite Campus",
+      "domain": "infinitecampus.com"
+    },
+    {
+      "name": "Infinity HR",
+      "domain": "infinitihr.com"
+    },
+    {
+      "name": "Influitive",
+      "domain": "influitive.com"
+    },
+    {
+      "name": "Infobip",
+      "domain": "infobip.com"
+    },
+    {
+      "name": "Ingeniux",
+      "domain": "ingeniux.com"
+    },
+    {
+      "name": "InMotion Hosting",
+      "domain": "inmotionhosting.com"
+    },
+    {
+      "name": "InsideView",
+      "domain": "insideview.com"
+    },
+    {
+      "name": "Insightly",
+      "domain": "insightly.com"
+    },
+    {
+      "name": "InsightSoftware",
+      "domain": "insightsoftware.com"
+    },
+    {
+      "name": "Instabug",
+      "domain": "instabug.com"
+    },
+    {
+      "name": "Instapage",
+      "domain": "instapage.com"
+    },
+    {
+      "name": "Intapp Time",
+      "domain": "intapp.com"
+    },
+    {
+      "name": "Intellect",
+      "domain": "intellect.com"
+    },
+    {
+      "name": "IntelligenceBank DAM",
+      "domain": "intelligencebank.com"
+    },
+    {
+      "name": "Interact Software",
+      "domain": "interactsoftware.com"
+    },
+    {
+      "name": "Interakt",
+      "domain": "interaktco.com"
+    },
+    {
+      "name": "Intercom",
+      "domain": "intercom.com"
+    },
+    {
+      "name": "Intralinks",
+      "domain": "intralinks.com"
+    },
+    {
+      "name": "Invoca",
+      "domain": "invoca.com"
+    },
+    {
+      "name": "IPRO Tech",
+      "domain": "iprotech.com"
+    },
+    {
+      "name": "iSpring QuizMaker",
+      "domain": "ispringsolutions.com"
+    },
+    {
+      "name": "Issuu",
+      "domain": "issuu.com"
+    },
+    {
+      "name": "iterable",
+      "domain": "iterable.com"
+    },
+    {
+      "name": "Ivy Mobility",
+      "domain": "ivymobility.com"
+    },
+    {
+      "name": "iWave",
+      "domain": "iwave.com"
+    },
+    {
+      "name": "IWD",
+      "domain": "iwd.io"
+    },
+    {
+      "name": "j2 Global",
+      "domain": "j2global.com"
+    },
+    {
+      "name": "Jambo (formerly Azalead)",
+      "domain": "jabmo.com"
+    },
+    {
+      "name": "JazzHR",
+      "domain": "jazz.co"
+    },
+    {
+      "name": "Jebbit",
+      "domain": "jebbit.com"
+    },
+    {
+      "name": "Jellyfish",
+      "domain": "jellyfish.co"
+    },
+    {
+      "name": "Jenzabar SONIS",
+      "domain": "jenzabar.com"
+    },
+    {
+      "name": "JetBrains",
+      "domain": "jetbrains.com"
+    },
+    {
+      "name": "Jirav",
+      "domain": "jirav.com"
+    },
+    {
+      "name": "JMP",
+      "domain": "jmp.com"
+    },
+    {
+      "name": "JobDiva",
+      "domain": "jobdiva.com"
+    },
+    {
+      "name": "JobNimbus",
+      "domain": "jobnimbus.com"
+    },
+    {
+      "name": "JobVite",
+      "domain": "jobvite.com"
+    },
+    {
+      "name": "Boulevard",
+      "domain": "joinblvd.com"
+    },
+    {
+      "name": "Jostle",
+      "domain": "jostle.me"
+    },
+    {
+      "name": "JotForm",
+      "domain": "jotform.com"
+    },
+    {
+      "name": "JumpCloud",
+      "domain": "jumpcloud.com"
+    },
+    {
+      "name": "Justworks",
+      "domain": "justworks.com"
+    },
+    {
+      "name": "Kahoot!",
+      "domain": "kahoot.com"
+    },
+    {
+      "name": "Kaseya",
+      "domain": "kaseya.com"
+    },
+    {
+      "name": "Keeper",
+      "domain": "keepersecurity.com"
+    },
+    {
+      "name": "Kentico",
+      "domain": "kentico.com"
+    },
+    {
+      "name": "KeyShot",
+      "domain": "keyshot.com"
+    },
+    {
+      "name": "Kimble PSA",
+      "domain": "kimbleapps.com"
+    },
+    {
+      "name": "Kindful",
+      "domain": "kindful.com"
+    },
+    {
+      "name": "Kinsta",
+      "domain": "kinsta.com"
+    },
+    {
+      "name": "kintone",
+      "domain": "kintone.com"
+    },
+    {
+      "name": "Kissflow Inc.",
+      "domain": "kissflow.com"
+    },
+    {
+      "name": "Klaus",
+      "domain": "klausapp.com"
+    },
+    {
+      "name": "Klaviyo",
+      "domain": "klaviyo.com"
+    },
+    {
+      "name": "Klippa",
+      "domain": "klippa.com"
+    },
+    {
+      "name": "Klue",
+      "domain": "klue.com"
+    },
+    {
+      "name": "Knowbe4",
+      "domain": "knowbe4.com"
+    },
+    {
+      "name": "Kovai.co",
+      "domain": "kovai.co"
+    },
+    {
+      "name": "Kustomer",
+      "domain": "kustomer.com"
+    },
+    {
+      "name": "Kyriba",
+      "domain": "kyriba.com"
+    },
+    {
+      "name": "LambdaTest",
+      "domain": "lambdatest.com"
+    },
+    {
+      "name": "Lansweeper",
+      "domain": "lansweeper.com"
+    },
+    {
+      "name": "Laserfiche",
+      "domain": "laserfiche.com"
+    },
+    {
+      "name": "LastPass",
+      "domain": "lastpass.com"
+    },
+    {
+      "name": "Later",
+      "domain": "later.com"
+    },
+    {
+      "name": "LaunchDarkly",
+      "domain": "launchdarkly.com"
+    },
+    {
+      "name": "Leadfeeder",
+      "domain": "leadfeeder.com"
+    },
+    {
+      "name": "Lead Forensics",
+      "domain": "leadforensics.com"
+    },
+    {
+      "name": "LeadIQ",
+      "domain": "leadiq.com"
+    },
+    {
+      "name": "LeadSpace",
+      "domain": "leadspace.com"
+    },
+    {
+      "name": "LeadSquared",
+      "domain": "leadsquared.com"
+    },
+    {
+      "name": "LeanData",
+      "domain": "leandatainc.com"
+    },
+    {
+      "name": "leanplum",
+      "domain": "leanplum.me"
+    },
+    {
+      "name": "LearnWorlds (CY) Ltd",
+      "domain": "learnworlds.com"
+    },
+    {
+      "name": "Lessonly",
+      "domain": "lessonly.com"
+    },
+    {
+      "name": "LetsBuild",
+      "domain": "letsbuild.com"
+    },
+    {
+      "name": "LifeRay",
+      "domain": "liferay.com"
+    },
+    {
+      "name": "Linode",
+      "domain": "linode.com"
+    },
+    {
+      "name": "Listrak",
+      "domain": "listrak.com"
+    },
+    {
+      "name": "Litify",
+      "domain": "litify.com"
+    },
+    {
+      "name": "LiveAgent",
+      "domain": "liveagent.com"
+    },
+    {
+      "name": "LiveChat, Inc.",
+      "domain": "livechat.com"
+    },
+    {
+      "name": "LiveChat",
+      "domain": "livechatinc.com"
+    },
+    {
+      "name": "LiveIntent",
+      "domain": "liveintent.com"
+    },
+    {
+      "name": "LivePerson",
+      "domain": "liveperson.com"
+    },
+    {
+      "name": "Livestorm",
+      "domain": "livestorm.co"
+    },
+    {
+      "name": "Lob",
+      "domain": "lob.com"
+    },
+    {
+      "name": "LogicGate",
+      "domain": "logicgate.com"
+    },
+    {
+      "name": "LogicMonitor",
+      "domain": "logicmonitor.com"
+    },
+    {
+      "name": "Logikcull",
+      "domain": "logikcull.com"
+    },
+    {
+      "name": "LogMeIn",
+      "domain": "logmein.com"
+    },
+    {
+      "name": "Logz.io",
+      "domain": "logz.io"
+    },
+    {
+      "name": "Looker",
+      "domain": "looker.com"
+    },
+    {
+      "name": "Loopio",
+      "domain": "loopio.com"
+    },
+    {
+      "name": "LoopNet",
+      "domain": "loopnet.com"
+    },
+    {
+      "name": "Lotame",
+      "domain": "lotame.com"
+    },
+    {
+      "name": "lucidworks",
+      "domain": "lucidworks.com"
+    },
+    {
+      "name": "LumApps",
+      "domain": "lumapps.com"
+    },
+    {
+      "name": "Lusha",
+      "domain": "lusha.com"
+    },
+    {
+      "name": "MadCap Software, Inc.",
+      "domain": "madcapsoftware.com"
+    },
+    {
+      "name": "Madison Logic",
+      "domain": "madisonlogic.com"
+    },
+    {
+      "name": "Maestro",
+      "domain": "maestro.io"
+    },
+    {
+      "name": "MailChimp",
+      "domain": "mailchimp.com"
+    },
+    {
+      "name": "MailerLite",
+      "domain": "mailerlite.com"
+    },
+    {
+      "name": "Mailgun",
+      "domain": "mailgun.com"
+    },
+    {
+      "name": "Maintenance Connection",
+      "domain": "maintenanceconnection.com"
+    },
+    {
+      "name": "Malwarebytes",
+      "domain": "malwarebytes.com"
+    },
+    {
+      "name": "ManageEngine",
+      "domain": "manageengine.com"
+    },
+    {
+      "name": "ManageWP",
+      "domain": "managewp.com"
+    },
+    {
+      "name": "Mapp Digital",
+      "domain": "mapp.com"
+    },
+    {
+      "name": "Marchex",
+      "domain": "marchex.com"
+    },
+    {
+      "name": "MarcomCentral",
+      "domain": "marcom.com"
+    },
+    {
+      "name": "MariaDB",
+      "domain": "mariadb.com"
+    },
+    {
+      "name": "maropost",
+      "domain": "maropost.com"
+    },
+    {
+      "name": "Mavenlink",
+      "domain": "mavenlink.com"
+    },
+    {
+      "name": "Maximizer Software",
+      "domain": "maximizer.com"
+    },
+    {
+      "name": "McLeod Software",
+      "domain": "mcleodsoftware.com"
+    },
+    {
+      "name": "Medidata Solutions",
+      "domain": "mdsol.com"
+    },
+    {
+      "name": "Medallia",
+      "domain": "medallia.com"
+    },
+    {
+      "name": "Mediafly",
+      "domain": "mediafly.com"
+    },
+    {
+      "name": "Mediaocean (formerly 4Cinsights.com)",
+      "domain": "mediaocean.com"
+    },
+    {
+      "name": "MediaValet",
+      "domain": "mediavalet.com"
+    },
+    {
+      "name": "MeisterTask",
+      "domain": "meistertask.com"
+    },
+    {
+      "name": "Meltwater",
+      "domain": "meltwater.com"
+    },
+    {
+      "name": "memoQ",
+      "domain": "memoq.com"
+    },
+    {
+      "name": "Memsource",
+      "domain": "memsource.com"
+    },
+    {
+      "name": "Mendix",
+      "domain": "mendix.com"
+    },
+    {
+      "name": "Mention",
+      "domain": "mention.com"
+    },
+    {
+      "name": "MessageBird",
+      "domain": "messagebird.com"
+    },
+    {
+      "name": "MessageGears",
+      "domain": "messagegears.com"
+    },
+    {
+      "name": "Mimecast",
+      "domain": "mimecast.com"
+    },
+    {
+      "name": "MindBody",
+      "domain": "mindbodyonline.com"
+    },
+    {
+      "name": "MindJet",
+      "domain": "mindjet.com"
+    },
+    {
+      "name": "Mindmatrix",
+      "domain": "mindmatrix.net"
+    },
+    {
+      "name": "MindTickle",
+      "domain": "mindtickle.com"
+    },
+    {
+      "name": "Miro",
+      "domain": "miro.com"
+    },
+    {
+      "name": "Mitel",
+      "domain": "mitel.com"
+    },
+    {
+      "name": "Miva",
+      "domain": "miva.com"
+    },
+    {
+      "name": "MixPanel",
+      "domain": "mixpanel.com"
+    },
+    {
+      "name": "Mix Telematics",
+      "domain": "mixtelematics.com"
+    },
+    {
+      "name": "MobileWalla",
+      "domain": "mobilewalla.com"
+    },
+    {
+      "name": "Mode Analytics",
+      "domain": "modeanalytics.com"
+    },
+    {
+      "name": "MoEngage",
+      "domain": "moengage.com"
+    },
+    {
+      "name": "Monday.com",
+      "domain": "monday.com"
+    },
+    {
+      "name": "Moodle",
+      "domain": "moodle.org"
+    },
+    {
+      "name": "MNTN (Formerly SteelHouse)",
+      "domain": "mountain.com"
+    },
+    {
+      "name": "moxtra",
+      "domain": "moxtra.com"
+    },
+    {
+      "name": "Moz",
+      "domain": "moz.com"
+    },
+    {
+      "name": "Mulesoft",
+      "domain": "mulesoft.com"
+    },
+    {
+      "name": "MURAL",
+      "domain": "mural.co"
+    },
+    {
+      "name": "Brightwheel",
+      "domain": "mybrightwheel.com"
+    },
+    {
+      "name": "MyCase",
+      "domain": "mycase.com"
+    },
+    {
+      "name": "Nagios",
+      "domain": "nagios.com"
+    },
+    {
+      "name": "Nakisa",
+      "domain": "nakisa.com"
+    },
+    {
+      "name": "Near",
+      "domain": "near.co"
+    },
+    {
+      "name": "Nearpod",
+      "domain": "nearpod.com"
+    },
+    {
+      "name": "Neovation Learning Solutions",
+      "domain": "neovation.com"
+    },
+    {
+      "name": "NetBase",
+      "domain": "netbase.com"
+    },
+    {
+      "name": "Netskope",
+      "domain": "netskope.com"
+    },
+    {
+      "name": "Netsuite",
+      "domain": "netsuite.com"
+    },
+    {
+      "name": "New Relic",
+      "domain": "newrelic.com"
+    },
+    {
+      "name": "NexJ",
+      "domain": "nexj.com"
+    },
+    {
+      "name": "Nextpoint",
+      "domain": "nextpoint.com"
+    },
+    {
+      "name": "NICE CXone (formerly NICE inContact)",
+      "domain": "niceincontact.com"
+    },
+    {
+      "name": "NinjaCat",
+      "domain": "ninjacat.io"
+    },
+    {
+      "name": "Nintex",
+      "domain": "nintex.com"
+    },
+    {
+      "name": "Notion",
+      "domain": "notion.so"
+    },
+    {
+      "name": "Nulab",
+      "domain": "nulab-inc.com"
+    },
+    {
+      "name": "Nutshell CRM",
+      "domain": "nutshell.com"
+    },
+    {
+      "name": "NUVI",
+      "domain": "nuvi.com"
+    },
+    {
+      "name": "NWEA",
+      "domain": "nwea.org"
+    },
+    {
+      "name": "Nylas",
+      "domain": "nylas.com"
+    },
+    {
+      "name": "Octopus Deploy",
+      "domain": "octopus.com"
+    },
+    {
+      "name": "Odoo",
+      "domain": "odoo.com"
+    },
+    {
+      "name": "Okta",
+      "domain": "okta.com"
+    },
+    {
+      "name": "Oktopost",
+      "domain": "oktopost.com"
+    },
+    {
+      "name": "Omnisend",
+      "domain": "omnisend.com"
+    },
+    {
+      "name": "OnceHub ",
+      "domain": "oncehub.com"
+    },
+    {
+      "name": "OneLogin",
+      "domain": "onelogin.com"
+    },
+    {
+      "name": "OneTrust",
+      "domain": "onetrust.com"
+    },
+    {
+      "name": "Onfleet",
+      "domain": "onfleet.com"
+    },
+    {
+      "name": "OnSolve",
+      "domain": "onsolve.com"
+    },
+    {
+      "name": "Oomnitza",
+      "domain": "oomnitza.com"
+    },
+    {
+      "name": "OpenSesame",
+      "domain": "opensesame.com"
+    },
+    {
+      "name": "OpenText",
+      "domain": "opentext.com"
+    },
+    {
+      "name": "Optimizely (Formerly Episerver CMS)",
+      "domain": "optimizely.com"
+    },
+    {
+      "name": "Optimove",
+      "domain": "optimove.com"
+    },
+    {
+      "name": "Bridgeline Digital (formerly Stantive Technologies Group)?",
+      "domain": "orchestracms.com"
+    },
+    {
+      "name": "Orderhive",
+      "domain": "orderhive.com"
+    },
+    {
+      "name": "outboundengine",
+      "domain": "outboundengine.com"
+    },
+    {
+      "name": "Outreach.io",
+      "domain": "outreach.io"
+    },
+    {
+      "name": "OutSystems",
+      "domain": "outsystems.com"
+    },
+    {
+      "name": "Overops",
+      "domain": "overops.com"
+    },
+    {
+      "name": "OwnBackup",
+      "domain": "ownbackup.com"
+    },
+    {
+      "name": "ownCloud",
+      "domain": "owncloud.org"
+    },
+    {
+      "name": "Paessler",
+      "domain": "paessler.com"
+    },
+    {
+      "name": "Pagefreezer",
+      "domain": "pagefreezer.com"
+    },
+    {
+      "name": "PagerDuty",
+      "domain": "pagerduty.com"
+    },
+    {
+      "name": "PageUp",
+      "domain": "pageup.com"
+    },
+    {
+      "name": "Palantir",
+      "domain": "palantir.com"
+    },
+    {
+      "name": "PandaDoc",
+      "domain": "pandadoc.com"
+    },
+    {
+      "name": "Panopto",
+      "domain": "panopto.com"
+    },
+    {
+      "name": "Panorama Necto",
+      "domain": "panorama.com"
+    },
+    {
+      "name": "Pantheon",
+      "domain": "pantheon.io"
+    },
+    {
+      "name": "PartnerStack",
+      "domain": "partnerstack.com"
+    },
+    {
+      "name": "PathFactory (Formerly LookBookHQ)",
+      "domain": "pathfactory.com"
+    },
+    {
+      "name": "Patriot Software",
+      "domain": "patriotsoftware.com"
+    },
+    {
+      "name": "Pax8",
+      "domain": "pax8.com"
+    },
+    {
+      "name": "Paylocity",
+      "domain": "paylocity.com"
+    },
+    {
+      "name": "Paymo",
+      "domain": "paymoapp.com"
+    },
+    {
+      "name": "Payrix",
+      "domain": "payrix.com"
+    },
+    {
+      "name": "PaySimple",
+      "domain": "paysimple.com"
+    },
+    {
+      "name": "PCRecruiter",
+      "domain": "pcrecruiter.net"
+    },
+    {
+      "name": "Pendo.io",
+      "domain": "pendo.io"
+    },
+    {
+      "name": "PeopleFluent",
+      "domain": "peoplefluent.com"
+    },
+    {
+      "name": "People HR",
+      "domain": "peoplehr.com"
+    },
+    {
+      "name": "Perforce",
+      "domain": "perforce.com"
+    },
+    {
+      "name": "Periscope Data",
+      "domain": "periscopedata.com"
+    },
+    {
+      "name": "Personio",
+      "domain": "personio.de"
+    },
+    {
+      "name": "Phocas Software",
+      "domain": "phocassoftware.com"
+    },
+    {
+      "name": "PhotoShelter for Brands",
+      "domain": "photoshelter.com"
+    },
+    {
+      "name": "Ping Identity",
+      "domain": "pingidentity.com"
+    },
+    {
+      "name": "Pipedrive",
+      "domain": "pipedrive.com"
+    },
+    {
+      "name": "Pipefy",
+      "domain": "pipefy.com"
+    },
+    {
+      "name": "Pipeliner CRM",
+      "domain": "pipelinersales.com"
+    },
+    {
+      "name": "Pitchbook",
+      "domain": "pitchbook.com"
+    },
+    {
+      "name": "Plaid",
+      "domain": "plaid.com"
+    },
+    {
+      "name": "Planisware",
+      "domain": "planisware.com"
+    },
+    {
+      "name": "Planview",
+      "domain": "planview.com"
+    },
+    {
+      "name": "Pleo",
+      "domain": "pleo.io"
+    },
+    {
+      "name": "Plesk",
+      "domain": "plesk.com"
+    },
+    {
+      "name": "Plex Systems",
+      "domain": "plex.com"
+    },
+    {
+      "name": "Plivo",
+      "domain": "plivo.com"
+    },
+    {
+      "name": "Pluralsight",
+      "domain": "pluralsight.com"
+    },
+    {
+      "name": "Podium",
+      "domain": "podium.com"
+    },
+    {
+      "name": "Poll Everywhere",
+      "domain": "polleverywhere.com"
+    },
+    {
+      "name": "Post Affiliate Pro",
+      "domain": "postaffiliatepro.com"
+    },
+    {
+      "name": "PowerChord, Inc.",
+      "domain": "powerchord.com"
+    },
+    {
+      "name": "PowerDMS",
+      "domain": "powerdms.com"
+    },
+    {
+      "name": "PowerReviews",
+      "domain": "powerreviews.com"
+    },
+    {
+      "name": "PowerSchool",
+      "domain": "powerschool.com"
+    },
+    {
+      "name": "PowToon",
+      "domain": "powtoon.com"
+    },
+    {
+      "name": "Practice Ignition",
+      "domain": "practiceignition.com"
+    },
+    {
+      "name": "Predictive Index",
+      "domain": "predictiveindex.com"
+    },
+    {
+      "name": "prestashop",
+      "domain": "prestashop.com"
+    },
+    {
+      "name": "Prezi",
+      "domain": "prezi.com"
+    },
+    {
+      "name": "PriceSpider",
+      "domain": "pricespider.com"
+    },
+    {
+      "name": "ProcessMaker",
+      "domain": "processmaker.com"
+    },
+    {
+      "name": "Productiv",
+      "domain": "productiv.com"
+    },
+    {
+      "name": "ProfitWell",
+      "domain": "profitwell.com"
+    },
+    {
+      "name": "Promo.com (formerly Slidely + Promo)",
+      "domain": "promo.com"
+    },
+    {
+      "name": "Promobi technologies",
+      "domain": "promobitech.com"
+    },
+    {
+      "name": "ProntoForms",
+      "domain": "prontoforms.com"
+    },
+    {
+      "name": "Proofpoint",
+      "domain": "proofpoint.com"
+    },
+    {
+      "name": "Prophix Software",
+      "domain": "prophix.com"
+    },
+    {
+      "name": "Proposify",
+      "domain": "proposify.biz"
+    },
+    {
+      "name": "ProProfs",
+      "domain": "proprofs.com"
+    },
+    {
+      "name": "ProQuo AI",
+      "domain": "proquoai.com"
+    },
+    {
+      "name": "PubMatic",
+      "domain": "pubmatic.com"
+    },
+    {
+      "name": "PubNub",
+      "domain": "pubnub.com"
+    },
+    {
+      "name": "Pulsar Platform",
+      "domain": "pulsarplatform.com"
+    },
+    {
+      "name": "Punchh",
+      "domain": "punchh.com"
+    },
+    {
+      "name": "Pushpay",
+      "domain": "pushpay.com"
+    },
+    {
+      "name": "Pypestream",
+      "domain": "pypestream.com"
+    },
+    {
+      "name": "QCommission",
+      "domain": "qcommission.com"
+    },
+    {
+      "name": "QMetry Test Manager",
+      "domain": "qmetry.com"
+    },
+    {
+      "name": "The Qt Company (formerly Qt Creator)",
+      "domain": "qt.io"
+    },
+    {
+      "name": "Qualtrics",
+      "domain": "qualtrics.com"
+    },
+    {
+      "name": "Qualys",
+      "domain": "qualys.com"
+    },
+    {
+      "name": "Quantcast",
+      "domain": "quantcast.com"
+    },
+    {
+      "name": "Quantum Metric",
+      "domain": "quantummetric.com"
+    },
+    {
+      "name": "Quantum Workplace",
+      "domain": "quantumworkplace.com"
+    },
+    {
+      "name": "Quillbot",
+      "domain": "quillbot.com"
+    },
+    {
+      "name": "Quip",
+      "domain": "quip.com"
+    },
+    {
+      "name": "RapidMiner",
+      "domain": "rapidminer.com"
+    },
+    {
+      "name": "Reachdesk",
+      "domain": "reachdesk.com"
+    },
+    {
+      "name": "VNC Connect",
+      "domain": "realvnc.com"
+    },
+    {
+      "name": "RebelMouse",
+      "domain": "rebelmouse.com"
+    },
+    {
+      "name": "Rebrandly",
+      "domain": "rebrandly.com"
+    },
+    {
+      "name": "Recruitee",
+      "domain": "recruitee.com"
+    },
+    {
+      "name": "Recurly",
+      "domain": "recurly.com"
+    },
+    {
+      "name": "Redis Cloud",
+      "domain": "redislabs.com"
+    },
+    {
+      "name": "RedTeam",
+      "domain": "redteam.com"
+    },
+    {
+      "name": "Relativity",
+      "domain": "relativity.com"
+    },
+    {
+      "name": "Reltio",
+      "domain": "reltio.com"
+    },
+    {
+      "name": "Replicon",
+      "domain": "replicon.com"
+    },
+    {
+      "name": "Reply.io",
+      "domain": "reply.io"
+    },
+    {
+      "name": "Repsly",
+      "domain": "repsly.com"
+    },
+    {
+      "name": "Reputation.com",
+      "domain": "reputation.com"
+    },
+    {
+      "name": "Resolver",
+      "domain": "resolver.com"
+    },
+    {
+      "name": "Restream",
+      "domain": "restream.io"
+    },
+    {
+      "name": "retreavor",
+      "domain": "retreavor.com"
+    },
+    {
+      "name": "ReverseAds",
+      "domain": "reverseads.com"
+    },
+    {
+      "name": "ReviewTrackers",
+      "domain": "reviewtrackers.com"
+    },
+    {
+      "name": "RingCentral",
+      "domain": "ringcentral.com"
+    },
+    {
+      "name": "Rippling",
+      "domain": "rippling.com"
+    },
+    {
+      "name": "RoboForm",
+      "domain": "roboform.com"
+    },
+    {
+      "name": "Rock Content",
+      "domain": "rockcontent.com"
+    },
+    {
+      "name": "Rocketrip",
+      "domain": "rocketrip.com"
+    },
+    {
+      "name": "Rokt",
+      "domain": "rokt.com"
+    },
+    {
+      "name": "Rollbar",
+      "domain": "rollbar.com"
+    },
+    {
+      "name": "Rootstock",
+      "domain": "rootstock.com"
+    },
+    {
+      "name": "Rubicon Project",
+      "domain": "rubiconproject.com"
+    },
+    {
+      "name": "Rubrik",
+      "domain": "rubrik.com"
+    },
+    {
+      "name": "Rybbon",
+      "domain": "rybbon.net"
+    },
+    {
+      "name": "Rydoo",
+      "domain": "rydoo.com"
+    },
+    {
+      "name": "Sage Intacct",
+      "domain": "sageintacct.com"
+    },
+    {
+      "name": "SailThru",
+      "domain": "sailthru.com"
+    },
+    {
+      "name": "Sales-i",
+      "domain": "sales-i.com"
+    },
+    {
+      "name": "Salesforce",
+      "domain": "salesforce.com"
+    },
+    {
+      "name": "SalesLoft",
+      "domain": "salesloft.com"
+    },
+    {
+      "name": "salesmanago",
+      "domain": "salesmanago.com"
+    },
+    {
+      "name": "Salsa CRM",
+      "domain": "salsalabs.com"
+    },
+    {
+      "name": "Salsify",
+      "domain": "salsify.com"
+    },
+    {
+      "name": "Samsara",
+      "domain": "samsara.com"
+    },
+    {
+      "name": "SANeForce",
+      "domain": "saneforce.com"
+    },
+    {
+      "name": "NICE Satmetrix",
+      "domain": "satmetrix.com"
+    },
+    {
+      "name": "Sauce Labs",
+      "domain": "saucelabs.com"
+    },
+    {
+      "name": "Saviom Software Pty Ltd",
+      "domain": "saviom.com"
+    },
+    {
+      "name": "Sciforma",
+      "domain": "sciforma.com"
+    },
+    {
+      "name": "Scoro",
+      "domain": "scoro.com"
+    },
+    {
+      "name": "Seamless.ai",
+      "domain": "seamless.ai"
+    },
+    {
+      "name": "Searchmetrics",
+      "domain": "searchmetrics.com"
+    },
+    {
+      "name": "SearchSpring",
+      "domain": "searchspring.com"
+    },
+    {
+      "name": "Segment",
+      "domain": "segment.com"
+    },
+    {
+      "name": "Seismic",
+      "domain": "seismic.com"
+    },
+    {
+      "name": "SellerCloud",
+      "domain": "sellercloud.com"
+    },
+    {
+      "name": "Sellsy",
+      "domain": "sellsy.com"
+    },
+    {
+      "name": "SEMrush",
+      "domain": "semrush.com"
+    },
+    {
+      "name": "Sendible",
+      "domain": "sendible.com"
+    },
+    {
+      "name": "Sendinblue",
+      "domain": "sendinblue.com"
+    },
+    {
+      "name": "Sendoso",
+      "domain": "sendoso.com"
+    },
+    {
+      "name": "SendPulse",
+      "domain": "sendpulse.com"
+    },
+    {
+      "name": "SentiOne",
+      "domain": "sentione.com"
+    },
+    {
+      "name": "Sentry",
+      "domain": "sentry.io"
+    },
+    {
+      "name": "SE Ranking",
+      "domain": "seranking.com"
+    },
+    {
+      "name": "Serpstat",
+      "domain": "serpstat.com"
+    },
+    {
+      "name": "Sertifi",
+      "domain": "sertifi.com"
+    },
+    {
+      "name": "ServiceNow",
+      "domain": "servicenow.com"
+    },
+    {
+      "name": "ServiceTitan",
+      "domain": "servicetitan.com"
+    },
+    {
+      "name": "ServiceTrade",
+      "domain": "servicetrade.com"
+    },
+    {
+      "name": "Servoy",
+      "domain": "servoy.com"
+    },
+    {
+      "name": "Shareablee",
+      "domain": "shareablee.com"
+    },
+    {
+      "name": "ShareASale",
+      "domain": "shareasale.com"
+    },
+    {
+      "name": "ShareThis",
+      "domain": "sharethis.com"
+    },
+    {
+      "name": "SharpSpring",
+      "domain": "sharpspring.com"
+    },
+    {
+      "name": "SheerID",
+      "domain": "sheerid.com"
+    },
+    {
+      "name": "Shipway Technology Pvt. Ltd",
+      "domain": "shipway.in"
+    },
+    {
+      "name": "shopgate",
+      "domain": "shopgate.com"
+    },
+    {
+      "name": "Shopify",
+      "domain": "shopify.com"
+    },
+    {
+      "name": "ShowingDesk BE",
+      "domain": "showingtime.com"
+    },
+    {
+      "name": "Sift ",
+      "domain": "sift.com"
+    },
+    {
+      "name": "SignEasy",
+      "domain": "signeasy.com"
+    },
+    {
+      "name": "SimilarWeb",
+      "domain": "similarweb.com"
+    },
+    {
+      "name": "SimpleLegal",
+      "domain": "simplelegal.com"
+    },
+    {
+      "name": "simpleshow video maker",
+      "domain": "simpleshow.com"
+    },
+    {
+      "name": "Simpli.fi",
+      "domain": "simpli.fi"
+    },
+    {
+      "name": "Simpplr",
+      "domain": "simpplr.com"
+    },
+    {
+      "name": "SimScale",
+      "domain": "simscale.com"
+    },
+    {
+      "name": "Singular",
+      "domain": "singular.net"
+    },
+    {
+      "name": "Sisense",
+      "domain": "sisense.com"
+    },
+    {
+      "name": "SiteGround",
+      "domain": "siteground.com"
+    },
+    {
+      "name": "Siteimprove",
+      "domain": "siteimprove.com"
+    },
+    {
+      "name": "SiteSpect",
+      "domain": "sitespect.com"
+    },
+    {
+      "name": "Skan",
+      "domain": "skan.ai"
+    },
+    {
+      "name": "SketchUp",
+      "domain": "sketchup.com"
+    },
+    {
+      "name": "Skilljar Inc.",
+      "domain": "skilljar.com"
+    },
+    {
+      "name": "SkillSoft",
+      "domain": "skillsoft.com"
+    },
+    {
+      "name": "SkillSurvey",
+      "domain": "skillsurvey.com"
+    },
+    {
+      "name": "Skyslope",
+      "domain": "skyslope.com"
+    },
+    {
+      "name": "Skyward",
+      "domain": "skyward.com"
+    },
+    {
+      "name": "Slack",
+      "domain": "slack.com"
+    },
+    {
+      "name": "Slido",
+      "domain": "sli.do"
+    },
+    {
+      "name": "Slintel Inc",
+      "domain": "slintel.com"
+    },
+    {
+      "name": "Smarp",
+      "domain": "smarp.com"
+    },
+    {
+      "name": "Smarsh",
+      "domain": "smarsh.com"
+    },
+    {
+      "name": "SmartBear",
+      "domain": "smartbear.com"
+    },
+    {
+      "name": "smartCat",
+      "domain": "smartcat.ai"
+    },
+    {
+      "name": "Smartling",
+      "domain": "smartling.com"
+    },
+    {
+      "name": "Smartlook",
+      "domain": "smartlook.com"
+    },
+    {
+      "name": "SmartRecruiters",
+      "domain": "smartrecruiters.com"
+    },
+    {
+      "name": "Smartsheet",
+      "domain": "smartsheet.com"
+    },
+    {
+      "name": "SnapLogic",
+      "domain": "snaplogic.com"
+    },
+    {
+      "name": "Snyk",
+      "domain": "snyk.io"
+    },
+    {
+      "name": "SocialPilot",
+      "domain": "socialpilot.co"
+    },
+    {
+      "name": "ETO Software",
+      "domain": "socialsolutions.com"
+    },
+    {
+      "name": "Sococo",
+      "domain": "sococo.com"
+    },
+    {
+      "name": "Softerware",
+      "domain": "softerware.com"
+    },
+    {
+      "name": "Soleo Communications",
+      "domain": "soleo.com"
+    },
+    {
+      "name": "Soundtrack Your Brand",
+      "domain": "soundtrackyourbrand.com"
+    },
+    {
+      "name": "Spark Hire",
+      "domain": "sparkhire.com"
+    },
+    {
+      "name": "SparkPost",
+      "domain": "sparkpost.com"
+    },
+    {
+      "name": "Spekit",
+      "domain": "spekit.com"
+    },
+    {
+      "name": "Spendesk",
+      "domain": "spendesk.com"
+    },
+    {
+      "name": "Spiff",
+      "domain": "spiff.com"
+    },
+    {
+      "name": "Splashtop",
+      "domain": "splashtop.com"
+    },
+    {
+      "name": "Splunk",
+      "domain": "splunk.com"
+    },
+    {
+      "name": "Sprinklr",
+      "domain": "sprinklr.com"
+    },
+    {
+      "name": "Sprout Social",
+      "domain": "sproutsocial.com"
+    },
+    {
+      "name": "SPS Commerce",
+      "domain": "spscommerce.com"
+    },
+    {
+      "name": "Squarespace",
+      "domain": "squarespace.com"
+    },
+    {
+      "name": "Square",
+      "domain": "squareup.com"
+    },
+    {
+      "name": "StackAdapt",
+      "domain": "stackadapt.com"
+    },
+    {
+      "name": "Stax",
+      "domain": "staxpayments.com"
+    },
+    {
+      "name": "Stripe",
+      "domain": "stripe.com"
+    },
+    {
+      "name": "SugarCRM",
+      "domain": "sugarcrm.com"
+    },
+    {
+      "name": "Sumo Logic",
+      "domain": "sumologic.com"
+    },
+    {
+      "name": "SumTotal",
+      "domain": "sumtotalsystems.com"
+    },
+    {
+      "name": "sunday",
+      "domain": "sundayapp.com"
+    },
+    {
+      "name": "SurePayroll",
+      "domain": "surepayroll.com"
+    },
+    {
+      "name": "SurveyMonkey",
+      "domain": "surveymonkey.com"
+    },
+    {
+      "name": "SurveySparrow",
+      "domain": "surveysparrow.com"
+    },
+    {
+      "name": "SutiExpense",
+      "domain": "sutisoft.com"
+    },
+    {
+      "name": "Synchronoss",
+      "domain": "synchronoss.com"
+    },
+    {
+      "name": "Synthesio",
+      "domain": "synthesio.com"
+    },
+    {
+      "name": "SysAid Technologies Ltd.",
+      "domain": "sysaid.com"
+    },
+    {
+      "name": "Tableau",
+      "domain": "tableau.com"
+    },
+    {
+      "name": "Taboola",
+      "domain": "taboola.com"
+    },
+    {
+      "name": "Tagetik",
+      "domain": "tagetik.com"
+    },
+    {
+      "name": "Tailwind",
+      "domain": "tailwindapp.com"
+    },
+    {
+      "name": "Talend",
+      "domain": "talend.com"
+    },
+    {
+      "name": "TalentReef",
+      "domain": "talentreef.com"
+    },
+    {
+      "name": "Talisma",
+      "domain": "talisma.com"
+    },
+    {
+      "name": "Talkable",
+      "domain": "talkable.com"
+    },
+    {
+      "name": "Talkdesk",
+      "domain": "talkdesk.com"
+    },
+    {
+      "name": "Talkwalker",
+      "domain": "talkwalker.com"
+    },
+    {
+      "name": "Tango Card",
+      "domain": "tangocard.com"
+    },
+    {
+      "name": "Tanium",
+      "domain": "tanium.com"
+    },
+    {
+      "name": "TapClicks",
+      "domain": "tapclicks.com"
+    },
+    {
+      "name": "Targit",
+      "domain": "targit.com"
+    },
+    {
+      "name": "tawk.to",
+      "domain": "tawk.to"
+    },
+    {
+      "name": "Tealium",
+      "domain": "tealium.com"
+    },
+    {
+      "name": "Teamleader",
+      "domain": "teamleader.eu"
+    },
+    {
+      "name": "TeamSnap",
+      "domain": "teamsnap.com"
+    },
+    {
+      "name": "TeamSupport",
+      "domain": "teamsupport.com"
+    },
+    {
+      "name": "TeamViewer",
+      "domain": "teamviewer.com"
+    },
+    {
+      "name": "Teamwork.com",
+      "domain": "teamwork.com"
+    },
+    {
+      "name": "Technolutions Slate",
+      "domain": "technolutions.com"
+    },
+    {
+      "name": "screenflow",
+      "domain": "telestream.net"
+    },
+    {
+      "name": "Telnyx",
+      "domain": "telnyx.com"
+    },
+    {
+      "name": "Terminus",
+      "domain": "terminus.com"
+    },
+    {
+      "name": "The Trade Desk",
+      "domain": "thetradedesk.com"
+    },
+    {
+      "name": "Thinkific",
+      "domain": "thinkific.com"
+    },
+    {
+      "name": "ThoughtSpot",
+      "domain": "thoughtspot.com"
+    },
+    {
+      "name": "ThriveHive",
+      "domain": "thrivehive.com"
+    },
+    {
+      "name": "Thycotic",
+      "domain": "thycotic.com"
+    },
+    {
+      "name": "Time Doctor",
+      "domain": "timedoctor.com"
+    },
+    {
+      "name": "Toast",
+      "domain": "toasttab.com"
+    },
+    {
+      "name": "Toggl Track",
+      "domain": "toggl.com"
+    },
+    {
+      "name": "Top Producer CRM",
+      "domain": "topproducer.com"
+    },
+    {
+      "name": "Total Expert",
+      "domain": "totalexpert.com"
+    },
+    {
+      "name": "Totango",
+      "domain": "totango.com"
+    },
+    {
+      "name": "Traackr",
+      "domain": "traackr.com"
+    },
+    {
+      "name": "TrackVia",
+      "domain": "trackvia.com"
+    },
+    {
+      "name": "Tradeshift",
+      "domain": "tradeshift.com"
+    },
+    {
+      "name": "Trakstar Learn (Formerly Mindflash)",
+      "domain": "trakstar.com"
+    },
+    {
+      "name": "Transifex",
+      "domain": "transifex.com"
+    },
+    {
+      "name": "AutoTURN",
+      "domain": "transoftsolutions.com"
+    },
+    {
+      "name": "TravelPerk",
+      "domain": "travelperk.com"
+    },
+    {
+      "name": "Tray.io",
+      "domain": "tray.io"
+    },
+    {
+      "name": "Trello",
+      "domain": "trello.com"
+    },
+    {
+      "name": "Triblio",
+      "domain": "triblio.com"
+    },
+    {
+      "name": "TrueConf",
+      "domain": "trueconf.com"
+    },
+    {
+      "name": "Twilio",
+      "domain": "twilio.com"
+    },
+    {
+      "name": "typeform",
+      "domain": "typeform.com"
+    },
+    {
+      "name": "Uberflip",
+      "domain": "uberflip.com"
+    },
+    {
+      "name": "Udemy",
+      "domain": "udemy.com"
+    },
+    {
+      "name": "UJET",
+      "domain": "ujet.co"
+    },
+    {
+      "name": "Umbraco",
+      "domain": "umbraco.com"
+    },
+    {
+      "name": "Unanet",
+      "domain": "unanet.com"
+    },
+    {
+      "name": "Unbounce",
+      "domain": "unbounce.com"
+    },
+    {
+      "name": "Unito",
+      "domain": "unito.io"
+    },
+    {
+      "name": "Unleashed",
+      "domain": "unleashedsoftware.com"
+    },
+    {
+      "name": "UpCloud",
+      "domain": "upcloud.com"
+    },
+    {
+      "name": "Upfluence",
+      "domain": "upfluence.com"
+    },
+    {
+      "name": "Upland",
+      "domain": "uplandsoftware.com"
+    },
+    {
+      "name": "UserTesting",
+      "domain": "usertesting.com"
+    },
+    {
+      "name": "UserVoice",
+      "domain": "uservoice.com"
+    },
+    {
+      "name": "V12 Data",
+      "domain": "v12data.com"
+    },
+    {
+      "name": "Vainu",
+      "domain": "vainu.io"
+    },
+    {
+      "name": "VanillaSoft",
+      "domain": "vanillasoft.com"
+    },
+    {
+      "name": "Vectorworks",
+      "domain": "vectorworks.net"
+    },
+    {
+      "name": "Veeam",
+      "domain": "veeam.com"
+    },
+    {
+      "name": "Veeva Systems",
+      "domain": "veeva.com"
+    },
+    {
+      "name": "Vendasta Technologies Inc.",
+      "domain": "vendasta.com"
+    },
+    {
+      "name": "Venngage",
+      "domain": "venngage.com"
+    },
+    {
+      "name": "Verb Technology Company, Inc.",
+      "domain": "verb.tech"
+    },
+    {
+      "name": "Verdigris",
+      "domain": "verdigris.com"
+    },
+    {
+      "name": "Versum",
+      "domain": "versum.com"
+    },
+    {
+      "name": "Vertafore",
+      "domain": "vertafore.com"
+    },
+    {
+      "name": "vFairs",
+      "domain": "vfairs.com"
+    },
+    {
+      "name": "VidMob",
+      "domain": "vidmob.com"
+    },
+    {
+      "name": "Vimeo",
+      "domain": "vimeo.com"
+    },
+    {
+      "name": "Vincere",
+      "domain": "vincere.io"
+    },
+    {
+      "name": "Vindicia",
+      "domain": "vindicia.com"
+    },
+    {
+      "name": "Virtana",
+      "domain": "virtana.com"
+    },
+    {
+      "name": "Virtru",
+      "domain": "virtru.com"
+    },
+    {
+      "name": "Visage",
+      "domain": "visageimaging.com"
+    },
+    {
+      "name": "VisibleThread",
+      "domain": "visiblethread.com"
+    },
+    {
+      "name": "Vistex",
+      "domain": "vistex.com"
+    },
+    {
+      "name": "volusion",
+      "domain": "volusion.com"
+    },
+    {
+      "name": "Vroozi",
+      "domain": "vroozi.com"
+    },
+    {
+      "name": "Vtiger",
+      "domain": "vtiger.com"
+    },
+    {
+      "name": "Vuture",
+      "domain": "vutu.re"
+    },
+    {
+      "name": "Vyond",
+      "domain": "vyond.com"
+    },
+    {
+      "name": "Wagepoint",
+      "domain": "wagepoint.com"
+    },
+    {
+      "name": "Walkme",
+      "domain": "walkme.com"
+    },
+    {
+      "name": "Wallarm",
+      "domain": "wallarm.com"
+    },
+    {
+      "name": "WatchGuard",
+      "domain": "watchguard.com"
+    },
+    {
+      "name": "Wave",
+      "domain": "waveapps.com"
+    },
+    {
+      "name": "WaveMaker",
+      "domain": "wavemaker.com"
+    },
+    {
+      "name": "WebCEO",
+      "domain": "webceo.com"
+    },
+    {
+      "name": "WebEx",
+      "domain": "webex.com"
+    },
+    {
+      "name": "Webflow",
+      "domain": "webflow.com"
+    },
+    {
+      "name": "Weblium",
+      "domain": "weblium.com"
+    },
+    {
+      "name": "WebPT",
+      "domain": "webpt.com"
+    },
+    {
+      "name": "WebTrends",
+      "domain": "webtrends.com"
+    },
+    {
+      "name": "Galvanize (formerly ACL Analytics)",
+      "domain": "wegalvanize.com"
+    },
+    {
+      "name": "Welcome (Formerly  NewsCred)",
+      "domain": "welcomesoftware.com"
+    },
+    {
+      "name": "WePay",
+      "domain": "wepay.com"
+    },
+    {
+      "name": "WeTransfer",
+      "domain": "wetransfer.com"
+    },
+    {
+      "name": "Whatagraph",
+      "domain": "whatagraph.com"
+    },
+    {
+      "name": "Whatfix",
+      "domain": "whatfix.com"
+    },
+    {
+      "name": "Whereby",
+      "domain": "whereby.com"
+    },
+    {
+      "name": "WhiteSource",
+      "domain": "whitesourcesoftware.com"
+    },
+    {
+      "name": "Widen Collective",
+      "domain": "widen.com"
+    },
+    {
+      "name": "Winmo",
+      "domain": "winmo.com"
+    },
+    {
+      "name": "Wire",
+      "domain": "wire.com"
+    },
+    {
+      "name": "Wishpond",
+      "domain": "wishpond.com"
+    },
+    {
+      "name": "Wistia",
+      "domain": "wistia.com"
+    },
+    {
+      "name": "Wix",
+      "domain": "wix.com"
+    },
+    {
+      "name": "Woocommerce",
+      "domain": "woocommerce.com"
+    },
+    {
+      "name": "WoodWing Elvis DAM",
+      "domain": "woodwing.com"
+    },
+    {
+      "name": "Workable",
+      "domain": "workable.com"
+    },
+    {
+      "name": "Workboard",
+      "domain": "workboard.com"
+    },
+    {
+      "name": "Workday",
+      "domain": "workday.com"
+    },
+    {
+      "name": "Workforce Softweare",
+      "domain": "workforcesoftware.com"
+    },
+    {
+      "name": "Workfront",
+      "domain": "workfront.com"
+    },
+    {
+      "name": "Workiva Inc. (NYSE:WK)",
+      "domain": "workiva.com"
+    },
+    {
+      "name": "WorkJam",
+      "domain": "workjam.com"
+    },
+    {
+      "name": "Work Market",
+      "domain": "workmarket.com"
+    },
+    {
+      "name": "WorkRamp",
+      "domain": "workramp.com"
+    },
+    {
+      "name": "WP Engine",
+      "domain": "wpengine.com"
+    },
+    {
+      "name": "Wrike",
+      "domain": "wrike.com"
+    },
+    {
+      "name": "Writer (Formerly Qordoba)",
+      "domain": "writer.com"
+    },
+    {
+      "name": "Wunderkind ( Formerly BounceX)",
+      "domain": "wunderkind.co"
+    },
+    {
+      "name": "Xactly",
+      "domain": "xactlycorp.com"
+    },
+    {
+      "name": "XANT",
+      "domain": "xant.ai"
+    },
+    {
+      "name": "Xero",
+      "domain": "xero.com"
+    },
+    {
+      "name": "Yardi",
+      "domain": "yardi.com"
+    },
+    {
+      "name": "Yellowfin BI",
+      "domain": "yellowfinbi.com"
+    },
+    {
+      "name": "Yelp for Resturaunts",
+      "domain": "yelp.com"
+    },
+    {
+      "name": "Yesware",
+      "domain": "yesware.com"
+    },
+    {
+      "name": "Yext",
+      "domain": "yext.com"
+    },
+    {
+      "name": "Yokoy",
+      "domain": "yokoy.ai"
+    },
+    {
+      "name": "Yotpo",
+      "domain": "yotpo.com"
+    },
+    {
+      "name": "Yourmembership",
+      "domain": "yourmembership.com"
+    },
+    {
+      "name": "Zabbix",
+      "domain": "zabbix.com"
+    },
+    {
+      "name": "ZAP",
+      "domain": "zapbi.com"
+    },
+    {
+      "name": "Zapier",
+      "domain": "zapier.com"
+    },
+    {
+      "name": "Zapproved",
+      "domain": "zapproved.com"
+    },
+    {
+      "name": "Zendesk",
+      "domain": "zendesk.com"
+    },
+    {
+      "name": "Zenefits",
+      "domain": "zenefits.com"
+    },
+    {
+      "name": "Zivver",
+      "domain": "zivver.com"
+    },
+    {
+      "name": "Zoho",
+      "domain": "zoho.com"
+    },
+    {
+      "name": "Zomentum",
+      "domain": "zomentum.com"
+    },
+    {
+      "name": "Zonos",
+      "domain": "zonos.com"
+    },
+    {
+      "name": "Zoom",
+      "domain": "zoom.us"
+    },
+    {
+      "name": "ZoomInfo",
+      "domain": "zoominfo.com"
+    },
+    {
+      "name": "Zudy",
+      "domain": "zudy.com"
+    }
+  ]
+}
