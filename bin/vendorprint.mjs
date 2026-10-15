@@ -45,7 +45,7 @@ Options:
   --max-inflight-dns <n>  Global DNS attempt ceiling (default: 32, maximum: 128)
   --qps <n>               Maximum DNS attempt starts per second (default: 100)
   --preserve-hostname     Scan the supplied hostname instead of its base domain
-  --include-unclassified  Include generic verification-like TXT diagnostics
+  --include-unclassified  Include unmatched TXT key diagnostics (values redacted)
   --ct                    Add opt-in passive certificate-transparency labels
   --ct-cache <path>       Reuse and update a local CT response cache
   --ct-delay <ms>         Delay between CT index requests (default: 1000)

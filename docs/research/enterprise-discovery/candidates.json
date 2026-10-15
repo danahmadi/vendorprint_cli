@@ -1,0 +1,93 @@
+{
+  "frozenAt": "2026-10-15T04:04:01.254Z",
+  "selection": "Recurring discovery-cohort observations plus explicit vendor documentation. Frozen before examining any holdout patterns. TXT rules require exact prefix and nonempty value; CNAME rules require hostname boundaries. No generic CDN, AWS, SendGrid, or guessed acronym attribution.",
+  "candidates": [
+    {
+      "family": "verification",
+      "provider": "Docusign",
+      "prefix": "docusign",
+      "category": "business_software",
+      "productScope": "docusign_organization_domain",
+      "url": "https://support.docusign.com/s/document-item?bundleId=rrf1583359212854&language=fr&topicId=gso1583359141256.html"
+    },
+    {
+      "family": "verification",
+      "provider": "Twilio",
+      "prefix": "twilio-domain-verification",
+      "category": "business_software",
+      "productScope": "twilio_organization_domain",
+      "url": "https://www.twilio.com/docs/iam/organizations/domains"
+    },
+    {
+      "family": "verification",
+      "provider": "Cloudflare Dashboard SSO",
+      "prefix": "cloudflare_dashboard_sso",
+      "category": "identity_access",
+      "productScope": "cloudflare_dashboard_sso_domain",
+      "url": "https://developers.cloudflare.com/fundamentals/manage-members/dashboard-sso/"
+    },
+    {
+      "family": "verification",
+      "provider": "Lovable",
+      "prefix": "lovable_verification",
+      "category": "ai_workspace",
+      "productScope": "lovable_workspace_domain",
+      "url": "https://docs.lovable.dev/features/verified-domains"
+    },
+    {
+      "family": "verification",
+      "provider": "PandaDoc",
+      "prefix": "pandadoc-domain-verification",
+      "category": "business_software",
+      "productScope": "pandadoc_sso_domain",
+      "url": "https://support.pandadoc.com/en/articles/9715050-sso-implementation"
+    },
+    {
+      "family": "verification",
+      "provider": "Remote",
+      "prefix": "remote-domain-verification",
+      "category": "business_software",
+      "productScope": "remote_sso_domain",
+      "url": "https://support.remote.com/hc/en-us/articles/31443994643725-SSO-Domain-Validation"
+    },
+    {
+      "family": "verification",
+      "provider": "Sage Intacct",
+      "prefix": "intacct-esk",
+      "category": "business_software",
+      "productScope": "sage_intacct_email_sender_key",
+      "url": "https://www-p50491.intacct.com/ia/docs/en_US/help_action/Company/Company_setup/Company_Information/company-information.htm"
+    },
+    {
+      "family": "verification",
+      "provider": "Snowflake",
+      "prefix": "snowflake-verification",
+      "category": "business_software",
+      "productScope": "snowflake_organization_email_domain",
+      "url": "https://docs.snowflake.com/en/user-guide/admin-domain-verification"
+    },
+    {
+      "family": "cname",
+      "provider": "Atlassian Statuspage",
+      "suffix": "stspg-customer.com",
+      "category": "customer_support",
+      "productScope": "statuspage_custom_domain",
+      "url": "https://support.atlassian.com/statuspage/docs/configure-your-dns"
+    },
+    {
+      "family": "cname",
+      "provider": "Auth0",
+      "suffix": "edge.tenants.auth0.com",
+      "category": "identity_access",
+      "productScope": "auth0_custom_authentication_domain",
+      "url": "https://auth0.com/blog/custom-domains-complete-guide/"
+    },
+    {
+      "family": "spf",
+      "provider": "Atlassian Statuspage",
+      "exact": "stspg-customer.com",
+      "productScope": "statuspage_notification_sending",
+      "url": "https://support.atlassian.com/statuspage/docs/configure-your-dns"
+    }
+  ]
+}

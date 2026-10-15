@@ -616,6 +616,23 @@ export function classifyDnsProvider(nameservers) {
   return matched.size ? [...matched] : ["Unknown"];
 }
 
+// Keep only short key names, never TXT values or opaque standalone tokens.
+// This diagnostic is deliberately broader than vendor attribution.
+export function extractUnmatchedTxtPrefixes(txtRecords) {
+  const prefixes = new Set();
+  for (const parts of txtRecords) {
+    const value = parts.join("").trim();
+    if (/^v=(?:spf1|DMARC1)\b/i.test(value)) continue;
+    if (extractDomainVerifications([parts]).length) continue;
+    const key = value.match(/^([a-z0-9][a-z0-9_.-]{1,63})\s*[=:]\s*\S/i)?.[1];
+    if (!key || !/[a-z]/i.test(key) || /[a-z0-9]{24,}/i.test(key) || /[a-f0-9]{8}-[a-f0-9]{4}-/i.test(key)) continue;
+    // Some vendors append the customer's domain to the key itself.
+    const prefix = key.split(".")[0].toLowerCase();
+    prefixes.add(prefix.replace(/((?:domain|site)-verification)-(?=[a-z0-9]*\d)[a-z0-9]{6,}$/i, "$1"));
+  }
+  return [...prefixes].sort();
+}
+
 export function extractDomainVerifications(txtRecords, options = {}) {
   const values = txtRecords.map((parts) => parts.join("").trim());
   const findings = [];

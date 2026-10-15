@@ -1,0 +1,74 @@
+[
+  {
+    "family": "txtRecordPrefixes",
+    "pattern": "asv",
+    "domains": 118,
+    "disposition": "Ambiguous short key; do not guess a vendor."
+  },
+  {
+    "family": "txtRecordPrefixes",
+    "pattern": "ms",
+    "domains": 157,
+    "disposition": "Existing Microsoft coverage/format lead; unmatched does not necessarily mean a new vendor."
+  },
+  {
+    "family": "txtRecordPrefixes",
+    "pattern": "smartsheet-site-validation",
+    "domains": 92,
+    "disposition": "Strong named lead; exact current syntax needs stronger primary documentation."
+  },
+  {
+    "family": "txtRecordPrefixes",
+    "pattern": "wiz-domain-verification",
+    "domains": 69,
+    "disposition": "Strong named security lead; not promoted without exact primary documentation."
+  },
+  {
+    "family": "txtRecordPrefixes",
+    "pattern": "wrike-verification",
+    "domains": 34,
+    "disposition": "Named lead; domain-verification mechanism documented but exact marker not confirmed."
+  },
+  {
+    "family": "txtRecordPrefixes",
+    "pattern": "elevenlabs",
+    "domains": 30,
+    "disposition": "Vendor documents TXT verification, but exact marker remains unconfirmed in public docs."
+  },
+  {
+    "family": "txtRecordPrefixes",
+    "pattern": "clay-domain-verification",
+    "domains": 1,
+    "disposition": "Only one domain and variable suffix; keep exploratory."
+  },
+  {
+    "family": "cnameTargetDomains",
+    "pattern": "mktossl.com",
+    "domains": 151,
+    "disposition": "High-priority Marketo alias coverage lead; primary target documentation/controlled-chain validation still needed."
+  },
+  {
+    "family": "cnameTargetDomains",
+    "pattern": "insided.com",
+    "domains": 51,
+    "disposition": "Community-platform lead; exact hosted-product scope still needs validation."
+  },
+  {
+    "family": "cnameTargetDomains",
+    "pattern": "cloudfront.net",
+    "domains": 237,
+    "disposition": "Shared infrastructure; no downstream SaaS attribution."
+  },
+  {
+    "family": "dkimTargetDomains",
+    "pattern": "mail.microsoft",
+    "domains": 22,
+    "disposition": "Potential Microsoft DKIM coverage update, not a new SaaS vendor."
+  },
+  {
+    "family": "mxTargetDomains",
+    "pattern": "msv1.invalid",
+    "domains": 6,
+    "disposition": "Non-routable verification-style target; not a mail provider."
+  }
+]

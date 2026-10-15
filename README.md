@@ -170,13 +170,36 @@ version it used:
 vendorprint signatures --pretty
 ```
 
-Audit an existing full JSON or NDJSON scan without making network requests. The
-audit emits aggregate unmatched TXT prefixes and CNAME, SPF, DKIM, and delegated-NS
-targets. It never emits account domains or verification tokens:
+Audit an existing full JSON or NDJSON scan without making network requests. For
+discovery runs, retain the diagnostic fields and redacted unknown TXT keys:
+
+```bash
+vendorprint --input accounts.txt --full --include-unclassified \
+  --format ndjson --output findings.ndjson
+```
+
+The audit ranks unmatched TXT keys and CNAME, MX, SPF, DKIM, and delegated-NS
+target domains. Counts are distinct scanned company domains, deduplicated across
+records and repeated scans. SPF includes/redirects include observed recursive
+references. Targets are grouped by registrable domain; tenant labels and
+first-party targets are omitted. TXT values are never included. Some variable
+verification-key suffixes are grouped for discovery, without assigning a vendor:
 
 ```bash
 vendorprint signatures audit findings.ndjson --pretty
 ```
+
+Audit schema `1.1` changes `count` from observations to distinct domains and groups
+`spfMechanisms` by registrable target domain. Compact scan output lacks the
+diagnostics needed for a complete audit. An unmatched pattern is a research lead,
+not an automatically learned signature. Validate it against vendor documentation
+and separate domains before updating the registry.
+
+The [1,000-domain business-software research pass](docs/research/enterprise-discovery-2026-10-14.md)
+adds documented signals for Docusign, Twilio, Cloudflare Dashboard SSO, Lovable,
+PandaDoc, Remote, Sage Intacct, Snowflake, and Auth0, plus Statuspage CNAME and SPF
+coverage. These identify published configuration or domain relationships, not
+active usage or licensed editions.
 
 Compare two JSON reports to identify category/provider additions and removals:
 

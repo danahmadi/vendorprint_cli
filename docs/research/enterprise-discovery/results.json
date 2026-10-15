@@ -1,0 +1,6178 @@
+{
+  "generatedAt": "2026-10-15T04:10:54.185Z",
+  "scanStartedAt": "2026-10-15T03:59:42.020Z",
+  "cohortDomains": 1000,
+  "discoveryDomains": 800,
+  "holdoutDomains": 200,
+  "baselineGitCommit": "9ca8ce4253646fb653571b4655d282b99e924133",
+  "rawScanSha256": "eff192d64d39374e6b6ec1490a3c2de3213993a450d61edccdf697ecf8d01bc5",
+  "queries": 77986,
+  "budgetExhaustedDomains": 572,
+  "limitedDnsDomains": [
+    "artesian.co",
+    "leanplum.me",
+    "retreavor.com",
+    "pageup.com",
+    "triblio.com"
+  ],
+  "domainsWithNoApexNameservers": [
+    "artesian.co",
+    "leanplum.me",
+    "retreavor.com",
+    "pageup.com",
+    "triblio.com"
+  ],
+  "domainsWithNonAbsenceErrorByCode": {
+    "EBADNAME": 72,
+    "BUDGET_EXHAUSTED": 426,
+    "ESERVFAIL": 25,
+    "ETIMEOUT": 3
+  },
+  "interpretation": "Counts are distinct domains with matching DNS observations, not verified customer counts, prevalence estimates, precision, recall, completed verification, or paid usage. Source cohort contains historical/acquired brands.",
+  "candidates": [
+    {
+      "family": "verification",
+      "provider": "Docusign",
+      "prefix": "docusign",
+      "category": "business_software",
+      "productScope": "docusign_organization_domain",
+      "url": "https://support.docusign.com/s/document-item?bundleId=rrf1583359212854&language=fr&topicId=gso1583359141256.html",
+      "discoveryDomains": 250,
+      "holdoutDomains": 69,
+      "totalDomains": 319,
+      "observations": [
+        {
+          "domain": "accruent.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "15five.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "8x8.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "accela.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "achievers.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "activecampaign.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "acumatica.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "adroll.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "aircall.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "algolia.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "akamai.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "alfresco.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "allocadia.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "amplitude.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "alteryx.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "anaplan.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "apollo.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "appian.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "appdirect.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "appfolio.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "appsflyer.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "apptio.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "archibus.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "arangodb.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "asana.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "articulate.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "atera.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "atlassian.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "avidxchange.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bazaarvoice.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "beekeeper.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bandwidth.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "avionte.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bamboohr.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bigtime.net",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bigcommerce.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bettercloud.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bloomfire.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "blackline.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bluebeam.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "brandmaker.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "braze.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "brightcove.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "bynder.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "calendly.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "calabrio.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "callrail.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "canva.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "captivateiq.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "carta.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "casavi.de",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "celtra.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "canto.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "centrify.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "celonis.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "channeladvisor.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "chargify.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "chartbeat.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "circleci.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "churnzero.net",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "classy.org",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "clari.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "clearbit.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "clevertap.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "clickup.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "cloudera.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "cloudpay.net",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "codesignal.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "code42.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "collibra.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "confluence.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "cohesity.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "conversica.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "cultureamp.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "coursera.org",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "couchbase.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "coveo.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "coupa.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "customer.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "coralogix.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "cvent.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "dataiku.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "datastax.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "datadoghq.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "deem.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "demandbase.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "digicert.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "docebo.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "docusign.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "doximity.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "deputy.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "drift.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "dropbox.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "dronedeploy.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "dudamobile.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "druva.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "dynatrace.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "e2open.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "eclinicalworks.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "easyvista.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "egnyte.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "elastic.co",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "enable.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "envoy.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "evernote.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "expensify.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "exasol.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "falcon.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "eventbrite.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "fastly.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "financialforce.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "figma.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "fivetran.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "floqast.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "five9.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "forter.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "frontapp.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "freshbooks.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "fullcontact.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "fullstory.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "github.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "gitlab.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "gong.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "grafana.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "gusto.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hashicorp.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "guildeducation.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hginsights.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "highspot.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hackerrank.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hopin.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hirevue.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "helpshift.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hotjar.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hubspot.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "hireology.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "imperva.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "icertis.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "icims.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "icontact.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "infobip.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "intapp.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "intralinks.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "issuu.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "invoca.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "j2global.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "iterable.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "jetbrains.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "jenzabar.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "jmp.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "jobvite.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "jumpcloud.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "kahoot.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "justworks.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "kaseya.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "kimbleapps.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "keyshot.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "kindful.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "klaviyo.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "kyriba.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "laserfiche.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "launchdarkly.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "leandatainc.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "kustomer.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "lastpass.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "liferay.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "liveperson.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "logicmonitor.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "lob.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "lusha.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "lucidworks.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "lotame.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "loopio.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mailchimp.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mailgun.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "malwarebytes.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mariadb.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mcleodsoftware.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "medallia.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "memsource.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mavenlink.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mendix.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "messagegears.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mindjet.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mimecast.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mindbodyonline.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "miro.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mitel.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mountain.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "monday.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "moz.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mycase.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "mural.co",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "nakisa.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "netbase.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "netsuite.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "newrelic.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "netskope.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "nintex.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "nylas.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "onetrust.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "octopus.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "oomnitza.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "okta.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "outsystems.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "onelogin.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "optimizely.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "outreach.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "ownbackup.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pagerduty.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pantheon.io",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "paylocity.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "peoplefluent.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pendo.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pax8.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "perforce.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pingidentity.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "personio.de",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "plaid.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "planview.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pleo.io",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pluralsight.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "podium.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "plivo.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "powerschool.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "processmaker.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "proofpoint.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pushpay.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "qualys.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "quantcast.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "pypestream.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "qualtrics.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "redislabs.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "replicon.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "reltio.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "resolver.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "reputation.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "rocketrip.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "ringcentral.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "rokt.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "rubiconproject.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "rubrik.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "salsalabs.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "salesloft.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "salsify.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "saucelabs.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "segment.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "sentry.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "searchmetrics.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "servicetitan.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "servicenow.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "simplelegal.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "simpli.fi",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "shopify.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "siteimprove.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "smartling.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "smartbear.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "smarsh.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "smartsheet.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "smartrecruiters.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "snyk.io",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "socialsolutions.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "squareup.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "splunk.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "sproutsocial.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "squarespace.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "sprinklr.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "stripe.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "sugarcrm.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "sumologic.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "talend.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "talkwalker.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "surveymonkey.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "tanium.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "tangocard.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "telnyx.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "teamviewer.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "terminus.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "thetradedesk.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "thoughtspot.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "thrivehive.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "thycotic.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "topproducer.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "toasttab.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "trackvia.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "tray.io",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "travelperk.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "typeform.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "udemy.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "unanet.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "twilio.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "usertesting.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "vidmob.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "virtana.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "virtru.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "vistex.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "volusion.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "vutu.re",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "walkme.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "wetransfer.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "webflow.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "wegalvanize.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "whatfix.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "wistia.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "workday.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "workboard.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "workiva.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "workforcesoftware.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "wpengine.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "workramp.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "wix.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "xactlycorp.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "wunderkind.co",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "zapier.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "zendesk.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "zivver.com",
+          "split": "holdout",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "yext.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "zoom.us",
+          "split": "discovery",
+          "prefix": "docusign"
+        },
+        {
+          "domain": "zoominfo.com",
+          "split": "discovery",
+          "prefix": "docusign"
+        }
+      ]
+    },
+    {
+      "family": "verification",
+      "provider": "Twilio",
+      "prefix": "twilio-domain-verification",
+      "category": "business_software",
+      "productScope": "twilio_organization_domain",
+      "url": "https://www.twilio.com/docs/iam/organizations/domains",
+      "discoveryDomains": 60,
+      "holdoutDomains": 21,
+      "totalDomains": 81,
+      "observations": [
+        {
+          "domain": "accelevents.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "8x8.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "advancedmd.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "aerospike.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "akamai.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "appdirect.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "atlassian.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "beekeeper.io",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "bandwidth.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "bamboohr.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "bizzabo.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "bluebeam.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "bluesnap.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "brightlocal.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "buildertrend.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "buildium.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "canva.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "carto.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "ceterus.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "clari.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "clickfunnels.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "clickup.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "conversica.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "cultureamp.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "couchbase.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "coupa.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "cvent.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "dataiku.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "deputy.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "domo.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "eventbrite.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "figma.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "five9.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "formstack.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "greenhouse.io",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "hashicorp.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "helpshift.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "iterable.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "jobnimbus.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "jotform.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "kaseya.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "leadiq.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "lastpass.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "medallia.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "mountain.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "mycase.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "nylas.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "oomnitza.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "okta.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "opentext.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "palantir.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "pagerduty.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "pandadoc.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "paylocity.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "peoplefluent.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "pax8.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "pingidentity.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "pleo.io",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "processmaker.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "salsalabs.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "samsara.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "salesloft.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "servicetrade.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "servicenow.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "shopify.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "smartbear.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "smartrecruiters.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "socialsolutions.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "squarespace.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "soleo.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "talkdesk.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "udemy.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "uplandsoftware.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "virtru.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "wishpond.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "workday.com",
+          "split": "holdout",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "wix.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "workjam.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "writer.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "xero.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        },
+        {
+          "domain": "yardi.com",
+          "split": "discovery",
+          "prefix": "twilio-domain-verification"
+        }
+      ]
+    },
+    {
+      "family": "verification",
+      "provider": "Cloudflare Dashboard SSO",
+      "prefix": "cloudflare_dashboard_sso",
+      "category": "identity_access",
+      "productScope": "cloudflare_dashboard_sso_domain",
+      "url": "https://developers.cloudflare.com/fundamentals/manage-members/dashboard-sso/",
+      "discoveryDomains": 38,
+      "holdoutDomains": 6,
+      "totalDomains": 44,
+      "observations": [
+        {
+          "domain": "accela.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "activecampaign.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "acquia.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "apollo.io",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "board.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "celum.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "cloudera.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "coupa.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "coralogix.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "cvent.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "databricks.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "dynatrace.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "easyvista.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "elastic.co",
+          "split": "holdout",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "expensify.com",
+          "split": "holdout",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "figma.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "forter.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "frontify.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "grafana.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "helpshift.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "hubstaff.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "klue.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "laserfiche.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "lansweeper.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "lucidworks.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "madcapsoftware.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "malwarebytes.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "miro.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "miva.com",
+          "split": "holdout",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "moengage.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "octopus.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "opentext.com",
+          "split": "holdout",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "pagerduty.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "patriotsoftware.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "rydoo.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "sentry.io",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "servicetitan.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "skillsoft.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "telestream.net",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "thoughtspot.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "typeform.com",
+          "split": "holdout",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "vectorworks.net",
+          "split": "holdout",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "wix.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        },
+        {
+          "domain": "yelp.com",
+          "split": "discovery",
+          "prefix": "cloudflare_dashboard_sso"
+        }
+      ]
+    },
+    {
+      "family": "verification",
+      "provider": "Lovable",
+      "prefix": "lovable_verification",
+      "category": "ai_workspace",
+      "productScope": "lovable_workspace_domain",
+      "url": "https://docs.lovable.dev/features/verified-domains",
+      "discoveryDomains": 31,
+      "holdoutDomains": 4,
+      "totalDomains": 35,
+      "observations": [
+        {
+          "domain": "ahrefs.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "appdirect.com",
+          "split": "holdout",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "articulate.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "automationanywhere.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "canto.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "ceros.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "centrical.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "certain.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "chargebee.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "coursera.org",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "coralogix.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "dataiku.com",
+          "split": "holdout",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "docebo.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "dropbox.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "floqast.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "forter.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "frontapp.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "heapanalytics.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "hotjar.com",
+          "split": "holdout",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "hubstaff.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "insightsoftware.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "keyshot.com",
+          "split": "holdout",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "kyriba.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "lansweeper.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "logicmonitor.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "moengage.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "omnisend.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "oncehub.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "pandadoc.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "pendo.io",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "salsify.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "sellsy.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "surveymonkey.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "teamviewer.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        },
+        {
+          "domain": "workjam.com",
+          "split": "discovery",
+          "prefix": "lovable_verification"
+        }
+      ]
+    },
+    {
+      "family": "verification",
+      "provider": "PandaDoc",
+      "prefix": "pandadoc-domain-verification",
+      "category": "business_software",
+      "productScope": "pandadoc_sso_domain",
+      "url": "https://support.pandadoc.com/en/articles/9715050-sso-implementation",
+      "discoveryDomains": 7,
+      "holdoutDomains": 0,
+      "totalDomains": 7,
+      "observations": [
+        {
+          "domain": "beekeeper.io",
+          "split": "discovery",
+          "prefix": "pandadoc-domain-verification"
+        },
+        {
+          "domain": "bizzabo.com",
+          "split": "discovery",
+          "prefix": "pandadoc-domain-verification"
+        },
+        {
+          "domain": "blueskyelearn.com",
+          "split": "discovery",
+          "prefix": "pandadoc-domain-verification"
+        },
+        {
+          "domain": "ceros.com",
+          "split": "discovery",
+          "prefix": "pandadoc-domain-verification"
+        },
+        {
+          "domain": "getresponse.com",
+          "split": "discovery",
+          "prefix": "pandadoc-domain-verification"
+        },
+        {
+          "domain": "nylas.com",
+          "split": "discovery",
+          "prefix": "pandadoc-domain-verification"
+        },
+        {
+          "domain": "pandadoc.com",
+          "split": "discovery",
+          "prefix": "pandadoc-domain-verification"
+        }
+      ]
+    },
+    {
+      "family": "verification",
+      "provider": "Remote",
+      "prefix": "remote-domain-verification",
+      "category": "business_software",
+      "productScope": "remote_sso_domain",
+      "url": "https://support.remote.com/hc/en-us/articles/31443994643725-SSO-Domain-Validation",
+      "discoveryDomains": 13,
+      "holdoutDomains": 4,
+      "totalDomains": 17,
+      "observations": [
+        {
+          "domain": "6sense.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "adverity.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "aircall.io",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "bamboohr.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "chartbeat.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "clearcompany.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "cultureamp.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "getjobber.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "kustomer.com",
+          "split": "holdout",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "octopus.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "paylocity.com",
+          "split": "holdout",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "reltio.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "sift.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "unbounce.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "upcloud.com",
+          "split": "discovery",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "webflow.com",
+          "split": "holdout",
+          "prefix": "remote-domain-verification"
+        },
+        {
+          "domain": "zapier.com",
+          "split": "holdout",
+          "prefix": "remote-domain-verification"
+        }
+      ]
+    },
+    {
+      "family": "verification",
+      "provider": "Sage Intacct",
+      "prefix": "intacct-esk",
+      "category": "business_software",
+      "productScope": "sage_intacct_email_sender_key",
+      "url": "https://www-p50491.intacct.com/ia/docs/en_US/help_action/Company/Company_setup/Company_Information/company-information.htm",
+      "discoveryDomains": 36,
+      "holdoutDomains": 7,
+      "totalDomains": 43,
+      "observations": [
+        {
+          "domain": "6sense.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "activecampaign.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "acquia.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "aderant.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "aerospike.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "allbound.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "allego.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "articulate.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "author-it.com",
+          "split": "holdout",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "blueskyelearn.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "bombora.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "canto.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "centercode.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "certain.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "code42.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "dealersocket.com",
+          "split": "holdout",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "deem.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "demandbase.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "fieldedge.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "imanage.com",
+          "split": "holdout",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "impartner.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "infinitecampus.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "interactsoftware.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "jostle.me",
+          "split": "holdout",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "klaviyo.com",
+          "split": "holdout",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "mediavalet.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "mycase.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "nakisa.com",
+          "split": "holdout",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "opensesame.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "pagefreezer.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "panopto.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "pendo.io",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "relativity.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "resolver.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "reputation.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "rootstock.com",
+          "split": "holdout",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "sales-i.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "showingtime.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "teamsnap.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "thycotic.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "vidmob.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "webpt.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        },
+        {
+          "domain": "zapbi.com",
+          "split": "discovery",
+          "prefix": "intacct-esk"
+        }
+      ]
+    },
+    {
+      "family": "verification",
+      "provider": "Snowflake",
+      "prefix": "snowflake-verification",
+      "category": "business_software",
+      "productScope": "snowflake_organization_email_domain",
+      "url": "https://docs.snowflake.com/en/user-guide/admin-domain-verification",
+      "discoveryDomains": 4,
+      "holdoutDomains": 0,
+      "totalDomains": 4,
+      "observations": [
+        {
+          "domain": "docusign.com",
+          "split": "discovery",
+          "prefix": "snowflake-verification"
+        },
+        {
+          "domain": "druva.com",
+          "split": "discovery",
+          "prefix": "snowflake-verification"
+        },
+        {
+          "domain": "uplandsoftware.com",
+          "split": "discovery",
+          "prefix": "snowflake-verification"
+        },
+        {
+          "domain": "yext.com",
+          "split": "discovery",
+          "prefix": "snowflake-verification"
+        }
+      ]
+    },
+    {
+      "family": "cname",
+      "provider": "Atlassian Statuspage",
+      "suffix": "stspg-customer.com",
+      "category": "customer_support",
+      "productScope": "statuspage_custom_domain",
+      "url": "https://support.atlassian.com/statuspage/docs/configure-your-dns",
+      "discoveryDomains": 274,
+      "holdoutDomains": 81,
+      "totalDomains": 355,
+      "observations": [
+        {
+          "domain": "1password.com",
+          "split": "holdout",
+          "hostname": "status.1password.com",
+          "target": "z5s8xghvb0vf.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "6sense.com",
+          "split": "discovery",
+          "hostname": "status.6sense.com",
+          "target": "w3npwn0d15f6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "accelo.com",
+          "split": "holdout",
+          "hostname": "status.accelo.com",
+          "target": "m0sbzc18yt4n.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "accela.com",
+          "split": "discovery",
+          "hostname": "status.accela.com",
+          "target": "5gzdx60zbxzf.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "act.com",
+          "split": "discovery",
+          "hostname": "status.act.com",
+          "target": "mvgsw3rfwxzv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "activecampaign.com",
+          "split": "discovery",
+          "hostname": "status.activecampaign.com",
+          "target": "36wq37z91g4s.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "acquia.com",
+          "split": "discovery",
+          "hostname": "status.acquia.com",
+          "target": "c3bdbqpxhzcc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "activtrak.com",
+          "split": "holdout",
+          "hostname": "status.activtrak.com",
+          "target": "dvzw77blgyqw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "360learning.com",
+          "split": "discovery",
+          "hostname": "status.360learning.com",
+          "target": "5r7vm2z68p2z.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "aderant.com",
+          "split": "discovery",
+          "hostname": "status.aderant.com",
+          "target": "lyfy9g668508.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "advancedmd.com",
+          "split": "discovery",
+          "hostname": "status.advancedmd.com",
+          "target": "qhx0jvljyb5m.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "adroll.com",
+          "split": "discovery",
+          "hostname": "status.adroll.com",
+          "target": "hsl6dxj2b4ft.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "agorapulse.com",
+          "split": "discovery",
+          "hostname": "status.agorapulse.com",
+          "target": "0y37yhhnv0y3.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "aha.io",
+          "split": "discovery",
+          "hostname": "status.aha.io",
+          "target": "kg9wbqnh5s2l.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "aerospike.com",
+          "split": "discovery",
+          "hostname": "status.aerospike.com",
+          "target": "gjsvpc7bs97f.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "akamai.com",
+          "split": "discovery",
+          "hostname": "status.akamai.com",
+          "target": "tmd0zfspxwvp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "alyce.com",
+          "split": "discovery",
+          "hostname": "status.alyce.com",
+          "target": "vt27jzkwjz94.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "amplitude.com",
+          "split": "holdout",
+          "hostname": "status.amplitude.com",
+          "target": "bn2d4b3wgfdd.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "aplos.com",
+          "split": "discovery",
+          "hostname": "status.aplos.com",
+          "target": "h9j60drszl7s.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "anaplan.com",
+          "split": "holdout",
+          "hostname": "status.anaplan.com",
+          "target": "h67slnm23cyy.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "appcues.com",
+          "split": "discovery",
+          "hostname": "status.appcues.com",
+          "target": "wrjfc0mvsnss.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "anydesk.com",
+          "split": "discovery",
+          "hostname": "status.anydesk.com",
+          "target": "tl94xqsdynv4.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "appointment-plus.com",
+          "split": "holdout",
+          "hostname": "status.appointment-plus.com",
+          "target": "yv7265p30w55.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "applitools.com",
+          "split": "discovery",
+          "hostname": "status.applitools.com",
+          "target": "xf93zhwpztl2.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "appfollow.io",
+          "split": "discovery",
+          "hostname": "status.appfollow.io",
+          "target": "634hk7s28cv2.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "appsflyer.com",
+          "split": "discovery",
+          "hostname": "status.appsflyer.com",
+          "target": "dgb87srq2spv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "apptio.com",
+          "split": "discovery",
+          "hostname": "status.apptio.com",
+          "target": "xhll3nj97jqx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "asknicely.com",
+          "split": "discovery",
+          "hostname": "status.asknicely.com",
+          "target": "b3f4f2vzgc0s.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "asana.com",
+          "split": "discovery",
+          "hostname": "status.asana.com",
+          "target": "w58858w0sjxx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "appzen.com",
+          "split": "discovery",
+          "hostname": "status.appzen.com",
+          "target": "4jhvpswq9gyq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "atera.com",
+          "split": "discovery",
+          "hostname": "status.atera.com",
+          "target": "kv6mqq586ny1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "atlassian.com",
+          "split": "discovery",
+          "hostname": "status.atlassian.com",
+          "target": "0f54fx204jpt.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "author-it.com",
+          "split": "holdout",
+          "hostname": "status.author-it.com",
+          "target": "x4v9bfqfjctf.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "avaamo.com",
+          "split": "discovery",
+          "hostname": "status.avaamo.com",
+          "target": "lghtjwtrcw78.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "avalara.com",
+          "split": "discovery",
+          "hostname": "status.avalara.com",
+          "target": "m10fpsk86bhy.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "aweber.com",
+          "split": "discovery",
+          "hostname": "status.aweber.com",
+          "target": "bjqyd6ttxjk7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "avidxchange.com",
+          "split": "discovery",
+          "hostname": "status.avidxchange.com",
+          "target": "xh29bdgyxxmr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bananatag.com",
+          "split": "discovery",
+          "hostname": "status.bananatag.com",
+          "target": "wmqxp38vdqyz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bazaarvoice.com",
+          "split": "discovery",
+          "hostname": "status.bazaarvoice.com",
+          "target": "h24x3lcpg0f8.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "beekeeper.io",
+          "split": "discovery",
+          "hostname": "status.beekeeper.io",
+          "target": "syqt39h45d5p.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bandwidth.com",
+          "split": "discovery",
+          "hostname": "status.bandwidth.com",
+          "target": "nlrgjx1zrcyr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "avionte.com",
+          "split": "holdout",
+          "hostname": "status.avionte.com",
+          "target": "g1cqt4d38cgw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bigtime.net",
+          "split": "discovery",
+          "hostname": "status.bigtime.net",
+          "target": "j1wpphqdn9mq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bigcommerce.com",
+          "split": "holdout",
+          "hostname": "status.bigcommerce.com",
+          "target": "qbn4dyd29jby.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bettercloud.com",
+          "split": "discovery",
+          "hostname": "status.bettercloud.com",
+          "target": "stbh0t87fyjr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "birdeye.com",
+          "split": "holdout",
+          "hostname": "status.birdeye.com",
+          "target": "r8zzw94qxcl3.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bizzabo.com",
+          "split": "discovery",
+          "hostname": "status.bizzabo.com",
+          "target": "w5wttjzcd1y1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bitly.com",
+          "split": "discovery",
+          "hostname": "status.bitly.com",
+          "target": "hr0hbjty1ljs.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bonus.ly",
+          "split": "holdout",
+          "hostname": "status.bonus.ly",
+          "target": "nqxv3p40kj3w.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "botkeeper.com",
+          "split": "holdout",
+          "hostname": "status.botkeeper.com",
+          "target": "gs2g8c7kp4py.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "brandwatch.com",
+          "split": "discovery",
+          "hostname": "status.brandwatch.com",
+          "target": "q61jfl7vt19t.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "brightidea.com",
+          "split": "discovery",
+          "hostname": "status.brightidea.com",
+          "target": "2yddgks1ry20.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bugsnag.com",
+          "split": "discovery",
+          "hostname": "status.bugsnag.com",
+          "target": "6xl1gdp6yn0x.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bynder.com",
+          "split": "discovery",
+          "hostname": "status.bynder.com",
+          "target": "jdl08qb35tzx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bullhorn.com",
+          "split": "discovery",
+          "hostname": "status.bullhorn.com",
+          "target": "cdxw86qkmw3x.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "buildium.com",
+          "split": "holdout",
+          "hostname": "status.buildium.com",
+          "target": "x4n38r548mv5.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "callrail.com",
+          "split": "discovery",
+          "hostname": "status.callrail.com",
+          "target": "clbfknnjdfpl.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "broadly.com",
+          "split": "discovery",
+          "hostname": "status.broadly.com",
+          "target": "28t78v84jg6k.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "captivateiq.com",
+          "split": "holdout",
+          "hostname": "status.captivateiq.com",
+          "target": "k5tcwdc968fz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "carta.com",
+          "split": "holdout",
+          "hostname": "status.carta.com",
+          "target": "vz6rclzjdt41.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "ceros.com",
+          "split": "discovery",
+          "hostname": "status.ceros.com",
+          "target": "dwky76gz3s50.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "certain.com",
+          "split": "discovery",
+          "hostname": "status.certain.com",
+          "target": "w2phszlzv1fd.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "channelengine.com",
+          "split": "discovery",
+          "hostname": "status.channelengine.com",
+          "target": "k7y4zrx0mm1h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "chef.io",
+          "split": "discovery",
+          "hostname": "status.chef.io",
+          "target": "c0nql3j2x52j.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "chargebee.com",
+          "split": "discovery",
+          "hostname": "status.chargebee.com",
+          "target": "7h56br5y94wh.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "chartbeat.com",
+          "split": "discovery",
+          "hostname": "status.chartbeat.com",
+          "target": "lvdxdpmg70q0.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "chilipiper.com",
+          "split": "holdout",
+          "hostname": "status.chilipiper.com",
+          "target": "19xzt6srnt5f.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "circleci.com",
+          "split": "discovery",
+          "hostname": "status.circleci.com",
+          "target": "6w4r0ttlx5ft.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "classy.org",
+          "split": "discovery",
+          "hostname": "status.classy.org",
+          "target": "tcmlf35kgm31.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "cirrusinsight.com",
+          "split": "discovery",
+          "hostname": "status.cirrusinsight.com",
+          "target": "rh5kkq7bnhmm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "clearbit.com",
+          "split": "discovery",
+          "hostname": "status.clearbit.com",
+          "target": "sts1h656g3ld.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "close.com",
+          "split": "discovery",
+          "hostname": "status.close.com",
+          "target": "8vgwlwbg3zbc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "cleo.com",
+          "split": "holdout",
+          "hostname": "status.cleo.com",
+          "target": "s521mp0tvmh6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "clickfunnels.com",
+          "split": "holdout",
+          "hostname": "status.clickfunnels.com",
+          "target": "68pj1chtmv4h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "clickdimensions.com",
+          "split": "discovery",
+          "hostname": "status.clickdimensions.com",
+          "target": "xp09f9mnbntv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "clevertap.com",
+          "split": "holdout",
+          "hostname": "status.clevertap.com",
+          "target": "m6853sjypfcc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "cloudera.com",
+          "split": "discovery",
+          "hostname": "status.cloudera.com",
+          "target": "kw8sx4b5g26z.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "codesignal.com",
+          "split": "discovery",
+          "hostname": "status.codesignal.com",
+          "target": "9kchx8x5mkxp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "code42.com",
+          "split": "discovery",
+          "hostname": "status.code42.com",
+          "target": "n7spgf9dkl62.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "cloud-elements.com",
+          "split": "discovery",
+          "hostname": "status.cloud-elements.com",
+          "target": "jbtr93ktt5gc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "cohesity.com",
+          "split": "discovery",
+          "hostname": "status.cohesity.com",
+          "target": "f7d99y0lq7q7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "cloudways.com",
+          "split": "discovery",
+          "hostname": "status.cloudways.com",
+          "target": "3wlgh0qb53fx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "convertkit.com",
+          "split": "holdout",
+          "hostname": "status.convertkit.com",
+          "target": "zhqnwspgy45x.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "convoso.com",
+          "split": "discovery",
+          "hostname": "status.convoso.com",
+          "target": "f4dhb2vdbwpn.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "copper.com",
+          "split": "discovery",
+          "hostname": "status.copper.com",
+          "target": "htdm1sj52pny.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "coschedule.com",
+          "split": "holdout",
+          "hostname": "status.coschedule.com",
+          "target": "lzrm2v4x1gxj.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "coursera.org",
+          "split": "discovery",
+          "hostname": "status.coursera.org",
+          "target": "sm6xhlx4fbg7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "couchbase.com",
+          "split": "discovery",
+          "hostname": "status.couchbase.com",
+          "target": "lf9f7vqm9z1f.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "creditrepaircloud.com",
+          "split": "discovery",
+          "hostname": "status.creditrepaircloud.com",
+          "target": "v53pwns8kml6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "customergauge.com",
+          "split": "holdout",
+          "hostname": "status.customergauge.com",
+          "target": "wk86dm6kgh5k.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "coralogix.com",
+          "split": "discovery",
+          "hostname": "status.coralogix.com",
+          "target": "9zt7p0n6cbpy.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "databox.com",
+          "split": "discovery",
+          "hostname": "status.databox.com",
+          "target": "ktt0qmt8vm7t.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "datastax.com",
+          "split": "discovery",
+          "hostname": "status.datastax.com",
+          "target": "gsplplgblzrv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "datarobot.com",
+          "split": "discovery",
+          "hostname": "status.datarobot.com",
+          "target": "rh4wvy7s0k6b.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "datadoghq.com",
+          "split": "holdout",
+          "hostname": "status.datadoghq.com",
+          "target": "1k6wzpspjf99.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "dealersocket.com",
+          "split": "holdout",
+          "hostname": "status.dealersocket.com",
+          "target": "qfs8b1frp9p1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "demandbase.com",
+          "split": "discovery",
+          "hostname": "status.demandbase.com",
+          "target": "45znt53mgqn3.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "digicert.com",
+          "split": "holdout",
+          "hostname": "status.digicert.com",
+          "target": "63gng2lz2kw8.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "deputy.com",
+          "split": "discovery",
+          "hostname": "status.deputy.com",
+          "target": "2c2rnpjspjm9.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "dronedeploy.com",
+          "split": "holdout",
+          "hostname": "status.dronedeploy.com",
+          "target": "g56bb5vqcws9.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "dwolla.com",
+          "split": "discovery",
+          "hostname": "status.dwolla.com",
+          "target": "tnynfs0nwlgr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "dubber.net",
+          "split": "discovery",
+          "hostname": "status.dubber.net",
+          "target": "xzr0pp3k6lry.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "duo.com",
+          "split": "discovery",
+          "hostname": "status.duo.com",
+          "target": "qrxf5mzbrsxw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "egnyte.com",
+          "split": "discovery",
+          "hostname": "status.egnyte.com",
+          "target": "jr196z1ns266.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "elastic.co",
+          "split": "holdout",
+          "hostname": "status.elastic.co",
+          "target": "8wpbdv4sl8gv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "enable.com",
+          "split": "discovery",
+          "hostname": "status.enable.com",
+          "target": "g4rk3qtqsvt7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "envoy.com",
+          "split": "discovery",
+          "hostname": "status.envoy.com",
+          "target": "sv7phj8x3xfr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "engineyard.com",
+          "split": "discovery",
+          "hostname": "status.engineyard.com",
+          "target": "76sphw1bc50q.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "expensify.com",
+          "split": "holdout",
+          "hostname": "status.expensify.com",
+          "target": "n6mt6bg37zmv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "exasol.com",
+          "split": "discovery",
+          "hostname": "status.exasol.com",
+          "target": "42rvj69fw9pj.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "fastspring.com",
+          "split": "discovery",
+          "hostname": "status.fastspring.com",
+          "target": "c44mj09svbzw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "figma.com",
+          "split": "discovery",
+          "hostname": "status.figma.com",
+          "target": "rxpksf93ynw6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "fieldedge.com",
+          "split": "discovery",
+          "hostname": "status.fieldedge.com",
+          "target": "lqskll62495n.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "floqast.com",
+          "split": "discovery",
+          "hostname": "status.floqast.com",
+          "target": "8pfn10zz2jt0.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "flatfile.io",
+          "split": "discovery",
+          "hostname": "status.flatfile.io",
+          "target": "4d1gcb5lj8s4.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "formassembly.com",
+          "split": "holdout",
+          "hostname": "status.formassembly.com",
+          "target": "s3xxyfbwv8pz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "form.com",
+          "split": "discovery",
+          "hostname": "status.form.com",
+          "target": "1lx75v4dgx6s.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "fountain.com",
+          "split": "discovery",
+          "hostname": "status.fountain.com",
+          "target": "tp2f5gp8blgc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "frontapp.com",
+          "split": "discovery",
+          "hostname": "status.frontapp.com",
+          "target": "cd8krl4cl1ks.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "freshbooks.com",
+          "split": "discovery",
+          "hostname": "status.freshbooks.com",
+          "target": "0598znb9bjpl.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "frontify.com",
+          "split": "discovery",
+          "hostname": "status.frontify.com",
+          "target": "w7dbdrjkdh1g.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "fullstory.com",
+          "split": "holdout",
+          "hostname": "status.fullstory.com",
+          "target": "hpdcfnlcgmgn.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "freeagent.com",
+          "split": "discovery",
+          "hostname": "status.freeagent.com",
+          "target": "tn2dcgpy021r.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "funnel.io",
+          "split": "discovery",
+          "hostname": "status.funnel.io",
+          "target": "z7lj8drdjnr8.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "getpostman.com",
+          "split": "holdout",
+          "hostname": "status.getpostman.com",
+          "target": "ms1frkqnsp7r.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "getresponse.com",
+          "split": "discovery",
+          "hostname": "status.getresponse.com",
+          "target": "ykjdtv1csj3l.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "gainsight.com",
+          "split": "holdout",
+          "hostname": "status.gainsight.com",
+          "target": "zncldvn59n96.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "gobridgit.com",
+          "split": "discovery",
+          "hostname": "status.gobridgit.com",
+          "target": "jtll4z0fhfc0.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "goco.io",
+          "split": "discovery",
+          "hostname": "status.goco.io",
+          "target": "cxcwd709yx0d.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "gofastpath.com",
+          "split": "discovery",
+          "hostname": "status.gofastpath.com",
+          "target": "28pd465q5ftm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "grafana.com",
+          "split": "discovery",
+          "hostname": "status.grafana.com",
+          "target": "6r99zhljywjf.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "graduway.com",
+          "split": "discovery",
+          "hostname": "status.graduway.com",
+          "target": "5z78ngwzdx1n.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "greenhouse.io",
+          "split": "discovery",
+          "hostname": "status.greenhouse.io",
+          "target": "z1fpkbyft3qn.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "growbots.com",
+          "split": "discovery",
+          "hostname": "status.growbots.com",
+          "target": "kjcpdgjnknjc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "happeo.com",
+          "split": "holdout",
+          "hostname": "status.happeo.com",
+          "target": "0cy73vl4rtv7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "gusto.com",
+          "split": "holdout",
+          "hostname": "status.gusto.com",
+          "target": "23f7fp8vs7sz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "helpscout.net",
+          "split": "holdout",
+          "hostname": "status.helpscout.net",
+          "target": "7wygpzghm26t.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hellosign.com",
+          "split": "discovery",
+          "hostname": "status.hellosign.com",
+          "target": "djw9397fmqd1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "heapanalytics.com",
+          "split": "discovery",
+          "hostname": "status.heapanalytics.com",
+          "target": "mvkrv0bw6dv7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hearsaysystems.com",
+          "split": "holdout",
+          "hostname": "status.hearsaysystems.com",
+          "target": "2d9525pwj3mr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hginsights.com",
+          "split": "discovery",
+          "hostname": "status.hginsights.com",
+          "target": "5hzzb1l3fzyr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hevodata.com",
+          "split": "discovery",
+          "hostname": "status.hevodata.com",
+          "target": "rthxyrqsy0m9.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "highspot.com",
+          "split": "discovery",
+          "hostname": "status.highspot.com",
+          "target": "yv0cybrq3zvh.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hirevue.com",
+          "split": "discovery",
+          "hostname": "status.hirevue.com",
+          "target": "jpr58pg19chh.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hiverhq.com",
+          "split": "holdout",
+          "hostname": "status.hiverhq.com",
+          "target": "6bqj9q95nrpr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hootsuite.com",
+          "split": "discovery",
+          "hostname": "status.hootsuite.com",
+          "target": "4cs9l3ql31j9.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "helpshift.com",
+          "split": "discovery",
+          "hostname": "status.helpshift.com",
+          "target": "b2897hlz70j6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hotjar.com",
+          "split": "holdout",
+          "hostname": "status.hotjar.com",
+          "target": "0b5bdbv94pfm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "housecallpro.com",
+          "split": "holdout",
+          "hostname": "status.housecallpro.com",
+          "target": "b9cs969t77x0.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "hubspot.com",
+          "split": "holdout",
+          "hostname": "status.hubspot.com",
+          "target": "8b9w1wwq3g7d.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "illuminateed.com",
+          "split": "discovery",
+          "hostname": "status.illuminateed.com",
+          "target": "89dyvbntvzml.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "imperva.com",
+          "split": "discovery",
+          "hostname": "status.imperva.com",
+          "target": "4dbnz6n8nkt2.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "influitive.com",
+          "split": "discovery",
+          "hostname": "status.influitive.com",
+          "target": "9j77d5b96mz1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "infobip.com",
+          "split": "discovery",
+          "hostname": "status.infobip.com",
+          "target": "38xjtdpgdp9c.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "insightly.com",
+          "split": "holdout",
+          "hostname": "status.insightly.com",
+          "target": "bcs8y5sckvh2.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "insightsoftware.com",
+          "split": "discovery",
+          "hostname": "status.insightsoftware.com",
+          "target": "6g91n9jb70t8.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "instapage.com",
+          "split": "discovery",
+          "hostname": "status.instapage.com",
+          "target": "44f9prlc8ks4.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "intralinks.com",
+          "split": "holdout",
+          "hostname": "status.intralinks.com",
+          "target": "tdmlswx4mxmd.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "invoca.com",
+          "split": "discovery",
+          "hostname": "status.invoca.com",
+          "target": "3rnqlj0kvv4x.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "iprotech.com",
+          "split": "discovery",
+          "hostname": "status.iprotech.com",
+          "target": "4yd03t1r159h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "iterable.com",
+          "split": "discovery",
+          "hostname": "status.iterable.com",
+          "target": "hm1wdv9pcjp9.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "jellyfish.co",
+          "split": "discovery",
+          "hostname": "status.jellyfish.co",
+          "target": "qc97d0m42ltj.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "jobnimbus.com",
+          "split": "discovery",
+          "hostname": "status.jobnimbus.com",
+          "target": "r8kw327v6276.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "jobvite.com",
+          "split": "discovery",
+          "hostname": "status.jobvite.com",
+          "target": "51tbl9vt4cw0.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "joinblvd.com",
+          "split": "discovery",
+          "hostname": "status.joinblvd.com",
+          "target": "7fqxx5fmp24r.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "jotform.com",
+          "split": "holdout",
+          "hostname": "status.jotform.com",
+          "target": "ygfxj62tsv64.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "jumpcloud.com",
+          "split": "discovery",
+          "hostname": "status.jumpcloud.com",
+          "target": "nflr6k3n1c0h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "kahoot.com",
+          "split": "holdout",
+          "hostname": "status.kahoot.com",
+          "target": "24hhwlzxx6bz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "justworks.com",
+          "split": "discovery",
+          "hostname": "status.justworks.com",
+          "target": "j1w7qc6jfmn9.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "kaseya.com",
+          "split": "discovery",
+          "hostname": "status.kaseya.com",
+          "target": "43vzbh696nvp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "kinsta.com",
+          "split": "holdout",
+          "hostname": "status.kinsta.com",
+          "target": "xy8sb5hf1p24.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "kindful.com",
+          "split": "discovery",
+          "hostname": "status.kindful.com",
+          "target": "d7x90jp53504.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "kintone.com",
+          "split": "holdout",
+          "hostname": "status.kintone.com",
+          "target": "53bp49z7s2n7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "klue.com",
+          "split": "discovery",
+          "hostname": "status.klue.com",
+          "target": "m1qdlh4gzmlk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "knowbe4.com",
+          "split": "discovery",
+          "hostname": "status.knowbe4.com",
+          "target": "bzcwcdz7454v.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "klaviyo.com",
+          "split": "holdout",
+          "hostname": "status.klaviyo.com",
+          "target": "9g91vn2drl3h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "laserfiche.com",
+          "split": "discovery",
+          "hostname": "status.laserfiche.com",
+          "target": "fdrgtw0xk48z.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "leadfeeder.com",
+          "split": "discovery",
+          "hostname": "status.leadfeeder.com",
+          "target": "hn1yjfj930h5.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "later.com",
+          "split": "discovery",
+          "hostname": "status.later.com",
+          "target": "hwl0tlgv8kg1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "launchdarkly.com",
+          "split": "discovery",
+          "hostname": "status.launchdarkly.com",
+          "target": "9404kdk7lkn7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "kustomer.com",
+          "split": "holdout",
+          "hostname": "status.kustomer.com",
+          "target": "lhn2sb4njk08.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "leadsquared.com",
+          "split": "discovery",
+          "hostname": "status.leadsquared.com",
+          "target": "gmcq2dggrsbs.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "linode.com",
+          "split": "discovery",
+          "hostname": "status.linode.com",
+          "target": "8dn0wstr1chc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "listrak.com",
+          "split": "discovery",
+          "hostname": "status.listrak.com",
+          "target": "fxzq2vxkg3fg.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "litify.com",
+          "split": "discovery",
+          "hostname": "status.litify.com",
+          "target": "79tghc7wdwdg.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "liveintent.com",
+          "split": "discovery",
+          "hostname": "status.liveintent.com",
+          "target": "0wc0y1l8krl7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "lessonly.com",
+          "split": "discovery",
+          "hostname": "status.lessonly.com",
+          "target": "tlcgk4x50ggk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "livestorm.co",
+          "split": "discovery",
+          "hostname": "status.livestorm.co",
+          "target": "fj0swnl4mf9b.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "logicmonitor.com",
+          "split": "discovery",
+          "hostname": "status.logicmonitor.com",
+          "target": "vgvrd21p58vb.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "logz.io",
+          "split": "holdout",
+          "hostname": "status.logz.io",
+          "target": "flbqdmg201t4.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "lusha.com",
+          "split": "discovery",
+          "hostname": "status.lusha.com",
+          "target": "swcqqk7psrfy.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "lucidworks.com",
+          "split": "discovery",
+          "hostname": "status.lucidworks.com",
+          "target": "645xcfkp6xtr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "madisonlogic.com",
+          "split": "discovery",
+          "hostname": "status.madisonlogic.com",
+          "target": "xbrwql10p253.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "logikcull.com",
+          "split": "discovery",
+          "hostname": "status.logikcull.com",
+          "target": "hngkpcdgljkm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "lotame.com",
+          "split": "discovery",
+          "hostname": "status.lotame.com",
+          "target": "df7fz4dgtpry.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mailgun.com",
+          "split": "discovery",
+          "hostname": "status.mailgun.com",
+          "target": "6jp439mdyy0k.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "managewp.com",
+          "split": "discovery",
+          "hostname": "status.managewp.com",
+          "target": "chg6k7b25lq6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "maropost.com",
+          "split": "discovery",
+          "hostname": "status.maropost.com",
+          "target": "8khflmr9pjpy.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "memsource.com",
+          "split": "discovery",
+          "hostname": "status.memsource.com",
+          "target": "1h2gj9cpnbtp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "memoq.com",
+          "split": "discovery",
+          "hostname": "status.memoq.com",
+          "target": "0t8j2qdpvlch.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "meltwater.com",
+          "split": "discovery",
+          "hostname": "status.meltwater.com",
+          "target": "w0w7mxxmf2r6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mention.com",
+          "split": "discovery",
+          "hostname": "status.mention.com",
+          "target": "f85766ks63v6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mavenlink.com",
+          "split": "discovery",
+          "hostname": "status.mavenlink.com",
+          "target": "d429lk1p6zj3.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mendix.com",
+          "split": "discovery",
+          "hostname": "status.mendix.com",
+          "target": "4rqwgw8gmq9t.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "messagebird.com",
+          "split": "discovery",
+          "hostname": "status.messagebird.com",
+          "target": "xf8120tyqx8n.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mindtickle.com",
+          "split": "discovery",
+          "hostname": "status.mindtickle.com",
+          "target": "h6plrmmlt7nh.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mixpanel.com",
+          "split": "discovery",
+          "hostname": "status.mixpanel.com",
+          "target": "x4m91ldrf511.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "modeanalytics.com",
+          "split": "discovery",
+          "hostname": "status.modeanalytics.com",
+          "target": "th35d4vb90h8.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "monday.com",
+          "split": "discovery",
+          "hostname": "status.monday.com",
+          "target": "zh081jts88wj.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "moengage.com",
+          "split": "discovery",
+          "hostname": "status.moengage.com",
+          "target": "tkvws0wp7snw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "moxtra.com",
+          "split": "discovery",
+          "hostname": "status.moxtra.com",
+          "target": "s2wbcm83mtsx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mycase.com",
+          "split": "discovery",
+          "hostname": "status.mycase.com",
+          "target": "g27k2wjljg4c.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "mural.co",
+          "split": "discovery",
+          "hostname": "status.mural.co",
+          "target": "dbk70dpy3n7h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "nearpod.com",
+          "split": "discovery",
+          "hostname": "status.nearpod.com",
+          "target": "tf0crwbtk9lx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "netsuite.com",
+          "split": "discovery",
+          "hostname": "status.netsuite.com",
+          "target": "jbt6k9g57c34.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "newrelic.com",
+          "split": "holdout",
+          "hostname": "status.newrelic.com",
+          "target": "nwg5xmnm9d17.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "netskope.com",
+          "split": "discovery",
+          "hostname": "status.netskope.com",
+          "target": "l0zqmx0dg2zs.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "ninjacat.io",
+          "split": "holdout",
+          "hostname": "status.ninjacat.io",
+          "target": "jf4bvqw1t0yt.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "nutshell.com",
+          "split": "discovery",
+          "hostname": "status.nutshell.com",
+          "target": "2qwvjdg4xvkv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "nwea.org",
+          "split": "holdout",
+          "hostname": "status.nwea.org",
+          "target": "fb8s28p8wpmb.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "omnisend.com",
+          "split": "discovery",
+          "hostname": "status.omnisend.com",
+          "target": "80nxcgd5stc9.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "octopus.com",
+          "split": "discovery",
+          "hostname": "status.octopus.com",
+          "target": "68h22lsztll6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "onfleet.com",
+          "split": "discovery",
+          "hostname": "status.onfleet.com",
+          "target": "l92bng659fhp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "opensesame.com",
+          "split": "discovery",
+          "hostname": "status.opensesame.com",
+          "target": "l2552mm5mhwq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "opentext.com",
+          "split": "holdout",
+          "hostname": "status.opentext.com",
+          "target": "tmd1c09qtjnm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "optimizely.com",
+          "split": "discovery",
+          "hostname": "status.optimizely.com",
+          "target": "v5qcc909t7qh.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "pandadoc.com",
+          "split": "discovery",
+          "hostname": "status.pandadoc.com",
+          "target": "gcs4ryzm3qt6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "pantheon.io",
+          "split": "holdout",
+          "hostname": "status.pantheon.io",
+          "target": "80f0zgsx80zh.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "payrix.com",
+          "split": "discovery",
+          "hostname": "status.payrix.com",
+          "target": "sst8lcm3kdky.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "pendo.io",
+          "split": "discovery",
+          "hostname": "status.pendo.io",
+          "target": "qxvy69hcwh22.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "periscopedata.com",
+          "split": "discovery",
+          "hostname": "status.periscopedata.com",
+          "target": "84t5b9y2v84z.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "pax8.com",
+          "split": "holdout",
+          "hostname": "status.pax8.com",
+          "target": "2d8szqmjt2tx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "perforce.com",
+          "split": "discovery",
+          "hostname": "status.perforce.com",
+          "target": "cfzvvkxxcv61.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "pingidentity.com",
+          "split": "discovery",
+          "hostname": "status.pingidentity.com",
+          "target": "4743169cznmw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "personio.de",
+          "split": "discovery",
+          "hostname": "status.personio.de",
+          "target": "68kf6yfjnk2d.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "plivo.com",
+          "split": "holdout",
+          "hostname": "status.plivo.com",
+          "target": "kwh95bwgs0qz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "practiceignition.com",
+          "split": "discovery",
+          "hostname": "status.practiceignition.com",
+          "target": "90hvxbxr19dg.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "powerschool.com",
+          "split": "discovery",
+          "hostname": "status.powerschool.com",
+          "target": "qf2hd2hhqfq1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "predictiveindex.com",
+          "split": "discovery",
+          "hostname": "status.predictiveindex.com",
+          "target": "y0l4g43nfndz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "processmaker.com",
+          "split": "holdout",
+          "hostname": "status.processmaker.com",
+          "target": "5p4rwwl0w1yn.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "proposify.biz",
+          "split": "discovery",
+          "hostname": "status.proposify.biz",
+          "target": "c57rrlfw0c3w.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "punchh.com",
+          "split": "discovery",
+          "hostname": "status.punchh.com",
+          "target": "8r9cx9m220s6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "pubnub.com",
+          "split": "discovery",
+          "hostname": "status.pubnub.com",
+          "target": "j2pr9thwz01t.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "qualys.com",
+          "split": "discovery",
+          "hostname": "status.qualys.com",
+          "target": "10ycvtr1341m.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "quip.com",
+          "split": "discovery",
+          "hostname": "status.quip.com",
+          "target": "0wnbtdj8rrcw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "quantcast.com",
+          "split": "discovery",
+          "hostname": "status.quantcast.com",
+          "target": "vm2ll45fyh5j.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "quantummetric.com",
+          "split": "discovery",
+          "hostname": "status.quantummetric.com",
+          "target": "7q3n82zz0qws.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "quantumworkplace.com",
+          "split": "discovery",
+          "hostname": "status.quantumworkplace.com",
+          "target": "7w23n9cc7gbc.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "pypestream.com",
+          "split": "holdout",
+          "hostname": "status.pypestream.com",
+          "target": "g92lzr2ffj64.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "qualtrics.com",
+          "split": "discovery",
+          "hostname": "status.qualtrics.com",
+          "target": "zzbcdhb83d4t.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "rebrandly.com",
+          "split": "discovery",
+          "hostname": "status.rebrandly.com",
+          "target": "pfpddjpnmpck.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "recruitee.com",
+          "split": "discovery",
+          "hostname": "status.recruitee.com",
+          "target": "bf6k4jctcdck.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "replicon.com",
+          "split": "discovery",
+          "hostname": "status.replicon.com",
+          "target": "f2yvtgjrx0qt.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "rebelmouse.com",
+          "split": "discovery",
+          "hostname": "status.rebelmouse.com",
+          "target": "53fwcpgwnf7c.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "reltio.com",
+          "split": "discovery",
+          "hostname": "status.reltio.com",
+          "target": "5xwc1bn6ml75.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "reputation.com",
+          "split": "discovery",
+          "hostname": "status.reputation.com",
+          "target": "ry1t8zhrwzqx.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "reviewtrackers.com",
+          "split": "holdout",
+          "hostname": "status.reviewtrackers.com",
+          "target": "w5mwz1hzx8c6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "rippling.com",
+          "split": "discovery",
+          "hostname": "status.rippling.com",
+          "target": "dtj0jj1f02xs.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "rubrik.com",
+          "split": "discovery",
+          "hostname": "status.rubrik.com",
+          "target": "3ylqq5vfnpmf.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "rybbon.net",
+          "split": "discovery",
+          "hostname": "status.rybbon.net",
+          "target": "bbp6cdmnxk54.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "rydoo.com",
+          "split": "discovery",
+          "hostname": "status.rydoo.com",
+          "target": "c46p6b2zxl0s.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sales-i.com",
+          "split": "discovery",
+          "hostname": "status.sales-i.com",
+          "target": "qx6sgsyvzqfs.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "salsify.com",
+          "split": "discovery",
+          "hostname": "status.salsify.com",
+          "target": "p1h2f2dvww7r.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "saucelabs.com",
+          "split": "discovery",
+          "hostname": "status.saucelabs.com",
+          "target": "71y1d11qjrsv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "searchspring.com",
+          "split": "discovery",
+          "hostname": "status.searchspring.com",
+          "target": "vyks1bpf66cv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "segment.com",
+          "split": "holdout",
+          "hostname": "status.segment.com",
+          "target": "yzw83vcxbysq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "seismic.com",
+          "split": "discovery",
+          "hostname": "status.seismic.com",
+          "target": "tlcgk4x50ggk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sentry.io",
+          "split": "discovery",
+          "hostname": "status.sentry.io",
+          "target": "t687h3m0nh65.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "servicetitan.com",
+          "split": "discovery",
+          "hostname": "status.servicetitan.com",
+          "target": "kwkkj5bkypmq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sharpspring.com",
+          "split": "holdout",
+          "hostname": "status.sharpspring.com",
+          "target": "730zjxtkvj7x.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sheerid.com",
+          "split": "discovery",
+          "hostname": "status.sheerid.com",
+          "target": "n4j96f8ynbkb.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sift.com",
+          "split": "discovery",
+          "hostname": "status.sift.com",
+          "target": "bc6dd7ft0q75.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "signeasy.com",
+          "split": "discovery",
+          "hostname": "status.signeasy.com",
+          "target": "fj9lz5h60qm5.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "simpplr.com",
+          "split": "discovery",
+          "hostname": "status.simpplr.com",
+          "target": "jz861d08q4gr.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sisense.com",
+          "split": "discovery",
+          "hostname": "status.sisense.com",
+          "target": "84t5b9y2v84z.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "singular.net",
+          "split": "discovery",
+          "hostname": "status.singular.net",
+          "target": "rjtmvhmqxzwv.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "siteimprove.com",
+          "split": "discovery",
+          "hostname": "status.siteimprove.com",
+          "target": "crvqn5ckdxpk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sitespect.com",
+          "split": "discovery",
+          "hostname": "status.sitespect.com",
+          "target": "0bkycgrmxs9j.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "slintel.com",
+          "split": "discovery",
+          "hostname": "status.slintel.com",
+          "target": "0pklrllsw0mg.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "smartling.com",
+          "split": "discovery",
+          "hostname": "status.smartling.com",
+          "target": "k0z6lpn44rkm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "skilljar.com",
+          "split": "discovery",
+          "hostname": "status.skilljar.com",
+          "target": "by5hq8p4g556.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "smartsheet.com",
+          "split": "discovery",
+          "hostname": "status.smartsheet.com",
+          "target": "tvv76p250rdk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "smartrecruiters.com",
+          "split": "discovery",
+          "hostname": "status.smartrecruiters.com",
+          "target": "fx1k40z383ff.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "snyk.io",
+          "split": "holdout",
+          "hostname": "status.snyk.io",
+          "target": "myj6w6kw42c6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "smartcat.ai",
+          "split": "discovery",
+          "hostname": "status.smartcat.ai",
+          "target": "4bnygzxtd4h6.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sparkpost.com",
+          "split": "discovery",
+          "hostname": "status.sparkpost.com",
+          "target": "7ky1q6zd3fyp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sparkhire.com",
+          "split": "discovery",
+          "hostname": "status.sparkhire.com",
+          "target": "df4d4q26yvb1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "soundtrackyourbrand.com",
+          "split": "discovery",
+          "hostname": "status.soundtrackyourbrand.com",
+          "target": "gkqdtbfvkc1m.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "spendesk.com",
+          "split": "discovery",
+          "hostname": "status.spendesk.com",
+          "target": "m94jhgrcwrb7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "splashtop.com",
+          "split": "discovery",
+          "hostname": "status.splashtop.com",
+          "target": "146dh2d2pp25.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "squarespace.com",
+          "split": "discovery",
+          "hostname": "status.squarespace.com",
+          "target": "1jkhm1drpysj.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "spscommerce.com",
+          "split": "discovery",
+          "hostname": "status.spscommerce.com",
+          "target": "s6cdj41y026n.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sprinklr.com",
+          "split": "discovery",
+          "hostname": "status.sprinklr.com",
+          "target": "1ngx98sfl7t4.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "staxpayments.com",
+          "split": "holdout",
+          "hostname": "status.staxpayments.com",
+          "target": "78h9382y4ksn.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sumologic.com",
+          "split": "discovery",
+          "hostname": "status.sumologic.com",
+          "target": "mch6db66pqjz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "surveymonkey.com",
+          "split": "discovery",
+          "hostname": "status.surveymonkey.com",
+          "target": "6kcn25x6k6f2.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "tawk.to",
+          "split": "discovery",
+          "hostname": "status.tawk.to",
+          "target": "x4tbcjh02yqq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "tangocard.com",
+          "split": "holdout",
+          "hostname": "status.tangocard.com",
+          "target": "3jy989k70812.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "talkdesk.com",
+          "split": "holdout",
+          "hostname": "status.talkdesk.com",
+          "target": "15mbf49rfsrt.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "teamleader.eu",
+          "split": "holdout",
+          "hostname": "status.teamleader.eu",
+          "target": "3h0654tlc7c0.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "teamsnap.com",
+          "split": "discovery",
+          "hostname": "status.teamsnap.com",
+          "target": "tk2km76crp6f.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "teamwork.com",
+          "split": "holdout",
+          "hostname": "status.teamwork.com",
+          "target": "gbvg14byz4n5.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "telestream.net",
+          "split": "discovery",
+          "hostname": "status.telestream.net",
+          "target": "97x7k30nlqx8.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "teamviewer.com",
+          "split": "discovery",
+          "hostname": "status.teamviewer.com",
+          "target": "gfggtctd0kh2.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "tapclicks.com",
+          "split": "discovery",
+          "hostname": "status.tapclicks.com",
+          "target": "8h04svywv8cn.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "terminus.com",
+          "split": "holdout",
+          "hostname": "status.terminus.com",
+          "target": "kppjdpgjnnnb.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "thinkific.com",
+          "split": "discovery",
+          "hostname": "status.thinkific.com",
+          "target": "w1vms1jfy8ry.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "teamsupport.com",
+          "split": "discovery",
+          "hostname": "status.teamsupport.com",
+          "target": "gkqh4gtqdkdp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "toggl.com",
+          "split": "holdout",
+          "hostname": "status.toggl.com",
+          "target": "bnyxj8tm8ppq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "totalexpert.com",
+          "split": "holdout",
+          "hostname": "status.totalexpert.com",
+          "target": "058knl9lkz9m.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "tradeshift.com",
+          "split": "discovery",
+          "hostname": "status.tradeshift.com",
+          "target": "dmjff62jn935.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "toasttab.com",
+          "split": "discovery",
+          "hostname": "status.toasttab.com",
+          "target": "5bc1y3k2xcvj.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "traackr.com",
+          "split": "holdout",
+          "hostname": "updates.traackr.com",
+          "target": "bbmc6vq53g9g.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "trackvia.com",
+          "split": "discovery",
+          "hostname": "status.trackvia.com",
+          "target": "b5c16q6ks0y8.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "transifex.com",
+          "split": "discovery",
+          "hostname": "status.transifex.com",
+          "target": "vb1s011cgcx2.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "tray.io",
+          "split": "discovery",
+          "hostname": "status.tray.io",
+          "target": "ttkjg93cdj8n.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "totango.com",
+          "split": "holdout",
+          "hostname": "status.totango.com",
+          "target": "1tp740n418tg.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "typeform.com",
+          "split": "holdout",
+          "hostname": "status.typeform.com",
+          "target": "fv5fyw3p7k8n.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "udemy.com",
+          "split": "discovery",
+          "hostname": "status.udemy.com",
+          "target": "l6t26zgc3vff.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "ujet.co",
+          "split": "discovery",
+          "hostname": "status.ujet.co",
+          "target": "m7cfxkzyq8kp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "unbounce.com",
+          "split": "discovery",
+          "hostname": "status.unbounce.com",
+          "target": "ywsbtsrktl04.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "upcloud.com",
+          "split": "discovery",
+          "hostname": "status.upcloud.com",
+          "target": "k11q7x12bmjp.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "twilio.com",
+          "split": "discovery",
+          "hostname": "status.twilio.com",
+          "target": "gpkpyklzq55q.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "uservoice.com",
+          "split": "holdout",
+          "hostname": "status.uservoice.com",
+          "target": "v46xg3ljl03j.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "usertesting.com",
+          "split": "discovery",
+          "hostname": "status.usertesting.com",
+          "target": "3r8dh4dvpmh5.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "vanillasoft.com",
+          "split": "discovery",
+          "hostname": "status.vanillasoft.com",
+          "target": "6mxlsfkv21sw.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "vendasta.com",
+          "split": "discovery",
+          "hostname": "status.vendasta.com",
+          "target": "g6tff10501jl.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "vfairs.com",
+          "split": "discovery",
+          "hostname": "status.vfairs.com",
+          "target": "c58535hvbrmg.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "vindicia.com",
+          "split": "holdout",
+          "hostname": "status.vindicia.com",
+          "target": "kxvx87mb2mnh.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "vidmob.com",
+          "split": "discovery",
+          "hostname": "status.vidmob.com",
+          "target": "hbhl1lvjvt4h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "visiblethread.com",
+          "split": "holdout",
+          "hostname": "status.visiblethread.com",
+          "target": "yf2wrq7mfjcb.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "volusion.com",
+          "split": "discovery",
+          "hostname": "status.volusion.com",
+          "target": "r8lt3dxjhd33.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "wallarm.com",
+          "split": "discovery",
+          "hostname": "status.wallarm.com",
+          "target": "1000hc1f0mzf.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "vincere.io",
+          "split": "discovery",
+          "hostname": "status.vincere.io",
+          "target": "qc15mby6nqmk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "walkme.com",
+          "split": "discovery",
+          "hostname": "status.walkme.com",
+          "target": "79dl9by36yp7.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "waveapps.com",
+          "split": "holdout",
+          "hostname": "status.waveapps.com",
+          "target": "k5kz6t3yktly.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "watchguard.com",
+          "split": "holdout",
+          "hostname": "status.watchguard.com",
+          "target": "9wcfjgptk1hk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "wetransfer.com",
+          "split": "discovery",
+          "hostname": "status.wetransfer.com",
+          "target": "sc26zwwp3c0r.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "webflow.com",
+          "split": "holdout",
+          "hostname": "status.webflow.com",
+          "target": "7bp2kqlfyczm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "wepay.com",
+          "split": "holdout",
+          "hostname": "status.wepay.com",
+          "target": "dlt7d4btcn1s.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "widen.com",
+          "split": "discovery",
+          "hostname": "status.widen.com",
+          "target": "23l5fsx12r1t.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "wishpond.com",
+          "split": "discovery",
+          "hostname": "status.wishpond.com",
+          "target": "npvl5c66rlpy.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "workiva.com",
+          "split": "holdout",
+          "hostname": "status.workiva.com",
+          "target": "pxr8fgvd83rm.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "workmarket.com",
+          "split": "discovery",
+          "hostname": "status.workmarket.com",
+          "target": "p2132zmg6nfz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "wix.com",
+          "split": "discovery",
+          "hostname": "status.wix.com",
+          "target": "3x6vjqhj2cpt.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "workjam.com",
+          "split": "discovery",
+          "hostname": "status.workjam.com",
+          "target": "flch382xkt17.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "wunderkind.co",
+          "split": "discovery",
+          "hostname": "status.wunderkind.co",
+          "target": "jstbzvg361pq.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "xero.com",
+          "split": "discovery",
+          "hostname": "status.xero.com",
+          "target": "nzlm387hk3hl.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "yesware.com",
+          "split": "discovery",
+          "hostname": "status.yesware.com",
+          "target": "4vl4kkdcb8tz.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "yardi.com",
+          "split": "discovery",
+          "hostname": "status.yardi.com",
+          "target": "3cqj0pmpypxd.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "yotpo.com",
+          "split": "discovery",
+          "hostname": "status.yotpo.com",
+          "target": "t8lbr870l9j1.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "zomentum.com",
+          "split": "discovery",
+          "hostname": "status.zomentum.com",
+          "target": "j3bjjj828c8h.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "zonos.com",
+          "split": "discovery",
+          "hostname": "status.zonos.com",
+          "target": "vk5tzck301mj.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "zoom.us",
+          "split": "discovery",
+          "hostname": "status.zoom.us",
+          "target": "14qjgk812kgk.stspg-customer.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "zoominfo.com",
+          "split": "discovery",
+          "hostname": "status.zoominfo.com",
+          "target": "j4k5f923y480.stspg-customer.com",
+          "wildcardLike": false
+        }
+      ]
+    },
+    {
+      "family": "cname",
+      "provider": "Auth0",
+      "suffix": "edge.tenants.auth0.com",
+      "category": "identity_access",
+      "productScope": "auth0_custom_authentication_domain",
+      "url": "https://auth0.com/blog/custom-domains-complete-guide/",
+      "discoveryDomains": 11,
+      "holdoutDomains": 0,
+      "totalDomains": 11,
+      "observations": [
+        {
+          "domain": "alyce.com",
+          "split": "discovery",
+          "hostname": "login.alyce.com",
+          "target": "alyce-production-cd-yoo335nnu2uob3jx.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "appcues.com",
+          "split": "discovery",
+          "hostname": "login.appcues.com",
+          "target": "appcues-cd-ujiu4yxcxqv88vln.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bettercloud.com",
+          "split": "discovery",
+          "hostname": "login.bettercloud.com",
+          "target": "bettercloud-production-cd-omyaou8v6sr1ecae.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "bombora.com",
+          "split": "discovery",
+          "hostname": "login.bombora.com",
+          "target": "bombora-cd-iyop1gngrqlcsbag.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "broadly.com",
+          "split": "discovery",
+          "hostname": "login.broadly.com",
+          "target": "broadly-cd-q7wlrq62ol3qm4pn.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "leadiq.com",
+          "split": "discovery",
+          "hostname": "login.leadiq.com",
+          "target": "leadiq-cd-qxqy7unhz2swgr7v.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "logikcull.com",
+          "split": "discovery",
+          "hostname": "login.logikcull.com",
+          "target": "logikcull-cd-1tm8qttlkm1o4pzc.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "predictiveindex.com",
+          "split": "discovery",
+          "hostname": "login.predictiveindex.com",
+          "target": "tpi-cd-qb8k3h20ndeoge85.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "sailthru.com",
+          "split": "discovery",
+          "hostname": "login.sailthru.com",
+          "target": "sailthru-cd-i5vspdi9uj3u6fua.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "unito.io",
+          "split": "discovery",
+          "hostname": "login.unito.io",
+          "target": "unito-cd-qrb57bgtcdcyinmi.edge.tenants.auth0.com",
+          "wildcardLike": false
+        },
+        {
+          "domain": "volusion.com",
+          "split": "discovery",
+          "hostname": "login.volusion.com",
+          "target": "material-cd-4l4jb2oguhu0i13k.edge.tenants.auth0.com",
+          "wildcardLike": false
+        }
+      ]
+    },
+    {
+      "family": "spf",
+      "provider": "Atlassian Statuspage",
+      "exact": "stspg-customer.com",
+      "productScope": "statuspage_notification_sending",
+      "url": "https://support.atlassian.com/statuspage/docs/configure-your-dns",
+      "discoveryDomains": 92,
+      "holdoutDomains": 22,
+      "totalDomains": 114,
+      "observations": [
+        {
+          "domain": "1password.com",
+          "split": "holdout",
+          "host": "1password.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "activecampaign.com",
+          "split": "discovery",
+          "host": "activecampaign.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "acquia.com",
+          "split": "discovery",
+          "host": "acquia.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "advancedmd.com",
+          "split": "discovery",
+          "host": "advancedmd.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "agorapulse.com",
+          "split": "discovery",
+          "host": "agorapulse.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "aircall.io",
+          "split": "discovery",
+          "host": "aircall.io",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "appfolio.com",
+          "split": "discovery",
+          "host": "appfolio.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "applitools.com",
+          "split": "discovery",
+          "host": "applitools.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "apptio.com",
+          "split": "discovery",
+          "host": "spf1.apptio.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "apspayroll.com",
+          "split": "discovery",
+          "host": "apspayroll.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "atera.com",
+          "split": "discovery",
+          "host": "spf3.atera.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "author-it.com",
+          "split": "holdout",
+          "host": "author-it.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "aweber.com",
+          "split": "discovery",
+          "host": "aweber.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "avidxchange.com",
+          "split": "discovery",
+          "host": "avidxchange.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "axosoft.com",
+          "split": "discovery",
+          "host": "axosoft.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "bandwidth.com",
+          "split": "discovery",
+          "host": "bandwidth.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "bizzabo.com",
+          "split": "discovery",
+          "host": "_spf1.bizzabo.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "bitly.com",
+          "split": "discovery",
+          "host": "bitly.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "bluecore.com",
+          "split": "discovery",
+          "host": "bluecore.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "botkeeper.com",
+          "split": "holdout",
+          "host": "botkeeper.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "chef.io",
+          "split": "discovery",
+          "host": "chef.io",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "cirrusinsight.com",
+          "split": "discovery",
+          "host": "cirrusinsight.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "clari.com",
+          "split": "discovery",
+          "host": "clari.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "close.com",
+          "split": "discovery",
+          "host": "close.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "cloudflare.com",
+          "split": "holdout",
+          "host": "cloudflare.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "cloudtalk.io",
+          "split": "discovery",
+          "host": "cloudtalk.io",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "cloud-elements.com",
+          "split": "discovery",
+          "host": "cloud-elements.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "cloudways.com",
+          "split": "discovery",
+          "host": "cloudways.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "convoso.com",
+          "split": "discovery",
+          "host": "convoso.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "customergauge.com",
+          "split": "holdout",
+          "host": "customergauge.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "datadoghq.com",
+          "split": "holdout",
+          "host": "datadoghq.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "deputy.com",
+          "split": "discovery",
+          "host": "deputy.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "dudamobile.com",
+          "split": "discovery",
+          "host": "dudamobile.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "duo.com",
+          "split": "discovery",
+          "host": "duo.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "efilecabinet.com",
+          "split": "discovery",
+          "host": "efilecabinet.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "enable.com",
+          "split": "discovery",
+          "host": "enable.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "engineyard.com",
+          "split": "discovery",
+          "host": "engineyard.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "everbridge.com",
+          "split": "discovery",
+          "host": "everbridge.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "form.com",
+          "split": "discovery",
+          "host": "form.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "fullcontact.com",
+          "split": "discovery",
+          "host": "fullcontact.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "greenclouddefense.com",
+          "split": "discovery",
+          "host": "greenclouddefense.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "greenclouddefense.com",
+          "split": "discovery",
+          "host": "greenclouddefense.com.hosted.spf-report.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "gonitro.com",
+          "split": "discovery",
+          "host": "gonitro.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "grin.co",
+          "split": "holdout",
+          "host": "grin.co",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "hearsaysystems.com",
+          "split": "holdout",
+          "host": "hearsaysystems.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "helpshift.com",
+          "split": "discovery",
+          "host": "helpshift.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "hotjar.com",
+          "split": "holdout",
+          "host": "hotjar.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "illuminateed.com",
+          "split": "discovery",
+          "host": "illuminateed.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "icims.com",
+          "split": "discovery",
+          "host": "icims.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "influitive.com",
+          "split": "discovery",
+          "host": "_spf.influitive.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "infobip.com",
+          "split": "discovery",
+          "host": "infobip.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "jellyfish.co",
+          "split": "discovery",
+          "host": "jellyfish.co",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "jobnimbus.com",
+          "split": "discovery",
+          "host": "jobnimbus.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "jostle.me",
+          "split": "holdout",
+          "host": "jostle.me",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "kinsta.com",
+          "split": "holdout",
+          "host": "kinsta.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "knowbe4.com",
+          "split": "discovery",
+          "host": "knowbe4.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "launchdarkly.com",
+          "split": "discovery",
+          "host": "launchdarkly.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "kustomer.com",
+          "split": "holdout",
+          "host": "kustomer.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "livechatinc.com",
+          "split": "discovery",
+          "host": "livechatinc.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "logmein.com",
+          "split": "discovery",
+          "host": "logmein.com.hosted.spf-report.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "logz.io",
+          "split": "holdout",
+          "host": "logz.io",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "lotame.com",
+          "split": "discovery",
+          "host": "lotame.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "mailchimp.com",
+          "split": "discovery",
+          "host": "_spf2.intuit.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "managewp.com",
+          "split": "discovery",
+          "host": "managewp.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "maropost.com",
+          "split": "discovery",
+          "host": "maropost.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "memoq.com",
+          "split": "discovery",
+          "host": "memoq.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "mindtickle.com",
+          "split": "discovery",
+          "host": "mindtickle.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "mural.co",
+          "split": "discovery",
+          "host": "mural.co",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "nutshell.com",
+          "split": "discovery",
+          "host": "nutshell.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "nylas.com",
+          "split": "discovery",
+          "host": "nylas.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "omnisend.com",
+          "split": "discovery",
+          "host": "omnisend.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "onfleet.com",
+          "split": "discovery",
+          "host": "onfleet.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "optimove.com",
+          "split": "discovery",
+          "host": "optimove.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "payrix.com",
+          "split": "discovery",
+          "host": "payrix.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "periscopedata.com",
+          "split": "discovery",
+          "host": "periscopedata.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "pingidentity.com",
+          "split": "discovery",
+          "host": "pingidentity.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "pipefy.com",
+          "split": "discovery",
+          "host": "pipefy.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "proposify.biz",
+          "split": "discovery",
+          "host": "proposify.biz",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "punchh.com",
+          "split": "discovery",
+          "host": "punchh.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "qualys.com",
+          "split": "discovery",
+          "host": "qualys.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "recurly.com",
+          "split": "discovery",
+          "host": "recurly.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "redislabs.com",
+          "split": "discovery",
+          "host": "redislabs.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "reply.io",
+          "split": "discovery",
+          "host": "reply.io",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "rubrik.com",
+          "split": "discovery",
+          "host": "rubrik.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "rybbon.net",
+          "split": "discovery",
+          "host": "rybbon.net",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "salesloft.com",
+          "split": "holdout",
+          "host": "salesloft.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "salsify.com",
+          "split": "discovery",
+          "host": "salsify.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "searchspring.com",
+          "split": "discovery",
+          "host": "searchspring.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "sertifi.com",
+          "split": "discovery",
+          "host": "sertifi.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "sheerid.com",
+          "split": "discovery",
+          "host": "sheerid.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "sisense.com",
+          "split": "discovery",
+          "host": "sisense.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "sitespect.com",
+          "split": "discovery",
+          "host": "sitespect.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "sli.do",
+          "split": "holdout",
+          "host": "sli.do",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "skilljar.com",
+          "split": "discovery",
+          "host": "skilljar.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "splashtop.com",
+          "split": "discovery",
+          "host": "splashtop.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "squareup.com",
+          "split": "discovery",
+          "host": "squareup.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "sproutsocial.com",
+          "split": "discovery",
+          "host": "sproutsocial.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "spscommerce.com",
+          "split": "discovery",
+          "host": "spscommerce.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "staxpayments.com",
+          "split": "holdout",
+          "host": "staxpayments.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "sysaid.com",
+          "split": "discovery",
+          "host": "sysaid.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "talend.com",
+          "split": "holdout",
+          "host": "talend.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "teamleader.eu",
+          "split": "holdout",
+          "host": "teamleader.eu",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "teamwork.com",
+          "split": "holdout",
+          "host": "teamwork.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "tapclicks.com",
+          "split": "discovery",
+          "host": "tapclicks.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "totalexpert.com",
+          "split": "holdout",
+          "host": "totalexpert.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "trackvia.com",
+          "split": "discovery",
+          "host": "trackvia.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "ujet.co",
+          "split": "discovery",
+          "host": "ujet.co",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "upcloud.com",
+          "split": "discovery",
+          "host": "upcloud.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "uservoice.com",
+          "split": "holdout",
+          "host": "uservoice.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "vanillasoft.com",
+          "split": "discovery",
+          "host": "vanillasoft.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "vendasta.com",
+          "split": "discovery",
+          "host": "vendasta.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "virtru.com",
+          "split": "holdout",
+          "host": "virtru.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "vutu.re",
+          "split": "discovery",
+          "host": "vutu.re",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "workforcesoftware.com",
+          "split": "discovery",
+          "host": "workforcesoftware.com",
+          "include": "stspg-customer.com"
+        },
+        {
+          "domain": "xero.com",
+          "split": "discovery",
+          "host": "xero.com",
+          "include": "stspg-customer.com"
+        }
+      ]
+    }
+  ]
+}

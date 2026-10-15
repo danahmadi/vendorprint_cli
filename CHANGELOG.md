@@ -2,6 +2,17 @@
 
 ## 0.4.0 — prepared for release
 
+- Add eight documented TXT signatures: Docusign, Twilio, Cloudflare Dashboard SSO,
+  Lovable, PandaDoc, Remote, Sage Intacct email sender keys, and Snowflake.
+- Add Auth0 custom authentication CNAMEs and expand Atlassian Statuspage with
+  custom-domain CNAME and notification-SPF signatures.
+- Research 1,000 established business-software domains with 800 discovery and
+  200 held-out validation domains; preserve sources, redacted evidence, and
+  unresolved candidates.
+- Upgrade offline audit to schema 1.1: distinct-domain counts, unknown MX,
+  recursive SPF candidates, broader redacted TXT key diagnostics, and suppression
+  of first-party targets. SPF candidates now aggregate by registrable domain.
+- Preserve sources and narrow scopes in generic CNAME profile evidence.
 - Recognize Read AI's documented domain-verification TXT marker.
 - Check Gong's documented `email-tracking` hostname in balanced and full scans.
 - Recognize the exact Gong Engage CDN alias corroborated by Figma's public DNS

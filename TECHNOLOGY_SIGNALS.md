@@ -149,3 +149,22 @@ budget for positive evidence:
 All branches share the same hard 80-attempt limit. Optional certificate-transparency
 discovery supplies candidate labels only; a certificate name is never emitted as a
 technology finding without live DNS corroboration.
+
+## Enterprise-software discovery additions (0.4.0)
+
+The 1,000-domain research cohort adds exact nonempty TXT markers for Docusign,
+Twilio, Cloudflare Dashboard SSO, Lovable, PandaDoc, Remote, Sage Intacct, and
+Snowflake. These establish published domain configuration only. In particular,
+Sage Intacct's marker is an email sender key; Snowflake's is organization email
+verification, not evidence of warehouse activity.
+
+Auth0 custom authentication domains are recognized only under
+`edge.tenants.auth0.com`. Atlassian Statuspage now also recognizes custom CNAMEs
+under `stspg-customer.com` and the exact SPF include for notification sending.
+Sources, split counts, independent checks, and unresolved candidates are in the
+[enterprise discovery report](docs/research/enterprise-discovery-2026-10-14.md).
+
+For new research cohorts, scan with `--full --include-unclassified`, then run
+`vendorprint signatures audit findings.ndjson`. Audit schema 1.1 ranks by distinct
+company domains, including unknown MX and observed recursive SPF references.
+Unknown patterns are candidates for investigation, never automatic vendor claims.

@@ -1,0 +1,381 @@
+{
+  "privacy": "TXT values are tested only in memory; never persisted.",
+  "results": [
+    {
+      "provider": "Docusign",
+      "family": "verification",
+      "domain": "accruent.com",
+      "hostname": "accruent.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:31.360Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "docusign"
+    },
+    {
+      "provider": "Docusign",
+      "family": "verification",
+      "domain": "15five.com",
+      "hostname": "15five.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:31.618Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "docusign"
+    },
+    {
+      "provider": "Docusign",
+      "family": "verification",
+      "domain": "8x8.com",
+      "hostname": "8x8.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:31.887Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "docusign"
+    },
+    {
+      "provider": "Twilio",
+      "family": "verification",
+      "domain": "accelevents.com",
+      "hostname": "accelevents.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:32.132Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "twilio-domain-verification"
+    },
+    {
+      "provider": "Twilio",
+      "family": "verification",
+      "domain": "8x8.com",
+      "hostname": "8x8.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:32.365Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "twilio-domain-verification"
+    },
+    {
+      "provider": "Twilio",
+      "family": "verification",
+      "domain": "advancedmd.com",
+      "hostname": "advancedmd.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:32.656Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "twilio-domain-verification"
+    },
+    {
+      "provider": "Cloudflare Dashboard SSO",
+      "family": "verification",
+      "domain": "accela.com",
+      "hostname": "accela.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:32.900Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "cloudflare_dashboard_sso"
+    },
+    {
+      "provider": "Cloudflare Dashboard SSO",
+      "family": "verification",
+      "domain": "activecampaign.com",
+      "hostname": "activecampaign.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:33.159Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "cloudflare_dashboard_sso"
+    },
+    {
+      "provider": "Cloudflare Dashboard SSO",
+      "family": "verification",
+      "domain": "acquia.com",
+      "hostname": "acquia.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:33.428Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "cloudflare_dashboard_sso"
+    },
+    {
+      "provider": "Lovable",
+      "family": "verification",
+      "domain": "ahrefs.com",
+      "hostname": "ahrefs.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:33.694Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "lovable_verification"
+    },
+    {
+      "provider": "Lovable",
+      "family": "verification",
+      "domain": "articulate.com",
+      "hostname": "articulate.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:33.950Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "lovable_verification"
+    },
+    {
+      "provider": "Lovable",
+      "family": "verification",
+      "domain": "automationanywhere.com",
+      "hostname": "automationanywhere.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:34.192Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "lovable_verification"
+    },
+    {
+      "provider": "PandaDoc",
+      "family": "verification",
+      "domain": "beekeeper.io",
+      "hostname": "beekeeper.io",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:34.453Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "pandadoc-domain-verification"
+    },
+    {
+      "provider": "PandaDoc",
+      "family": "verification",
+      "domain": "bizzabo.com",
+      "hostname": "bizzabo.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:34.716Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "pandadoc-domain-verification"
+    },
+    {
+      "provider": "PandaDoc",
+      "family": "verification",
+      "domain": "blueskyelearn.com",
+      "hostname": "blueskyelearn.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:34.963Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "pandadoc-domain-verification"
+    },
+    {
+      "provider": "Remote",
+      "family": "verification",
+      "domain": "6sense.com",
+      "hostname": "6sense.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:35.226Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "remote-domain-verification"
+    },
+    {
+      "provider": "Remote",
+      "family": "verification",
+      "domain": "adverity.com",
+      "hostname": "adverity.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:35.473Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "remote-domain-verification"
+    },
+    {
+      "provider": "Remote",
+      "family": "verification",
+      "domain": "aircall.io",
+      "hostname": "aircall.io",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:35.721Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "remote-domain-verification"
+    },
+    {
+      "provider": "Sage Intacct",
+      "family": "verification",
+      "domain": "6sense.com",
+      "hostname": "6sense.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:36.003Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "intacct-esk"
+    },
+    {
+      "provider": "Sage Intacct",
+      "family": "verification",
+      "domain": "activecampaign.com",
+      "hostname": "activecampaign.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:36.261Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "intacct-esk"
+    },
+    {
+      "provider": "Sage Intacct",
+      "family": "verification",
+      "domain": "acquia.com",
+      "hostname": "acquia.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:36.510Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "intacct-esk"
+    },
+    {
+      "provider": "Snowflake",
+      "family": "verification",
+      "domain": "docusign.com",
+      "hostname": "docusign.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:36.808Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "snowflake-verification"
+    },
+    {
+      "provider": "Snowflake",
+      "family": "verification",
+      "domain": "druva.com",
+      "hostname": "druva.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:37.044Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "prefix": "snowflake-verification"
+    },
+    {
+      "provider": "Atlassian Statuspage",
+      "family": "cname",
+      "domain": "6sense.com",
+      "hostname": "status.6sense.com",
+      "type": "CNAME",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:37.280Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "targets": [
+        "w3npwn0d15f6.stspg-customer.com"
+      ]
+    },
+    {
+      "provider": "Atlassian Statuspage",
+      "family": "cname",
+      "domain": "accela.com",
+      "hostname": "status.accela.com",
+      "type": "CNAME",
+      "matched": false,
+      "observedAt": "2026-10-15T04:04:37.556Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "targets": [
+        "status.springbrooksoftware.com"
+      ]
+    },
+    {
+      "provider": "Atlassian Statuspage",
+      "family": "cname",
+      "domain": "act.com",
+      "hostname": "status.act.com",
+      "type": "CNAME",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:37.798Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "targets": [
+        "mvgsw3rfwxzv.stspg-customer.com"
+      ]
+    },
+    {
+      "provider": "Auth0",
+      "family": "cname",
+      "domain": "alyce.com",
+      "hostname": "login.alyce.com",
+      "type": "CNAME",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:38.069Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "targets": [
+        "alyce-production-cd-yoo335nnu2uob3jx.edge.tenants.auth0.com"
+      ]
+    },
+    {
+      "provider": "Auth0",
+      "family": "cname",
+      "domain": "appcues.com",
+      "hostname": "login.appcues.com",
+      "type": "CNAME",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:38.336Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "targets": [
+        "appcues-cd-ujiu4yxcxqv88vln.edge.tenants.auth0.com"
+      ]
+    },
+    {
+      "provider": "Auth0",
+      "family": "cname",
+      "domain": "bettercloud.com",
+      "hostname": "login.bettercloud.com",
+      "type": "CNAME",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:38.693Z",
+      "resolver": "Google DNS-over-HTTPS",
+      "targets": [
+        "bettercloud-production-cd-omyaou8v6sr1ecae.edge.tenants.auth0.com"
+      ]
+    },
+    {
+      "provider": "Atlassian Statuspage",
+      "family": "spf",
+      "domain": "activecampaign.com",
+      "hostname": "activecampaign.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:38.943Z",
+      "resolver": "Google DNS-over-HTTPS"
+    },
+    {
+      "provider": "Atlassian Statuspage",
+      "family": "spf",
+      "domain": "acquia.com",
+      "hostname": "acquia.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:39.194Z",
+      "resolver": "Google DNS-over-HTTPS"
+    },
+    {
+      "provider": "Atlassian Statuspage",
+      "family": "spf",
+      "domain": "advancedmd.com",
+      "hostname": "advancedmd.com",
+      "type": "TXT",
+      "matched": true,
+      "observedAt": "2026-10-15T04:04:39.478Z",
+      "resolver": "Google DNS-over-HTTPS"
+    }
+  ],
+  "followups": [
+    {
+      "provider": "Atlassian Statuspage",
+      "family": "cname",
+      "domain": "accela.com",
+      "hostname": "status.springbrooksoftware.com",
+      "reason": "Follow the intermediate alias returned for status.accela.com",
+      "resolver": "Google DNS-over-HTTPS",
+      "observedAt": "2026-10-15T04:06:24.561Z",
+      "targets": [
+        "5gzdx60zbxzf.stspg-customer.com"
+      ],
+      "matched": true
+    }
+  ]
+}

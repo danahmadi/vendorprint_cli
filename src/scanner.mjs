@@ -14,6 +14,7 @@ import {
   detectCnameTechnology,
   detectSalesVendor,
   extractDomainVerifications,
+  extractUnmatchedTxtPrefixes,
   parseDmarc,
   parseSpf,
 } from "./signals.mjs";
@@ -344,7 +345,7 @@ function buildMethodology(config) {
     scope:
       config.mode === "full"
         ? "Public MX, TXT ownership/SPF, DMARC, common and evidence-guided DKIM selectors, apex and delegated nameservers, and bounded CNAME discovery with short chain following."
-        : "Public MX, TXT ownership/SPF, DMARC, nameservers, and CNAMEs on prioritized tracking subdomain labels. DKIM is omitted in fast and balanced modes.",
+        : "Public MX, TXT ownership/SPF, DMARC, nameservers, and CNAMEs on prioritized tracking subdomain labels. Common DKIM selectors are omitted; SPF-guided DKIM queries may still run within budget.",
     confidence:
       "Findings distinguish domain relationships, sending authorization, and product-specific configuration. Absence of a signal is inconclusive.",
     privacy: `${config.certificateTransparency
@@ -621,6 +622,7 @@ async function scanDomain(domain, options) {
           unclassifiedDomainVerifications: allDomainVerifications.filter(
             (finding) => finding.provider === "Unclassified service",
           ),
+          unmatchedTxtPrefixes: extractUnmatchedTxtPrefixes(txtResult.value),
         }
       : {}),
     authorizedEmailSenders: mail.spf.authorizedSenders,

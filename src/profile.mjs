@@ -56,6 +56,8 @@ function cnameEvidence(service) {
     relationship: "platform_configuration",
     hostname: item.hostname,
     target: item.target,
+    ...(item.sources ? { sources: item.sources } : {}),
+    ...(item.productScope ? { productScope: item.productScope } : {}),
     ...(item.wildcardLikeCname
       ? {
           wildcardLikeCname: true,
@@ -370,8 +372,8 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
     if (genericMap && !explicitlyProfiled.has(service.provider)) {
       for (const item of evidence) {
         pushFinding(genericMap, service.provider, item, {
-          productScope: service.category,
-          caveat:
+          productScope: service.evidence[0]?.productScope ?? service.category,
+          caveat: service.evidence[0]?.caveat ??
             "The public CNAME proves product infrastructure is configured, not that the product is actively used today.",
         });
       }
@@ -379,7 +381,12 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
   }
 
   for (const provider of technologySignals.authorizedEmailSenders) {
-    if (provider === "Salesforce") {
+    if (provider === "Atlassian Statuspage") {
+      pushFinding(customerSupport, provider, spfEvidence(provider), {
+        productScope: "statuspage_notification_sending",
+        caveat: "SPF authorizes Statuspage notification mail; it does not establish current notifications or an active subscription.",
+      });
+    } else if (provider === "Salesforce") {
       pushFinding(crm, "Salesforce", spfEvidence(provider), {
         productScope: "salesforce_email_sending",
         caveat:

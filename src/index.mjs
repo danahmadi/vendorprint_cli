@@ -42,6 +42,7 @@ export {
   detectCnameTechnology,
   detectSalesVendor,
   extractDomainVerifications,
+  extractUnmatchedTxtPrefixes,
   parseDmarc,
   parseSpf,
 } from "./signals.mjs";
