@@ -43,8 +43,9 @@ function verificationEvidence(finding) {
     confidence: finding.confidence,
     relationship: "domain_relationship",
     recordPrefix: finding.recordPrefix,
+    ...(finding.sources ? { sources: finding.sources } : {}),
     interpretation:
-      "The domain completed this vendor's ownership challenge. This proves configuration, not current licensing or seat activity.",
+      "The domain publishes a vendor-specific ownership-verification record. Publication does not establish completed verification, current licensing, or activity.",
   };
 }
 
@@ -55,6 +56,8 @@ function cnameEvidence(service) {
     relationship: "platform_configuration",
     hostname: item.hostname,
     target: item.target,
+    ...(item.sources ? { sources: item.sources } : {}),
+    ...(item.productScope ? { productScope: item.productScope } : {}),
     ...(item.wildcardLikeCname
       ? {
           wildcardLikeCname: true,
@@ -192,9 +195,9 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
     const genericMap = categoryMaps[finding.category];
     if (genericMap && !genericMap.has(finding.provider)) {
       pushFinding(genericMap, finding.provider, verificationEvidence(finding), {
-        productScope: finding.category,
-        caveat:
-          "The ownership challenge proves a configured domain relationship, not an active subscription, edition, seats, or recent use.",
+        productScope: finding.productScope ?? finding.category,
+        caveat: finding.caveat ??
+          "The published ownership record indicates a domain relationship, not completed verification, an active subscription, edition, seats, or recent use.",
       });
     }
   }
@@ -369,8 +372,8 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
     if (genericMap && !explicitlyProfiled.has(service.provider)) {
       for (const item of evidence) {
         pushFinding(genericMap, service.provider, item, {
-          productScope: service.category,
-          caveat:
+          productScope: service.evidence[0]?.productScope ?? service.category,
+          caveat: service.evidence[0]?.caveat ??
             "The public CNAME proves product infrastructure is configured, not that the product is actively used today.",
         });
       }
@@ -378,7 +381,12 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
   }
 
   for (const provider of technologySignals.authorizedEmailSenders) {
-    if (provider === "Salesforce") {
+    if (provider === "Atlassian Statuspage") {
+      pushFinding(customerSupport, provider, spfEvidence(provider), {
+        productScope: "statuspage_notification_sending",
+        caveat: "SPF authorizes Statuspage notification mail; it does not establish current notifications or an active subscription.",
+      });
+    } else if (provider === "Salesforce") {
       pushFinding(crm, "Salesforce", spfEvidence(provider), {
         productScope: "salesforce_email_sending",
         caveat:
@@ -530,10 +538,11 @@ export function buildTechnologyProfile(technologySignals, context = {}) {
           relationship: item.relationship ?? "platform_configuration",
           hostname: item.hostname,
           target: item.target,
+          ...(item.sources ? { sources: item.sources } : {}),
         },
         {
-          productScope: "sales_engagement_tracking",
-          caveat:
+          productScope: item.productScope ?? "sales_engagement_tracking",
+          caveat: item.caveat ??
             "Tracking-domain configuration is strong setup evidence, but does not prove active seats or recent sequence activity.",
         },
       );

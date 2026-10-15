@@ -1,0 +1,11 @@
+{
+  "frozenBeforeHoldout": true,
+  "frozenAt": "2026-10-15",
+  "candidates": [
+    {"vendor":"Gong Engage","family":"CNAME","suffix":"email-composer-webhooks.gong.io","scope":"Branded link tracking only","basis":"Existing signature and official Gong documentation; add documented email-tracking label."},
+    {"vendor":"Fireflies.ai","family":"TXT","prefix":"fireflies-verification","scope":"Published domain-verification record only","basis":"Existing signature, prior lead-selected live records, official SSO domain verification workflow."},
+    {"vendor":"Read AI","family":"TXT","prefix":"read-ai-verification","scope":"Published workspace domain-verification record only","basis":"Discovery Gusto DNS plus exact prefix documented by Read AI: https://support.read.ai/hc/en-us/articles/48607849975955-How-do-I-verify-domain-ownership"},
+    {"vendor":"Reachdesk","family":"TXT","prefix":"reachdesk-verification","scope":"Published branded email domain-verification record only","basis":"Discovery Atlan and Greenhouse DNS; official branded correspondence verification workflow: https://support.reachdesk.com/hc/en-gb/articles/4410354225169-How-to-verify-domains-within-Reachdesk"}
+  ],
+  "rejected": ["No Granola-specific candidate identified in discovery.", "Generic WorkOS/Okta/Google/Microsoft/shared email services cannot identify a meeting vendor.", "Customer website domains need not be employee email domains."]
+}

@@ -1,4 +1,5 @@
 export const FAST_TRACKING_LABELS = [
+  "trust",
   "go",
   "info",
   "hello",
@@ -13,6 +14,9 @@ export const FAST_TRACKING_LABELS = [
 
 export const BALANCED_TRACKING_LABELS = [
   ...FAST_TRACKING_LABELS,
+  "security",
+  "trustcenter",
+  "email-tracking",
   "outreach",
   "tracking",
   "click",
@@ -29,8 +33,12 @@ export const BALANCED_TRACKING_LABELS = [
 ];
 
 export const DEFAULT_TRACKING_LABELS = [
+  "trust",
+  "security",
+  "trustcenter",
   "track",
   "tracking",
+  "email-tracking",
   "click",
   "clicks",
   "link",
@@ -379,11 +387,6 @@ const VERIFICATION_PATTERNS = [
     pattern: /^linear-domain-verification\s*=/i,
   },
   {
-    provider: "Reachdesk",
-    purpose: "Reachdesk domain ownership",
-    pattern: /^reachdesk-verification\s*=/i,
-  },
-  {
     provider: "Cisco",
     purpose: "Cisco service domain ownership",
     pattern: /^cisco-ci-domain-verification\s*=/i,
@@ -531,6 +534,14 @@ function matchPattern(host, definitions) {
   );
 }
 
+function signatureMetadata(definition) {
+  return Object.fromEntries(
+    ["productScope", "caveat", "sources", "verifiedAt"]
+      .filter((key) => definition?.[key] !== undefined)
+      .map((key) => [key, definition[key]]),
+  );
+}
+
 export function detectSalesVendor(hostname, cnameTarget) {
   const target = cleanHost(cnameTarget);
   const registryMatch = findHostSignature(target, "cname");
@@ -546,6 +557,7 @@ export function detectSalesVendor(hostname, cnameTarget) {
     relationship: "platform_configuration",
     hostname: cleanHost(hostname),
     target,
+    ...signatureMetadata(matched),
     rationale:
       matched.confidence === "high"
         ? "A public tracking-style subdomain points to documented or vendor-attributable infrastructure. This is strong configuration evidence, but does not prove current seat usage."
@@ -566,6 +578,7 @@ export function detectCnameTechnology(hostname, cnameTarget) {
     confidence: matched.confidence ?? "high",
     hostname: cleanHost(hostname),
     target,
+    ...signatureMetadata(matched),
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
   };
 }
@@ -609,6 +622,23 @@ export function classifyDnsProvider(nameservers) {
   return matched.size ? [...matched] : ["Unknown"];
 }
 
+// Keep only short key names, never TXT values or opaque standalone tokens.
+// This diagnostic is deliberately broader than vendor attribution.
+export function extractUnmatchedTxtPrefixes(txtRecords) {
+  const prefixes = new Set();
+  for (const parts of txtRecords) {
+    const value = parts.join("").trim();
+    if (/^v=(?:spf1|DMARC1)\b/i.test(value)) continue;
+    if (extractDomainVerifications([parts]).length) continue;
+    const key = value.match(/^([a-z0-9][a-z0-9_.-]{1,63})\s*[=:]\s*\S/i)?.[1];
+    if (!key || !/[a-z]/i.test(key) || /[a-z0-9]{24,}/i.test(key) || /[a-f0-9]{8}-[a-f0-9]{4}-/i.test(key)) continue;
+    // Some vendors append the customer's domain to the key itself.
+    const prefix = key.split(".")[0].toLowerCase();
+    prefixes.add(prefix.replace(/((?:domain|site)-verification)-(?=[a-z0-9]*\d)[a-z0-9]{6,}$/i, "$1"));
+  }
+  return [...prefixes].sort();
+}
+
 export function extractDomainVerifications(txtRecords, options = {}) {
   const values = txtRecords.map((parts) => parts.join("").trim());
   const findings = [];
@@ -633,6 +663,7 @@ export function extractDomainVerifications(txtRecords, options = {}) {
       purpose: known?.purpose ?? "Domain or site ownership verification",
       confidence: known ? "medium" : "low",
       ...(known?.category ? { category: known.category } : {}),
+      ...signatureMetadata(known),
       recordPrefix: prefix,
       tokenRedacted: true,
       signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,

@@ -170,13 +170,36 @@ version it used:
 vendorprint signatures --pretty
 ```
 
-Audit an existing full JSON or NDJSON scan without making network requests. The
-audit emits aggregate unmatched TXT prefixes and CNAME, SPF, DKIM, and delegated-NS
-targets. It never emits account domains or verification tokens:
+Audit an existing full JSON or NDJSON scan without making network requests. For
+discovery runs, retain the diagnostic fields and redacted unknown TXT keys:
+
+```bash
+vendorprint --input accounts.txt --full --include-unclassified \
+  --format ndjson --output findings.ndjson
+```
+
+The audit ranks unmatched TXT keys and CNAME, MX, SPF, DKIM, and delegated-NS
+target domains. Counts are distinct scanned company domains, deduplicated across
+records and repeated scans. SPF includes/redirects include observed recursive
+references. Targets are grouped by registrable domain; tenant labels and
+first-party targets are omitted. TXT values are never included. Some variable
+verification-key suffixes are grouped for discovery, without assigning a vendor:
 
 ```bash
 vendorprint signatures audit findings.ndjson --pretty
 ```
+
+Audit schema `1.1` changes `count` from observations to distinct domains and groups
+`spfMechanisms` by registrable target domain. Compact scan output lacks the
+diagnostics needed for a complete audit. An unmatched pattern is a research lead,
+not an automatically learned signature. Validate it against vendor documentation
+and separate domains before updating the registry.
+
+The [1,000-domain business-software research pass](docs/research/enterprise-discovery-2026-10-14.md)
+adds documented signals for Docusign, Twilio, Cloudflare Dashboard SSO, Lovable,
+PandaDoc, Remote, Sage Intacct, Snowflake, and Auth0, plus Statuspage CNAME and SPF
+coverage. These identify published configuration or domain relationships, not
+active usage or licensed editions.
 
 Compare two JSON reports to identify category/provider additions and removals:
 
@@ -203,11 +226,17 @@ name alone never becomes a technology finding without live DNS corroboration.
 
 ## Coverage and operational notes
 
-- Full mode tries common tracking, help, community, education, and hosted-content
-  labels, plus adaptive SPF, CNAME, DKIM, and delegated-NS checks. It is the default.
-- `--mode fast` uses the 10 highest-yield labels and omits DKIM: about 14 queries
-  per domain.
-- `--mode balanced` uses 23 labels and omits DKIM: about 27 queries per domain.
+- Full mode tries 50 common tracking, trust-center, help, community, education,
+  and hosted-content labels, plus adaptive SPF, CNAME, DKIM, and delegated-NS
+  checks. It is the default.
+- `--mode fast` uses 11 labels, including `trust`: 16 initial queries per domain.
+- `--mode balanced` uses 27 labels, including `trust`, `security`, and
+  `trustcenter`: 32 initial queries per domain. Fast/balanced omit common DKIM
+  selectors; SPF-guided DKIM and other adaptive queries may still run.
+- Vanta, SafeBase, and Drata trust centers are recognized by vendor-specific CNAME
+  targets. A `trust` hostname or generic CDN target alone never identifies them.
+  These findings describe trust-center hosting, not certification or licensed
+  compliance modules. See the [DNS research](docs/research/trust-centers-2026-10-14.md).
 - URLs and hostnames are normalized to their registrable company domain using the
   Public Suffix List. Use `--preserve-hostname` only when a specific delegated
   hostname should be scanned.
@@ -262,8 +291,29 @@ name alone never becomes a technology finding without live DNS corroboration.
   The observed `aplolinks.com` fingerprint is
   deliberately medium-confidence because Apollo's public setup documentation does
   not name that generated target.
-- Gong documents Engage branded URL CNAMEs whose unbranded target is under
-  `email-composer-webhooks.gong.io`.
+- [Gong documents Engage branded URL CNAMEs](https://help.gong.io/docs/set-up-branded-urls)
+  under `email-composer-webhooks.gong.io`. Balanced and full scans include the
+  documented `email-tracking` label. This identifies Engage link tracking, not
+  Gong call recording. The exact observed alias
+  `email-composer-webhooks.gong.io.cdn.cloudflare.net` is also recognized at
+  medium confidence, corroborated through Gong's own CNAME chain; other
+  Cloudflare hostnames are not attributed to Gong.
+- Fireflies and [Read AI](https://support.read.ai/hc/en-us/articles/48607849975955-How-do-I-verify-domain-ownership)
+  verification markers identify published domain-verification records. DNS does
+  not establish completed verification, enabled SSO, paid seats, or recording activity.
+- [Reachdesk domain verification](https://support.reachdesk.com/hc/en-gb/articles/4410354225169-How-to-verify-domains-within-Reachdesk)
+  indicates configuration for branded correspondence, not active gifting campaigns.
+- The [meeting-intelligence research report](https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md)
+  records 35 Gong, 32 Fireflies, and 30 Granola public references, their evidence
+  strength, and bounded DNS results. No Granola-specific signature was validated.
+  Public customer references and DNS observations are separate evidence sources.
+  Version 0.4.0 narrows Gong Engage, Fireflies, and Reachdesk `productScope` values, so existing
+  fingerprints and diffs involving those providers change once on upgrade; that
+  alone does not indicate a customer's stack changed.
+- A [26-domain ABM pilot](https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/abm-2026-10-14.md)
+  did not establish reliable DNS signatures for 6sense, Demandbase, or legacy
+  Engagio. They are not currently supported detections. In particular, shared
+  SendGrid records do not establish 6sense AI Email usage.
 - Salesloft supports custom tracking domains; its attributable target used by the
   detector is `custom-tracking.salesloft.com`.
 - [HubSpot documents reverse-proxy targets under `hscoscdn.net`](https://developers.hubspot.com/docs/cms/best-practices/testing-staging-performance/reverse-proxies/setup),

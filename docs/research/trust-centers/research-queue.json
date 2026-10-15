@@ -1,0 +1,926 @@
+{
+  "caveat": "Unattributed first-hop external CNAME groups, not inferred vendors. Includes already-known providers and shared infrastructure; requires review.",
+  "candidates": [
+    {
+      "targetDomain": "aptible.in",
+      "domains": 23,
+      "observations": [
+        {
+          "domain": "achievers.com",
+          "hostname": "trust.achievers.com",
+          "target": "elb-conveyor-80058.aptible.in"
+        },
+        {
+          "domain": "alteryx.com",
+          "hostname": "trust.alteryx.com",
+          "target": "elb-conveyor-102347.aptible.in"
+        },
+        {
+          "domain": "asana.com",
+          "hostname": "trustcenter.asana.com",
+          "target": "elb-conveyor-128165.aptible.in"
+        },
+        {
+          "domain": "callrail.com",
+          "hostname": "trust.callrail.com",
+          "target": "elb-conveyor-126416.aptible.in"
+        },
+        {
+          "domain": "carta.com",
+          "hostname": "trust.carta.com",
+          "target": "elb-conveyor-108735.aptible.in"
+        },
+        {
+          "domain": "cloudera.com",
+          "hostname": "trust.cloudera.com",
+          "target": "elb-conveyor-70724.aptible.in"
+        },
+        {
+          "domain": "cloudtalk.io",
+          "hostname": "trust.cloudtalk.io",
+          "target": "elb-conveyor-103911.aptible.in"
+        },
+        {
+          "domain": "cvent.com",
+          "hostname": "trust.cvent.com",
+          "target": "elb-conveyor-77277.aptible.in"
+        },
+        {
+          "domain": "dynatrace.com",
+          "hostname": "trust.dynatrace.com",
+          "target": "elb-conveyor-114417.aptible.in"
+        },
+        {
+          "domain": "frontify.com",
+          "hostname": "trust.frontify.com",
+          "target": "elb-conveyor-99979.aptible.in"
+        },
+        {
+          "domain": "hootsuite.com",
+          "hostname": "trustcenter.hootsuite.com",
+          "target": "elb-conveyor-105592.aptible.in"
+        },
+        {
+          "domain": "impartner.com",
+          "hostname": "trustcenter.impartner.com",
+          "target": "elb-conveyor-108037.aptible.in"
+        },
+        {
+          "domain": "insightsoftware.com",
+          "hostname": "trust.insightsoftware.com",
+          "target": "elb-conveyor-109110.aptible.in"
+        },
+        {
+          "domain": "klaviyo.com",
+          "hostname": "trust.klaviyo.com",
+          "target": "elb-conveyor-117961.aptible.in"
+        },
+        {
+          "domain": "liveperson.com",
+          "hostname": "trust.liveperson.com",
+          "target": "elb-conveyor-95962.aptible.in"
+        },
+        {
+          "domain": "logicgate.com",
+          "hostname": "trust.logicgate.com",
+          "target": "elb-conveyor-106592.aptible.in"
+        },
+        {
+          "domain": "logicmonitor.com",
+          "hostname": "trust.logicmonitor.com",
+          "target": "elb-conveyor-83127.aptible.in"
+        },
+        {
+          "domain": "qualtrics.com",
+          "hostname": "trust.qualtrics.com",
+          "target": "elb-conveyor-96514.aptible.in"
+        },
+        {
+          "domain": "realvnc.com",
+          "hostname": "trust.realvnc.com",
+          "target": "elb-conveyor-65042.aptible.in"
+        },
+        {
+          "domain": "salesloft.com",
+          "hostname": "trust.salesloft.com",
+          "target": "elb-conveyor-122989.aptible.in"
+        },
+        {
+          "domain": "sproutsocial.com",
+          "hostname": "trust.sproutsocial.com",
+          "target": "elb-conveyor-66183.aptible.in"
+        },
+        {
+          "domain": "sumologic.com",
+          "hostname": "trust.sumologic.com",
+          "target": "elb-conveyor-93852.aptible.in"
+        },
+        {
+          "domain": "zapier.com",
+          "hostname": "trust.zapier.com",
+          "target": "elb-conveyor-91919.aptible.in"
+        }
+      ]
+    },
+    {
+      "targetDomain": "securitypal.com",
+      "domains": 7,
+      "observations": [
+        {
+          "domain": "anaplan.com",
+          "hostname": "trust.anaplan.com",
+          "target": "anaplan.securitypal.com"
+        },
+        {
+          "domain": "bamboohr.com",
+          "hostname": "trust.bamboohr.com",
+          "target": "bamboohr.securitypal.com"
+        },
+        {
+          "domain": "iterable.com",
+          "hostname": "trust.iterable.com",
+          "target": "iterable.securitypal.com"
+        },
+        {
+          "domain": "plaid.com",
+          "hostname": "security.plaid.com",
+          "target": "plaid.securitypal.com"
+        },
+        {
+          "domain": "smartrecruiters.com",
+          "hostname": "trust.smartrecruiters.com",
+          "target": "smartrecruiters.securitypal.com"
+        },
+        {
+          "domain": "surveymonkey.com",
+          "hostname": "trust.surveymonkey.com",
+          "target": "surveymonkey.securitypal.com"
+        },
+        {
+          "domain": "wistia.com",
+          "hostname": "security.wistia.com",
+          "target": "wistia.securitypal.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "whistic.com",
+      "domains": 6,
+      "observations": [
+        {
+          "domain": "avalara.com",
+          "hostname": "trust.avalara.com",
+          "target": "f0b0de2.whistic.com"
+        },
+        {
+          "domain": "connectwise.com",
+          "hostname": "trust.connectwise.com",
+          "target": "2973b21.whistic.com"
+        },
+        {
+          "domain": "mural.co",
+          "hostname": "trust.mural.co",
+          "target": "2df87d4.whistic.com"
+        },
+        {
+          "domain": "rippling.com",
+          "hostname": "trust.rippling.com",
+          "target": "2b49694.whistic.com"
+        },
+        {
+          "domain": "rubrik.com",
+          "hostname": "trust.rubrik.com",
+          "target": "ce5a566.whistic.com"
+        },
+        {
+          "domain": "vertafore.com",
+          "hostname": "trust.vertafore.com",
+          "target": "a7b5576.whistic.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "stspg-customer.com",
+      "domains": 4,
+      "observations": [
+        {
+          "domain": "accela.com",
+          "hostname": "trust.accela.com",
+          "target": "bw3rp99fqvm2.stspg-customer.com"
+        },
+        {
+          "domain": "blackline.com",
+          "hostname": "trust.blackline.com",
+          "target": "lv5fwrnk2c09.stspg-customer.com"
+        },
+        {
+          "domain": "snaplogic.com",
+          "hostname": "trust.snaplogic.com",
+          "target": "6jrkb3x939j9.stspg-customer.com"
+        },
+        {
+          "domain": "vindicia.com",
+          "hostname": "trust.vindicia.com",
+          "target": "xc8gr9w5szwk.stspg-customer.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "com.cdn.cloudflare.net",
+      "domains": 4,
+      "observations": [
+        {
+          "domain": "coupa.com",
+          "hostname": "trust.coupa.com",
+          "target": "trust.coupa.com.cdn.cloudflare.net"
+        },
+        {
+          "domain": "mindbodyonline.com",
+          "hostname": "security.mindbodyonline.com",
+          "target": "security.mindbodyonline.com.cdn.cloudflare.net"
+        },
+        {
+          "domain": "nylas.com",
+          "hostname": "trust.nylas.com",
+          "target": "trust.nylas.com.cdn.cloudflare.net"
+        },
+        {
+          "domain": "okta.com",
+          "hostname": "trust.okta.com",
+          "target": "trust.okta.com.cdn.cloudflare.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "com.edgekey.net",
+      "domains": 3,
+      "observations": [
+        {
+          "domain": "akamai.com",
+          "hostname": "trust.akamai.com",
+          "target": "trust.akamai.com.edgekey.net"
+        },
+        {
+          "domain": "akamai.com",
+          "hostname": "security.akamai.com",
+          "target": "eis-redirect-ov.akamai.com.edgekey.net"
+        },
+        {
+          "domain": "opentext.com",
+          "hostname": "security.opentext.com",
+          "target": "www.opentext.com.edgekey.net"
+        },
+        {
+          "domain": "salesforce.com",
+          "hostname": "trust.salesforce.com",
+          "target": "trust.salesforce.com.edgekey.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "amazonaws.com",
+      "domains": 3,
+      "observations": [
+        {
+          "domain": "lambdatest.com",
+          "hostname": "trust.lambdatest.com",
+          "target": "a0930ae3d15c34033abf5d3c9025319e-92bc4a75261f6d79.elb.ap-south-1.amazonaws.com"
+        },
+        {
+          "domain": "moengage.com",
+          "hostname": "trust.moengage.com",
+          "target": "a0930ae3d15c34033abf5d3c9025319e-92bc4a75261f6d79.elb.ap-south-1.amazonaws.com"
+        },
+        {
+          "domain": "nintex.com",
+          "hostname": "trust.nintex.com",
+          "target": "ac78d871874d04827be96d6a1b33e82c-1ea39c4ec1d6f094.elb.us-east-2.amazonaws.com"
+        },
+        {
+          "domain": "nintex.com",
+          "hostname": "security.nintex.com",
+          "target": "ac78d871874d04827be96d6a1b33e82c-1ea39c4ec1d6f094.elb.us-east-2.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "hypercomplytrust.com",
+      "domains": 2,
+      "observations": [
+        {
+          "domain": "appian.com",
+          "hostname": "trustcenter.appian.com",
+          "target": "proxy.hypercomplytrust.com"
+        },
+        {
+          "domain": "madcapsoftware.com",
+          "hostname": "trust.madcapsoftware.com",
+          "target": "proxy.hypercomplytrust.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "rfpio.com",
+      "domains": 2,
+      "observations": [
+        {
+          "domain": "blackline.com",
+          "hostname": "trustcenter.blackline.com",
+          "target": "profiles.rfpio.com"
+        },
+        {
+          "domain": "newrelic.com",
+          "hostname": "trust.newrelic.com",
+          "target": "profiles.rfpio.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "hubspot.net",
+      "domains": 2,
+      "observations": [
+        {
+          "domain": "botkeeper.com",
+          "hostname": "trust.botkeeper.com",
+          "target": "1726470.group20.sites.hubspot.net"
+        },
+        {
+          "domain": "experlogix.com",
+          "hostname": "trust.experlogix.com",
+          "target": "8035545.group45.sites.hubspot.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "wpengine.com",
+      "domains": 2,
+      "observations": [
+        {
+          "domain": "code42.com",
+          "hostname": "trust.code42.com",
+          "target": "c42www.wpengine.com"
+        },
+        {
+          "domain": "xactlycorp.com",
+          "hostname": "trust.xactlycorp.com",
+          "target": "xactlytrust.wpengine.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "wolfia.com",
+      "domains": 2,
+      "observations": [
+        {
+          "domain": "miro.com",
+          "hostname": "trust.miro.com",
+          "target": "connect.wolfia.com"
+        },
+        {
+          "domain": "thoughtspot.com",
+          "hostname": "security.thoughtspot.com",
+          "target": "connect.wolfia.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "getprobo.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "ahrefs.com",
+          "hostname": "trust.ahrefs.com",
+          "target": "cname.eu.console.getprobo.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "dg7yax2nb93oh.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "amplitude.com",
+          "hostname": "trust.amplitude.com",
+          "target": "dg7yax2nb93oh.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "live-verint.pantheonsite.io",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "calabrio.com",
+          "hostname": "trust.calabrio.com",
+          "target": "live-verint.pantheonsite.io"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d-ge7i84kl7g.execute-api.us-east-1.amazonaws.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "celtx.com",
+          "hostname": "trust.celtx.com",
+          "target": "d-ge7i84kl7g.execute-api.us-east-1.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "wirewheel.io",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "churnzero.net",
+          "hostname": "trustcenter.churnzero.net",
+          "target": "churnzero-tc.static.services.wirewheel.io"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d37vlcsolqorv8.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "clari.com",
+          "hostname": "trust.clari.com",
+          "target": "d37vlcsolqorv8.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d2e8bfcb9dt7gg.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "clevertap.com",
+          "hostname": "trust.clevertap.com",
+          "target": "d2e8bfcb9dt7gg.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "uptimerobot.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "clickdimensions.com",
+          "hostname": "trust.clickdimensions.com",
+          "target": "stats.uptimerobot.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d3qwa0pr9rt71y.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "convoso.com",
+          "hostname": "trust.convoso.com",
+          "target": "d3qwa0pr9rt71y.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d17lws1ounnyjp.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "copper.com",
+          "hostname": "trust.copper.com",
+          "target": "d17lws1ounnyjp.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "safebase.us",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "coralogix.com",
+          "hostname": "trust.coralogix.com",
+          "target": "coralogix.safebase.us"
+        }
+      ]
+    },
+    {
+      "targetDomain": "anecdotes.ai",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "coveo.com",
+          "hostname": "trust.coveo.com",
+          "target": "trustcenter.anecdotes.ai"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d1s9p0nbed1odk.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "databricks.com",
+          "hostname": "trust.databricks.com",
+          "target": "d1s9p0nbed1odk.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "cowpaths.github.io",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "fullstory.com",
+          "hostname": "security.fullstory.com",
+          "target": "cowpaths.github.io"
+        }
+      ]
+    },
+    {
+      "targetDomain": "wp.wpenginepowered.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "graduway.com",
+          "hostname": "trust.graduway.com",
+          "target": "wp.wpenginepowered.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "greenhouse.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "greenhouse.io",
+          "hostname": "trust.greenhouse.io",
+          "target": "trust.greenhouse.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d1pfcz4bx9nomh.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "hackerrank.com",
+          "hostname": "security.hackerrank.com",
+          "target": "d1pfcz4bx9nomh.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d12pkr9m68sblj.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "hevodata.com",
+          "hostname": "trust.hevodata.com",
+          "target": "d12pkr9m68sblj.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d1z8zew9cyno1w.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "hiverhq.com",
+          "hostname": "trustcenter.hiverhq.com",
+          "target": "d1z8zew9cyno1w.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "safebase.io",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "instabug.com",
+          "hostname": "security.instabug.com",
+          "target": "proxy-ssl.safebase.io"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d1xcl3e4pv7fni.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "kaseya.com",
+          "hostname": "trust.kaseya.com",
+          "target": "d1xcl3e4pv7fni.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d2s73q2llaj8wx.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "kyriba.com",
+          "hostname": "trust.kyriba.com",
+          "target": "d2s73q2llaj8wx.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d2lpm3cm841f1w.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "medallia.com",
+          "hostname": "trust.medallia.com",
+          "target": "d2lpm3cm841f1w.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d2l812bt19zyrj.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "memoq.com",
+          "hostname": "trust.memoq.com",
+          "target": "d2l812bt19zyrj.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d3laz7s3nz5xlf.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "mindtickle.com",
+          "hostname": "trust.mindtickle.com",
+          "target": "d3laz7s3nz5xlf.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "com.s3-website-us-west-2.amazonaws.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "mulesoft.com",
+          "hostname": "trust.mulesoft.com",
+          "target": "trust.mulesoft.com.s3-website-us-west-2.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "goskope.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "netskope.com",
+          "hostname": "trust.netskope.com",
+          "target": "trustportal.goskope.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "trust-onelogin-com-redirect-alb-1004071515.us-west-2.elb.amazonaws.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "onelogin.com",
+          "hostname": "trust.onelogin.com",
+          "target": "trust-onelogin-com-redirect-alb-1004071515.us-west-2.elb.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "hostedstatus.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "panopto.com",
+          "hostname": "trust.panopto.com",
+          "target": "66381571.hostedstatus.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "simpletrustportal.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "pipefy.com",
+          "hostname": "trust.pipefy.com",
+          "target": "custom.simpletrustportal.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "vercel-dns-016.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "plivo.com",
+          "hostname": "trustcenter.plivo.com",
+          "target": "fd5ea42a144502d9.vercel-dns-016.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "readmessl.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "recurly.com",
+          "hostname": "trust.recurly.com",
+          "target": "recurly-trust-group-fdd8772f.readmessl.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "a01.azurefd.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "relativity.com",
+          "hostname": "trust.relativity.com",
+          "target": "a00mpiiswb001-b0gcc8gthee9ascg.a01.azurefd.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d2oyw6v7d4rua.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "replicon.com",
+          "hostname": "security.replicon.com",
+          "target": "d2oyw6v7d4rua.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "go-vip.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "salesforce.com",
+          "hostname": "security.salesforce.com",
+          "target": "salesforcesecurity.go-vip.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "zengrc.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "skyward.com",
+          "hostname": "trustcenter.skyward.com",
+          "target": "trustcenter.prod.zengrc.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "vendict.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "squareup.com",
+          "hostname": "trust.squareup.com",
+          "target": "trustpage.vendict.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d-4l44trmwu6.execute-api.us-east-1.amazonaws.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "staxpayments.com",
+          "hostname": "trust.staxpayments.com",
+          "target": "d-4l44trmwu6.execute-api.us-east-1.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "stripecdn.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "stripe.com",
+          "hostname": "trust.stripe.com",
+          "target": "b.stripecdn.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "ops-redirect-lb-888239976.us-west-1.elb.amazonaws.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "sugarcrm.com",
+          "hostname": "trust.sugarcrm.com",
+          "target": "ops-redirect-lb-888239976.us-west-1.elb.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "zentrova.ai",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "toasttab.com",
+          "hostname": "trustcenter.toasttab.com",
+          "target": "connector.zentrova.ai"
+        }
+      ]
+    },
+    {
+      "targetDomain": "secureframetrust.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "traackr.com",
+          "hostname": "trust.traackr.com",
+          "target": "traackr.secureframetrust.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "z01.azurefd.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "veeva.com",
+          "hostname": "trust.veeva.com",
+          "target": "statuscast-web-1-csgrc8g3b0hye7c4.z01.azurefd.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "vimeo.map.fastly.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "vimeo.com",
+          "hostname": "trust.vimeo.com",
+          "target": "vimeo.map.fastly.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "virtru-corp.github.io",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "virtru.com",
+          "hostname": "trust.virtru.com",
+          "target": "virtru-corp.github.io"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d13agnwqe6g3kp.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "whatfix.com",
+          "hostname": "trust.whatfix.com",
+          "target": "d13agnwqe6g3kp.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "widencollective.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "widen.com",
+          "hostname": "security.widen.com",
+          "target": "redirect.widencollective.com"
+        }
+      ]
+    },
+    {
+      "targetDomain": "d1pvhukhknbjm4.cloudfront.net",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "yelp.com",
+          "hostname": "trust.yelp.com",
+          "target": "d1pvhukhknbjm4.cloudfront.net"
+        }
+      ]
+    },
+    {
+      "targetDomain": "zerodisclo.com",
+      "domains": 1,
+      "observations": [
+        {
+          "domain": "zivver.com",
+          "hostname": "security.zivver.com",
+          "target": "zerodisclo.com"
+        }
+      ]
+    }
+  ]
+}

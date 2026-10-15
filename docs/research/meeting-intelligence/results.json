@@ -1,0 +1,1153 @@
+{
+  "methodology": {
+    "maxQueries": 80,
+    "labels": [
+      "track",
+      "tracking",
+      "email-tracking",
+      "click",
+      "clicks",
+      "link",
+      "links",
+      "go",
+      "email",
+      "hello",
+      "engage",
+      "connect",
+      "outreach",
+      "sales",
+      "marketing",
+      "mail",
+      "send",
+      "trk",
+      "info",
+      "pages",
+      "offers",
+      "resources",
+      "learn",
+      "discover",
+      "events",
+      "webinars",
+      "meet",
+      "calendar",
+      "success",
+      "updates",
+      "news",
+      "brand",
+      "crm",
+      "portal",
+      "community",
+      "partners",
+      "customers",
+      "login",
+      "support",
+      "help",
+      "docs",
+      "status",
+      "academy",
+      "training",
+      "autodiscover",
+      "www2",
+      "lp",
+      "gong",
+      "fireflies",
+      "granola",
+      "recordings",
+      "notes",
+      "meetings"
+    ],
+    "transport": "native DNS",
+    "globalMinStartGapMs": 30,
+    "domainConcurrency": 4,
+    "spfMax": 10,
+    "chainQueriesMax": 10,
+    "chainHopsMax": 3,
+    "scope": "Apex TXT prefixes and NS; fixed CNAME candidates and wildcard control; recursive SPF host references; short CNAME chains. No HTTP requests to customer sites, no CT, no private DNS. TXT values redacted before persistence."
+  },
+  "baselineQueryCount": 6545,
+  "rows": [
+    {
+      "domain": "a16z.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:04.476Z",
+      "queryCount": 68,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "accel.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:03.248Z",
+      "queryCount": 59,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "accu.co.uk",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:34.120Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "addepar.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:34.746Z",
+      "queryCount": 69,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "agilehro.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:33.602Z",
+      "queryCount": 58,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "aircall.io",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:34.686Z",
+      "queryCount": 71,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "akatia.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:06.355Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "allvuesystems.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:42.237Z",
+      "queryCount": 72,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "amplifiedinnovation.co",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:03.717Z",
+      "queryCount": 65,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "anthropic.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:41.437Z",
+      "queryCount": 59,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "appen.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:11.396Z",
+      "queryCount": 66,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "appsflyer.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:43.689Z",
+      "queryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "asana.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:43.042Z",
+      "queryCount": 71,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "atlan.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:50.046Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "atlan.com",
+          "prefix": "reachdesk-verification"
+        }
+      ]
+    },
+    {
+      "domain": "auvik.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:50.406Z",
+      "queryCount": 72,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "aventus.ai",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:50.851Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "baanx.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:50.917Z",
+      "queryCount": 60,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "bairesdev.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:56.930Z",
+      "queryCount": 66,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "beetechy.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:56.823Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "benchmark.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:59.177Z",
+      "queryCount": 62,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "beyondintent.com.au",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:13:58.669Z",
+      "queryCount": 60,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "bluecatnetworks.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:05.249Z",
+      "queryCount": 74,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "bosch.com",
+      "split": "support",
+      "observedAt": "2026-10-15T00:16:19.377Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "bosch.com",
+          "prefix": "fireflies-verification"
+        }
+      ]
+    },
+    {
+      "domain": "boulderthinking.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:06.239Z",
+      "queryCount": 57,
+      "apexTxtStatus": "no_answer",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "brex.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:06.148Z",
+      "queryCount": 73,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "bukihq.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:05.482Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "bumble.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:15.258Z",
+      "queryCount": 60,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "chime.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:12.018Z",
+      "queryCount": 59,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "clara.co",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:11.815Z",
+      "queryCount": 67,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "clay.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:12.835Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "cultureamp.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:12.812Z",
+      "queryCount": 61,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "cursor.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:11.834Z",
+      "queryCount": 65,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "daversapartners.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:21.197Z",
+      "queryCount": 62,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "decagon.ai",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:14.417Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "demandbase.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:22.272Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "devrev.ai",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:19.491Z",
+      "queryCount": 65,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "digitalbullgo.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:18.086Z",
+      "queryCount": 58,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "discoverkeep.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:21.719Z",
+      "queryCount": 69,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "dreamdata.io",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:30.263Z",
+      "queryCount": 67,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "easyship.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:28.567Z",
+      "queryCount": 68,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "eftsure.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:29.212Z",
+      "queryCount": 67,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "eftsure.com.au",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:30.535Z",
+      "queryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "egnyte.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:20.835Z",
+      "queryCount": 72,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "element451.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:36.803Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "equalitymd.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:35.989Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "eventengage.io",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:37.077Z",
+      "queryCount": 56,
+      "apexTxtStatus": "no_answer",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "exterro.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:38.668Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "fello.agency",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:41.946Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "figma.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:19.683Z",
+      "queryCount": 69,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "figma.com",
+          "prefix": "reachdesk-verification"
+        }
+      ],
+      "exploratoryFollowupHits": [
+        {
+          "type": "CNAME",
+          "name": "email-tracking.figma.com",
+          "target": "email-composer-webhooks.gong.io.cdn.cloudflare.net",
+          "note": "Identified after frozen candidate evaluation; not an independent holdout validation."
+        }
+      ]
+    },
+    {
+      "domain": "fourangle.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:58.971Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [
+        {
+          "name": "sales.fourangle.com",
+          "type": "CNAME",
+          "code": "ETIMEOUT"
+        }
+      ],
+      "candidateHits": []
+    },
+    {
+      "domain": "frontify.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:43.783Z",
+      "queryCount": 71,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "fundingcircle.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:45.294Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "futurosity.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:48.088Z",
+      "queryCount": 60,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "gainsight.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:50.820Z",
+      "queryCount": 74,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "ghx.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:23.628Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "glyphic.bio",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:51.059Z",
+      "queryCount": 58,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "greenhouse.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:55.089Z",
+      "queryCount": 68,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "greenhouse.io",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:58.534Z",
+      "queryCount": 72,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "greenhouse.io",
+          "prefix": "reachdesk-verification"
+        }
+      ]
+    },
+    {
+      "domain": "gusto.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:14:59.086Z",
+      "queryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "gusto.com",
+          "prefix": "read-ai-verification"
+        }
+      ]
+    },
+    {
+      "domain": "hubspot.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:02.165Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "iheartjane.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:25.993Z",
+      "queryCount": 68,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "intercom.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:27.309Z",
+      "queryCount": 67,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "kynection.com.au",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:13.953Z",
+      "queryCount": 64,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "levelupleads.io",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:06.377Z",
+      "queryCount": 59,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "linear.app",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:04.705Z",
+      "queryCount": 60,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "lovable.dev",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:08.386Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "mammaldigital.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:10.493Z",
+      "queryCount": 60,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "meaningfulgigs.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:12.645Z",
+      "queryCount": 60,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "media.bukihq.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:14.153Z",
+      "queryCount": 56,
+      "apexTxtStatus": "no_answer",
+      "apexNsStatus": "no_answer",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "menlovc.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:28.574Z",
+      "queryCount": 62,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "mistral.ai",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:31.119Z",
+      "queryCount": 62,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "mybluegrace.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:17.709Z",
+      "queryCount": 65,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "ohpcoach.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:19.530Z",
+      "queryCount": 56,
+      "apexTxtStatus": "no_answer",
+      "apexNsStatus": "no_answer",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "omneo.io",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:20.838Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "paycor.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:22.609Z",
+      "queryCount": 71,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "posthog.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:25.684Z",
+      "queryCount": 68,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "ramp.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:26.565Z",
+      "queryCount": 62,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "reachdesk.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:33.904Z",
+      "queryCount": 66,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "reachdesk.com",
+          "prefix": "reachdesk-verification"
+        }
+      ]
+    },
+    {
+      "domain": "remotish.agency",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:27.886Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "replit.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:34.150Z",
+      "queryCount": 59,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "rippling.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:30.005Z",
+      "queryCount": 74,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "roblox.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:37.486Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "rootly.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:38.734Z",
+      "queryCount": 63,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "sendoso.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:42.620Z",
+      "queryCount": 72,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "sequoiacap.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:41.951Z",
+      "queryCount": 69,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "shopify.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:44.300Z",
+      "queryCount": 65,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "shoppurnama.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:45.433Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "slingshot-effect.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:33.848Z",
+      "queryCount": 58,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "spiral.co.nz",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:42.274Z",
+      "queryCount": 64,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "superposition.ai",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:33.309Z",
+      "queryCount": 59,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "tavily.com",
+      "split": "support",
+      "observedAt": "2026-10-15T00:16:09.603Z",
+      "queryCount": 68,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "tavily.com",
+          "prefix": "fireflies-verification"
+        }
+      ]
+    },
+    {
+      "domain": "thumbtack.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:46.657Z",
+      "queryCount": 66,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [
+        {
+          "name": "mkto-o0211.com",
+          "type": "CNAME",
+          "code": "ESERVFAIL"
+        }
+      ],
+      "candidateHits": []
+    },
+    {
+      "domain": "ticino.com",
+      "split": "holdout",
+      "observedAt": "2026-10-15T00:16:55.126Z",
+      "queryCount": 71,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "tokenizz.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:35.265Z",
+      "queryCount": 58,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "topmarketer.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:38.510Z",
+      "queryCount": 57,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "usv.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:39.929Z",
+      "queryCount": 64,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "utopianhealthcare.org",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:44.555Z",
+      "queryCount": 66,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "vanta.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:45.940Z",
+      "queryCount": 69,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "vercel.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:47.182Z",
+      "queryCount": 70,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    },
+    {
+      "domain": "webflow.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:49.171Z",
+      "queryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": [
+        {
+          "type": "TXT",
+          "name": "webflow.com",
+          "prefix": "fireflies-verification"
+        },
+        {
+          "type": "TXT",
+          "name": "webflow.com",
+          "prefix": "reachdesk-verification"
+        }
+      ]
+    },
+    {
+      "domain": "zapier.com",
+      "split": "discovery",
+      "observedAt": "2026-10-15T00:15:49.807Z",
+      "queryCount": 73,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "candidateHits": []
+    }
+  ]
+}

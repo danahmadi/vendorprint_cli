@@ -1,0 +1,87 @@
+{
+  "phase": "Exploratory follow-up after holdout review; not a frozen candidate or holdout validation.",
+  "rows": [
+    {
+      "name": "email-tracking.figma.com",
+      "type": "CNAME",
+      "resolver": "native",
+      "observedAt": "2026-10-15T00:24:30.649Z",
+      "targets": [
+        "email-composer-webhooks.gong.io.cdn.cloudflare.net"
+      ]
+    },
+    {
+      "name": "email-tracking.figma.com",
+      "type": "CNAME",
+      "resolver": "Google DNS over HTTPS",
+      "observedAt": "2026-10-15T00:24:30.902Z",
+      "dnsStatus": 0,
+      "answers": [
+        {
+          "name": "email-tracking.figma.com.",
+          "target": "email-composer-webhooks.gong.io.cdn.cloudflare.net."
+        }
+      ]
+    },
+    {
+      "name": "us-6653.email-composer-webhooks.gong.io",
+      "type": "CNAME",
+      "resolver": "native",
+      "observedAt": "2026-10-15T00:24:30.902Z",
+      "targets": [
+        "email-composer-webhooks.gong.io"
+      ]
+    },
+    {
+      "name": "us-6653.email-composer-webhooks.gong.io",
+      "type": "CNAME",
+      "resolver": "Google DNS over HTTPS",
+      "observedAt": "2026-10-15T00:24:31.009Z",
+      "dnsStatus": 0,
+      "answers": [
+        {
+          "name": "us-6653.email-composer-webhooks.gong.io.",
+          "target": "email-composer-webhooks.gong.io."
+        }
+      ]
+    },
+    {
+      "name": "email-composer-webhooks.gong.io",
+      "type": "CNAME",
+      "resolver": "native",
+      "observedAt": "2026-10-15T00:24:31.009Z",
+      "targets": [
+        "email-composer-webhooks.gong.io.cdn.cloudflare.net"
+      ]
+    },
+    {
+      "name": "email-composer-webhooks.gong.io",
+      "type": "CNAME",
+      "resolver": "Google DNS over HTTPS",
+      "observedAt": "2026-10-15T00:24:31.117Z",
+      "dnsStatus": 0,
+      "answers": [
+        {
+          "name": "email-composer-webhooks.gong.io.",
+          "target": "email-composer-webhooks.gong.io.cdn.cloudflare.net."
+        }
+      ]
+    },
+    {
+      "name": "email-composer-webhooks.gong.io.cdn.cloudflare.net",
+      "type": "CNAME",
+      "resolver": "native",
+      "observedAt": "2026-10-15T00:24:31.138Z",
+      "code": "ENODATA",
+      "targets": []
+    },
+    {
+      "name": "email-composer-webhooks.gong.io.cdn.cloudflare.net",
+      "type": "CNAME",
+      "resolver": "Google DNS over HTTPS",
+      "observedAt": "2026-10-15T00:24:31.224Z",
+      "dnsStatus": 0,
+      "answers": []
+    }
+  ]
+}

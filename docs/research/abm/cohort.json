@@ -1,0 +1,240 @@
+{
+  "selectedBeforeDns": true,
+  "scope": "Exploratory pilot; no holdout or known-negative control group. General vendor customer evidence does not establish AI Email adoption. Engagio relationships are historical, not current subscription claims.",
+  "rows": [
+    {
+      "vendor": "6sense",
+      "company": "Lyra Health",
+      "domain": "lyrahealth.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "Tipalti",
+      "domain": "tipalti.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "Ivanti",
+      "domain": "ivanti.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "FullStory",
+      "domain": "fullstory.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "Flexential",
+      "domain": "flexential.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "PTC",
+      "domain": "ptc.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "Sumo Logic",
+      "domain": "sumologic.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "Sage",
+      "domain": "sage.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "Khoros",
+      "domain": "khoros.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customers/",
+      "evidenceTier": "vendor_case_study_or_testimonial",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "TeamViewer",
+      "domain": "teamviewer.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "Denodo",
+      "domain": "denodo.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "PageUp",
+      "domain": "pageuppeople.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "Unanet",
+      "domain": "unanet.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "Achievers",
+      "domain": "achievers.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "CyberArk",
+      "domain": "cyberark.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "GoCardless",
+      "domain": "gocardless.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "DISCO",
+      "domain": "csdisco.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Demandbase",
+      "company": "Tenable",
+      "domain": "tenable.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/resources/case-studies/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Engagio",
+      "company": "Atlassian",
+      "domain": "atlassian.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/press-release/demandbase-acquires-engagio/",
+      "evidenceTier": "historical_customer_named_2020",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Engagio",
+      "company": "Anaplan",
+      "domain": "anaplan.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/press-release/demandbase-acquires-engagio/",
+      "evidenceTier": "historical_customer_named_2020",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Engagio",
+      "company": "Snowflake",
+      "domain": "snowflake.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/press-release/demandbase-acquires-engagio/",
+      "evidenceTier": "historical_customer_named_2020",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Engagio",
+      "company": "Pendo",
+      "domain": "pendo.io",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/press-release/demandbase-acquires-engagio/",
+      "evidenceTier": "historical_customer_named_2020",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Engagio",
+      "company": "New Relic",
+      "domain": "newrelic.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/press-release/demandbase-acquires-engagio/",
+      "evidenceTier": "historical_customer_named_2020",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Engagio",
+      "company": "Trend Micro",
+      "domain": "trendmicro.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/press-release/demandbase-acquires-engagio/",
+      "evidenceTier": "historical_customer_named_2020",
+      "split": "discovery"
+    },
+    {
+      "vendor": "Engagio",
+      "company": "Vonage",
+      "domain": "vonage.com",
+      "alternateDomains": [],
+      "source": "https://www.demandbase.com/press-release/demandbase-acquires-engagio/",
+      "evidenceTier": "historical_customer_named_2020",
+      "split": "discovery"
+    },
+    {
+      "vendor": "6sense",
+      "company": "Salesloft",
+      "domain": "salesloft.com",
+      "alternateDomains": [],
+      "source": "https://6sense.com/customer-stories/salesloft-harnesses-the-power-of-a-lean-tech-stack-with-6sense/",
+      "evidenceTier": "vendor_case_study",
+      "split": "discovery"
+    }
+  ]
+}

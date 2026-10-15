@@ -1,4 +1,4 @@
-export const SIGNATURE_CATALOG_VERSION = "2026.08.24";
+export const SIGNATURE_CATALOG_VERSION = "2026.10.14";
 
 const source = (url, kind = "official_documentation") => ({ url, kind });
 
@@ -7,11 +7,64 @@ export const SIGNATURE_REGISTRY = Object.freeze({
   catalogVersion: SIGNATURE_CATALOG_VERSION,
   verifiedAt: "2026-07-29",
   cname: [
+    {
+      provider: "Drata", category: "security_compliance",
+      exact: ["trust.cname.drata.com"], confidence: "high",
+      productScope: "drata_trust_center",
+      caveat: "DNS points to Drata Trust Center hosting. It does not establish certification, licensed compliance modules, or current activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://help.drata.com/en/articles/8067419-display-details"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/trust-centers-2026-10-14.md", "public_dns_research"),
+      ],
+    },
+    {
+      provider: "Vanta", category: "security_compliance",
+      suffixes: ["cname.vantatrust.com"], confidence: "high",
+      productScope: "vanta_trust_center",
+      caveat: "DNS points to Vanta Trust Center hosting. It does not establish certification, licensed compliance modules, or current activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://help.vanta.com/en/articles/11345446-creating-your-custom-domain-trust-center"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/trust-centers-2026-10-14.md", "public_dns_research"),
+      ],
+    },
+    {
+      provider: "SafeBase", category: "security_compliance",
+      suffixes: ["portals.safebase.io"], confidence: "high",
+      productScope: "safebase_trust_center",
+      caveat: "DNS points to SafeBase Trust Center hosting. It does not establish certification, use of Drata's compliance platform, or current activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://trust.drata.com/", "official_trust_center"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/trust-centers-2026-10-14.md", "public_dns_research"),
+      ],
+    },
+    {"provider": "Auth0", "category": "identity_access", "suffixes": ["edge.tenants.auth0.com"], "confidence": "high", "productScope": "auth0_custom_authentication_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://auth0.com/blog/custom-domains-complete-guide/", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "Published DNS indicates configuration only; it does not prove active use or a current subscription."},
+    {"provider": "Atlassian Statuspage", "category": "customer_support", "suffixes": ["stspg-customer.com"], "confidence": "high", "productScope": "statuspage_custom_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://support.atlassian.com/statuspage/docs/configure-your-dns", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "Published DNS indicates configuration only; it does not prove active use or a current subscription."},
     { provider: "Outreach", category: "sales_engagement", suffixes: ["outrch.com", "outreach.io", "outreach-mail.com"], confidence: "high" },
     { provider: "Apollo", category: "sales_engagement", suffixes: ["apollo.io", "apollo-mail.io", "apollomail.io", "tryapollo.io"], confidence: "high" },
     { provider: "Apollo", category: "sales_engagement", suffixes: ["aplolinks.com"], confidence: "medium" },
     { provider: "Salesloft", category: "sales_engagement", suffixes: ["salesloft.com"], confidence: "high" },
-    { provider: "Gong Engage", category: "sales_engagement", suffixes: ["email-composer-webhooks.gong.io"], confidence: "high" },
+    {
+      provider: "Gong Engage", category: "sales_engagement",
+      suffixes: ["email-composer-webhooks.gong.io"], confidence: "high",
+      productScope: "gong_engage_link_tracking",
+      caveat: "This identifies Gong Engage branded link tracking, not Gong call recording, active seats, or recent activity.",
+      verifiedAt: "2026-10-14",
+      sources: [source("https://help.gong.io/docs/set-up-branded-urls")],
+    },
+    {
+      provider: "Gong Engage", category: "sales_engagement",
+      exact: ["email-composer-webhooks.gong.io.cdn.cloudflare.net"], confidence: "medium",
+      productScope: "gong_engage_link_tracking",
+      caveat: "This exact CDN alias is corroborated by Gong's documented tracking endpoint and public DNS. It identifies branded link tracking, not Gong call recording or recent activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://help.gong.io/docs/set-up-branded-urls"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md", "public_dns_research"),
+      ],
+    },
     { provider: "Mixmax", category: "sales_engagement", suffixes: ["mixmax.com"], confidence: "high" },
     { provider: "Nooks", category: "sales_engagement", suffixes: ["nooks.in"], confidence: "medium" },
     { provider: "Adobe Marketo", category: "marketing_automation", suffixes: ["mktoweb.com"], confidence: "high" },
@@ -57,6 +110,7 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     { provider: "Microsoft 365", category: "mail_productivity", exact: ["autodiscover.outlook.com"], confidence: "high", sources: [source("https://learn.microsoft.com/en-us/microsoft-365/admin/dns/create-dns-records-at-any-dns-hosting-provider")] },
   ],
   spf: [
+    {"provider": "Atlassian Statuspage", "exact": ["stspg-customer.com"], "confidence": "medium", "productScope": "statuspage_notification_sending", "verifiedAt": "2026-10-14", "sources": [{"url": "https://support.atlassian.com/statuspage/docs/configure-your-dns", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "Published DNS indicates configuration only; it does not prove active use or a current subscription."},
     { provider: "Google Workspace", suffixes: ["_spf.google.com"] },
     { provider: "Microsoft 365", suffixes: ["spf.protection.outlook.com"] },
     { provider: "Salesforce", suffixes: ["_spf.salesforce.com"] },
@@ -103,6 +157,14 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     { provider: "Adobe Campaign", category: "marketing_automation", suffixes: ["ns.campaign.adobe.com"], confidence: "high", sources: [source("https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding/delegate-subdomain")] },
   ],
   verification: [
+    ["Snowflake", "Snowflake domain configuration", /^snowflake-verification\s*=\s*\S+/i, "business_software", {"productScope": "snowflake_organization_email_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://docs.snowflake.com/en/user-guide/admin-domain-verification", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A Snowflake domain-verification record is published. It does not establish completed verification, enabled SSO, paid seats, or recent activity."}],
+    ["Sage Intacct", "Sage Intacct domain configuration", /^intacct-esk\s*=\s*\S+/i, "business_software", {"productScope": "sage_intacct_email_sender_key", "verifiedAt": "2026-10-14", "sources": [{"url": "https://www-p50491.intacct.com/ia/docs/en_US/help_action/Company/Company_setup/Company_Information/company-information.htm", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A Sage Intacct email sender key is published. This indicates email-domain setup, not completed verification, licensed accounting modules, or current sending activity."}],
+    ["Remote", "Remote domain configuration", /^remote-domain-verification\s*=\s*\S+/i, "business_software", {"productScope": "remote_sso_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://support.remote.com/hc/en-us/articles/31443994643725-SSO-Domain-Validation", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A Remote domain-verification record is published. It does not establish completed verification, enabled SSO, paid seats, or recent activity."}],
+    ["PandaDoc", "PandaDoc domain configuration", /^pandadoc-domain-verification\s*=\s*\S+/i, "business_software", {"productScope": "pandadoc_sso_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://support.pandadoc.com/en/articles/9715050-sso-implementation", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A PandaDoc domain-verification record is published. It does not establish completed verification, enabled SSO, paid seats, or recent activity."}],
+    ["Lovable", "Lovable domain configuration", /^lovable_verification\s*=\s*\S+/i, "ai_workspace", {"productScope": "lovable_workspace_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://docs.lovable.dev/features/verified-domains", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A Lovable domain-verification record is published. It does not establish completed verification, enabled SSO, paid seats, or recent activity."}],
+    ["Cloudflare Dashboard SSO", "Cloudflare Dashboard SSO domain configuration", /^cloudflare_dashboard_sso\s*=\s*\S+/i, "identity_access", {"productScope": "cloudflare_dashboard_sso_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://developers.cloudflare.com/fundamentals/manage-members/dashboard-sso/", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A Cloudflare Dashboard SSO domain-verification record is published. It does not establish completed verification, enabled SSO, paid seats, or recent activity."}],
+    ["Twilio", "Twilio domain configuration", /^twilio-domain-verification\s*=\s*\S+/i, "business_software", {"productScope": "twilio_organization_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://www.twilio.com/docs/iam/organizations/domains", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A Twilio domain-verification record is published. It does not establish completed verification, enabled SSO, paid seats, or recent activity."}],
+    ["Docusign", "Docusign domain configuration", /^docusign\s*=\s*\S+/i, "business_software", {"productScope": "docusign_organization_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://support.docusign.com/s/document-item?bundleId=rrf1583359212854&language=fr&topicId=gso1583359141256.html", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "A Docusign domain-verification record is published. It does not establish completed verification, enabled SSO, paid seats, or recent activity."}],
     ["Google", "Google site or domain ownership", /^google-site-verification\s*=/i, "business_software"],
     ["Microsoft", "Microsoft domain ownership", /^MS=ms[a-z0-9]+$/i, "business_software"],
     ["Apple Business", "Apple Business domain ownership", /^apple-domain-verification\s*=/i, "business_software"],
@@ -118,8 +180,31 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     ["Salesforce", "Salesforce domain ownership", /^salesforce-domain-verification\s*=/i, "crm"],
     ["Segment", "Twilio Segment workspace domain ownership", /^segment-site-verification\s*=/i, "customer_data"],
     ["Pendo", "Pendo subscription domain ownership", /^pendo-domain-verification\s*=/i, "product_analytics"],
-    ["Fireflies.ai", "Fireflies domain ownership", /^fireflies-verification\s*=/i, "meeting_intelligence"],
+    ["Fireflies.ai", "Fireflies domain ownership", /^fireflies-verification\s*=\s*\S+/i, "meeting_intelligence", {
+      productScope: "fireflies_domain_verification",
+      caveat: "A Fireflies domain-verification record is published. It does not establish completed verification, enabled SSO, a paid subscription, or meeting-recording activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://guide.fireflies.ai/articles/7821332836-how-to-setup-saml-sso-for-your-google-workspace"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md", "public_dns_research"),
+      ],
+    }],
     ["LinkedIn", "LinkedIn organization domain ownership", /^linkedin-site-verification\s*=/i, "business_software"],
+    ["Read AI", "Read AI workspace domain ownership", /^read-ai-verification\s*=\s*\S+/i, "meeting_intelligence", {
+      productScope: "read_ai_domain_verification",
+      caveat: "A Read AI workspace domain-verification record is published. It does not establish completed verification, a paid subscription, or meeting-recording activity.",
+      verifiedAt: "2026-10-14",
+      sources: [source("https://support.read.ai/hc/en-us/articles/48607849975955-How-do-I-verify-domain-ownership")],
+    }],
+    ["Reachdesk", "Reachdesk branded email domain ownership", /^reachdesk-verification\s*=\s*\S+/i, "advertising_abm", {
+      productScope: "reachdesk_email_domain_verification",
+      caveat: "A Reachdesk domain-verification record is published for branded correspondence. It does not establish completed verification, active campaigns, or gifts sent.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://support.reachdesk.com/hc/en-gb/articles/4410354225169-How-to-verify-domains-within-Reachdesk"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md", "public_dns_research"),
+      ],
+    }],
     ["Stripe", "Stripe domain ownership", /^stripe-verification\s*=/i, "commerce_payments"],
     ["Monday.com", "Monday.com organization domain ownership", /^monday-com-verification\s*=/i, "business_software"],
     ["Rippling", "Rippling organization domain ownership", /^rippling-domain-verification\s*=/i, "business_software"],
@@ -139,7 +224,6 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     ["Box", "Box organization domain ownership", /^box-domain-verification\s*=/i, "business_software"],
     ["Uber for Business", "Uber organization domain ownership", /^uber-domain-verification\s*=/i, "business_software"],
     ["Linear", "Linear workspace domain ownership", /^linear-domain-verification\s*=/i, "business_software"],
-    ["Reachdesk", "Reachdesk domain ownership", /^reachdesk-verification\s*=/i, "advertising_abm"],
     ["Cisco", "Cisco service domain ownership", /^cisco-ci-domain-verification\s*=/i, "business_software"],
     ["Cursor", "Cursor organization domain ownership", /^cursor-domain-verification(?:-[a-z0-9]+)?\s*=/i, "ai_workspace"],
     ["Postman", "Postman organization domain ownership", /^postman-domain-verification\s*=/i, "business_software"],
@@ -154,7 +238,7 @@ export const SIGNATURE_REGISTRY = Object.freeze({
     ["Proton Mail", "Proton Mail custom-domain ownership", /^protonmail-verification\s*=/i, "mail_productivity"],
     ["Zoho", "Zoho custom-domain ownership", /^zoho-verification\s*=/i, "mail_productivity"],
     ["Emma by Marigold", "Emma sending-domain ownership", /^e2ma-verification\s*=/i, "marketing_automation"],
-  ].map(([provider, purpose, pattern, category]) => ({ provider, purpose, pattern, category, confidence: "medium" })),
+  ].map(([provider, purpose, pattern, category, metadata = {}]) => ({ provider, purpose, pattern, category, confidence: "medium", ...metadata })),
 });
 
 export function matchesHost(host, definition) {

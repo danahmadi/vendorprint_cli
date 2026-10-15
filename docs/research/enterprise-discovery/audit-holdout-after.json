@@ -1,0 +1,2361 @@
+{
+  "schemaVersion": "1.1",
+  "privacy": "Aggregates unmatched key names and registrable target domains only; TXT values, tenant labels, and first-party targets are omitted.",
+  "counting": "Each count is distinct scanned registrable domains, deduplicated across records and repeated scan rows. SPF targets are grouped by registrable domain.",
+  "domainsAudited": 200,
+  "diagnostics": {
+    "rowsWithoutDomain": 0,
+    "rowsWithoutDiagnostics": 0,
+    "recommendation": "Use --full --include-unclassified when scanning; compact reports omit discovery evidence."
+  },
+  "candidates": {
+    "txtRecordPrefixes": [
+      {
+        "value": "asv",
+        "count": 30
+      },
+      {
+        "value": "ms",
+        "count": 29
+      },
+      {
+        "value": "amazonses",
+        "count": 21
+      },
+      {
+        "value": "smartsheet-site-validation",
+        "count": 21
+      },
+      {
+        "value": "wiz-domain-verification",
+        "count": 19
+      },
+      {
+        "value": "globalsign-domain-verification",
+        "count": 14
+      },
+      {
+        "value": "parallels-domain-verification",
+        "count": 13
+      },
+      {
+        "value": "yahoo-verification-key",
+        "count": 13
+      },
+      {
+        "value": "teamviewer-sso-verification",
+        "count": 9
+      },
+      {
+        "value": "elevenlabs",
+        "count": 8
+      },
+      {
+        "value": "ps-cd-verification",
+        "count": 8
+      },
+      {
+        "value": "bw",
+        "count": 7
+      },
+      {
+        "value": "cloudhealth",
+        "count": 7
+      },
+      {
+        "value": "neat-pulse-domain-verification",
+        "count": 7
+      },
+      {
+        "value": "detectify-verification",
+        "count": 6
+      },
+      {
+        "value": "northpass-domain-verification",
+        "count": 6
+      },
+      {
+        "value": "wrike-verification",
+        "count": 6
+      },
+      {
+        "value": "adobe-sign-verification",
+        "count": 5
+      },
+      {
+        "value": "amazon-business-verification",
+        "count": 5
+      },
+      {
+        "value": "google-gws-recovery-domain-verification",
+        "count": 5
+      },
+      {
+        "value": "hj-ownership",
+        "count": 5
+      },
+      {
+        "value": "liveramp-site-verification",
+        "count": 5
+      },
+      {
+        "value": "astro-domain-verification",
+        "count": 4
+      },
+      {
+        "value": "blitz",
+        "count": 4
+      },
+      {
+        "value": "brevo-code",
+        "count": 4
+      },
+      {
+        "value": "calendly-site-verification",
+        "count": 4
+      },
+      {
+        "value": "citrix-verification-code",
+        "count": 4
+      },
+      {
+        "value": "directfedauthurl",
+        "count": 4
+      },
+      {
+        "value": "domain-verification",
+        "count": 4
+      },
+      {
+        "value": "dust-domain-verification",
+        "count": 4
+      },
+      {
+        "value": "loom-verification",
+        "count": 4
+      },
+      {
+        "value": "perplexity-ai-domain-verification",
+        "count": 4
+      },
+      {
+        "value": "whimsical",
+        "count": 4
+      },
+      {
+        "value": "aliyun-site-verification",
+        "count": 3
+      },
+      {
+        "value": "browserstack-domain-verification",
+        "count": 3
+      },
+      {
+        "value": "dynatrace-site-verification",
+        "count": 3
+      },
+      {
+        "value": "heroku-domain-verification",
+        "count": 3
+      },
+      {
+        "value": "manus-domain-verification",
+        "count": 3
+      },
+      {
+        "value": "onx",
+        "count": 3
+      },
+      {
+        "value": "site24x7-signals-domain-verification",
+        "count": 3
+      },
+      {
+        "value": "tiktok-developers-site-verification",
+        "count": 3
+      },
+      {
+        "value": "verification_token",
+        "count": 3
+      },
+      {
+        "value": "actively-ai-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "applause-verification",
+        "count": 2
+      },
+      {
+        "value": "boon-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "firebase",
+        "count": 2
+      },
+      {
+        "value": "gitkraken-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "hibp-verify",
+        "count": 2
+      },
+      {
+        "value": "hpe-greenlake-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "https",
+        "count": 2
+      },
+      {
+        "value": "identrust_validate",
+        "count": 2
+      },
+      {
+        "value": "include",
+        "count": 2
+      },
+      {
+        "value": "intersight",
+        "count": 2
+      },
+      {
+        "value": "lucidlink-verification",
+        "count": 2
+      },
+      {
+        "value": "ms-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "new-relic-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "paloaltonetworks-site-verification",
+        "count": 2
+      },
+      {
+        "value": "pinterest-site-verification",
+        "count": 2
+      },
+      {
+        "value": "pp-verification",
+        "count": 2
+      },
+      {
+        "value": "probely",
+        "count": 2
+      },
+      {
+        "value": "projectdiscovery-verification",
+        "count": 2
+      },
+      {
+        "value": "quovadis",
+        "count": 2
+      },
+      {
+        "value": "sendinblue-code",
+        "count": 2
+      },
+      {
+        "value": "serval-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "spacelift-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "token",
+        "count": 2
+      },
+      {
+        "value": "tollbit-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "unbounce",
+        "count": 2
+      },
+      {
+        "value": "webexdomainverification",
+        "count": 2
+      },
+      {
+        "value": "wework-site-verification",
+        "count": 2
+      },
+      {
+        "value": "workplace-domain-verification",
+        "count": 2
+      },
+      {
+        "value": "yandex-verification",
+        "count": 2
+      },
+      {
+        "value": "zendeskverification",
+        "count": 2
+      },
+      {
+        "value": "00d15000000ftxq",
+        "count": 1
+      },
+      {
+        "value": "00d1a000000abmw",
+        "count": 1
+      },
+      {
+        "value": "00d1h000000oc0i",
+        "count": 1
+      },
+      {
+        "value": "00d30000000nz7a",
+        "count": 1
+      },
+      {
+        "value": "00d36000000umz5",
+        "count": 1
+      },
+      {
+        "value": "00d37000000i7vh",
+        "count": 1
+      },
+      {
+        "value": "00d3x000002ml8m",
+        "count": 1
+      },
+      {
+        "value": "00d50000000jv6w",
+        "count": 1
+      },
+      {
+        "value": "00da0000000hlwq",
+        "count": 1
+      },
+      {
+        "value": "00de0000000jadq",
+        "count": 1
+      },
+      {
+        "value": "00dgp000002fuqx",
+        "count": 1
+      },
+      {
+        "value": "00do800000ksnc1",
+        "count": 1
+      },
+      {
+        "value": "00dt0000000dpvc",
+        "count": 1
+      },
+      {
+        "value": "00du000000098yw",
+        "count": 1
+      },
+      {
+        "value": "abacum-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "alienapp-verification",
+        "count": 1
+      },
+      {
+        "value": "announcekit-verify",
+        "count": 1
+      },
+      {
+        "value": "arcules-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "as",
+        "count": 1
+      },
+      {
+        "value": "as2trusteddomains",
+        "count": 1
+      },
+      {
+        "value": "astra-target-verification",
+        "count": 1
+      },
+      {
+        "value": "asv_domain",
+        "count": 1
+      },
+      {
+        "value": "auth0-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "autodesk-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "avalara-saml-domain",
+        "count": 1
+      },
+      {
+        "value": "base44-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "bcn",
+        "count": 1
+      },
+      {
+        "value": "bitrise-verification",
+        "count": 1
+      },
+      {
+        "value": "blitzy-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "boon-domain-verification-zjgcsz",
+        "count": 1
+      },
+      {
+        "value": "carta-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "ccisso",
+        "count": 1
+      },
+      {
+        "value": "censys-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "chariot",
+        "count": 1
+      },
+      {
+        "value": "clickfunnels-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "cloudbees-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "cloudflare-verify",
+        "count": 1
+      },
+      {
+        "value": "cloudpiercer-verification",
+        "count": 1
+      },
+      {
+        "value": "configcat-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "content",
+        "count": 1
+      },
+      {
+        "value": "convex-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "creatopy-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "databank-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "datadome-domain-verify",
+        "count": 1
+      },
+      {
+        "value": "decagon-domain-verification-cmrbvs",
+        "count": 1
+      },
+      {
+        "value": "dell-technologies-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "digicert-domain-verify",
+        "count": 1
+      },
+      {
+        "value": "disclosebot-verify",
+        "count": 1
+      },
+      {
+        "value": "docusign-verification",
+        "count": 1
+      },
+      {
+        "value": "domainverification",
+        "count": 1
+      },
+      {
+        "value": "ds1",
+        "count": 1
+      },
+      {
+        "value": "dtm-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "easydmarc-verification",
+        "count": 1
+      },
+      {
+        "value": "ecostruxure-it-verification",
+        "count": 1
+      },
+      {
+        "value": "epoch-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "everyone-social-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "fadv-validation",
+        "count": 1
+      },
+      {
+        "value": "gauntlet-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "gentrace-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "gitlab-pages-verification-code",
+        "count": 1
+      },
+      {
+        "value": "gitpod-verification",
+        "count": 1
+      },
+      {
+        "value": "hes",
+        "count": 1
+      },
+      {
+        "value": "heygen-verification",
+        "count": 1
+      },
+      {
+        "value": "heyhack-verification",
+        "count": 1
+      },
+      {
+        "value": "hosting-site",
+        "count": 1
+      },
+      {
+        "value": "identrust_validation",
+        "count": 1
+      },
+      {
+        "value": "intercom-domain-validation",
+        "count": 1
+      },
+      {
+        "value": "keybase-site-verification",
+        "count": 1
+      },
+      {
+        "value": "kiro-site-verification",
+        "count": 1
+      },
+      {
+        "value": "larridin-dev-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "lemlist-verif",
+        "count": 1
+      },
+      {
+        "value": "lens-lbid-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "loadmill-challenge",
+        "count": 1
+      },
+      {
+        "value": "lucid-verification",
+        "count": 1
+      },
+      {
+        "value": "lw",
+        "count": 1
+      },
+      {
+        "value": "mailru-verification",
+        "count": 1
+      },
+      {
+        "value": "make-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "mindmanager-verification",
+        "count": 1
+      },
+      {
+        "value": "montycloud",
+        "count": 1
+      },
+      {
+        "value": "mtc",
+        "count": 1
+      },
+      {
+        "value": "mty4ytt9",
+        "count": 1
+      },
+      {
+        "value": "next",
+        "count": 1
+      },
+      {
+        "value": "nitro-verification-code",
+        "count": 1
+      },
+      {
+        "value": "oneidp",
+        "count": 1
+      },
+      {
+        "value": "opine-verification",
+        "count": 1
+      },
+      {
+        "value": "paperform_sso_verification",
+        "count": 1
+      },
+      {
+        "value": "pardot1044333",
+        "count": 1
+      },
+      {
+        "value": "pardot1066413",
+        "count": 1
+      },
+      {
+        "value": "pardot464372",
+        "count": 1
+      },
+      {
+        "value": "pardot673673",
+        "count": 1
+      },
+      {
+        "value": "pardot697193",
+        "count": 1
+      },
+      {
+        "value": "pardot700413",
+        "count": 1
+      },
+      {
+        "value": "pardot751443",
+        "count": 1
+      },
+      {
+        "value": "pardot786613",
+        "count": 1
+      },
+      {
+        "value": "pardot811663",
+        "count": 1
+      },
+      {
+        "value": "pardot856853",
+        "count": 1
+      },
+      {
+        "value": "pardot860623",
+        "count": 1
+      },
+      {
+        "value": "pardot893801",
+        "count": 1
+      },
+      {
+        "value": "pardot894481",
+        "count": 1
+      },
+      {
+        "value": "pardot975333",
+        "count": 1
+      },
+      {
+        "value": "pax8-verification",
+        "count": 1
+      },
+      {
+        "value": "pinnacle-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "plain-domain-verification-qnaqmy",
+        "count": 1
+      },
+      {
+        "value": "prodpad-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "profound-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "pylon-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "qam_check",
+        "count": 1
+      },
+      {
+        "value": "remarkable-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "rovag_verification_token",
+        "count": 1
+      },
+      {
+        "value": "sending_domain1028501",
+        "count": 1
+      },
+      {
+        "value": "sending_domain1033703",
+        "count": 1
+      },
+      {
+        "value": "sending_domain1044333",
+        "count": 1
+      },
+      {
+        "value": "sending_domain1066413",
+        "count": 1
+      },
+      {
+        "value": "sending_domain856853",
+        "count": 1
+      },
+      {
+        "value": "sending_domain885773",
+        "count": 1
+      },
+      {
+        "value": "sentinelone-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "serval-domain-verification-rahzqw",
+        "count": 1
+      },
+      {
+        "value": "shopify_verification_store",
+        "count": 1
+      },
+      {
+        "value": "shopify-verification-code",
+        "count": 1
+      },
+      {
+        "value": "solarwinds-service0desk-verification",
+        "count": 1
+      },
+      {
+        "value": "specops-verification-code",
+        "count": 1
+      },
+      {
+        "value": "spycloud-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "stytch_verification_dns",
+        "count": 1
+      },
+      {
+        "value": "tipalti-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "unity-sso-verification",
+        "count": 1
+      },
+      {
+        "value": "uploadcare-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "usm-spycloud-verification",
+        "count": 1
+      },
+      {
+        "value": "v4ugvwqk",
+        "count": 1
+      },
+      {
+        "value": "validity-domain-monitoring",
+        "count": 1
+      },
+      {
+        "value": "validity-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "visa",
+        "count": 1
+      },
+      {
+        "value": "windsurf-verification",
+        "count": 1
+      },
+      {
+        "value": "work-accounts-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "work-os-domain-verification",
+        "count": 1
+      },
+      {
+        "value": "work-os-domain-verification-rsbgjp",
+        "count": 1
+      },
+      {
+        "value": "wpe-verification",
+        "count": 1
+      },
+      {
+        "value": "zoho-sites-verification",
+        "count": 1
+      },
+      {
+        "value": "zoom-site-verification",
+        "count": 1
+      },
+      {
+        "value": "zywave-domain-verification",
+        "count": 1
+      }
+    ],
+    "cnameTargetDomains": [
+      {
+        "value": "cloudfront.net",
+        "count": 47
+      },
+      {
+        "value": "cloud.microsoft",
+        "count": 40
+      },
+      {
+        "value": "amazonaws.com",
+        "count": 30
+      },
+      {
+        "value": "mktossl.com",
+        "count": 30
+      },
+      {
+        "value": "google.com",
+        "count": 23
+      },
+      {
+        "value": "cloudflare.net",
+        "count": 21
+      },
+      {
+        "value": "googlehosted.com",
+        "count": 20
+      },
+      {
+        "value": "fastly.net",
+        "count": 13
+      },
+      {
+        "value": "insided.com",
+        "count": 12
+      },
+      {
+        "value": "mktocloud.com",
+        "count": 11
+      },
+      {
+        "value": "readmessl.com",
+        "count": 8
+      },
+      {
+        "value": "docebopaas.com",
+        "count": 7
+      },
+      {
+        "value": "incident.io",
+        "count": 7
+      },
+      {
+        "value": "edgekey.net",
+        "count": 5
+      },
+      {
+        "value": "hosted-by-discourse.com",
+        "count": 5
+      },
+      {
+        "value": "impartner.com",
+        "count": 5
+      },
+      {
+        "value": "secureserver.net",
+        "count": 5
+      },
+      {
+        "value": "azurefd.net",
+        "count": 4
+      },
+      {
+        "value": "azurewebsites.net",
+        "count": 4
+      },
+      {
+        "value": "bigmarker.com",
+        "count": 4
+      },
+      {
+        "value": "circle.so",
+        "count": 4
+      },
+      {
+        "value": "instatus.com",
+        "count": 4
+      },
+      {
+        "value": "northpass.com",
+        "count": 4
+      },
+      {
+        "value": "pageserve.co",
+        "count": 4
+      },
+      {
+        "value": "partner-experience.com",
+        "count": 4
+      },
+      {
+        "value": "vercel-dns-016.com",
+        "count": 4
+      },
+      {
+        "value": "akamai.net",
+        "count": 3
+      },
+      {
+        "value": "azure.com",
+        "count": 3
+      },
+      {
+        "value": "betteruptime.com",
+        "count": 3
+      },
+      {
+        "value": "customer.io",
+        "count": 3
+      },
+      {
+        "value": "document360.io",
+        "count": 3
+      },
+      {
+        "value": "edgesuite.net",
+        "count": 3
+      },
+      {
+        "value": "folloze.com",
+        "count": 3
+      },
+      {
+        "value": "freshdesk.com",
+        "count": 3
+      },
+      {
+        "value": "getbeamer.com",
+        "count": 3
+      },
+      {
+        "value": "gitbook.io",
+        "count": 3
+      },
+      {
+        "value": "office365.com",
+        "count": 3
+      },
+      {
+        "value": "pathfactory.com",
+        "count": 3
+      },
+      {
+        "value": "service-now.com",
+        "count": 3
+      },
+      {
+        "value": "thinkific.com",
+        "count": 3
+      },
+      {
+        "value": "trafficmanager.net",
+        "count": 3
+      },
+      {
+        "value": "wpeproxy.com",
+        "count": 3
+      },
+      {
+        "value": "akamaiedge.net",
+        "count": 2
+      },
+      {
+        "value": "auth0.com",
+        "count": 2
+      },
+      {
+        "value": "bettermode.io",
+        "count": 2
+      },
+      {
+        "value": "ceros.com",
+        "count": 2
+      },
+      {
+        "value": "emailsrvr.com",
+        "count": 2
+      },
+      {
+        "value": "impartner.io",
+        "count": 2
+      },
+      {
+        "value": "impervadns.net",
+        "count": 2
+      },
+      {
+        "value": "knowledgeowl.com",
+        "count": 2
+      },
+      {
+        "value": "leadpages.net",
+        "count": 2
+      },
+      {
+        "value": "lmspowered.com",
+        "count": 2
+      },
+      {
+        "value": "ludicrous.cloud",
+        "count": 2
+      },
+      {
+        "value": "mandrillapp.com",
+        "count": 2
+      },
+      {
+        "value": "mintlify.builders",
+        "count": 2
+      },
+      {
+        "value": "myabsorb.com",
+        "count": 2
+      },
+      {
+        "value": "nimbuspop.com",
+        "count": 2
+      },
+      {
+        "value": "outlook.com",
+        "count": 2
+      },
+      {
+        "value": "partnerlinks.io",
+        "count": 2
+      },
+      {
+        "value": "pressdns.com",
+        "count": 2
+      },
+      {
+        "value": "swoogo.com",
+        "count": 2
+      },
+      {
+        "value": "talentlms.com",
+        "count": 2
+      },
+      {
+        "value": "tm-azurefd.net",
+        "count": 2
+      },
+      {
+        "value": "trackgb.com",
+        "count": 2
+      },
+      {
+        "value": "windows.net",
+        "count": 2
+      },
+      {
+        "value": "wpenginepowered.com",
+        "count": 2
+      },
+      {
+        "value": "zohohost.in",
+        "count": 2
+      },
+      {
+        "value": "zoholandingpage.com",
+        "count": 2
+      },
+      {
+        "value": "ac-page.com",
+        "count": 1
+      },
+      {
+        "value": "adobe.com",
+        "count": 1
+      },
+      {
+        "value": "aftership.com",
+        "count": 1
+      },
+      {
+        "value": "allbound.com",
+        "count": 1
+      },
+      {
+        "value": "amp.vg",
+        "count": 1
+      },
+      {
+        "value": "aplosites.com",
+        "count": 1
+      },
+      {
+        "value": "arrows.to",
+        "count": 1
+      },
+      {
+        "value": "azureedge.net",
+        "count": 1
+      },
+      {
+        "value": "azurestaticapps.net",
+        "count": 1
+      },
+      {
+        "value": "beyondtrustcloud.com",
+        "count": 1
+      },
+      {
+        "value": "bigcommerce.net",
+        "count": 1
+      },
+      {
+        "value": "bizzabo.com",
+        "count": 1
+      },
+      {
+        "value": "bynder.com",
+        "count": 1
+      },
+      {
+        "value": "canny.io",
+        "count": 1
+      },
+      {
+        "value": "cdntwrk.com",
+        "count": 1
+      },
+      {
+        "value": "cloudwork.com",
+        "count": 1
+      },
+      {
+        "value": "coengage.com",
+        "count": 1
+      },
+      {
+        "value": "concentric.net",
+        "count": 1
+      },
+      {
+        "value": "connectedcommunity.org",
+        "count": 1
+      },
+      {
+        "value": "conversion.ai",
+        "count": 1
+      },
+      {
+        "value": "crisp.help",
+        "count": 1
+      },
+      {
+        "value": "cronitorstatus.com",
+        "count": 1
+      },
+      {
+        "value": "cventcustom.com",
+        "count": 1
+      },
+      {
+        "value": "dataiku.io",
+        "count": 1
+      },
+      {
+        "value": "digicert.net",
+        "count": 1
+      },
+      {
+        "value": "docebodns.com",
+        "count": 1
+      },
+      {
+        "value": "easyredir.com",
+        "count": 1
+      },
+      {
+        "value": "elastic.dev",
+        "count": 1
+      },
+      {
+        "value": "foleon.com",
+        "count": 1
+      },
+      {
+        "value": "formassembly.app",
+        "count": 1
+      },
+      {
+        "value": "forsta.com",
+        "count": 1
+      },
+      {
+        "value": "framer.app",
+        "count": 1
+      },
+      {
+        "value": "gainsightapp.net",
+        "count": 1
+      },
+      {
+        "value": "gainsightcloud.com",
+        "count": 1
+      },
+      {
+        "value": "getbynder.com",
+        "count": 1
+      },
+      {
+        "value": "getlearnworlds.com",
+        "count": 1
+      },
+      {
+        "value": "gmail.com",
+        "count": 1
+      },
+      {
+        "value": "googleapis.com",
+        "count": 1
+      },
+      {
+        "value": "herokuapp.com",
+        "count": 1
+      },
+      {
+        "value": "herokudns.com",
+        "count": 1
+      },
+      {
+        "value": "herokuspace.com",
+        "count": 1
+      },
+      {
+        "value": "higherlogic.net",
+        "count": 1
+      },
+      {
+        "value": "highspot.com",
+        "count": 1
+      },
+      {
+        "value": "hostedstatus.com",
+        "count": 1
+      },
+      {
+        "value": "hs-sites.com",
+        "count": 1
+      },
+      {
+        "value": "hushly.com",
+        "count": 1
+      },
+      {
+        "value": "impactradius.com",
+        "count": 1
+      },
+      {
+        "value": "impartner.live",
+        "count": 1
+      },
+      {
+        "value": "incapdns.net",
+        "count": 1
+      },
+      {
+        "value": "influitive.com",
+        "count": 1
+      },
+      {
+        "value": "insightly.services",
+        "count": 1
+      },
+      {
+        "value": "insightlyservice.com",
+        "count": 1
+      },
+      {
+        "value": "intellum.com",
+        "count": 1
+      },
+      {
+        "value": "jivesoftware.com",
+        "count": 1
+      },
+      {
+        "value": "kajabi.com",
+        "count": 1
+      },
+      {
+        "value": "kayako.com",
+        "count": 1
+      },
+      {
+        "value": "learnworlds.com",
+        "count": 1
+      },
+      {
+        "value": "lemlist.com",
+        "count": 1
+      },
+      {
+        "value": "lessonly.com",
+        "count": 1
+      },
+      {
+        "value": "mailjet.com",
+        "count": 1
+      },
+      {
+        "value": "mindtouch.us",
+        "count": 1
+      },
+      {
+        "value": "mintlifysite.com",
+        "count": 1
+      },
+      {
+        "value": "mtasv.net",
+        "count": 1
+      },
+      {
+        "value": "mybrandfolder.com",
+        "count": 1
+      },
+      {
+        "value": "mykajabi.com",
+        "count": 1
+      },
+      {
+        "value": "netlify.app",
+        "count": 1
+      },
+      {
+        "value": "nopassword.com",
+        "count": 1
+      },
+      {
+        "value": "noticeable.news",
+        "count": 1
+      },
+      {
+        "value": "omnisenddns.com",
+        "count": 1
+      },
+      {
+        "value": "on24.com",
+        "count": 1
+      },
+      {
+        "value": "outsystemsenterprise.com",
+        "count": 1
+      },
+      {
+        "value": "pages.services",
+        "count": 1
+      },
+      {
+        "value": "parta.io",
+        "count": 1
+      },
+      {
+        "value": "partnerpage.io",
+        "count": 1
+      },
+      {
+        "value": "performable.com",
+        "count": 1
+      },
+      {
+        "value": "pingdom.com",
+        "count": 1
+      },
+      {
+        "value": "postclickmarketing.com",
+        "count": 1
+      },
+      {
+        "value": "presscentre.com",
+        "count": 1
+      },
+      {
+        "value": "pulsetic.com",
+        "count": 1
+      },
+      {
+        "value": "qloaked.com",
+        "count": 1
+      },
+      {
+        "value": "rainfocus.com",
+        "count": 1
+      },
+      {
+        "value": "rcoffice.online",
+        "count": 1
+      },
+      {
+        "value": "refined.site",
+        "count": 1
+      },
+      {
+        "value": "resend-dns.com",
+        "count": 1
+      },
+      {
+        "value": "rootly.com",
+        "count": 1
+      },
+      {
+        "value": "saleshandy.com",
+        "count": 1
+      },
+      {
+        "value": "seismic.com",
+        "count": 1
+      },
+      {
+        "value": "sg53.net",
+        "count": 1
+      },
+      {
+        "value": "short.io",
+        "count": 1
+      },
+      {
+        "value": "site.com",
+        "count": 1
+      },
+      {
+        "value": "site24x7sp.com",
+        "count": 1
+      },
+      {
+        "value": "site24x7sp.eu",
+        "count": 1
+      },
+      {
+        "value": "skytapdns.com",
+        "count": 1
+      },
+      {
+        "value": "slapfive.com",
+        "count": 1
+      },
+      {
+        "value": "smtp-pulse.com",
+        "count": 1
+      },
+      {
+        "value": "sorryapp.com",
+        "count": 1
+      },
+      {
+        "value": "sparrowdesk.com",
+        "count": 1
+      },
+      {
+        "value": "ss-domain.com",
+        "count": 1
+      },
+      {
+        "value": "status.io",
+        "count": 1
+      },
+      {
+        "value": "statuscake.com",
+        "count": 1
+      },
+      {
+        "value": "stoplight.io",
+        "count": 1
+      },
+      {
+        "value": "supportsystem.com",
+        "count": 1
+      },
+      {
+        "value": "swoogo.net",
+        "count": 1
+      },
+      {
+        "value": "tableaucorp.com",
+        "count": 1
+      },
+      {
+        "value": "telligentcloud.net",
+        "count": 1
+      },
+      {
+        "value": "tfaforms.net",
+        "count": 1
+      },
+      {
+        "value": "thoughtindustriesproxy.com",
+        "count": 1
+      },
+      {
+        "value": "tinyurl.com",
+        "count": 1
+      },
+      {
+        "value": "torchlite.com",
+        "count": 1
+      },
+      {
+        "value": "transsender.net",
+        "count": 1
+      },
+      {
+        "value": "uberflip.com",
+        "count": 1
+      },
+      {
+        "value": "uptime.com",
+        "count": 1
+      },
+      {
+        "value": "uptimerobot.com",
+        "count": 1
+      },
+      {
+        "value": "vanillacommunities.com",
+        "count": 1
+      },
+      {
+        "value": "vectera.com",
+        "count": 1
+      },
+      {
+        "value": "vercel.app",
+        "count": 1
+      },
+      {
+        "value": "vtiger.email",
+        "count": 1
+      },
+      {
+        "value": "web.app",
+        "count": 1
+      },
+      {
+        "value": "workramp.io",
+        "count": 1
+      },
+      {
+        "value": "yandex.net",
+        "count": 1
+      },
+      {
+        "value": "zeroheight.com",
+        "count": 1
+      },
+      {
+        "value": "zohohost.com",
+        "count": 1
+      },
+      {
+        "value": "zohosites.in",
+        "count": 1
+      },
+      {
+        "value": "zoom.us",
+        "count": 1
+      },
+      {
+        "value": "zuddl.com",
+        "count": 1
+      }
+    ],
+    "spfMechanisms": [
+      {
+        "value": "pardot.com",
+        "count": 13
+      },
+      {
+        "value": "pphosted.com",
+        "count": 11
+      },
+      {
+        "value": "vali.email",
+        "count": 10
+      },
+      {
+        "value": "mimecast.com",
+        "count": 9
+      },
+      {
+        "value": "qualtrics.com",
+        "count": 9
+      },
+      {
+        "value": "docebosaas.com",
+        "count": 8
+      },
+      {
+        "value": "intacct.com",
+        "count": 8
+      },
+      {
+        "value": "mtasv.net",
+        "count": 8
+      },
+      {
+        "value": "mailjet.com",
+        "count": 6
+      },
+      {
+        "value": "google.com",
+        "count": 5
+      },
+      {
+        "value": "sendergen.com",
+        "count": 4
+      },
+      {
+        "value": "act-on.net",
+        "count": 3
+      },
+      {
+        "value": "autopilothq.com",
+        "count": 3
+      },
+      {
+        "value": "braintreegateway.com",
+        "count": 3
+      },
+      {
+        "value": "easydmarc.pro",
+        "count": 3
+      },
+      {
+        "value": "mim.ec",
+        "count": 3
+      },
+      {
+        "value": "netsuite.com",
+        "count": 3
+      },
+      {
+        "value": "sparkpostmail.com",
+        "count": 3
+      },
+      {
+        "value": "tipalti.com",
+        "count": 3
+      },
+      {
+        "value": "autospf.email",
+        "count": 2
+      },
+      {
+        "value": "chargebee.com",
+        "count": 2
+      },
+      {
+        "value": "chargify.com",
+        "count": 2
+      },
+      {
+        "value": "email-od.com",
+        "count": 2
+      },
+      {
+        "value": "emsd1.com",
+        "count": 2
+      },
+      {
+        "value": "lessonly.com",
+        "count": 2
+      },
+      {
+        "value": "md02.com",
+        "count": 2
+      },
+      {
+        "value": "ondmarc.com",
+        "count": 2
+      },
+      {
+        "value": "smtp.com",
+        "count": 2
+      },
+      {
+        "value": "workshop-spf.net",
+        "count": 2
+      },
+      {
+        "value": "zcsend.in",
+        "count": 2
+      },
+      {
+        "value": "zcsend.net",
+        "count": 2
+      },
+      {
+        "value": "zuora.com",
+        "count": 2
+      },
+      {
+        "value": "amocrmmail.com",
+        "count": 1
+      },
+      {
+        "value": "backlog.jp",
+        "count": 1
+      },
+      {
+        "value": "backlogtool.com",
+        "count": 1
+      },
+      {
+        "value": "campusmgmt.com",
+        "count": 1
+      },
+      {
+        "value": "cloudfilter.net",
+        "count": 1
+      },
+      {
+        "value": "cloudflare.net",
+        "count": 1
+      },
+      {
+        "value": "contact-list.net",
+        "count": 1
+      },
+      {
+        "value": "cuenote.jp",
+        "count": 1
+      },
+      {
+        "value": "dixa.io",
+        "count": 1
+      },
+      {
+        "value": "dmarclg.com",
+        "count": 1
+      },
+      {
+        "value": "dmarclj.com",
+        "count": 1
+      },
+      {
+        "value": "dsgspf.com",
+        "count": 1
+      },
+      {
+        "value": "easydmarc.com",
+        "count": 1
+      },
+      {
+        "value": "electric.net",
+        "count": 1
+      },
+      {
+        "value": "eloqua.com",
+        "count": 1
+      },
+      {
+        "value": "emailsignatures365.com",
+        "count": 1
+      },
+      {
+        "value": "emailsrvr.com",
+        "count": 1
+      },
+      {
+        "value": "etrgmail.com",
+        "count": 1
+      },
+      {
+        "value": "exclaimer.net",
+        "count": 1
+      },
+      {
+        "value": "extole.io",
+        "count": 1
+      },
+      {
+        "value": "fdmarc.net",
+        "count": 1
+      },
+      {
+        "value": "firebasemail.com",
+        "count": 1
+      },
+      {
+        "value": "flowmailer.net",
+        "count": 1
+      },
+      {
+        "value": "freshdesk.com",
+        "count": 1
+      },
+      {
+        "value": "freshservice.com",
+        "count": 1
+      },
+      {
+        "value": "happyfox.com",
+        "count": 1
+      },
+      {
+        "value": "hostedemail.com",
+        "count": 1
+      },
+      {
+        "value": "ice.com",
+        "count": 1
+      },
+      {
+        "value": "intercom.io",
+        "count": 1
+      },
+      {
+        "value": "kinstamailservice.com",
+        "count": 1
+      },
+      {
+        "value": "mailanyone.net",
+        "count": 1
+      },
+      {
+        "value": "mailgun.info",
+        "count": 1
+      },
+      {
+        "value": "mailgun.us",
+        "count": 1
+      },
+      {
+        "value": "mailspamprotection.com",
+        "count": 1
+      },
+      {
+        "value": "mcsv.net",
+        "count": 1
+      },
+      {
+        "value": "messagelabs.com",
+        "count": 1
+      },
+      {
+        "value": "mxhero.com",
+        "count": 1
+      },
+      {
+        "value": "myclickfunnels.com",
+        "count": 1
+      },
+      {
+        "value": "myorderbox.com",
+        "count": 1
+      },
+      {
+        "value": "name-services.com",
+        "count": 1
+      },
+      {
+        "value": "nfco-mailout.com",
+        "count": 1
+      },
+      {
+        "value": "nmbrsapp.com",
+        "count": 1
+      },
+      {
+        "value": "onbmc.com",
+        "count": 1
+      },
+      {
+        "value": "openair.com",
+        "count": 1
+      },
+      {
+        "value": "oracleemaildelivery.com",
+        "count": 1
+      },
+      {
+        "value": "ppops.net",
+        "count": 1
+      },
+      {
+        "value": "prestashop.net",
+        "count": 1
+      },
+      {
+        "value": "prnewswire.com",
+        "count": 1
+      },
+      {
+        "value": "qemailserver.com",
+        "count": 1
+      },
+      {
+        "value": "recurly.com",
+        "count": 1
+      },
+      {
+        "value": "rediffmailpro.com",
+        "count": 1
+      },
+      {
+        "value": "rocketseed.com",
+        "count": 1
+      },
+      {
+        "value": "samanage.com",
+        "count": 1
+      },
+      {
+        "value": "securence.com",
+        "count": 1
+      },
+      {
+        "value": "sendersrv.com",
+        "count": 1
+      },
+      {
+        "value": "service-now.com",
+        "count": 1
+      },
+      {
+        "value": "shopify.com",
+        "count": 1
+      },
+      {
+        "value": "smtp2go.com",
+        "count": 1
+      },
+      {
+        "value": "spf-report.com",
+        "count": 1
+      },
+      {
+        "value": "transmail.net.in",
+        "count": 1
+      },
+      {
+        "value": "tripletex.no",
+        "count": 1
+      },
+      {
+        "value": "trustpilotservice.com",
+        "count": 1
+      },
+      {
+        "value": "ultipro.com",
+        "count": 1
+      },
+      {
+        "value": "vtigermails.com",
+        "count": 1
+      },
+      {
+        "value": "websitewelcome.com",
+        "count": 1
+      },
+      {
+        "value": "zeptomail.net",
+        "count": 1
+      },
+      {
+        "value": "zivver.org",
+        "count": 1
+      },
+      {
+        "value": "zoho.com",
+        "count": 1
+      },
+      {
+        "value": "zoho.eu",
+        "count": 1
+      },
+      {
+        "value": "zohocorp.com",
+        "count": 1
+      },
+      {
+        "value": "zohocreator.in",
+        "count": 1
+      },
+      {
+        "value": "zohomail.in",
+        "count": 1
+      },
+      {
+        "value": "zohomail360.com",
+        "count": 1
+      },
+      {
+        "value": "zohomail360.eu",
+        "count": 1
+      },
+      {
+        "value": "zohomail360.in",
+        "count": 1
+      }
+    ],
+    "dkimTargetDomains": [
+      {
+        "value": "mail.microsoft",
+        "count": 6
+      },
+      {
+        "value": "amazonaws.com",
+        "count": 1
+      },
+      {
+        "value": "azurefd.net",
+        "count": 1
+      },
+      {
+        "value": "dnssmarthost.net",
+        "count": 1
+      },
+      {
+        "value": "hscoscdn-eu1.net",
+        "count": 1
+      },
+      {
+        "value": "mcsv.net",
+        "count": 1
+      },
+      {
+        "value": "sg53.net",
+        "count": 1
+      }
+    ],
+    "delegatedNameserverDomains": [
+      {
+        "value": "awsdns-16.com",
+        "count": 18
+      },
+      {
+        "value": "awsdns-09.co.uk",
+        "count": 17
+      },
+      {
+        "value": "awsdns-09.net",
+        "count": 17
+      },
+      {
+        "value": "awsdns-57.org",
+        "count": 17
+      },
+      {
+        "value": "marketo.co.uk",
+        "count": 8
+      },
+      {
+        "value": "marketo.com",
+        "count": 8
+      },
+      {
+        "value": "mktdns.com",
+        "count": 8
+      },
+      {
+        "value": "dnsmadeeasy.com",
+        "count": 6
+      },
+      {
+        "value": "awsdns-12.com",
+        "count": 3
+      },
+      {
+        "value": "awsdns-22.co.uk",
+        "count": 3
+      },
+      {
+        "value": "awsdns-04.org",
+        "count": 2
+      },
+      {
+        "value": "awsdns-08.net",
+        "count": 2
+      },
+      {
+        "value": "nsone.net",
+        "count": 2
+      },
+      {
+        "value": "athenahealth-dns.com",
+        "count": 1
+      },
+      {
+        "value": "awsdns-04.co.uk",
+        "count": 1
+      },
+      {
+        "value": "awsdns-04.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-06.co.uk",
+        "count": 1
+      },
+      {
+        "value": "awsdns-07.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-10.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-11.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-12.org",
+        "count": 1
+      },
+      {
+        "value": "awsdns-13.co.uk",
+        "count": 1
+      },
+      {
+        "value": "awsdns-15.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-22.org",
+        "count": 1
+      },
+      {
+        "value": "awsdns-24.co.uk",
+        "count": 1
+      },
+      {
+        "value": "awsdns-25.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-26.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-28.org",
+        "count": 1
+      },
+      {
+        "value": "awsdns-30.org",
+        "count": 1
+      },
+      {
+        "value": "awsdns-36.com",
+        "count": 1
+      },
+      {
+        "value": "awsdns-37.com",
+        "count": 1
+      },
+      {
+        "value": "awsdns-45.co.uk",
+        "count": 1
+      },
+      {
+        "value": "awsdns-49.co.uk",
+        "count": 1
+      },
+      {
+        "value": "awsdns-50.co.uk",
+        "count": 1
+      },
+      {
+        "value": "awsdns-50.com",
+        "count": 1
+      },
+      {
+        "value": "awsdns-51.com",
+        "count": 1
+      },
+      {
+        "value": "awsdns-51.org",
+        "count": 1
+      },
+      {
+        "value": "awsdns-54.org",
+        "count": 1
+      },
+      {
+        "value": "awsdns-55.org",
+        "count": 1
+      },
+      {
+        "value": "awsdns-56.com",
+        "count": 1
+      },
+      {
+        "value": "awsdns-59.net",
+        "count": 1
+      },
+      {
+        "value": "awsdns-61.com",
+        "count": 1
+      },
+      {
+        "value": "awsdns-62.org",
+        "count": 1
+      },
+      {
+        "value": "google.com",
+        "count": 1
+      },
+      {
+        "value": "nr-dns.net",
+        "count": 1
+      },
+      {
+        "value": "yandex.ru",
+        "count": 1
+      }
+    ],
+    "mxTargetDomains": [
+      {
+        "value": "msv1.invalid",
+        "count": 3
+      },
+      {
+        "value": "mxrecord.io",
+        "count": 2
+      },
+      {
+        "value": "mxrecord.mx",
+        "count": 2
+      },
+      {
+        "value": "bitrixsoft.com",
+        "count": 1
+      },
+      {
+        "value": "cf-emailsecurity.net",
+        "count": 1
+      },
+      {
+        "value": "exfy.io",
+        "count": 1
+      },
+      {
+        "value": "fortimail.com",
+        "count": 1
+      },
+      {
+        "value": "hornetsecurity.com",
+        "count": 1
+      },
+      {
+        "value": "mailchannels.net",
+        "count": 1
+      },
+      {
+        "value": "mailgun.org",
+        "count": 1
+      },
+      {
+        "value": "mailspamprotection.com",
+        "count": 1
+      },
+      {
+        "value": "mx.microsoft",
+        "count": 1
+      },
+      {
+        "value": "outlook.com",
+        "count": 1
+      },
+      {
+        "value": "ppe-hosted.com",
+        "count": 1
+      },
+      {
+        "value": "qemailserver.com",
+        "count": 1
+      },
+      {
+        "value": "sendgrid.net",
+        "count": 1
+      },
+      {
+        "value": "sscinc.com",
+        "count": 1
+      },
+      {
+        "value": "ssnc-corp.cloud",
+        "count": 1
+      },
+      {
+        "value": "zohocorp.com",
+        "count": 1
+      }
+    ]
+  }
+}

@@ -26,14 +26,15 @@ difference.
 | Marketing | HubSpot CNAME | High | HubSpot-hosted content/marketing infrastructure; exact Hub remains ambiguous |
 | Marketing | Marketo, HubSpot, or Mailchimp SPF | Medium | Authorized vendor email sending; potentially stale |
 | Marketing | Salesforce `sfmc-content.com` CNAME | High | Marketing Cloud-hosted content or CloudPages configuration |
-| Sales engagement | Outreach, Apollo, Salesloft, Gong Engage, Mixmax CNAME | High | Product-specific tracking configuration |
+| Sales engagement | Outreach, Apollo, Salesloft, Gong Engage, Mixmax CNAME | High/Medium | Product-specific tracking configuration; exact observed Gong CDN alias is medium confidence |
 | Sales engagement | Apollo `aplolinks.com` or Nooks `nooks.in` CNAME | Medium | Corroborated vendor infrastructure with narrower public documentation |
 | Customer support | Zendesk, Intercom, or Help Scout CNAME | High | Product-specific help-center configuration |
 | Customer education | Skilljar or Docebo CNAME | High | Product-hosted academy or learning domain |
 | Events | Goldcast CNAME | High | Product-specific vanity event domain |
 | Customer data | Segment ownership TXT | Medium | Configured Segment organization relationship |
 | Product analytics | Pendo or Mixpanel ownership TXT | Medium | Configured analytics-platform relationship |
-| Meeting intelligence | Fireflies ownership TXT | Medium | Configured Fireflies organization relationship |
+| Meeting intelligence | Fireflies or Read AI ownership TXT | Medium | Published vendor-specific domain-verification record; not proof of meeting activity |
+| Gifting / ABM | Reachdesk ownership TXT | Medium | Published domain-verification record for branded correspondence |
 | Payments | Stripe ownership TXT | Medium | Configured Stripe domain relationship |
 | CRM inference | Salesforce Account Engagement/Pardot CNAME | High | Salesforce CRM organization relationship; not active Sales Cloud seats |
 | CRM inference | Salesforce Marketing Cloud Engagement CNAME | Medium | Salesforce CRM inferred from a proven Marketing Cloud relationship; not direct proof of Sales Cloud |
@@ -41,6 +42,9 @@ difference.
 | Delivery | SendGrid, Mailgun, Amazon SES, or SparkPost SPF | Low | Authorized sending only; potentially stale |
 | Security | KnowBe4 or Sophos verification TXT | Medium | Configured security-provider domain relationship; exact edition remains ambiguous |
 | Security | KnowBe4 or Sophos SPF | Low | Vendor-authorized email sending only; potentially stale |
+| Security | Vanta `cname.vantatrust.com` CNAME | High | Vanta Trust Center hosting configuration; not certification or licensed compliance modules |
+| Security | SafeBase `portals.safebase.io` CNAME | High | SafeBase Trust Center hosting configuration; not certification or Drata compliance-platform use |
+| Security | Drata exact `trust.cname.drata.com` CNAME | High | Drata Trust Center hosting configuration; not certification or licensed compliance modules |
 | Identity | Duo SSO verification TXT | Medium | Domain permitted for Duo Single Sign-On; not proof of active seats |
 | IT service management | Freshservice CNAME | High | Branded Freshservice portal configuration |
 | Automotive CRM | DealerSocket or CDK Elead SPF | Low | Vendor-authorized automotive CRM email sending; potentially stale |
@@ -51,7 +55,7 @@ describes how specifically the record identifies the provider. `relationshipLeve
 describes what the record actually proves:
 
 - `platform_configuration`: an attributable hosted or tracking CNAME;
-- `domain_relationship`: a completed ownership-verification challenge;
+- `domain_relationship`: a published vendor-specific ownership-verification record; completion is not observable from DNS;
 - `sending_authorization`: permission in SPF to send on the domain's behalf.
 
 ## Cross-tool inference graph
@@ -148,3 +152,22 @@ budget for positive evidence:
 All branches share the same hard 80-attempt limit. Optional certificate-transparency
 discovery supplies candidate labels only; a certificate name is never emitted as a
 technology finding without live DNS corroboration.
+
+## Enterprise-software discovery additions (0.4.0)
+
+The 1,000-domain research cohort adds exact nonempty TXT markers for Docusign,
+Twilio, Cloudflare Dashboard SSO, Lovable, PandaDoc, Remote, Sage Intacct, and
+Snowflake. These establish published domain configuration only. In particular,
+Sage Intacct's marker is an email sender key; Snowflake's is organization email
+verification, not evidence of warehouse activity.
+
+Auth0 custom authentication domains are recognized only under
+`edge.tenants.auth0.com`. Atlassian Statuspage now also recognizes custom CNAMEs
+under `stspg-customer.com` and the exact SPF include for notification sending.
+Sources, split counts, independent checks, and unresolved candidates are in the
+[enterprise discovery report](docs/research/enterprise-discovery-2026-10-14.md).
+
+For new research cohorts, scan with `--full --include-unclassified`, then run
+`vendorprint signatures audit findings.ndjson`. Audit schema 1.1 ranks by distinct
+company domains, including unknown MX and observed recursive SPF references.
+Unknown patterns are candidates for investigation, never automatic vendor claims.
