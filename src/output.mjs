@@ -64,6 +64,8 @@ export function compactResult(result) {
   return {
     domain: result.domain,
     status: result.status,
+    ...(result.observedAt ? { observedAt: result.observedAt } : {}),
+    ...(result.scanCompleteness ? { scanCompleteness: result.scanCompleteness } : {}),
     ...(email ? { email } : {}),
     technologyProfile,
     ...(!email && !hasTechnologyFindings

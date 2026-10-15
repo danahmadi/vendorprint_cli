@@ -226,7 +226,7 @@ name alone never becomes a technology finding without live DNS corroboration.
 
 ## Coverage and operational notes
 
-- Full mode tries 50 common tracking, trust-center, help, community, education,
+- Full mode prioritizes the base CNAME, supplied hostnames, `www`, and 50 common tracking, trust-center, help, community, education,
   and hosted-content labels, plus adaptive SPF, CNAME, DKIM, and delegated-NS
   checks. It is the default.
 - `--mode fast` uses 11 labels, including `trust`: 16 initial queries per domain.
@@ -348,3 +348,23 @@ vendorprint signatures audit findings.ndjson --pretty
 [Browse the signature catalog](https://www.vendorprintcli.com/coverage) for record
 families, scopes, confidence, and available sources. Coverage benchmarks describe
 a specific cohort and scan date, not vendor-detection accuracy or paid adoption.
+
+## Hostname coverage and scan completeness (0.5.0)
+
+URL inputs retain their exact hostnames as DNS candidates while findings are grouped by registrable company domain. For example, `vendorprint https://try.example.com/offer example.com` scans one company, checks `try.example.com`, the base CNAME, and `www.example.com`, then the usual labels. No page is loaded. `--preserve-hostname` also checks the supplied hostname's own CNAME.
+
+For research-derived names, supply a JSON file:
+
+```json
+{"example.com": ["try.example.com", "join.campaign.example.com"]}
+```
+
+```bash
+vendorprint example.com --hostname-hints hosts.json
+```
+
+The library accepts the same map as `hostnameHintsByDomain`. Hints must belong to their specified scan domain; unrelated names are rejected. Hints augment requested accounts rather than scheduling new accounts. Exact names precede guessed labels and share the 80-attempt budget, including nested wildcard checks. Excess names are reported as skipped. Query results retain the exact evidence hostname. Start a new output file after changing hints or package version: resume skips completed domains rather than rechecking them.
+
+Every fresh result includes `observedAt` and `scanCompleteness`, including compact JSON and NDJSON. `scanCompleteness.status` is `complete` or `partial` **for the bounded checks only**. Reasons can include `query_budget`, `dns_errors`, `spf_lookup_limit`, `cname_depth_limit`, and `discovery_errors`. The object includes query attempts/limit, skipped hostnames, budget-blocked queries, and DNS error codes. Legacy `status: "ok"` describes DNS response availability and does not imply complete coverage. Finding confidence remains independent; absence is always inconclusive.
+
+[Validated research](docs/research/publicwww-upgrade-2026-10-15.md) adds Smartsheet, Dynatrace, TeamViewer, and Adobe Acrobat Sign verification records as domain relationships. Wiz, Perplexity, Wrike, and ABM candidates remain unclaimed pending stronger attribution.

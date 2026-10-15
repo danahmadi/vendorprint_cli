@@ -38,6 +38,7 @@ Usage:
 Options:
   --input <path>          Read newline- or comma-separated domains
   --stdin                 Read newline- or comma-separated domains from stdin
+  --hostname-hints <path> JSON map of company domains to exact hostname arrays
   --labels <a,b,c>        Add candidate tracking subdomain labels
   --mode <value>          full (default), balanced, or fast
   --timeout <ms>          DNS timeout per attempt (default: 1800)
@@ -145,6 +146,9 @@ function parseArgs(argv) {
       index += 1;
     } else if (arg === "--resume") {
       options.resume = takeValue(argv, index, "--resume");
+      index += 1;
+    } else if (arg === "--hostname-hints") {
+      options.hostnameHintsPath = takeValue(argv, index, "--hostname-hints");
       index += 1;
     } else if (arg === "--labels") {
       options.extraLabels.push(
@@ -480,6 +484,7 @@ try {
     if (options.stdin) {
       options.domains.push(...splitDomains(await readStdin()));
     }
+    if (options.hostnameHintsPath) options.hostnameHintsByDomain = JSON.parse(await readFile(options.hostnameHintsPath, "utf8"));
     await addCertificateTransparencyLabels(options);
     if (options.domains.length === 0) {
       fail("Provide at least one domain, --input, or --stdin.");

@@ -118,7 +118,7 @@ test("streams metadata and a final summary without buffering results", async () 
     events.map((event) => event.type),
     ["meta", "summary"],
   );
-  assert.equal(events[0].schemaVersion, "1.2");
+  assert.equal(events[0].schemaVersion, "1.3");
   assert.equal(events[1].summary.scanned, 0);
 });
 

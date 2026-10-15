@@ -1,0 +1,32 @@
+{
+  "candidates": [
+    {
+      "provider": "Smartsheet",
+      "prefix": "smartsheet-site-validation",
+      "category": "business_software",
+      "productScope": "smartsheet_domain_verification",
+      "url": "https://help.smartsheet.com/learning-track/system-admin-access-and-authentication/domain-management"
+    },
+    {
+      "provider": "Dynatrace",
+      "prefix": "dynatrace-site-verification",
+      "category": "business_software",
+      "productScope": "dynatrace_domain_verification",
+      "url": "https://docs.dynatrace.com/docs/manage/identity-access-management/user-and-group-management/access-saml"
+    },
+    {
+      "provider": "TeamViewer",
+      "prefix": "teamviewer-sso-verification",
+      "category": "business_software",
+      "productScope": "teamviewer_sso_domain_verification",
+      "url": "https://www.teamviewer.com/en-us/global/support/knowledge-base/teamviewer-tensor/sso/single-sign-on-for-centrify/"
+    },
+    {
+      "provider": "Adobe Acrobat Sign",
+      "prefix": "adobe-sign-verification",
+      "category": "business_software",
+      "productScope": "adobe_acrobat_sign_domain_claim",
+      "url": "https://helpx.adobe.com/sign/web/using/claim-domain-names.html"
+    }
+  ]
+}

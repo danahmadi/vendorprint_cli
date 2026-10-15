@@ -251,6 +251,7 @@ function buildConfig(options) {
     dnsTransport: options.dnsTransport ?? "native",
     concurrency: options.concurrency ?? 4,
     extraLabels: options.extraLabels ?? [],
+    hostnameHintsByDomain: options.hostnameHintsByDomain ?? {},
     mode: options.mode ?? "full",
     maxInflightDns: options.maxInflightDns ?? 32,
     qps: options.qps ?? 100,
@@ -301,9 +302,7 @@ function buildConfig(options) {
     throw new TypeError("preserveHostname must be a boolean");
   }
   if (typeof config.includeUnclassifiedVerifications !== "boolean") {
-    throw new TypeError(
-      "includeUnclassifiedVerifications must be a boolean",
-    );
+    throw new TypeError("includeUnclassifiedVerifications must be a boolean");
   }
   if (
     config.passiveLabelsByDomain === null ||
@@ -312,6 +311,33 @@ function buildConfig(options) {
   ) {
     throw new TypeError("passiveLabelsByDomain must be an object");
   }
+  if (
+    !config.hostnameHintsByDomain ||
+    typeof config.hostnameHintsByDomain !== "object" ||
+    Array.isArray(config.hostnameHintsByDomain)
+  ) {
+    throw new TypeError(
+      "hostnameHintsByDomain must be an object mapping domains to hostname arrays",
+    );
+  }
+  const hints = Object.create(null);
+  for (const [input, values] of Object.entries(config.hostnameHintsByDomain)) {
+    const domain = normalizeDomainInput(input, {
+      preserveHostname: config.preserveHostname,
+    });
+    if (
+      !Array.isArray(values) ||
+      values.some((value) => typeof value !== "string")
+    )
+      throw new TypeError("Hostname hints must be arrays of strings");
+    for (const value of values) {
+      const host = normalizeDomainInput(value, { preserveHostname: true });
+      if (host !== domain && !host.endsWith(`.${domain}`))
+        throw new RangeError(`Hostname hint must belong to ${domain}`);
+      (hints[domain] ??= []).push(host);
+    }
+  }
+  config.hostnameHintsByDomain = hints;
   return config;
 }
 
@@ -323,11 +349,12 @@ function prepareInputs(inputs, config) {
   const domains = [];
   for (const input of inputs) {
     try {
-      domains.push(
-        normalizeDomainInput(input, {
-          preserveHostname: config.preserveHostname,
-        }),
-      );
+      const domain = normalizeDomainInput(input, {
+        preserveHostname: config.preserveHostname,
+      });
+      const host = normalizeDomainInput(input, { preserveHostname: true });
+      domains.push(domain);
+      (config.hostnameHintsByDomain[domain] ??= []).push(host);
     } catch (error) {
       invalidInputs.push({
         input,
@@ -349,11 +376,15 @@ function buildMethodology(config) {
         : "Public MX, TXT ownership/SPF, DMARC, nameservers, and CNAMEs on prioritized tracking and trust-center subdomain labels. Common DKIM selectors are omitted; SPF-guided DKIM queries may still run within budget.",
     confidence:
       "Findings distinguish domain relationships, sending authorization, and product-specific configuration. Absence of a signal is inconclusive.",
-    privacy: `${config.certificateTransparency
-      ? "Uses public DNS plus explicitly enabled passive certificate-transparency metadata. Certificate discovery queries a third-party log index, then only DNS-validates names; no company endpoint, login, mailbox, or personal data is accessed."
-      : "Uses public DNS records only; no login, mailbox, personal data, or vendor endpoint is accessed."}${config.dnsTransport === "https"
-      ? " DNS queries are sent to Google's DNS-over-HTTPS service."
-      : ""}`,
+    privacy: `${
+      config.certificateTransparency
+        ? "Uses public DNS plus explicitly enabled passive certificate-transparency metadata. Certificate discovery queries a third-party log index, then only DNS-validates names; no company endpoint, login, mailbox, or personal data is accessed."
+        : "Uses public DNS records only; no login, mailbox, personal data, or vendor endpoint is accessed."
+    }${
+      config.dnsTransport === "https"
+        ? " DNS queries are sent to Google's DNS-over-HTTPS service."
+        : ""
+    }`,
     dnsTransport: config.dnsTransport,
     safety: `Queries are bounded to ${MAX_QUERIES_PER_DOMAIN} attempts per domain, including adaptive branches; limited to ${PER_DOMAIN_QUERY_CONCURRENCY} logical queries in flight per domain and ${config.maxInflightDns} DNS attempts globally, with no more than ${config.qps} starts per second. Only four critical record types are retried. No AXFR, NSEC walking, or endpoint probing is performed.`,
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
@@ -362,9 +393,10 @@ function buildMethodology(config) {
 
 async function scanDomain(domain, options) {
   const startedAt = performance.now();
-  const resolver = options.dnsTransport === "https"
-    ? createDohResolver({ timeoutMs: options.timeoutMs })
-    : new Resolver({ timeout: options.timeoutMs, tries: 1 });
+  const resolver =
+    options.dnsTransport === "https"
+      ? createDohResolver({ timeoutMs: options.timeoutMs })
+      : new Resolver({ timeout: options.timeoutMs, tries: 1 });
   const baseLabels =
     options.mode === "fast"
       ? FAST_TRACKING_LABELS
@@ -373,23 +405,48 @@ async function scanDomain(domain, options) {
         : DEFAULT_TRACKING_LABELS;
   const dkimSelectors = options.mode === "full" ? DKIM_SELECTORS : [];
   const delegatedLabels = options.mode === "full" ? DELEGATED_SUBDOMAINS : [];
-  const fixedQueries =
-    5 + dkimSelectors.length * 2 + delegatedLabels.length;
+  const fixedQueries = 5 + dkimSelectors.length * 2 + delegatedLabels.length;
   const retryReserve = options.criticalRetries * 4;
   const candidateLabels = [
     ...new Set(
       [
-        ...baseLabels,
+        "www",
         ...options.extraLabels,
+        ...baseLabels,
         ...(options.passiveLabelsByDomain[domain] ?? []),
       ]
         .map((label) => label.trim().toLowerCase())
         .filter((label) => /^[a-z0-9-]{1,63}$/.test(label)),
     ),
   ];
-  const labelBudget =
-    MAX_QUERIES_PER_DOMAIN - fixedQueries - retryReserve;
-  const labels = candidateLabels.slice(0, labelBudget);
+  const suppliedHostnames = [
+    ...new Set(options.hostnameHintsByDomain[domain] ?? []),
+  ];
+  const candidateHostnames = [
+    ...new Set([
+      domain,
+      ...suppliedHostnames,
+      ...candidateLabels.map((label) => `${label}.${domain}`),
+    ]),
+  ];
+  const hostnameBudget = MAX_QUERIES_PER_DOMAIN - fixedQueries - retryReserve;
+  const wildcardParents = new Set([domain]);
+  const hostnames = [];
+  let plannedCnameQueries = 0;
+  for (const hostname of candidateHostnames) {
+    const parent =
+      hostname === domain && normalizeDomainInput(domain) === domain
+        ? domain
+        : hostname.slice(hostname.indexOf(".") + 1);
+    const cost = 1 + (wildcardParents.has(parent) ? 0 : 1);
+    if (plannedCnameQueries + cost > hostnameBudget) continue;
+    hostnames.push(hostname);
+    wildcardParents.add(parent);
+    plannedCnameQueries += cost;
+  }
+  const labels = candidateLabels.filter((label) =>
+    hostnames.includes(`${label}.${domain}`),
+  );
   const resolveLimited = createQueryLimiter(
     PER_DOMAIN_QUERY_CONCURRENCY,
     QUERY_START_DELAY_MS,
@@ -397,6 +454,8 @@ async function scanDomain(domain, options) {
   let queryAttempts = 0;
   let retryAttempts = 0;
   let budgetExhausted = false;
+  let queriesSkippedDueToBudget = 0;
+  const queryErrors = [];
   const query = (operation, retries = 0) =>
     resolveLimited(async () => {
       const result = await resolveWithRetry(operation, {
@@ -405,6 +464,7 @@ async function scanDomain(domain, options) {
           options.scheduleGlobalDnsAttempt(async () => {
             if (queryAttempts >= MAX_QUERIES_PER_DOMAIN) {
               budgetExhausted = true;
+              queriesSkippedDueToBudget += 1;
               throw Object.assign(new Error("query budget exhausted"), {
                 code: "BUDGET_EXHAUSTED",
               });
@@ -413,11 +473,15 @@ async function scanDomain(domain, options) {
             return attempt();
           }),
       });
+      if (result.error) queryErrors.push(result.error);
       retryAttempts += result.retryAttempts;
       return result;
     });
 
-  const mxPromise = query(() => resolver.resolveMx(domain), options.criticalRetries);
+  const mxPromise = query(
+    () => resolver.resolveMx(domain),
+    options.criticalRetries,
+  );
   const txtPromise = query(
     () => resolver.resolveTxt(domain),
     options.criticalRetries,
@@ -426,14 +490,27 @@ async function scanDomain(domain, options) {
     () => resolver.resolveTxt(`_dmarc.${domain}`),
     options.criticalRetries,
   );
-  const nsPromise = query(() => resolver.resolveNs(domain), options.criticalRetries);
+  const nsPromise = query(
+    () => resolver.resolveNs(domain),
+    options.criticalRetries,
+  );
   const wildcardHostname = `vp-wildcard-${createHash("sha256")
     .update(domain)
     .digest("hex")
     .slice(0, 10)}.${domain}`;
-  const wildcardPromise = query(() => resolver.resolveCname(wildcardHostname));
-  const cnamePromises = labels.map(async (label) => {
-    const hostname = `${label}.${domain}`;
+  const wildcardPromise = Promise.all(
+    [...wildcardParents].map((parent) => {
+      const hostname =
+        parent === domain
+          ? wildcardHostname
+          : `vp-wildcard-${createHash("sha256").update(parent).digest("hex").slice(0, 10)}.${parent}`;
+      return query(() => resolver.resolveCname(hostname)).then((result) => ({
+        hostname,
+        ...result,
+      }));
+    }),
+  );
+  const cnamePromises = hostnames.map(async (hostname) => {
     const result = await query(() => resolver.resolveCname(hostname));
     return { hostname, ...result };
   });
@@ -467,21 +544,20 @@ async function scanDomain(domain, options) {
     txtResult,
     dmarcResult,
     nsResult,
-    wildcardResult,
+    wildcardResults,
     cnameResults,
     initialDkimResults,
     delegatedNsResults,
-  ] =
-    await Promise.all([
-      mxPromise,
-      txtPromise,
-      dmarcPromise,
-      nsPromise,
-      wildcardPromise,
-      Promise.all(cnamePromises),
-      Promise.all(dkimPromises),
-      Promise.all(delegatedNsPromises),
-    ]);
+  ] = await Promise.all([
+    mxPromise,
+    txtPromise,
+    dmarcPromise,
+    nsPromise,
+    wildcardPromise,
+    Promise.all(cnamePromises),
+    Promise.all(dkimPromises),
+    Promise.all(delegatedNsPromises),
+  ]);
 
   const mailClassification = classifyMx(mxResult.value);
   const spf = await resolveSpfGraph(
@@ -500,19 +576,35 @@ async function scanDomain(domain, options) {
     );
     cnameChains.push(...paths);
   }
+  const initialCnameAnalysis = collapseWildcardLikeCnames(
+    cnameResults,
+    hostnames.length,
+    wildcardResults.flatMap((result) => result.value),
+  );
+  const wildcardHosts = new Set(
+    initialCnameAnalysis.evidenceObservations
+      .filter((item) => item.wildcardLike)
+      .map((item) => item.hostname),
+  );
+  // Collapsed observations can omit owners, so classify every matching first hop.
+  for (const item of cnameResults)
+    if (
+      item.value.some((target) =>
+        initialCnameAnalysis.wildcardLikeTargets.some(
+          (w) => w.target === target.toLowerCase().replace(/\.$/, ""),
+        ),
+      )
+    )
+      wildcardHosts.add(item.hostname);
   const chainObservations = cnameChains.flatMap((path) =>
     path.slice(2).map((target) => ({
       hostname: path[0],
       target,
-      wildcardLike: false,
+      wildcardLike: wildcardHosts.has(path[0]),
       cnameChain: path,
     })),
   );
-  const cnameAnalysis = collapseWildcardLikeCnames(
-    cnameResults,
-    labels.length,
-    wildcardResult.value,
-  );
+  const cnameAnalysis = initialCnameAnalysis;
   cnameAnalysis.evidenceObservations.push(...chainObservations);
 
   const adaptiveSelectors = [
@@ -550,17 +642,6 @@ async function scanDomain(domain, options) {
     })
     .filter(Boolean);
   const detected = dedupeVendorSignals(signals);
-  const queryErrors = [
-    mxResult.error,
-    txtResult.error,
-    dmarcResult.error,
-    nsResult.error,
-    wildcardResult.error,
-    ...cnameResults.map((item) => item.error),
-    ...dkimResults.map((item) => item.error),
-    ...delegatedNsResults.map((item) => item.error),
-    ...spf.lookupErrors.map((item) => item.error),
-  ].filter(Boolean);
   const mail = {
     ...mailClassification,
     queryStatus: {
@@ -586,9 +667,7 @@ async function scanDomain(domain, options) {
         value:
           item.type === "TXT"
             ? ["public-key-present"]
-            : item.value.map((value) =>
-                value.replace(/\.$/, "").toLowerCase(),
-              ),
+            : item.value.map((value) => value.replace(/\.$/, "").toLowerCase()),
         ...(item.type === "CNAME"
           ? {
               providerAttribution: item.value
@@ -634,8 +713,8 @@ async function scanDomain(domain, options) {
         hostname: item.hostname,
       })),
     ),
-    dkimServices: mail.observedDkimSelectors.flatMap((item) =>
-      item.providerAttribution ?? [],
+    dkimServices: mail.observedDkimSelectors.flatMap(
+      (item) => item.providerAttribution ?? [],
     ),
     cnameServices: [...cnameServiceGroups.values()].map((evidence) => ({
       provider: evidence[0].provider,
@@ -649,9 +728,7 @@ async function scanDomain(domain, options) {
   });
 
   const salesEngagement = {
-    status: detected.length
-      ? "signals_found"
-      : "no_public_dns_signal_found",
+    status: detected.length ? "signals_found" : "no_public_dns_signal_found",
     detected,
     labelsChecked: labels,
     observedCnames: cnameAnalysis.evidenceObservations.map((item) => ({
@@ -666,8 +743,38 @@ async function scanDomain(domain, options) {
       : "No known signal was found. This does not mean the company does not use these tools: the subdomain name may be custom, proxied, unlisted, or tracking may be disabled.",
   };
 
+  const skippedHostnames = candidateHostnames.length - hostnames.length;
+  const dnsErrors = [
+    ...new Set(queryErrors.filter((error) => error !== "BUDGET_EXHAUSTED")),
+  ];
+  const reasons = [
+    ...(budgetExhausted || skippedHostnames ? ["query_budget"] : []),
+    ...(dnsErrors.length ? ["dns_errors"] : []),
+    ...(spf.truncated ? ["spf_lookup_limit"] : []),
+    ...(cnameChains.some((path) => path.length >= 4)
+      ? ["cname_depth_limit"]
+      : []),
+    ...(options.certificateTransparency?.errors?.some(
+      (error) => error.domain === domain,
+    )
+      ? ["discovery_errors"]
+      : []),
+  ];
   return {
     domain,
+    observedAt: new Date().toISOString(),
+    scanCompleteness: {
+      status: reasons.length ? "partial" : "complete",
+      scope: "bounded_checks",
+      reasons,
+      queryAttempts,
+      queryLimit: MAX_QUERIES_PER_DOMAIN,
+      skippedHostnames,
+      queriesSkippedDueToBudget,
+      dnsErrors,
+      interpretation:
+        "Completeness describes the bounded scan plan, not all possible DNS names or vendor usage. Absence remains inconclusive.",
+    },
     status:
       mxResult.value.length || nsResult.value.length
         ? "ok"
@@ -679,7 +786,7 @@ async function scanDomain(domain, options) {
     technologyFingerprint: fingerprintTechnologyProfile(technologyProfile),
     querySafety: {
       mode: options.mode,
-      queriesPlanned: fixedQueries + labels.length,
+      queriesPlanned: fixedQueries + plannedCnameQueries,
       queryAttempts,
       retryAttempts,
       retryReserve,
@@ -688,10 +795,12 @@ async function scanDomain(domain, options) {
       minimumPerDomainStartDelayMs: QUERY_START_DELAY_MS,
       maxInflightDnsGlobal: options.maxInflightDns,
       maximumDnsStartsPerSecond: options.qps,
+      candidateHostnamesRequested: candidateHostnames.length,
+      candidateHostnamesChecked: hostnames.length,
+      suppliedHostnames,
       candidateLabelsRequested: candidateLabels.length,
       candidateLabelsChecked: labels.length,
-      candidateLabelsSkippedDueToBudget:
-        candidateLabels.length - labels.length,
+      candidateLabelsSkippedDueToBudget: candidateLabels.length - labels.length,
       adaptive: {
         spfLookups: spf.lookupCount,
         cnameChainsFollowed: cnameChains.length,
@@ -700,7 +809,7 @@ async function scanDomain(domain, options) {
         passiveCertificateLabels:
           options.passiveLabelsByDomain[domain]?.length ?? 0,
       },
-      budgetExhausted,
+      budgetExhausted: budgetExhausted || skippedHostnames > 0,
     },
     salesEngagement,
     dns: {
@@ -709,7 +818,7 @@ async function scanDomain(domain, options) {
       ),
       wildcardProbe: {
         hostname: wildcardHostname,
-        targets: wildcardResult.value.map((value) =>
+        targets: wildcardResults[0].value.map((value) =>
           value.replace(/\.$/, "").toLowerCase(),
         ),
       },
@@ -720,6 +829,13 @@ async function scanDomain(domain, options) {
           nameservers: item.value.map((value) =>
             value.replace(/\.$/, "").toLowerCase(),
           ),
+        })),
+      additionalWildcardProbes: wildcardResults
+        .slice(1)
+        .map(({ hostname, value, error }) => ({
+          hostname,
+          targets: value,
+          error,
         })),
       cnameChains,
       nonAbsenceQueryErrors: [...new Set(queryErrors)],
@@ -740,7 +856,7 @@ export async function* scanDomainEvents(inputs, options = {}) {
 
   yield {
     type: "meta",
-    schemaVersion: "1.2",
+    schemaVersion: "1.3",
     packageVersion: PACKAGE_VERSION,
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
     generatedAt,
@@ -786,7 +902,7 @@ export async function* scanDomainEvents(inputs, options = {}) {
 
   yield {
     type: "summary",
-    schemaVersion: "1.2",
+    schemaVersion: "1.3",
     packageVersion: PACKAGE_VERSION,
     signatureCatalogVersion: SIGNATURE_CATALOG_VERSION,
     generatedAt,
