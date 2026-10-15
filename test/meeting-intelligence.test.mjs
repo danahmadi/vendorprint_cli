@@ -7,6 +7,7 @@ import { fingerprintTechnologyProfile } from "../src/fingerprint.mjs";
 import { detectSalesVendor, dedupeVendorSignals, detectCnameTechnology, extractDomainVerifications } from "../src/signals.mjs";
 
 const gongTarget = "us-6653.email-composer-webhooks.gong.io";
+const gongCdnTarget = "email-composer-webhooks.gong.io.cdn.cloudflare.net";
 
 test("Fireflies needs a nonempty exact marker, joins TXT chunks, and redacts values", () => {
   const findings = extractDomainVerifications([
@@ -30,7 +31,11 @@ test("Fireflies needs a nonempty exact marker, joins TXT chunks, and redacts val
 
 test("Gong target boundaries reject generic hosts, spoof suffixes, and suggestive labels", () => {
   assert.equal(detectSalesVendor("email-tracking.example.com", `${gongTarget.toUpperCase()}.`)?.provider, "Gong Engage");
-  for (const target of ["gong.io", "app.gong.io", `${gongTarget}.example.net`, "notemail-composer-webhooks.gong.io", "proxy.example.net"]) {
+  const cdn = detectSalesVendor("email-tracking.example.com", `${gongCdnTarget.toUpperCase()}.`);
+  assert.equal(cdn.provider, "Gong Engage");
+  assert.equal(cdn.confidence, "medium");
+  assert.equal(cdn.productScope, "gong_engage_link_tracking");
+  for (const target of ["gong.io", "app.gong.io", `${gongTarget}.example.net`, "notemail-composer-webhooks.gong.io", "proxy.example.net", `tenant.${gongCdnTarget}`, `${gongCdnTarget}.example.net`, "other.gong.io.cdn.cloudflare.net", "other.cdn.cloudflare.net"]) {
     assert.equal(detectSalesVendor("gong.example.com", target), null);
   }
   assert.notEqual(detectCnameTechnology("granola.example.com", "tenant.workos-dns.com")?.provider, "Granola");
@@ -82,7 +87,7 @@ test("balanced and full scans discover the documented Gong hostname within the D
   t.mock.method(Resolver.prototype, "resolveNs", async () => ["ns.example.net"]);
   t.mock.method(Resolver.prototype, "resolveCname", async (name) => {
     queried.push(name);
-    return name === "email-tracking.example.com" ? [gongTarget] : [];
+    return name === "email-tracking.example.com" ? [gongCdnTarget] : [];
   });
   for (const mode of ["balanced", "full"]) {
     const { results: [result] } = await scanDomains(["example.com"], { mode });

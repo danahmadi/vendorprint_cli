@@ -19,6 +19,17 @@ export const SIGNATURE_REGISTRY = Object.freeze({
       verifiedAt: "2026-10-14",
       sources: [source("https://help.gong.io/docs/set-up-branded-urls")],
     },
+    {
+      provider: "Gong Engage", category: "sales_engagement",
+      exact: ["email-composer-webhooks.gong.io.cdn.cloudflare.net"], confidence: "medium",
+      productScope: "gong_engage_link_tracking",
+      caveat: "This exact CDN alias is corroborated by Gong's documented tracking endpoint and public DNS. It identifies branded link tracking, not Gong call recording or recent activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://help.gong.io/docs/set-up-branded-urls"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/meeting-intelligence-2026-10-14.md", "public_dns_research"),
+      ],
+    },
     { provider: "Mixmax", category: "sales_engagement", suffixes: ["mixmax.com"], confidence: "high" },
     { provider: "Nooks", category: "sales_engagement", suffixes: ["nooks.in"], confidence: "medium" },
     { provider: "Adobe Marketo", category: "marketing_automation", suffixes: ["mktoweb.com"], confidence: "high" },

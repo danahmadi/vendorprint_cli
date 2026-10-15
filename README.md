@@ -265,7 +265,10 @@ name alone never becomes a technology finding without live DNS corroboration.
 - [Gong documents Engage branded URL CNAMEs](https://help.gong.io/docs/set-up-branded-urls)
   under `email-composer-webhooks.gong.io`. Balanced and full scans include the
   documented `email-tracking` label. This identifies Engage link tracking, not
-  Gong call recording.
+  Gong call recording. The exact observed alias
+  `email-composer-webhooks.gong.io.cdn.cloudflare.net` is also recognized at
+  medium confidence, corroborated through Gong's own CNAME chain; other
+  Cloudflare hostnames are not attributed to Gong.
 - Fireflies and [Read AI](https://support.read.ai/hc/en-us/articles/48607849975955-How-do-I-verify-domain-ownership)
   verification markers identify published domain-verification records. DNS does
   not establish completed verification, enabled SSO, paid seats, or recording activity.

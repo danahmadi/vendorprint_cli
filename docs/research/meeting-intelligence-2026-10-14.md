@@ -24,9 +24,18 @@ Additional findings across the sample and separately selected supporting domains
 | `read-ai-verification=` | Gusto, in the Granola cohort | None | Add medium-confidence Read AI domain-verification detector: exact prefix is officially documented and independently DNS-confirmed |
 | `reachdesk-verification=` | Atlan, Greenhouse's `greenhouse.io` alternate domain, Webflow | Figma; also Reachdesk's own domain | Refine existing detector, remove duplicate permissive rules, add provenance and branded-correspondence scope |
 | Gong Engage target suffix | Official Gong configuration documentation; no sample match | None | Retain existing target signature; add documented `email-tracking` discovery label to balanced/full modes |
+| Exact Gong Engage CDN alias | Discovered only in subsequent review of Figma's holdout CNAME answer | Not independently validated as a frozen candidate | Add exact-match, medium-confidence rule after vendor-controlled chain and second-resolver corroboration; see follow-up below |
 | Granola / generic identity infrastructure | No Granola-specific candidate | No attributable match | Do not add a Granola signature or infer it from WorkOS, Okta, Microsoft, Google, or shared mail services |
 
 The Read AI rule did **not** replicate in this holdout. Its inclusion rests on the exact vendor-published DNS format, a live observation, and confirmation through a second resolver—not a measured customer-detection rate. Reachdesk's own domain is vendor self-configuration, not an additional independent customer confirmation. Reachdesk and Fireflies were already recognized by 0.3.2; Read AI is the newly recognized provider.
+
+### Exploratory follow-up: Gong's exact CDN alias
+
+Reviewing all vendor-like hostnames after the frozen-candidate evaluation uncovered `email-tracking.figma.com → email-composer-webhooks.gong.io.cdn.cloudflare.net`. This target was outside the existing `email-composer-webhooks.gong.io` suffix rule. Figma entered the sample as a Granola reference, not as a source-confirmed Gong customer, and it remains in that original cohort.
+
+Gong's documented example independently resolves through `us-6653.email-composer-webhooks.gong.io → email-composer-webhooks.gong.io → email-composer-webhooks.gong.io.cdn.cloudflare.net`. Both native DNS and Google DNS confirmed the Figma answer and the vendor-controlled chain. The [eight recorded follow-up queries](meeting-intelligence/gong-alias-confirmations.json) support a medium-confidence **exact** target match; arbitrary subdomains of that target, other Gong-named Cloudflare hosts, and Cloudflare infrastructure generally do not match.
+
+This is a useful new Gong Engage fingerprint, but it is exploratory evidence learned from holdout inspection. It is **not** a successful independent holdout validation of a preregistered rule, and it does not establish call recording or a current paid contract. The 35 source-selected Gong case-study domains still had no matching tracking CNAME within this probe's bounds.
 
 ## What DNS evidence means
 
@@ -54,6 +63,7 @@ Observation timestamps are October 15 UTC, which was October 14 in America/Los_A
 
 - Add Read AI to `meetingIntelligence`, with `read_ai_domain_verification` scope.
 - Add `email-tracking` to balanced and full CNAME discovery; keep the 80-query scanner ceiling. The ten-label fast mode is unchanged.
+- Add the exact Gong CDN alias at medium confidence, supported by the separately recorded exploratory follow-up.
 - Narrow scopes to `gong_engage_link_tracking`, `fireflies_domain_verification`, and `reachdesk_email_domain_verification` for existing signatures.
 - Carry applicable signature sources, verification date, product scope, and caveat through raw findings; include sources in the resulting profile evidence.
 - Require nonempty values for Fireflies, Read AI, and Reachdesk markers. Keep exact prefix matching and DNS suffix boundaries. Remove duplicate legacy Reachdesk definitions that would otherwise bypass the stricter rule.
@@ -63,6 +73,8 @@ Existing Gong Engage, Fireflies, and Reachdesk fingerprints/product-scope diff k
 
 Regression tests cover split TXT records, optional whitespace, empty values, misleading prefixes, spoofed CNAME suffixes, shared identity infrastructure, token redaction, source propagation, narrow scopes, and scanner discovery within its query budget. All test values are synthetic.
 
+Validation completed: `npm run check` and all 64 tests on Node 20, 22, and 24. A freshly packed tarball installed successfully and the installed CLI detected the Read AI marker on Gusto, Fireflies/Reachdesk markers on Webflow, and the exact Gong Engage alias on Figma. GitHub Actions was disabled for the repository, so the version matrix was run locally; no GitHub CI pass is claimed.
+
 ## Sources and reproducibility
 
 - [Gong: Set up branded URLs](https://help.gong.io/docs/set-up-branded-urls) — product-specific suffix and suggested hostname.
@@ -71,6 +83,7 @@ Regression tests cover split TXT records, optional whitespace, empty values, mis
 - [Reachdesk: Verify domains](https://support.reachdesk.com/hc/en-gb/articles/4410354225169-How-to-verify-domains-within-Reachdesk) — branded correspondence and apex TXT verification workflow; repeated public observations corroborate the prefix.
 - [Granola: SSO setup guide](https://docs.granola.ai/help-center/sso-setup-guide) — SSO configuration does not by itself supply a validated DNS fingerprint.
 - [Per-domain results](meeting-intelligence/results.json), [second-resolver confirmations](meeting-intelligence/confirmations.json), and [source-linked cohort](meeting-intelligence/cohort.json).
+- [Gong CDN alias follow-up](meeting-intelligence/gong-alias-confirmations.json) — separate from the frozen candidate evaluation and its eleven TXT/error confirmation queries.
 
 The committed results summarize only candidate-marker hits and query health. Full redacted observations and fetched source pages were retained in the local research workspace, outside the package and repository. The reproducible probe emits a fresh redacted observation file; live DNS will change over time. The research files are excluded from the npm tarball.
 

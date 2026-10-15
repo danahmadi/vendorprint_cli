@@ -572,6 +572,14 @@
           "name": "figma.com",
           "prefix": "reachdesk-verification"
         }
+      ],
+      "exploratoryFollowupHits": [
+        {
+          "type": "CNAME",
+          "name": "email-tracking.figma.com",
+          "target": "email-composer-webhooks.gong.io.cdn.cloudflare.net",
+          "note": "Identified after frozen candidate evaluation; not an independent holdout validation."
+        }
       ]
     },
     {

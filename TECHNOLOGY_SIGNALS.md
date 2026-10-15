@@ -26,7 +26,7 @@ difference.
 | Marketing | HubSpot CNAME | High | HubSpot-hosted content/marketing infrastructure; exact Hub remains ambiguous |
 | Marketing | Marketo, HubSpot, or Mailchimp SPF | Medium | Authorized vendor email sending; potentially stale |
 | Marketing | Salesforce `sfmc-content.com` CNAME | High | Marketing Cloud-hosted content or CloudPages configuration |
-| Sales engagement | Outreach, Apollo, Salesloft, Gong Engage, Mixmax CNAME | High | Product-specific tracking configuration |
+| Sales engagement | Outreach, Apollo, Salesloft, Gong Engage, Mixmax CNAME | High/Medium | Product-specific tracking configuration; exact observed Gong CDN alias is medium confidence |
 | Sales engagement | Apollo `aplolinks.com` or Nooks `nooks.in` CNAME | Medium | Corroborated vendor infrastructure with narrower public documentation |
 | Customer support | Zendesk, Intercom, or Help Scout CNAME | High | Product-specific help-center configuration |
 | Customer education | Skilljar or Docebo CNAME | High | Product-hosted academy or learning domain |
