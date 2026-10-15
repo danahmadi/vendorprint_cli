@@ -226,11 +226,17 @@ name alone never becomes a technology finding without live DNS corroboration.
 
 ## Coverage and operational notes
 
-- Full mode tries common tracking, help, community, education, and hosted-content
-  labels, plus adaptive SPF, CNAME, DKIM, and delegated-NS checks. It is the default.
-- `--mode fast` uses the 10 highest-yield labels and omits DKIM: about 14 queries
-  per domain.
-- `--mode balanced` uses 23 labels and omits DKIM: about 27 queries per domain.
+- Full mode tries 50 common tracking, trust-center, help, community, education,
+  and hosted-content labels, plus adaptive SPF, CNAME, DKIM, and delegated-NS
+  checks. It is the default.
+- `--mode fast` uses 11 labels, including `trust`: 16 initial queries per domain.
+- `--mode balanced` uses 27 labels, including `trust`, `security`, and
+  `trustcenter`: 32 initial queries per domain. Fast/balanced omit common DKIM
+  selectors; SPF-guided DKIM and other adaptive queries may still run.
+- Vanta, SafeBase, and Drata trust centers are recognized by vendor-specific CNAME
+  targets. A `trust` hostname or generic CDN target alone never identifies them.
+  These findings describe trust-center hosting, not certification or licensed
+  compliance modules. See the [DNS research](docs/research/trust-centers-2026-10-14.md).
 - URLs and hostnames are normalized to their registrable company domain using the
   Public Suffix List. Use `--preserve-hostname` only when a specific delegated
   hostname should be scanned.

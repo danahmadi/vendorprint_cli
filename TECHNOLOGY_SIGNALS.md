@@ -42,6 +42,9 @@ difference.
 | Delivery | SendGrid, Mailgun, Amazon SES, or SparkPost SPF | Low | Authorized sending only; potentially stale |
 | Security | KnowBe4 or Sophos verification TXT | Medium | Configured security-provider domain relationship; exact edition remains ambiguous |
 | Security | KnowBe4 or Sophos SPF | Low | Vendor-authorized email sending only; potentially stale |
+| Security | Vanta `cname.vantatrust.com` CNAME | High | Vanta Trust Center hosting configuration; not certification or licensed compliance modules |
+| Security | SafeBase `portals.safebase.io` CNAME | High | SafeBase Trust Center hosting configuration; not certification or Drata compliance-platform use |
+| Security | Drata exact `trust.cname.drata.com` CNAME | High | Drata Trust Center hosting configuration; not certification or licensed compliance modules |
 | Identity | Duo SSO verification TXT | Medium | Domain permitted for Duo Single Sign-On; not proof of active seats |
 | IT service management | Freshservice CNAME | High | Branded Freshservice portal configuration |
 | Automotive CRM | DealerSocket or CDK Elead SPF | Low | Vendor-authorized automotive CRM email sending; potentially stale |

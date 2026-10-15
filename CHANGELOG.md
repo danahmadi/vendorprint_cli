@@ -2,6 +2,9 @@
 
 ## 0.4.0 — prepared for release
 
+- Detect Vanta, SafeBase, and Drata trust-center CNAMEs with narrowly scoped evidence.
+  Probe `trust` in every mode and `security`/`trustcenter` in balanced/full mode,
+  retaining the 80-attempt ceiling. Add a supplemental 1,000-domain DNS study.
 - Add eight documented TXT signatures: Docusign, Twilio, Cloudflare Dashboard SSO,
   Lovable, PandaDoc, Remote, Sage Intacct email sender keys, and Snowflake.
 - Add Auth0 custom authentication CNAMEs and expand Atlassian Statuspage with

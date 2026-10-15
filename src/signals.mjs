@@ -1,4 +1,5 @@
 export const FAST_TRACKING_LABELS = [
+  "trust",
   "go",
   "info",
   "hello",
@@ -13,6 +14,8 @@ export const FAST_TRACKING_LABELS = [
 
 export const BALANCED_TRACKING_LABELS = [
   ...FAST_TRACKING_LABELS,
+  "security",
+  "trustcenter",
   "email-tracking",
   "outreach",
   "tracking",
@@ -30,6 +33,9 @@ export const BALANCED_TRACKING_LABELS = [
 ];
 
 export const DEFAULT_TRACKING_LABELS = [
+  "trust",
+  "security",
+  "trustcenter",
   "track",
   "tracking",
   "email-tracking",

@@ -1,0 +1,95 @@
+{
+  "resolver": "Google DNS-over-HTTPS",
+  "confirmations": [
+    {
+      "provider": "Vanta",
+      "domain": "8x8.com",
+      "hostname": "trust.8x8.com",
+      "targets": [
+        "68094680869c472aea035a7d.cname.vantatrust.com"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.077Z"
+    },
+    {
+      "provider": "Vanta",
+      "domain": "activtrak.com",
+      "hostname": "trust.activtrak.com",
+      "targets": [
+        "603eaafd96bef488c38c6a8a.cname.vantatrust.com"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.106Z"
+    },
+    {
+      "provider": "Vanta",
+      "domain": "aerospike.com",
+      "hostname": "trust.aerospike.com",
+      "targets": [
+        "670d4bf78f205f2660f22cc0.cname.vantatrust.com"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.131Z"
+    },
+    {
+      "provider": "SafeBase",
+      "domain": "15five.com",
+      "hostname": "trust.15five.com",
+      "targets": [
+        "15five.portals.safebase.io"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.158Z"
+    },
+    {
+      "provider": "SafeBase",
+      "domain": "6sense.com",
+      "hostname": "trust.6sense.com",
+      "targets": [
+        "6sense.portals.safebase.io"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.185Z"
+    },
+    {
+      "provider": "SafeBase",
+      "domain": "accelevents.com",
+      "hostname": "trust.accelevents.com",
+      "targets": [
+        "accelevents.portals.safebase.io"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.216Z"
+    },
+    {
+      "provider": "Drata",
+      "domain": "appointment-plus.com",
+      "hostname": "trust.appointment-plus.com",
+      "targets": [
+        "trust.cname.drata.com"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.249Z"
+    },
+    {
+      "provider": "Drata",
+      "domain": "powtoon.com",
+      "hostname": "trust.powtoon.com",
+      "targets": [
+        "trust.cname.drata.com"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.272Z"
+    },
+    {
+      "provider": "Drata",
+      "domain": "rebelmouse.com",
+      "hostname": "trust.rebelmouse.com",
+      "targets": [
+        "trust.cname.drata.com"
+      ],
+      "matched": true,
+      "observedAt": "2026-10-15T05:13:14.301Z"
+    }
+  ]
+}

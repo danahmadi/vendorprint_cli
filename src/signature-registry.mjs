@@ -7,6 +7,39 @@ export const SIGNATURE_REGISTRY = Object.freeze({
   catalogVersion: SIGNATURE_CATALOG_VERSION,
   verifiedAt: "2026-07-29",
   cname: [
+    {
+      provider: "Drata", category: "security_compliance",
+      exact: ["trust.cname.drata.com"], confidence: "high",
+      productScope: "drata_trust_center",
+      caveat: "DNS points to Drata Trust Center hosting. It does not establish certification, licensed compliance modules, or current activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://help.drata.com/en/articles/8067419-display-details"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/trust-centers-2026-10-14.md", "public_dns_research"),
+      ],
+    },
+    {
+      provider: "Vanta", category: "security_compliance",
+      suffixes: ["cname.vantatrust.com"], confidence: "high",
+      productScope: "vanta_trust_center",
+      caveat: "DNS points to Vanta Trust Center hosting. It does not establish certification, licensed compliance modules, or current activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://help.vanta.com/en/articles/11345446-creating-your-custom-domain-trust-center"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/trust-centers-2026-10-14.md", "public_dns_research"),
+      ],
+    },
+    {
+      provider: "SafeBase", category: "security_compliance",
+      suffixes: ["portals.safebase.io"], confidence: "high",
+      productScope: "safebase_trust_center",
+      caveat: "DNS points to SafeBase Trust Center hosting. It does not establish certification, use of Drata's compliance platform, or current activity.",
+      verifiedAt: "2026-10-14",
+      sources: [
+        source("https://trust.drata.com/", "official_trust_center"),
+        source("https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/trust-centers-2026-10-14.md", "public_dns_research"),
+      ],
+    },
     {"provider": "Auth0", "category": "identity_access", "suffixes": ["edge.tenants.auth0.com"], "confidence": "high", "productScope": "auth0_custom_authentication_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://auth0.com/blog/custom-domains-complete-guide/", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "Published DNS indicates configuration only; it does not prove active use or a current subscription."},
     {"provider": "Atlassian Statuspage", "category": "customer_support", "suffixes": ["stspg-customer.com"], "confidence": "high", "productScope": "statuspage_custom_domain", "verifiedAt": "2026-10-14", "sources": [{"url": "https://support.atlassian.com/statuspage/docs/configure-your-dns", "kind": "official_documentation"}, {"url": "https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/enterprise-discovery-2026-10-14.md", "kind": "public_dns_research"}], "caveat": "Published DNS indicates configuration only; it does not prove active use or a current subscription."},
     { provider: "Outreach", category: "sales_engagement", suffixes: ["outrch.com", "outreach.io", "outreach-mail.com"], confidence: "high" },

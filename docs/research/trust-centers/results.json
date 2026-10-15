@@ -1,0 +1,3913 @@
+{
+  "startedAt": "2026-10-15T05:10:46.783Z",
+  "completedAt": "2026-10-15T05:12:10.934Z",
+  "cohort": "../enterprise-discovery/cohort.json",
+  "rawSha256": "08ed8fba159334cd15b0024452ee5312ac7fb395a7427da43e02e4ba52a89bd1",
+  "methodology": "1,000 existing cohort domains; native DNS, 8 sequential workers, >=100ms between queries per worker, 3 CNAME queries per label maximum plus one wildcard control. The previous split is descriptive, not independently labelled ground truth. Only Vanta and SafeBase candidates fixed before this supplemental pass.",
+  "domains": 1000,
+  "queries": 4609,
+  "labels": [
+    "trust",
+    "security",
+    "trustcenter"
+  ],
+  "wildcardObservations": 204,
+  "errorQueries": 19,
+  "errorDomains": 7,
+  "detectedDomains": 187,
+  "counts": [
+    {
+      "provider": "Vanta",
+      "suffix": "cname.vantatrust.com",
+      "domains": 88,
+      "discovery": 71,
+      "holdout": 17,
+      "trustDomains": 80,
+      "onlyOtherLabels": 8
+    },
+    {
+      "provider": "SafeBase",
+      "suffix": "portals.safebase.io",
+      "domains": 91,
+      "discovery": 72,
+      "holdout": 19,
+      "trustDomains": 66,
+      "onlyOtherLabels": 25
+    },
+    {
+      "provider": "Drata",
+      "exact": "trust.cname.drata.com",
+      "exploratory": true,
+      "domains": 8,
+      "discovery": 6,
+      "holdout": 2,
+      "trustDomains": 8,
+      "onlyOtherLabels": 0
+    }
+  ],
+  "findings": [
+    {
+      "domain": "15five.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.15five.com",
+      "chain": [
+        {
+          "hostname": "trust.15five.com",
+          "targets": [
+            "15five.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "15five.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "6sense.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.6sense.com",
+      "chain": [
+        {
+          "hostname": "trust.6sense.com",
+          "targets": [
+            "6sense.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6sense.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "8x8.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.8x8.com",
+      "chain": [
+        {
+          "hostname": "trust.8x8.com",
+          "targets": [
+            "68094680869c472aea035a7d.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68094680869c472aea035a7d.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "accelevents.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.accelevents.com",
+      "chain": [
+        {
+          "hostname": "trust.accelevents.com",
+          "targets": [
+            "accelevents.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "accelevents.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "acquia.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.acquia.com",
+      "chain": [
+        {
+          "hostname": "security.acquia.com",
+          "targets": [
+            "acquia.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "acquia.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "activtrak.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.activtrak.com",
+      "chain": [
+        {
+          "hostname": "trust.activtrak.com",
+          "targets": [
+            "603eaafd96bef488c38c6a8a.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "603eaafd96bef488c38c6a8a.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "aderant.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.aderant.com",
+      "chain": [
+        {
+          "hostname": "trust.aderant.com",
+          "targets": [
+            "aderant.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "aderant.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "aerospike.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.aerospike.com",
+      "chain": [
+        {
+          "hostname": "trust.aerospike.com",
+          "targets": [
+            "670d4bf78f205f2660f22cc0.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "670d4bf78f205f2660f22cc0.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "agorapulse.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.agorapulse.com",
+      "chain": [
+        {
+          "hostname": "trust.agorapulse.com",
+          "targets": [
+            "6165a0fa1157254bd608231f.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6165a0fa1157254bd608231f.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "algolia.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.algolia.com",
+      "chain": [
+        {
+          "hostname": "trust.algolia.com",
+          "targets": [
+            "688c75a301aab4d2f7f0c8c7.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "688c75a301aab4d2f7f0c8c7.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "ambition.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.ambition.com",
+      "chain": [
+        {
+          "hostname": "security.ambition.com",
+          "targets": [
+            "ambition.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "ambition.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "anydesk.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.anydesk.com",
+      "chain": [
+        {
+          "hostname": "trust.anydesk.com",
+          "targets": [
+            "6643abcba32ced89dc333e92.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6643abcba32ced89dc333e92.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "apollo.io",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.apollo.io",
+      "chain": [
+        {
+          "hostname": "trust.apollo.io",
+          "targets": [
+            "apollo.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "apollo.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "appcues.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.appcues.com",
+      "chain": [
+        {
+          "hostname": "trust.appcues.com",
+          "targets": [
+            "66281f8a5360cc947aa45922.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "66281f8a5360cc947aa45922.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "appfollow.io",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.appfollow.io",
+      "chain": [
+        {
+          "hostname": "trust.appfollow.io",
+          "targets": [
+            "63fe20a15f6062b166f4154e.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "63fe20a15f6062b166f4154e.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "applitools.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.applitools.com",
+      "chain": [
+        {
+          "hostname": "trust.applitools.com",
+          "targets": [
+            "applitools.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "applitools.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "appointment-plus.com",
+      "split": "holdout",
+      "provider": "Drata",
+      "hostname": "trust.appointment-plus.com",
+      "chain": [
+        {
+          "hostname": "trust.appointment-plus.com",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "apspayroll.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.apspayroll.com",
+      "chain": [
+        {
+          "hostname": "security.apspayroll.com",
+          "targets": [
+            "apspayroll.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "apspayroll.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "articulate.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.articulate.com",
+      "chain": [
+        {
+          "hostname": "trust.articulate.com",
+          "targets": [
+            "articulate.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "articulate.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "athenahealth.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.athenahealth.com",
+      "chain": [
+        {
+          "hostname": "trust.athenahealth.com",
+          "targets": [
+            "67b619fc13cb3f0f9115e35d.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67b619fc13cb3f0f9115e35d.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "author-it.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.author-it.com",
+      "chain": [
+        {
+          "hostname": "trust.author-it.com",
+          "targets": [
+            "68da3dd3fa05a684db233d73.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68da3dd3fa05a684db233d73.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "avaamo.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.avaamo.com",
+      "chain": [
+        {
+          "hostname": "trust.avaamo.com",
+          "targets": [
+            "avaamo.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "avaamo.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "avidxchange.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.avidxchange.com",
+      "chain": [
+        {
+          "hostname": "trust.avidxchange.com",
+          "targets": [
+            "avidxchange.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "avidxchange.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "bettercloud.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.bettercloud.com",
+      "chain": [
+        {
+          "hostname": "trust.bettercloud.com",
+          "targets": [
+            "67233a698f205f26605fef66.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67233a698f205f26605fef66.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "bigcommerce.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "security.bigcommerce.com",
+      "chain": [
+        {
+          "hostname": "security.bigcommerce.com",
+          "targets": [
+            "bigcommerce.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "bigcommerce.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "bigtime.net",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.bigtime.net",
+      "chain": [
+        {
+          "hostname": "trust.bigtime.net",
+          "targets": [
+            "bigtime.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "bigtime.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "birdeye.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.birdeye.com",
+      "chain": [
+        {
+          "hostname": "trust.birdeye.com",
+          "targets": [
+            "6a58ffcb6e15e5963d2000b0.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6a58ffcb6e15e5963d2000b0.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "bitly.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.bitly.com",
+      "chain": [
+        {
+          "hostname": "security.bitly.com",
+          "targets": [
+            "bit-1.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "bit-1.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "bluecore.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.bluecore.com",
+      "chain": [
+        {
+          "hostname": "trust.bluecore.com",
+          "targets": [
+            "bluecore.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "bluecore.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "brightcove.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.brightcove.com",
+      "chain": [
+        {
+          "hostname": "trust.brightcove.com",
+          "targets": [
+            "brightcove.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "brightcove.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "brightflag.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.brightflag.com",
+      "chain": [
+        {
+          "hostname": "trust.brightflag.com",
+          "targets": [
+            "5ed5951114e5f8b0d0db9086.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5ed5951114e5f8b0d0db9086.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "buildertrend.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trustcenter.buildertrend.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.buildertrend.com",
+          "targets": [
+            "buildertrend.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "buildertrend.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "bynder.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.bynder.com",
+      "chain": [
+        {
+          "hostname": "trust.bynder.com",
+          "targets": [
+            "6425b7bd671e2b33a24f7996.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6425b7bd671e2b33a24f7996.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "callbox.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.callbox.com",
+      "chain": [
+        {
+          "hostname": "trust.callbox.com",
+          "targets": [
+            "64a6f68db79e25ca06a027b8.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "64a6f68db79e25ca06a027b8.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "canto.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.canto.com",
+      "chain": [
+        {
+          "hostname": "trust.canto.com",
+          "targets": [
+            "canto.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "canto.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "canva.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.canva.com",
+      "chain": [
+        {
+          "hostname": "trust.canva.com",
+          "targets": [
+            "canva.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "canva.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "carto.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "security.carto.com",
+      "chain": [
+        {
+          "hostname": "security.carto.com",
+          "targets": [
+            "61a550073d7c181b0c277691.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "61a550073d7c181b0c277691.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "caspio.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.caspio.com",
+      "chain": [
+        {
+          "hostname": "trust.caspio.com",
+          "targets": [
+            "619d4bfc3d7c181b0ceb7889.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "619d4bfc3d7c181b0ceb7889.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "cbinsights.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.cbinsights.com",
+      "chain": [
+        {
+          "hostname": "trust.cbinsights.com",
+          "targets": [
+            "66f41674b4ef31ac7cf70e5d.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "66f41674b4ef31ac7cf70e5d.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "celonis.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.celonis.com",
+      "chain": [
+        {
+          "hostname": "trust.celonis.com",
+          "targets": [
+            "celonis.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "celonis.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "celtra.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.celtra.com",
+      "chain": [
+        {
+          "hostname": "trust.celtra.com",
+          "targets": [
+            "68f7934e25aa4475df71ed9e.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68f7934e25aa4475df71ed9e.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "ceros.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.ceros.com",
+      "chain": [
+        {
+          "hostname": "trust.ceros.com",
+          "targets": [
+            "649b0bc8b79e25ca061ae8ae.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "649b0bc8b79e25ca061ae8ae.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "chartbeat.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.chartbeat.com",
+      "chain": [
+        {
+          "hostname": "trust.chartbeat.com",
+          "targets": [
+            "6025bd34a181ea14b1d7e84a.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6025bd34a181ea14b1d7e84a.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "chilipiper.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.chilipiper.com",
+      "chain": [
+        {
+          "hostname": "trust.chilipiper.com",
+          "targets": [
+            "5d1d4b2a0a606c1d1eaa62a6.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5d1d4b2a0a606c1d1eaa62a6.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "circleci.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.circleci.com",
+      "chain": [
+        {
+          "hostname": "trust.circleci.com",
+          "targets": [
+            "circleci.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "circleci.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "cleo.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trustcenter.cleo.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.cleo.com",
+          "targets": [
+            "cleo.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "cleo.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "clickup.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.clickup.com",
+      "chain": [
+        {
+          "hostname": "security.clickup.com",
+          "targets": [
+            "clickup.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "clickup.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "close.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.close.com",
+      "chain": [
+        {
+          "hostname": "trust.close.com",
+          "targets": [
+            "61d4e70f471122853d2bf5d7.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "61d4e70f471122853d2bf5d7.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "codesignal.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.codesignal.com",
+      "chain": [
+        {
+          "hostname": "trust.codesignal.com",
+          "targets": [
+            "6018d578a181ea14b19be53d.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6018d578a181ea14b19be53d.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "cognism.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.cognism.com",
+      "chain": [
+        {
+          "hostname": "trust.cognism.com",
+          "targets": [
+            "5f69a6d398c28dda164896b8.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5f69a6d398c28dda164896b8.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "conversica.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.conversica.com",
+      "chain": [
+        {
+          "hostname": "trust.conversica.com",
+          "targets": [
+            "65a0f6a2b4c7501f8979a89a.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65a0f6a2b4c7501f8979a89a.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "cultureamp.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.cultureamp.com",
+      "chain": [
+        {
+          "hostname": "security.cultureamp.com",
+          "targets": [
+            "cultureamp.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "cultureamp.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "dashlane.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.dashlane.com",
+      "chain": [
+        {
+          "hostname": "trust.dashlane.com",
+          "targets": [
+            "631f3ba0372ed4d85bd035aa.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "631f3ba0372ed4d85bd035aa.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "databox.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.databox.com",
+      "chain": [
+        {
+          "hostname": "trust.databox.com",
+          "targets": [
+            "databox.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "databox.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "datadoghq.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.datadoghq.com",
+      "chain": [
+        {
+          "hostname": "trust.datadoghq.com",
+          "targets": [
+            "datadoghq.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "datadoghq.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "datarobot.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.datarobot.com",
+      "chain": [
+        {
+          "hostname": "trust.datarobot.com",
+          "targets": [
+            "69d5224d78aa822d47d86c1e.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "69d5224d78aa822d47d86c1e.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "datastax.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.datastax.com",
+      "chain": [
+        {
+          "hostname": "trust.datastax.com",
+          "targets": [
+            "datastax.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "datastax.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "demandbase.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.demandbase.com",
+      "chain": [
+        {
+          "hostname": "trust.demandbase.com",
+          "targets": [
+            "demandbase.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "demandbase.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "demandfarm.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.demandfarm.com",
+      "chain": [
+        {
+          "hostname": "trust.demandfarm.com",
+          "targets": [
+            "demandfarm.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "demandfarm.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "deputy.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.deputy.com",
+      "chain": [
+        {
+          "hostname": "trust.deputy.com",
+          "targets": [
+            "deputy.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "deputy.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "docebo.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.docebo.com",
+      "chain": [
+        {
+          "hostname": "trust.docebo.com",
+          "targets": [
+            "68efd12dcee7963761738ba7.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68efd12dcee7963761738ba7.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "dronedeploy.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.dronedeploy.com",
+      "chain": [
+        {
+          "hostname": "trust.dronedeploy.com",
+          "targets": [
+            "690bc7792382fc97ede106e1.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "690bc7792382fc97ede106e1.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "druva.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.druva.com",
+      "chain": [
+        {
+          "hostname": "security.druva.com",
+          "targets": [
+            "druva.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "druva.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "dubber.net",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.dubber.net",
+      "chain": [
+        {
+          "hostname": "trust.dubber.net",
+          "targets": [
+            "dubber.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "dubber.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "encompasscorporation.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.encompasscorporation.com",
+      "chain": [
+        {
+          "hostname": "trust.encompasscorporation.com",
+          "targets": [
+            "67c43e22b66aa516261de65a.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67c43e22b66aa516261de65a.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "envoy.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.envoy.com",
+      "chain": [
+        {
+          "hostname": "trust.envoy.com",
+          "targets": [
+            "envoy.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "envoy.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "everbridge.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.everbridge.com",
+      "chain": [
+        {
+          "hostname": "trust.everbridge.com",
+          "targets": [
+            "everbridge.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "everbridge.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "expensify.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.expensify.com",
+      "chain": [
+        {
+          "hostname": "trust.expensify.com",
+          "targets": [
+            "687f96937411e23c43c25d4d.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "687f96937411e23c43c25d4d.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "fastspring.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.fastspring.com",
+      "chain": [
+        {
+          "hostname": "trust.fastspring.com",
+          "targets": [
+            "fastspring.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "fastspring.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "five9.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trustcenter.five9.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.five9.com",
+          "targets": [
+            "five9.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "five9.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "fivetran.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.fivetran.com",
+      "chain": [
+        {
+          "hostname": "trust.fivetran.com",
+          "targets": [
+            "fivetran.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "fivetran.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "forma.ai",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.forma.ai",
+      "chain": [
+        {
+          "hostname": "trust.forma.ai",
+          "targets": [
+            "formaai.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "formaai.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "formassembly.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "security.formassembly.com",
+      "chain": [
+        {
+          "hostname": "security.formassembly.com",
+          "targets": [
+            "formassembly.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "formassembly.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "fullcontact.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.fullcontact.com",
+      "chain": [
+        {
+          "hostname": "trust.fullcontact.com",
+          "targets": [
+            "677505f28ce3058cc3fd6518.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "677505f28ce3058cc3fd6518.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "fullstory.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.fullstory.com",
+      "chain": [
+        {
+          "hostname": "trust.fullstory.com",
+          "targets": [
+            "fullstory.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "fullstory.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "gainsight.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.gainsight.com",
+      "chain": [
+        {
+          "hostname": "trust.gainsight.com",
+          "targets": [
+            "gainsight.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "gainsight.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "gitlab.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.gitlab.com",
+      "chain": [
+        {
+          "hostname": "trust.gitlab.com",
+          "targets": [
+            "gitlab.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "gitlab.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "gobridgit.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.gobridgit.com",
+      "chain": [
+        {
+          "hostname": "trust.gobridgit.com",
+          "targets": [
+            "5ff377e63f7abda7868cb7d7.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5ff377e63f7abda7868cb7d7.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "gong.io",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.gong.io",
+      "chain": [
+        {
+          "hostname": "trust.gong.io",
+          "targets": [
+            "gong.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "gong.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "grafana.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.grafana.com",
+      "chain": [
+        {
+          "hostname": "trust.grafana.com",
+          "targets": [
+            "grafana.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "grafana.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "happeo.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.happeo.com",
+      "chain": [
+        {
+          "hostname": "trust.happeo.com",
+          "targets": [
+            "6682c2c9d8cc796ea5264d75.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6682c2c9d8cc796ea5264d75.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "hginsights.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.hginsights.com",
+      "chain": [
+        {
+          "hostname": "trust.hginsights.com",
+          "targets": [
+            "hginsights.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "hginsights.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "hireology.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.hireology.com",
+      "chain": [
+        {
+          "hostname": "trust.hireology.com",
+          "targets": [
+            "66a3eaef17f6ad4ce8ce0adb.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "66a3eaef17f6ad4ce8ce0adb.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "hirevue.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.hirevue.com",
+      "chain": [
+        {
+          "hostname": "trust.hirevue.com",
+          "targets": [
+            "hirevue.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "hirevue.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "hubstaff.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.hubstaff.com",
+      "chain": [
+        {
+          "hostname": "trust.hubstaff.com",
+          "targets": [
+            "6010847fc91023ce783d55ea.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6010847fc91023ce783d55ea.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "icertis.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trustcenter.icertis.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.icertis.com",
+          "targets": [
+            "icertis.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "icertis.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "icims.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.icims.com",
+      "chain": [
+        {
+          "hostname": "trust.icims.com",
+          "targets": [
+            "icims.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "icims.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "instapage.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "security.instapage.com",
+      "chain": [
+        {
+          "hostname": "security.instapage.com",
+          "targets": [
+            "67112cfa8f205f2660701c04.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67112cfa8f205f2660701c04.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "interactsoftware.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.interactsoftware.com",
+      "chain": [
+        {
+          "hostname": "trust.interactsoftware.com",
+          "targets": [
+            "interact.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "interact.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "intercom.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.intercom.com",
+      "chain": [
+        {
+          "hostname": "trust.intercom.com",
+          "targets": [
+            "668262a7bb4f7b57d3e7d536.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "668262a7bb4f7b57d3e7d536.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "invoca.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.invoca.com",
+      "chain": [
+        {
+          "hostname": "trust.invoca.com",
+          "targets": [
+            "6773b3fa8ce3058cc3ba3c64.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6773b3fa8ce3058cc3ba3c64.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "jellyfish.co",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.jellyfish.co",
+      "chain": [
+        {
+          "hostname": "trust.jellyfish.co",
+          "targets": [
+            "jellyfish.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "jellyfish.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "kentico.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.kentico.com",
+      "chain": [
+        {
+          "hostname": "trust.kentico.com",
+          "targets": [
+            "kentico.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "kentico.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "knowbe4.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.knowbe4.com",
+      "chain": [
+        {
+          "hostname": "trust.knowbe4.com",
+          "targets": [
+            "knowbe.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "knowbe.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "kustomer.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.kustomer.com",
+      "chain": [
+        {
+          "hostname": "trust.kustomer.com",
+          "targets": [
+            "5c0972f6f5ea8a08d776c52b.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5c0972f6f5ea8a08d776c52b.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "later.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.later.com",
+      "chain": [
+        {
+          "hostname": "trust.later.com",
+          "targets": [
+            "later.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "later.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "leadforensics.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.leadforensics.com",
+      "chain": [
+        {
+          "hostname": "trust.leadforensics.com",
+          "targets": [
+            "68ff8ad1ade684871b7e63e4.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68ff8ad1ade684871b7e63e4.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "leadiq.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "security.leadiq.com",
+      "chain": [
+        {
+          "hostname": "security.leadiq.com",
+          "targets": [
+            "5e6acc150ff5eb7ba9e32f30.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5e6acc150ff5eb7ba9e32f30.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "livestorm.co",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.livestorm.co",
+      "chain": [
+        {
+          "hostname": "security.livestorm.co",
+          "targets": [
+            "livestorm.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "livestorm.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "lob.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.lob.com",
+      "chain": [
+        {
+          "hostname": "trust.lob.com",
+          "targets": [
+            "66995e76865ac5731414dbb7.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "66995e76865ac5731414dbb7.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "lucidworks.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.lucidworks.com",
+      "chain": [
+        {
+          "hostname": "trust.lucidworks.com",
+          "targets": [
+            "lucidworks.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "lucidworks.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "lumapps.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.lumapps.com",
+      "chain": [
+        {
+          "hostname": "trust.lumapps.com",
+          "targets": [
+            "61a4eef03d7c181b0cc7acd0.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "61a4eef03d7c181b0cc7acd0.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "madisonlogic.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.madisonlogic.com",
+      "chain": [
+        {
+          "hostname": "trust.madisonlogic.com",
+          "targets": [
+            "madisonlogic.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "madisonlogic.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "mediavalet.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trustcenter.mediavalet.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.mediavalet.com",
+          "targets": [
+            "65443a0954db6dea36b78af1.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65443a0954db6dea36b78af1.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "meltwater.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.meltwater.com",
+      "chain": [
+        {
+          "hostname": "trust.meltwater.com",
+          "targets": [
+            "62b397adb657294ee2355a19.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "62b397adb657294ee2355a19.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "messagegears.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.messagegears.com",
+      "chain": [
+        {
+          "hostname": "trust.messagegears.com",
+          "targets": [
+            "5e83e9e1bef03f4cf55e4842.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5e83e9e1bef03f4cf55e4842.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "mimecast.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.mimecast.com",
+      "chain": [
+        {
+          "hostname": "trust.mimecast.com",
+          "targets": [
+            "mimecast.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "mimecast.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "mixpanel.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.mixpanel.com",
+      "chain": [
+        {
+          "hostname": "trust.mixpanel.com",
+          "targets": [
+            "6775057a8ce3058cc3fd5f32.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6775057a8ce3058cc3fd5f32.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "monday.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.monday.com",
+      "chain": [
+        {
+          "hostname": "trust.monday.com",
+          "targets": [
+            "monday.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "monday.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "nutshell.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.nutshell.com",
+      "chain": [
+        {
+          "hostname": "trust.nutshell.com",
+          "targets": [
+            "67c71f05707204a08bd6ef6e.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67c71f05707204a08bd6ef6e.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "octopus.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.octopus.com",
+      "chain": [
+        {
+          "hostname": "trust.octopus.com",
+          "targets": [
+            "6171e3481157254bd6671bfb.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6171e3481157254bd6671bfb.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "okta.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.okta.com",
+      "chain": [
+        {
+          "hostname": "security.okta.com",
+          "targets": [
+            "okta.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "okta.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "onfleet.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.onfleet.com",
+      "chain": [
+        {
+          "hostname": "trust.onfleet.com",
+          "targets": [
+            "5c6dcdbff5ea8a08d765e7e8.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5c6dcdbff5ea8a08d765e7e8.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "opensesame.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.opensesame.com",
+      "chain": [
+        {
+          "hostname": "security.opensesame.com",
+          "targets": [
+            "opensesame.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "opensesame.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "outsystems.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "security.outsystems.com",
+      "chain": [
+        {
+          "hostname": "security.outsystems.com",
+          "targets": [
+            "outsystems.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "outsystems.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "pantheon.io",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.pantheon.io",
+      "chain": [
+        {
+          "hostname": "trust.pantheon.io",
+          "targets": [
+            "65d4f4d33e2c0ef88c22b18c.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65d4f4d33e2c0ef88c22b18c.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "partnerstack.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.partnerstack.com",
+      "chain": [
+        {
+          "hostname": "trust.partnerstack.com",
+          "targets": [
+            "65f1f4d9f2693ee6e2e57ae4.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65f1f4d9f2693ee6e2e57ae4.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "pax8.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.pax8.com",
+      "chain": [
+        {
+          "hostname": "trust.pax8.com",
+          "targets": [
+            "pax8.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "pax8.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "paylocity.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.paylocity.com",
+      "chain": [
+        {
+          "hostname": "trust.paylocity.com",
+          "targets": [
+            "655e0746734955947eec9199.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "655e0746734955947eec9199.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "pendo.io",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.pendo.io",
+      "chain": [
+        {
+          "hostname": "trust.pendo.io",
+          "targets": [
+            "64fb99288dfab7d4e47315e8.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "64fb99288dfab7d4e47315e8.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "perforce.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.perforce.com",
+      "chain": [
+        {
+          "hostname": "trust.perforce.com",
+          "targets": [
+            "65d7b72f3e2c0ef88c56d501.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65d7b72f3e2c0ef88c56d501.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "pipedrive.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trustcenter.pipedrive.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.pipedrive.com",
+          "targets": [
+            "pipedrive.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "pipedrive.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "planview.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.planview.com",
+      "chain": [
+        {
+          "hostname": "trust.planview.com",
+          "targets": [
+            "safebase.trust.planview.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "safebase.trust.planview.com",
+          "targets": [
+            "planview.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "planview.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "pluralsight.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.pluralsight.com",
+      "chain": [
+        {
+          "hostname": "trust.pluralsight.com",
+          "targets": [
+            "pluralsight.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "pluralsight.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "podium.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.podium.com",
+      "chain": [
+        {
+          "hostname": "trust.podium.com",
+          "targets": [
+            "65bac9eb443767d624018abc.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65bac9eb443767d624018abc.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "powtoon.com",
+      "split": "discovery",
+      "provider": "Drata",
+      "hostname": "trust.powtoon.com",
+      "chain": [
+        {
+          "hostname": "trust.powtoon.com",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "predictiveindex.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.predictiveindex.com",
+      "chain": [
+        {
+          "hostname": "trust.predictiveindex.com",
+          "targets": [
+            "65ba8f48443767d62434a080.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65ba8f48443767d62434a080.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "prophix.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.prophix.com",
+      "chain": [
+        {
+          "hostname": "trust.prophix.com",
+          "targets": [
+            "65e0cb85d9723f97a3506916.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65e0cb85d9723f97a3506916.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "pypestream.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.pypestream.com",
+      "chain": [
+        {
+          "hostname": "trust.pypestream.com",
+          "targets": [
+            "64666f3d533993cf2173cee8.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "64666f3d533993cf2173cee8.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "quantumworkplace.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.quantumworkplace.com",
+      "chain": [
+        {
+          "hostname": "trust.quantumworkplace.com",
+          "targets": [
+            "67856ad9c8ba5c28ee352ffb.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67856ad9c8ba5c28ee352ffb.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "reachdesk.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.reachdesk.com",
+      "chain": [
+        {
+          "hostname": "trust.reachdesk.com",
+          "targets": [
+            "5e5de38a6ad788551197eca5.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "5e5de38a6ad788551197eca5.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "rebelmouse.com",
+      "split": "discovery",
+      "provider": "Drata",
+      "hostname": "trust.rebelmouse.com",
+      "chain": [
+        {
+          "hostname": "trust.rebelmouse.com",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "rebrandly.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.rebrandly.com",
+      "chain": [
+        {
+          "hostname": "trust.rebrandly.com",
+          "targets": [
+            "rebrandly.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "rebrandly.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "reply.io",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.reply.io",
+      "chain": [
+        {
+          "hostname": "trust.reply.io",
+          "targets": [
+            "61bc974fa8b1961303437f4a.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "61bc974fa8b1961303437f4a.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "ringcentral.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.ringcentral.com",
+      "chain": [
+        {
+          "hostname": "trust.ringcentral.com",
+          "targets": [
+            "ringcentral.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "ringcentral.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "rydoo.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.rydoo.com",
+      "chain": [
+        {
+          "hostname": "trust.rydoo.com",
+          "targets": [
+            "68243eb1843e73dc45270fd5.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68243eb1843e73dc45270fd5.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "samsara.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "security.samsara.com",
+      "chain": [
+        {
+          "hostname": "security.samsara.com",
+          "targets": [
+            "65eb986af2693ee6e2af2634.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65eb986af2693ee6e2af2634.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "saucelabs.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.saucelabs.com",
+      "chain": [
+        {
+          "hostname": "trust.saucelabs.com",
+          "targets": [
+            "65d675463e2c0ef88ca0ad64.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65d675463e2c0ef88ca0ad64.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "seamless.ai",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.seamless.ai",
+      "chain": [
+        {
+          "hostname": "trust.seamless.ai",
+          "targets": [
+            "63b494633be401fb60fe13d3.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "63b494633be401fb60fe13d3.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "segment.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "security.segment.com",
+      "chain": [
+        {
+          "hostname": "security.segment.com",
+          "targets": [
+            "segment.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "segment.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "seismic.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.seismic.com",
+      "chain": [
+        {
+          "hostname": "trust.seismic.com",
+          "targets": [
+            "seismic.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "seismic.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "sendoso.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "security.sendoso.com",
+      "chain": [
+        {
+          "hostname": "security.sendoso.com",
+          "targets": [
+            "630d0d06d6bce29eb1205049.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "630d0d06d6bce29eb1205049.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "sertifi.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.sertifi.com",
+      "chain": [
+        {
+          "hostname": "trust.sertifi.com",
+          "targets": [
+            "sertifi.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "sertifi.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "servicetitan.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.servicetitan.com",
+      "chain": [
+        {
+          "hostname": "security.servicetitan.com",
+          "targets": [
+            "servicetitan.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "servicetitan.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "similarweb.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trustcenter.similarweb.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.similarweb.com",
+          "targets": [
+            "similarweb.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "similarweb.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "simpli.fi",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.simpli.fi",
+      "chain": [
+        {
+          "hostname": "trust.simpli.fi",
+          "targets": [
+            "64db25726491f66d230c4406.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "64db25726491f66d230c4406.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "sisense.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.sisense.com",
+      "chain": [
+        {
+          "hostname": "trust.sisense.com",
+          "targets": [
+            "sisense.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "sisense.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "skan.ai",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.skan.ai",
+      "chain": [
+        {
+          "hostname": "trust.skan.ai",
+          "targets": [
+            "skan.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "skan.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "smarsh.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.smarsh.com",
+      "chain": [
+        {
+          "hostname": "trust.smarsh.com",
+          "targets": [
+            "68f2bfe69e397ef048b9ed65.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68f2bfe69e397ef048b9ed65.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "smartbear.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.smartbear.com",
+      "chain": [
+        {
+          "hostname": "trust.smartbear.com",
+          "targets": [
+            "smartbear.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "smartbear.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "snyk.io",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.snyk.io",
+      "chain": [
+        {
+          "hostname": "trust.snyk.io",
+          "targets": [
+            "67d46c05c60aaec47af4ec48.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67d46c05c60aaec47af4ec48.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "sparkhire.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.sparkhire.com",
+      "chain": [
+        {
+          "hostname": "trust.sparkhire.com",
+          "targets": [
+            "63586389e0bf35c4485c01b5.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "63586389e0bf35c4485c01b5.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "spekit.com",
+      "split": "discovery",
+      "provider": "Drata",
+      "hostname": "trust.spekit.com",
+      "chain": [
+        {
+          "hostname": "trust.spekit.com",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "spendesk.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.spendesk.com",
+      "chain": [
+        {
+          "hostname": "trust.spendesk.com",
+          "targets": [
+            "62e407561d4d716d607f1862.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "62e407561d4d716d607f1862.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "sprinklr.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.sprinklr.com",
+      "chain": [
+        {
+          "hostname": "trust.sprinklr.com",
+          "targets": [
+            "sprinklr.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "sprinklr.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "spscommerce.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.spscommerce.com",
+      "chain": [
+        {
+          "hostname": "trust.spscommerce.com",
+          "targets": [
+            "spscommerce.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "spscommerce.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "surveysparrow.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "security.surveysparrow.com",
+      "chain": [
+        {
+          "hostname": "security.surveysparrow.com",
+          "targets": [
+            "surveysparrow.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "surveysparrow.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "sysaid.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.sysaid.com",
+      "chain": [
+        {
+          "hostname": "trust.sysaid.com",
+          "targets": [
+            "6a6d38e3f104ab0f1d213842.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6a6d38e3f104ab0f1d213842.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "talend.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "security.talend.com",
+      "chain": [
+        {
+          "hostname": "security.talend.com",
+          "targets": [
+            "talend.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "talend.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "tealium.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.tealium.com",
+      "chain": [
+        {
+          "hostname": "trust.tealium.com",
+          "targets": [
+            "68c320e561b3ac529eaa0d2e.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "68c320e561b3ac529eaa0d2e.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "telestream.net",
+      "split": "discovery",
+      "provider": "Drata",
+      "hostname": "trust.telestream.net",
+      "chain": [
+        {
+          "hostname": "trust.telestream.net",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "telnyx.com",
+      "split": "discovery",
+      "provider": "Drata",
+      "hostname": "trust.telnyx.com",
+      "chain": [
+        {
+          "hostname": "trust.telnyx.com",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "terminus.com",
+      "split": "holdout",
+      "provider": "Drata",
+      "hostname": "trust.terminus.com",
+      "chain": [
+        {
+          "hostname": "trust.terminus.com",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "trackvia.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.trackvia.com",
+      "chain": [
+        {
+          "hostname": "trust.trackvia.com",
+          "targets": [
+            "65f44707f2693ee6e2a26396.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65f44707f2693ee6e2a26396.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "twilio.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "security.twilio.com",
+      "chain": [
+        {
+          "hostname": "security.twilio.com",
+          "targets": [
+            "twilio.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "twilio.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "typeform.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.typeform.com",
+      "chain": [
+        {
+          "hostname": "trust.typeform.com",
+          "targets": [
+            "6671965a0e94d8120d3793b3.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6671965a0e94d8120d3793b3.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "unanet.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.unanet.com",
+      "chain": [
+        {
+          "hostname": "trust.unanet.com",
+          "targets": [
+            "65ef1e16f2693ee6e2213aae.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "65ef1e16f2693ee6e2213aae.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "uplandsoftware.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.uplandsoftware.com",
+      "chain": [
+        {
+          "hostname": "trust.uplandsoftware.com",
+          "targets": [
+            "uplandsoftware.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "uplandsoftware.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "usertesting.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.usertesting.com",
+      "chain": [
+        {
+          "hostname": "trust.usertesting.com",
+          "targets": [
+            "61b77601a8b1961303c55f7b.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "61b77601a8b1961303c55f7b.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "vendasta.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.vendasta.com",
+      "chain": [
+        {
+          "hostname": "trust.vendasta.com",
+          "targets": [
+            "656901352acf3ab5721bc5f4.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "656901352acf3ab5721bc5f4.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "vfairs.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.vfairs.com",
+      "chain": [
+        {
+          "hostname": "trust.vfairs.com",
+          "targets": [
+            "vfairs.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "vfairs.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "vidmob.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.vidmob.com",
+      "chain": [
+        {
+          "hostname": "trust.vidmob.com",
+          "targets": [
+            "63cf15e0585fe396821aa07e.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "63cf15e0585fe396821aa07e.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "visiblethread.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.visiblethread.com",
+      "chain": [
+        {
+          "hostname": "trust.visiblethread.com",
+          "targets": [
+            "67ff6403b3ccf84086e3df38.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "67ff6403b3ccf84086e3df38.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "vyond.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.vyond.com",
+      "chain": [
+        {
+          "hostname": "trust.vyond.com",
+          "targets": [
+            "vyond.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "vyond.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "wagepoint.com",
+      "split": "holdout",
+      "provider": "Vanta",
+      "hostname": "trust.wagepoint.com",
+      "chain": [
+        {
+          "hostname": "trust.wagepoint.com",
+          "targets": [
+            "6904d02be699929eb69e9ea5.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6904d02be699929eb69e9ea5.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "walkme.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.walkme.com",
+      "chain": [
+        {
+          "hostname": "trust.walkme.com",
+          "targets": [
+            "walkme.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "walkme.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "webflow.com",
+      "split": "holdout",
+      "provider": "SafeBase",
+      "hostname": "trust.webflow.com",
+      "chain": [
+        {
+          "hostname": "trust.webflow.com",
+          "targets": [
+            "webflow1.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "webflow1.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "wetransfer.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.wetransfer.com",
+      "chain": [
+        {
+          "hostname": "trust.wetransfer.com",
+          "targets": [
+            "wetransfer.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "wetransfer.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "whereby.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.whereby.com",
+      "chain": [
+        {
+          "hostname": "trust.whereby.com",
+          "targets": [
+            "whereby.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "whereby.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "workramp.com",
+      "split": "discovery",
+      "provider": "Drata",
+      "hostname": "trust.workramp.com",
+      "chain": [
+        {
+          "hostname": "trust.workramp.com",
+          "targets": [
+            "trust.cname.drata.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "trust.cname.drata.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "wrike.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "security.wrike.com",
+      "chain": [
+        {
+          "hostname": "security.wrike.com",
+          "targets": [
+            "685da6b2b7ec4123b896e8d3.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "685da6b2b7ec4123b896e8d3.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "writer.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trustcenter.writer.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.writer.com",
+          "targets": [
+            "66bd20e5ce3fc89d32492970.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "66bd20e5ce3fc89d32492970.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "wunderkind.co",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.wunderkind.co",
+      "chain": [
+        {
+          "hostname": "trust.wunderkind.co",
+          "targets": [
+            "69585f461710549ee9ec710a.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "69585f461710549ee9ec710a.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "yesware.com",
+      "split": "discovery",
+      "provider": "Vanta",
+      "hostname": "trust.yesware.com",
+      "chain": [
+        {
+          "hostname": "trust.yesware.com",
+          "targets": [
+            "6594b6814807912dd6370b9f.cname.vantatrust.com"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "6594b6814807912dd6370b9f.cname.vantatrust.com",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "yext.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trustcenter.yext.com",
+      "chain": [
+        {
+          "hostname": "trustcenter.yext.com",
+          "targets": [
+            "yext.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "yext.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "yotpo.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.yotpo.com",
+      "chain": [
+        {
+          "hostname": "trust.yotpo.com",
+          "targets": [
+            "yotpo.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "yotpo.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    },
+    {
+      "domain": "zonos.com",
+      "split": "discovery",
+      "provider": "SafeBase",
+      "hostname": "trust.zonos.com",
+      "chain": [
+        {
+          "hostname": "trust.zonos.com",
+          "targets": [
+            "zonos.portals.safebase.io"
+          ],
+          "error": null
+        },
+        {
+          "hostname": "zonos.portals.safebase.io",
+          "targets": [],
+          "error": null
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "domain": "churnzero.net",
+      "hostname": "churnzero-tc.static.services.wirewheel.io",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "creatio.com",
+      "hostname": "f8xcdhw.x.incapdns.net",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "creatio.com",
+      "hostname": "f8xcdhw.x.incapdns.net",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "creatio.com",
+      "hostname": "f8xcdhw.x.incapdns.net",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "employeenavigator.com",
+      "hostname": "krgm3xt.x.incapdns.net",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "employeenavigator.com",
+      "hostname": "krgm3xt.x.incapdns.net",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "employeenavigator.com",
+      "hostname": "krgm3xt.x.incapdns.net",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "pageup.com",
+      "hostname": "vp-trust-1caf0edd31.pageup.com",
+      "targets": [],
+      "error": "ETIMEOUT"
+    },
+    {
+      "domain": "pageup.com",
+      "hostname": "trust.pageup.com",
+      "targets": [],
+      "error": "ETIMEOUT"
+    },
+    {
+      "domain": "pageup.com",
+      "hostname": "security.pageup.com",
+      "targets": [],
+      "error": "ETIMEOUT"
+    },
+    {
+      "domain": "pageup.com",
+      "hostname": "trustcenter.pageup.com",
+      "targets": [],
+      "error": "ETIMEOUT"
+    },
+    {
+      "domain": "reverseads.com",
+      "hostname": "https://www.vaticai.com/",
+      "targets": [],
+      "error": "EBADNAME"
+    },
+    {
+      "domain": "reverseads.com",
+      "hostname": "https://www.vaticai.com/",
+      "targets": [],
+      "error": "EBADNAME"
+    },
+    {
+      "domain": "reverseads.com",
+      "hostname": "https://www.vaticai.com/",
+      "targets": [],
+      "error": "EBADNAME"
+    },
+    {
+      "domain": "soleo.com",
+      "hostname": "trustcenter.soleo.com",
+      "targets": [],
+      "error": "ETIMEOUT"
+    },
+    {
+      "domain": "triblio.com",
+      "hostname": "vp-trust-09b0a57635.triblio.com",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "triblio.com",
+      "hostname": "trust.triblio.com",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "triblio.com",
+      "hostname": "security.triblio.com",
+      "targets": [],
+      "error": "ESERVFAIL"
+    },
+    {
+      "domain": "triblio.com",
+      "hostname": "trustcenter.triblio.com",
+      "targets": [],
+      "error": "ESERVFAIL"
+    }
+  ]
+}
