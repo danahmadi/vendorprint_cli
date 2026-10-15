@@ -281,6 +281,10 @@ name alone never becomes a technology finding without live DNS corroboration.
   Version 0.4.0 narrows Gong Engage, Fireflies, and Reachdesk `productScope` values, so existing
   fingerprints and diffs involving those providers change once on upgrade; that
   alone does not indicate a customer's stack changed.
+- A [26-domain ABM pilot](https://github.com/danahmadi/vendorprint_cli/blob/main/docs/research/abm-2026-10-14.md)
+  did not establish reliable DNS signatures for 6sense, Demandbase, or legacy
+  Engagio. They are not currently supported detections. In particular, shared
+  SendGrid records do not establish 6sense AI Email usage.
 - Salesloft supports custom tracking domains; its attributable target used by the
   detector is `custom-tracking.salesloft.com`.
 - [HubSpot documents reverse-proxy targets under `hscoscdn.net`](https://developers.hubspot.com/docs/cms/best-practices/testing-staging-performance/reverse-proxies/setup),

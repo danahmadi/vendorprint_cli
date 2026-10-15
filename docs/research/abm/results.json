@@ -1,0 +1,327 @@
+{
+  "methodology": {
+    "maxQueries": 80,
+    "labels": [
+      "track",
+      "tracking",
+      "email-tracking",
+      "click",
+      "clicks",
+      "link",
+      "links",
+      "go",
+      "email",
+      "hello",
+      "engage",
+      "connect",
+      "outreach",
+      "sales",
+      "marketing",
+      "mail",
+      "send",
+      "trk",
+      "info",
+      "pages",
+      "offers",
+      "resources",
+      "learn",
+      "discover",
+      "events",
+      "webinars",
+      "meet",
+      "calendar",
+      "success",
+      "updates",
+      "news",
+      "brand",
+      "crm",
+      "portal",
+      "community",
+      "partners",
+      "customers",
+      "login",
+      "support",
+      "help",
+      "docs",
+      "status",
+      "academy",
+      "training",
+      "autodiscover",
+      "www2",
+      "lp",
+      "gong",
+      "fireflies",
+      "granola",
+      "recordings",
+      "notes",
+      "meetings",
+      "6sense",
+      "demandbase",
+      "engagio",
+      "inbox"
+    ],
+    "transport": "native DNS",
+    "globalMinStartGapMs": 30,
+    "domainConcurrency": 4,
+    "spfMax": 10,
+    "chainQueriesMax": 10,
+    "chainHopsMax": 3,
+    "scope": "Apex TXT prefixes and NS; fixed CNAME candidates and wildcard control; recursive SPF host references; short CNAME chains. No HTTP requests to customer sites, no CT, no private DNS. TXT values redacted before persistence."
+  },
+  "baselineQueries": 2014,
+  "additionalApexTxtQueries": 26,
+  "additionalApexTxtPurpose": "Explicitly includes digit-prefixed keys such as 6sense; raw values discarded before persistence.",
+  "rows": [
+    {
+      "domain": "achievers.com",
+      "observedAt": "2026-10-15T00:29:06.530Z",
+      "baselineQueryCount": 78,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "anaplan.com",
+      "observedAt": "2026-10-15T00:29:04.592Z",
+      "baselineQueryCount": 73,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "atlassian.com",
+      "observedAt": "2026-10-15T00:29:05.307Z",
+      "baselineQueryCount": 79,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "csdisco.com",
+      "observedAt": "2026-10-15T00:29:05.646Z",
+      "baselineQueryCount": 80,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "cyberark.com",
+      "observedAt": "2026-10-15T00:29:12.159Z",
+      "baselineQueryCount": 73,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "denodo.com",
+      "observedAt": "2026-10-15T00:29:18.485Z",
+      "baselineQueryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "flexential.com",
+      "observedAt": "2026-10-15T00:29:13.772Z",
+      "baselineQueryCount": 77,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "fullstory.com",
+      "observedAt": "2026-10-15T00:29:15.592Z",
+      "baselineQueryCount": 77,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "gocardless.com",
+      "observedAt": "2026-10-15T00:29:20.353Z",
+      "baselineQueryCount": 73,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "ivanti.com",
+      "observedAt": "2026-10-15T00:29:22.206Z",
+      "baselineQueryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "khoros.com",
+      "observedAt": "2026-10-15T00:29:25.033Z",
+      "baselineQueryCount": 79,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "lyrahealth.com",
+      "observedAt": "2026-10-15T00:29:27.162Z",
+      "baselineQueryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "newrelic.com",
+      "observedAt": "2026-10-15T00:29:29.531Z",
+      "baselineQueryCount": 78,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "pageuppeople.com",
+      "observedAt": "2026-10-15T00:29:31.542Z",
+      "baselineQueryCount": 79,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [
+        {
+          "name": "inbox.pageuppeople.com",
+          "type": "MX",
+          "code": "ESERVFAIL"
+        },
+        {
+          "name": "9unyb.x.incapdns.net",
+          "type": "CNAME",
+          "code": "ESERVFAIL"
+        }
+      ],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "pendo.io",
+      "observedAt": "2026-10-15T00:29:35.599Z",
+      "baselineQueryCount": 80,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "ptc.com",
+      "observedAt": "2026-10-15T00:29:36.298Z",
+      "baselineQueryCount": 80,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "sage.com",
+      "observedAt": "2026-10-15T00:29:38.533Z",
+      "baselineQueryCount": 74,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "salesloft.com",
+      "observedAt": "2026-10-15T00:29:40.377Z",
+      "baselineQueryCount": 78,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "snowflake.com",
+      "observedAt": "2026-10-15T00:29:43.948Z",
+      "baselineQueryCount": 78,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "sumologic.com",
+      "observedAt": "2026-10-15T00:29:44.441Z",
+      "baselineQueryCount": 79,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "teamviewer.com",
+      "observedAt": "2026-10-15T00:29:57.866Z",
+      "baselineQueryCount": 75,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "tenable.com",
+      "observedAt": "2026-10-15T00:29:48.751Z",
+      "baselineQueryCount": 80,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "tipalti.com",
+      "observedAt": "2026-10-15T00:29:51.958Z",
+      "baselineQueryCount": 80,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "trendmicro.com",
+      "observedAt": "2026-10-15T00:29:54.386Z",
+      "baselineQueryCount": 79,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [
+        {
+          "name": "wac.1df5.edgecastcdn.net",
+          "type": "CNAME",
+          "code": "ETIMEOUT"
+        }
+      ],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "unanet.com",
+      "observedAt": "2026-10-15T00:29:55.577Z",
+      "baselineQueryCount": 80,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    },
+    {
+      "domain": "vonage.com",
+      "observedAt": "2026-10-15T00:29:57.298Z",
+      "baselineQueryCount": 80,
+      "apexTxtStatus": "answered",
+      "apexNsStatus": "answered",
+      "nonAbsenceErrors": [],
+      "vendorSpecificCandidateHits": []
+    }
+  ]
+}

@@ -4,3 +4,5 @@ node_modules/
 findings.json
 .vendorprint-ct-cache.json
 docs/research/meeting-intelligence/*-observations.json
+docs/research/abm/*-observations.json
+docs/research/abm/prefix-checks.json
