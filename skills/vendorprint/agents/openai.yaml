@@ -1,0 +1,4 @@
+interface:
+  display_name: "VendorPrint"
+  short_description: "Research company technology signals from public DNS"
+  default_prompt: "Use $vendorprint to research this company's DNS-visible software stack and explain the evidence."
