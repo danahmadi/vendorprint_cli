@@ -1,7 +1,8 @@
 # vendorprint
 
-vendorprint builds an evidence-backed vendor fingerprint from public DNS. It is a
-Node.js CLI that checks for:
+vendorprint is an open-source CLI and Node.js library for company technographics
+from public DNS. It returns vendor findings with evidence, confidence, and caveats,
+checking for:
 
 - the inbound email provider or security gateway;
 - recursive SPF, DMARC, and conventional plus evidence-guided DKIM selectors;
@@ -49,6 +50,32 @@ To use the library API from a Node.js project:
 ```bash
 npm install vendorprint
 ```
+
+## Use with AI agents
+
+Install the [VendorPrint skill](skills/vendorprint/SKILL.md) in a compatible
+coding agent with shell access, such as Codex, Claude Code, or Cursor:
+
+```bash
+npx skills add danahmadi/vendorprint_cli --skill vendorprint
+```
+
+Choose your agent in the installer. The skills installer currently requires
+Node.js 22.20 or newer; the VendorPrint scanner requires Node.js 20 or newer.
+The skill is distributed from this GitHub repository and uses the published
+`vendorprint@0.5.0` scanner without an account or API key.
+
+Try: **"Use vendorprint to research example.com's software stack. Show the
+evidence, confidence, and what remains unknown."** Replace `example.com` with
+the company domain you want to research.
+
+For a batch: **"Use vendorprint to enrich the domains in accounts.txt with
+DNS-visible technology signals. Save the results with their evidence and flag
+partial scans."**
+
+The skill teaches agents to preserve observation time, product scope, inference
+labels, and completeness. It includes a reference for streaming, resuming, and
+using the Node.js library. [Agent setup guide](https://www.vendorprintcli.com/docs#agents)
 
 ## Run
 
